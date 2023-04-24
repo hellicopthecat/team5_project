@@ -1,4 +1,8 @@
 Hello
+<<<<<<< HEAD
 
 Hi I'm Jina. 
 How are you, 암 파인 땡큐 앤유?
+=======
+장진용
+>>>>>>> 7db1b9237c4011625d6a08a5db5610bce0eb1df8
