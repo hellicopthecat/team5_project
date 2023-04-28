@@ -1,4 +1,17 @@
 :root {
-  --main-color: #46c9d5;
-  --font-color: #363636;
+  --main-color: #004e42;
+  --main-sub-color: #ff6900;
+  --font-color: #fff;
+}
+
+body {
+  color: var(--main-color);
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+footer {
+  background-color: var(--main-color);
 }

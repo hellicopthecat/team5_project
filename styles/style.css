@@ -1,1 +1,4 @@
-@import "_variables.css";
+/*reset*/
+@import "components/_reset.css";
+/*variables*/
+@import "components/_variables.css";
