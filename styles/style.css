@@ -1,4 +1,8 @@
 /*reset*/
 @import "components/_reset.css";
+
 /*variables*/
 @import "components/_variables.css";
+
+/*screens*/
+@import "screens/menu.css";
