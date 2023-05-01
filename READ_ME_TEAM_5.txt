@@ -30,3 +30,8 @@ git push origin main
 // font-family: var(--sub-font);
 
 
+헤더랑 푸터 하시는 분들은 html 작업은 index.html에 하시면 되고 css는 components 폴더에 하셔서 style.css에 임포트 하시면 됩니다. 
+
+파일 업로드시 단톡에 물어보고 올리는 방법을 하고 싶습니다. 
+특히 index.html 작업시 헤더 메인페이지 푸터 담당하는 사람들끼리 일정 조정하면 좋을 듯합니다.
+(깃헙 업로드시 충돌 방지)
