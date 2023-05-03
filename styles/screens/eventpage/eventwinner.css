@@ -4,10 +4,10 @@
 }
 
 .toggle_slide {
-  transition: height 0.8s ease-in-out;
+  transition: height 0.5s ease-in-out;
   overflow: hidden;
 }
 .active {
-  transition: height 0.8s ease-in-out;
+  transition: height 0.5s ease-in-out;
   height: 0;
 }

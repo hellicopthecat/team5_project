@@ -5,6 +5,8 @@
 @import "../styles/components/_variables.css";
 
 /* - screens -  */
+/* - mainpage - */
+@import "../styles/screens/mainpage/mainpage.css";
 /* - menu -*/
 
 /* - mall - */
@@ -33,7 +35,12 @@
   font-weight: normal;
   font-size: 18px;
 }
-
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
 .hidden {
   display: none;
 }
