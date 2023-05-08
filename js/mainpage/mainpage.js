@@ -1,9 +1,16 @@
-const slideContainer = document.getElementById("slide_cont");
-const slide = slideContainer.querySelector("li img");
-const lBtn = document.getElementById("lbtn");
-const playBtn = document.getElementById("play");
-const rBtn = document.getElementById("rbtn");
+/**Video Slide */
+const bakeryVideoList = document.getElementById("daily_bakery_video_list");
+const bakeryVideos = bakeryVideoList.querySelectorAll("li video");
 
+/**AD Slide */
+const slideCont = document.getElementById("slide_cont");
+const slide = slideCont.querySelectorAll("li");
+const playBtn = document.getElementById("play");
+const pasueBtn = document.getElementById("pause");
+const btnDotCont = document.getElementById("btn_dot");
+const btnDots = btnDotCont.querySelectorAll("button");
+
+/**메뉴 정보 Array */
 const adImg = [
   {
     src: "./img/mainpage/main_ad/main_ad_1.jpeg",
@@ -34,20 +41,83 @@ const adImg = [
     alt: "5월 뚜레쥬의 배달앱 할인 혜택 최대 7원 할인(배달의 민족, 요기요, 땡겨요)",
   },
 ];
-
-let currentIndex = 1;
+/**슬라이드 위치 */
+let currentIndex = 0;
+/**자동슬라이드 동작 */
 function slidecontroller() {
   let slideArray = adImg[currentIndex++];
-  if (adImg.length <= currentIndex) {
-    currentIndex = 0;
-  }
+  adImg.length <= currentIndex ? (currentIndex = 0) : null;
+
   //   console.log(slideArray);
+
   const li = document.createElement("li");
   const img = document.createElement("img");
   img.setAttribute("src", slideArray.src);
   img.setAttribute("alt", slideArray.alt);
   li.append(img);
-  slideContainer.appendChild(li);
-  slideContainer.firstElementChild.remove();
+  const newLi = slideCont.appendChild(li);
+  if (newLi) {
+    newLi.classList.add("newLi");
+    newLi.animate(
+      [
+        {left: "50%", transform: "translateX(10vw)", easing: "ease-in"},
+        {left: "0%", transform: "translateX(0vw)", easing: "ease-out"},
+      ],
+      700
+    );
+  }
+  // console.log(newLi);
+  const slideNum = slideCont.children;
+  // console.log(slideNum);
+  if (slideNum.length > 9) {
+    slideNum[7].remove();
+    slideNum[8].remove();
+  }
 }
-setInterval(slidecontroller, 10000);
+const sliderMotion = setInterval(slidecontroller, 5000);
+function handlepause() {
+  clearInterval(sliderMotion);
+  playBtn.classList.add("hidden");
+  pasueBtn.classList.remove("hidden");
+}
+function handlePlay() {
+  playBtn.classList.remove("hidden");
+  pasueBtn.classList.add("hidden");
+  slide.forEach((element) => {
+    element.style.removeProperty("z-index");
+  });
+  setInterval(slidecontroller, 5000);
+}
+playBtn.addEventListener("click", handlepause);
+pasueBtn.addEventListener("click", handlePlay);
+/**버튼 누를시 동작 */
+function slideMotion(num) {
+  slide.forEach((element) => {
+    element.style.removeProperty("z-index");
+  });
+
+  slide[num].style.zIndex = 1;
+  slide[num].animate(
+    [
+      {left: "50%", transform: "translateX(10vw)", easing: "ease-in"},
+      {left: "0%", transform: "translateX(0vw)", easing: "ease-out"},
+    ],
+    700
+  );
+}
+btnDots.forEach((element) => {
+  function handleSelect(event) {
+    const target = event.target;
+    const dots = btnDotCont.children;
+
+    for (let i = 0; i < dots.length; i++) {
+      // console.log(dots.item([i]));
+      // console.log(i);
+      if (target === dots.item([i])) {
+        slideMotion(i);
+        return handlepause();
+      }
+    }
+  }
+  element.addEventListener("click", handleSelect);
+});

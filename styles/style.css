@@ -21,25 +21,17 @@
 @import "../styles/screens/eventpage/eventwinner.css";
 @import "../styles/screens/eventpage/membership.css";
 
-@font-face {
-  font-family: "JUA";
-  src: url(../font/woff/BMJUA.woff) format("woff");
-  src: url(../font/woff2/BMJUA.woff2) format("woff2");
-  font-weight: normal;
-  font-size: 18px;
-}
-@font-face {
-  font-family: "YACHAE";
-  src: url(../font/woff/yanolja-yachae-reg.woff) format("woff");
-  src: url(../font/woff2/yanolja-yachae-reg.woff2) format("woff2");
-  font-weight: normal;
-  font-size: 18px;
-}
 * {
   box-sizing: border-box;
 }
 body {
   width: 100%;
+  height: 100vh;
+}
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .hidden {
   display: none;
