@@ -45,7 +45,7 @@ body{background: #F7F0DA;}
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom:30px;
+    margin-bottom:60px;
 }
 .bread_category p{
     font-size: 14px;
@@ -68,11 +68,27 @@ body{background: #F7F0DA;}
 /* 빵 목록 */
 
 /* 상세분류 셀렉터 */
-#selector_wrap{
-    width: 250px;
+
+.bread_wrap{
+    width: 1100px;
+    margin: auto;
+    position: relative;
 }
+#selector_wrap input{
+    width: 150px;
+    height: 28px;
+    background: white;
+    border: 1px solid #DADFCB;
+    position: relative;
+    top: -40px;  
+}
+
 .selector{
     float: right;
+}
+.select span{
+    position: relative;
+    color: #0D4633;
 }
 
 /* 식빵 */
@@ -82,8 +98,8 @@ body{background: #F7F0DA;}
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 800;
     color: #0D4633;
     background: #DADFCB;
     margin-bottom: 12px;
@@ -92,14 +108,16 @@ body{background: #F7F0DA;}
     margin-bottom: 45px;
 
 }
-
-.bread_all ul{
+.bread_all{
+    position: relative;
+}
+.bread_all dl ul{
     width: 1120px;
     margin: auto;
-    left: -10px;
-    top: -10px;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    position: relative;
+    left: -10px; 
 }
 .bread_all ul li{
     padding: 10px;
@@ -109,8 +127,10 @@ body{background: #F7F0DA;}
 
 .bread_all ul li p{
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: #555;
+    font-weight: 600;
+
 }
 .bread_all ul li img{
     width: 260px;
