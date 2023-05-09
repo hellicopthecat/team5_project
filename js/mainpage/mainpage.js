@@ -1,7 +1,3 @@
-/**Video Slide */
-const bakeryVideoList = document.getElementById("daily_bakery_video_list");
-const bakeryVideos = bakeryVideoList.querySelectorAll("li video");
-
 /**AD Slide */
 const slideCont = document.getElementById("slide_cont");
 const slide = slideCont.querySelectorAll("li");
