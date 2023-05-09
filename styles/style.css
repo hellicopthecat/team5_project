@@ -23,12 +23,9 @@
 @import "../styles/screens/eventpage/eventwinner.css";
 @import "../styles/screens/eventpage/membership.css";
 
-<<<<<<< HEAD
 /* - footer - */
 @import "../styles/components/footer.css";
 
-
-=======
 * {
   box-sizing: border-box;
 }
@@ -44,4 +41,3 @@ body {
 .hidden {
   display: none;
 }
->>>>>>> a2e651c560018a9737c870955b922da07f74f623
