@@ -33,6 +33,15 @@
 body {
   width: 100%;
   height: 100vh;
+  background: #f7f0da;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: inherit;
 }
 .wrap {
   position: relative;
