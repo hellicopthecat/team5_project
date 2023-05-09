@@ -1,0 +1,81 @@
+/* Video Slide */
+.daily_bakery_warp {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.daily_bakery {
+  position: relative;
+}
+.daily_bakery_video {
+  position: relative;
+  overflow: hidden;
+}
+.daily_bakery_video ul {
+  width: 900%;
+  display: flex;
+}
+
+.daily_bakery_video video {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.video_controller,
+.video_dots,
+.play_video {
+  position: absolute;
+  color: white;
+}
+.video_controller {
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  font-size: 40px;
+  width: 100%;
+}
+.play_video {
+  font-size: 25px;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+.video_dots {
+  border: 1px solid tomato;
+  display: block;
+  bottom: 40px;
+  left: 47%;
+  justify-content: center;
+}
+
+/* AD Slide */
+.main_ad_warp {
+  height: 400px;
+}
+.main_ad {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.slide_cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.slide_cont > li {
+  position: absolute;
+  float: left;
+}
+.slide_cont img {
+  width: 400px;
+  height: 400px;
+}
+.main_ad_btn {
+  display: flex;
+}
+.btn_dot ul {
+  display: flex;
+}
