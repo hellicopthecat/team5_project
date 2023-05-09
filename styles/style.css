@@ -6,6 +6,8 @@
 
 /* - screens -  */
 /* - menu -*/
+@import "../styles/screens/menu/bread.css";
+@import "../styles/screens/menu/bread_01.css";
 
 /* - mall - */
 
@@ -16,17 +18,7 @@
 /* - event - Page - */
 @import "../styles/screens/eventpage/eventpage.css";
 
-@font-face {
-  font-family: "JUA";
-  src: url(../font/woff/BMJUA.woff) format("woff");
-  src: url(../font/woff2/BMJUA.woff2) format("woff2");
-  font-weight: normal;
-  font-size: 18px;
-}
-@font-face {
-  font-family: "YACHAE";
-  src: url(../font/woff/yanolja-yachae-reg.woff) format("woff");
-  src: url(../font/woff2/yanolja-yachae-reg.woff2) format("woff2");
-  font-weight: normal;
-  font-size: 18px;
-}
+/* - footer - */
+@import "../styles/components/footer.css";
+
+
