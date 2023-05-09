@@ -11,30 +11,50 @@ const videoDots = document.getElementById("video_dots");
 
 let currentVideo = 1;
 
-let IMAGE_WIDTH = video.clientWidth;
+let VIDEO_WIDTH = video.clientWidth;
 window.addEventListener("resize", () => {
-  IMAGE_WIDTH = video.clientWidth;
+  VIDEO_WIDTH = video.clientWidth;
 });
+
+function handlePlay() {
+  videos.item([currentVideo - 1]).play();
+  pauseVideo.classList.remove("hidden");
+  playVideo.classList.add("hidden");
+}
+function handlePause() {
+  videos.item([currentVideo - 1]).pause();
+  playVideo.classList.remove("hidden");
+  pauseVideo.classList.add("hidden");
+}
 
 function handlePrev() {
   if (currentVideo === 0) {
     currentVideo = bakeryVideos;
   } else {
+    handlePause();
     currentVideo--;
+  }
+  if (currentVideo > 0) {
+    handlePause();
   }
   bakeryVideoList.style.transition = `ease-in-out 1s`;
   bakeryVideoList.style.transform = `translateX(-${
-    IMAGE_WIDTH * (currentVideo - 1)
+    VIDEO_WIDTH * (currentVideo - 1)
   }px)`;
 }
 
 function handleNext() {
   if (currentVideo >= bakeryVideos) {
+    handlePause();
     currentVideo = 0;
+  } else {
+    handlePause();
+    currentVideo + 1;
   }
+  console.log(currentVideo);
   bakeryVideoList.style.transition = `ease-in-out 1s`;
   bakeryVideoList.style.transform = `translateX(-${
-    IMAGE_WIDTH * currentVideo
+    VIDEO_WIDTH * currentVideo
   }px)`;
   currentVideo++;
 }
@@ -42,23 +62,16 @@ function handleNext() {
 const videoNavDots = videoDots.querySelectorAll("a");
 videoNavDots.forEach((element) => {
   function handleNav(event) {
+    handlePause();
     event.preventDefault();
-    currentVideo = parseInt(element.text) - 1;
+    currentVideo = parseInt(element.text);
     bakeryVideoList.style.transition = `ease-in-out 1s`;
     bakeryVideoList.style.transform = `translateX(-${
-      IMAGE_WIDTH * currentVideo
+      VIDEO_WIDTH * (currentVideo - 1)
     }px)`;
   }
   element.addEventListener("click", handleNav);
 });
-
-function handlePlay() {
-  videos.item([currentVideo - 1]).play();
-  pauseVideo.classList.remove("hidden");
-}
-function handlePause() {
-  videos.item([currentVideo - 1]).pause();
-}
 prev.addEventListener("click", handlePrev);
 next.addEventListener("click", handleNext);
 playVideo.addEventListener("click", handlePlay);

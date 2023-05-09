@@ -24,7 +24,7 @@
 .video_dots,
 .play_video {
   position: absolute;
-  color: white;
+  color: gray;
 }
 .video_controller {
   display: flex;
