@@ -1,0 +1,134 @@
+
+/* 페이지 제목 */
+.h2_wrap{
+    width: 1100px;
+    margin: auto;
+    height: 100px;
+    padding-top: 32px;
+    box-sizing: border-box;
+    position: relative;
+}
+.page_title span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0D4633;  
+    padding-left: 15px
+}
+.page_title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 4px;
+    height: 22px;
+    background-color: #2f6d56;
+}
+
+
+/* 카테고리 별 빵 보기 선택박스 */
+
+.category_wrap{
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.bread_category{
+    height: 150px;
+    background: white;
+    border: 1px solid #DADFCB;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom:60px;
+}
+.bread_category p{
+    font-size: 14px;
+    font-weight: 800;
+    color: #0D4633;
+    padding: 10px 0 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #DADFCB;
+}
+.bread_category_toggle_wrap ul{
+    display: flex;
+}
+.bread_category_toggle_wrap ul li{
+    margin-right: 40px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* 빵 목록 */
+
+/* 상세분류 셀렉터 */
+
+.bread_wrap{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+#selector_wrap input{
+    width: 150px;
+    height: 28px;
+    background: white;
+    border: 1px solid #DADFCB;
+    position: relative;
+    top: -40px;  
+}
+
+.selector{
+    float: right;
+}
+.select span{
+    position: relative;
+    color: #0D4633;
+}
+
+/* 식빵 */
+
+.category_name{
+    width: 1100px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0D4633;
+    background: #DADFCB;
+    margin-bottom: 12px;
+}
+.bread_all  > dl > dd{
+    margin-bottom: 45px;
+
+}
+.bread_all{
+    position: relative;
+}
+.bread_all dl ul{
+    width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: -10px; 
+}
+.bread_all ul li{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.bread_all ul li p{
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+
+}
+.bread_all ul li img{
+    width: 260px;
+    height: 260px;
+    margin-bottom: 10px;
+}
