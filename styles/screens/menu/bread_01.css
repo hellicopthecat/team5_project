@@ -68,9 +68,11 @@
     padding: 0 80px;
     text-align: left;
 }
-.info{
+.menu_info{
     width: 400px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    margin: auto;
 }
 h3{
     font-size: 20px;
@@ -78,16 +80,15 @@ h3{
     color: #0D4633;
     text-align: center;
     padding-bottom: 10px;
-    margin-bottom: 5px;
 }
-.info_detail{
+.menu_info_detail{
     height: 63px;
     background-image:url('../../../img/menu/gr_bg.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.info_detail p{
+.menu_info_detail p{
     font-size: 12px;
     color: #0D4633;
     text-align: center;
