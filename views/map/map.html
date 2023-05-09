@@ -580,7 +580,7 @@
                     </p>
                 </a></li>
 
-                <li class="ss" id="s4"><a href="#none">
+                <li class="" id="s4"><a href="#none">
                     <img src="../../../img/shop/ser_e1.jpeg" alt="">
                     <p>
                     KT 달달해택
@@ -630,7 +630,22 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
     <script>
-      
+    //   왼쪽 가기 버튼
+    $(".event_wrap").off().on("click", function(){
+        $('.event_arrow_lt').click(function(){
+            let q=   $('#s1').attr('class')
+         let w=  $('#s2').attr('class')
+          let e=  $('#s3').attr('class')
+         let r=  $('#s4').attr('class')
+         if(r == 'ss'){
+            $('#page_1').removeClass('event_page_play')
+               $('#page_3').removeClass('event_page')
+               $('#page_3').addClass('event_page_play')
+               $('#page_1').addClass('event_page')
+               $('.event_slide').animate({left:'-3400px'})
+         }
+        })
+    })
     </script>
 
 

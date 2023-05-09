@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b30fa9 (jjy_map_02)
 /* 지도 api css */
 .map_wrap,
 .map_wrap * {
@@ -187,6 +191,7 @@
   width: 285px;
 }
 .search_title {
+<<<<<<< HEAD
   display: flex;
   text-align: center;
 }
@@ -199,6 +204,25 @@
 .search_title h3 {
   font-size: 12px;
   line-height: 40px;
+=======
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+ 
+}
+.search_title a {
+    text-decoration: none;
+    color: black;
+    height: 35px;
+    width: 150px;
+
+    
+}
+.search_title h3{
+    font-size: 12px;
+      line-height : 40px;
+      border-bottom: 1px solid #444;
+>>>>>>> 0b30fa9 (jjy_map_02)
 }
 .search_title_click {
   background-color: var(--main-color);

@@ -57,3 +57,7 @@ button {
 .hidden {
   display: none;
 }
+button{
+  border: none;
+  background-color: inherit;
+}
