@@ -1,8 +1,8 @@
 /**AD Slide */
 const slideCont = document.getElementById("slide_cont");
 const slide = slideCont.querySelectorAll("li");
-const playBtn = document.getElementById("play");
-const pasueBtn = document.getElementById("pause");
+const adPlayBtn = document.getElementById("main_play_btn");
+const adPauseBtn = document.getElementById("main_pause_btn");
 const btnDotCont = document.getElementById("btn_dot");
 const btnDots = btnDotCont.querySelectorAll("button");
 
@@ -73,19 +73,19 @@ function slidecontroller() {
 const sliderMotion = setInterval(slidecontroller, 5000);
 function handlepause() {
   clearInterval(sliderMotion);
-  playBtn.classList.add("hidden");
-  pasueBtn.classList.remove("hidden");
+  adPlayBtn.classList.add("hidden");
+  adPauseBtn.classList.remove("hidden");
 }
 function handlePlay() {
-  playBtn.classList.remove("hidden");
-  pasueBtn.classList.add("hidden");
+  adPlayBtn.classList.remove("hidden");
+  adPauseBtn.classList.add("hidden");
   slide.forEach((element) => {
     element.style.removeProperty("z-index");
   });
   setInterval(slidecontroller, 5000);
 }
-playBtn.addEventListener("click", handlepause);
-pasueBtn.addEventListener("click", handlePlay);
+adPlayBtn.addEventListener("click", handlepause);
+adPauseBtn.addEventListener("click", handlePlay);
 /**버튼 누를시 동작 */
 function slideMotion(num) {
   slide.forEach((element) => {

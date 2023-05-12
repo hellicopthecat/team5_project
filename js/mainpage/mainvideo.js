@@ -3,8 +3,8 @@ const bakeryVideoList = document.getElementById("daily_bakery_video_list");
 const bakeryVideos = bakeryVideoList.querySelectorAll("li").length;
 const video = bakeryVideoList.querySelector("video");
 const videos = bakeryVideoList.querySelectorAll("video");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
+const videoPrev = document.getElementById("video_prev");
+const videoNext = document.getElementById("video_next");
 const playVideo = document.getElementById("play");
 const pauseVideo = document.getElementById("pause");
 const videoDots = document.getElementById("video_dots");
@@ -51,7 +51,6 @@ function handleNext() {
     handlePause();
     currentVideo + 1;
   }
-  console.log(currentVideo);
   bakeryVideoList.style.transition = `ease-in-out 1s`;
   bakeryVideoList.style.transform = `translateX(-${
     VIDEO_WIDTH * currentVideo
@@ -72,7 +71,7 @@ videoNavDots.forEach((element) => {
   }
   element.addEventListener("click", handleNav);
 });
-prev.addEventListener("click", handlePrev);
-next.addEventListener("click", handleNext);
+videoPrev.addEventListener("click", handlePrev);
+videoNext.addEventListener("click", handleNext);
 playVideo.addEventListener("click", handlePlay);
 pauseVideo.addEventListener("click", handlePause);

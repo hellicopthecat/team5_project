@@ -12,7 +12,7 @@
       <div class="wrap">
         <div class="skip_menu">
           <ul>
-            <li><a href="#해당페이지 바디로 이동">본문냉요으로 바로가기</a></li>
+            <li><a href="#해당페이지 바디로 이동">본문내용으로 바로가기</a></li>
             <li><a href="#gnb로 이동">주메뉴 바로가기</a></li>
           </ul>
         </div>
@@ -77,8 +77,8 @@
               </ul>
             </div>
             <div class="video_controller">
-              <a id="prev" href="#none">prev</a>
-              <a id="next" href="#none">next</a>
+              <a id="video_prev">prev</a>
+              <a id="video_next">next</a>
             </div>
             <div id="video_dots" class="video_dots">
               <a href="#none">1</a>
@@ -97,6 +97,7 @@
             </div>
           </div>
         </section>
+
         <section class="main_ad_warp">
           <div id="main_ad" class="main_ad">
             <ul id="slide_cont" class="slide_cont">
@@ -161,8 +162,151 @@
               <button>6</button>
               <button>7</button>
             </div>
-            <button id="play">play</button>
-            <button id="pause" class="hidden">pause</button>
+            <button id="main_play_btn">play</button>
+            <button id="main_pause_btn" class="hidden">pause</button>
+          </div>
+        </section>
+
+        <section class="recommend_menu_warp">
+          <div class="recommend_menu">
+            <ul id="recommend_menu__list">
+              <li class="recommend_menu__list-bread">
+                <span>BREAD</span>
+                <a>MORE1</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>
+                        <img
+                          src="./img/menu/bread/butter_garlic_pretzel.jpg"
+                          alt="남해마늘로 만든 버터갈릭프레첼"
+                        />
+                        <span>남해마늘로 만든 버터갈릭프레첼</span>
+                        <p>
+                          곁곁이 바사한 식감의 패스트리에 알사한 남해 마늘의
+                          진한 맛과 향이 더해진 간식형 제품
+                        </p>
+                      </li>
+                      <li>
+                        <img
+                          src="./img/menu/bread/garlic_chicken_goroke.jpg"
+                          alt="남해마늘로 만든 마늘치킨 고로케"
+                        />
+                        <span>남해마늘로 만든 마늘치킨 고로케</span>
+                        <p>
+                          간장치킨 내용물이 듬뿍 들어있는 고로케에, 알싸하고
+                          진한 남해마늘 솟를 토핑한 제품
+                        </p>
+                      </li>
+                      <li>
+                        <img
+                          src="./img/menu/bread/mini_marabll.jpg"
+                          alt="작다고 얕보지 마라볼"
+                        />
+                        <span>작다고 얕보지 마라볼</span>
+                        <p>
+                          크기는 작지만 폭신한 빵 속에 얼얼한 마라내용물이 꽉찬
+                          알파세대 취향 저격 제품
+                        </p>
+                      </li>
+                      <li>
+                        <img
+                          src="./img/menu/bread/classic_strberry_mammoth.png"
+                          alt="클래식 딸기잼 맘모스"
+                        />
+                        <span>클래식 딸기잼 맘모스</span>
+                        <p>
+                          소보로를 토피안 부드러운 빵 사이에 버터크림과 달기잼을
+                          샌드한 대형 제품
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;1</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend_menu__list-cake">
+                <span>CAKE</span>
+                <a>MORE2</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>hihi</li>
+                      <li>hihi</li>
+                      <li>hihi</li>
+                      <li>hihi</li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;2</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend_menu__list-deli">
+                <span>DELI</span>
+                <a>MORE3</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>hihihi</li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;3</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend_menu__list-dessert">
+                <span>DESSERT</span>
+                <a>MORE4</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>hohoho</li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;4</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend_menu__list-drink">
+                <span>DRINK</span>
+                <a>MORE5</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>hehehe</li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;5</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend_menu__list-gift">
+                <span>GIFT</span>
+                <a>MORE6</a>
+                <div class="toggle_slide slideup_active recomm_cont hidden">
+                  <div class="recomm_cont_list">
+                    <ul>
+                      <li>gogogogo</li>
+                    </ul>
+                  </div>
+                  <div class="recomm__btns">
+                    <a class="recomm_left">&lt;6</a>
+                    <a class="recomm_right">&gt;</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
@@ -170,5 +314,6 @@
     <script src="js/app.js"></script>
     <script src="js/mainpage/mainpage.js"></script>
     <script src="js/mainpage/mainvideo.js"></script>
+    <script src="js/mainpage/recommend_menu.js"></script>
   </body>
 </html>

@@ -51,6 +51,7 @@
 /* AD Slide */
 .main_ad_warp {
   height: 400px;
+  margin-bottom: 20px;
 }
 .main_ad {
   position: relative;
@@ -78,4 +79,42 @@
 }
 .btn_dot ul {
   display: flex;
+}
+
+/* recommend menu*/
+#recommend_menu__list > li {
+  position: relative;
+  z-index: 1;
+}
+.recomm_cont_list ul {
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+.recomm_cont_list li {
+  border: none;
+}
+.recomm_cont img {
+  border: none;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+.recomm__btns {
+  position: absolute;
+  display: flex;
+  top: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 100px;
+}
+.recomm__btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
 }
