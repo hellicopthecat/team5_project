@@ -19,7 +19,9 @@
   height: 50px;
   margin: auto;
 }
-.policy ul .private {
+.company a:hover,
+.policy a:hover {
+  transition: 0.3s ease-in-out;
   color: #e16f14;
 }
 .company ul,
