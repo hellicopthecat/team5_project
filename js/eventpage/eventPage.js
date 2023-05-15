@@ -2,14 +2,14 @@ const eventWin = document.getElementById("event_winner");
 const winnerList = eventWin.querySelectorAll("li");
 
 winnerList.forEach((each) => {
-  each.addEventListener("click", function handleClick(event) {
+  function handleClick(event) {
     event.preventDefault();
     const img = each.querySelectorAll("img");
 
     img.forEach((att) => {
       // console.dir(att);
-      if (att.classList.contains("active")) {
-        att.classList.remove("active");
+      if (att.classList.contains("slideup_active")) {
+        att.classList.remove("slideup_active");
         att.style.height = "auto";
 
         const imgHeight = `${att.clientHeight}px`;
@@ -24,7 +24,7 @@ winnerList.forEach((each) => {
         att.addEventListener(
           "transitionend",
           () => {
-            att.classList.add("active");
+            att.classList.add("slideup_active");
           },
           {once: true}
         );
@@ -33,8 +33,8 @@ winnerList.forEach((each) => {
         if (clicked !== each) {
           const imgClicked = clicked.querySelectorAll("img");
           imgClicked.forEach((findOne) => {
-            if (!findOne.classList.contains("acitve")) {
-              findOne.classList.add("active");
+            if (!findOne.classList.contains("slideup_active")) {
+              findOne.classList.add("slideup_active");
               findOne.style.height = "auto";
               findOne.style.height = "0px";
             }
@@ -42,5 +42,6 @@ winnerList.forEach((each) => {
         }
       });
     });
-  });
+  }
+  each.addEventListener("click", handleClick);
 });
