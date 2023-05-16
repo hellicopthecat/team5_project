@@ -19,3 +19,4 @@
                     $(this).removeClass('product_event')
 
                 })
+
