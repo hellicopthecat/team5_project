@@ -87,7 +87,7 @@
     height: 305px;
     position: relative;
     border: 1px solid var(--main-color);
-    background-color: #fff;
+    background-color:#FFFFFF;
     transition: all .3s ease;
     margin-bottom: 20px;
 }
@@ -105,10 +105,11 @@
 }
 .deli_product img{
     position: absolute;
-    left: 50px;
+    left: 40px;
     top: 50px;
-    width: 210px;
-    height: 210px;
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
 }
 .deli_see_more{
        animation: all 0.5s;
@@ -180,7 +181,7 @@ justify-content: center;
     align-items: center
 }
 .moadl_title p {
-    background: url(../../img/shop/homedelivery/modal_01.png) no-repeat ;
+    background: url(../../img/app/homedelivery/KakaoTalk_Image_2023-05-16-18-09-57.png) no-repeat ;
     width: 200px;
     text-align: center;
     margin-bottom: 15px;

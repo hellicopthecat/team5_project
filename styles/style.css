@@ -15,9 +15,11 @@
 /* - mall - */
 
 /* - searchstore - */
+/*  - app - */
+@import "../styles/app/homedelivery.css";
+
 /*  - map - */
 @import "../styles/map/map.css";
-@import "../styles/map/homedelivery.css";
 /* - stroy - */
 
 /* - event - Page - */
