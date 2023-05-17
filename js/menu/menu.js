@@ -46,12 +46,11 @@ viewNutris.addEventListener("click",handleViewNutris)
 
 $('.selector_tab').click(function(){
     $('.selector_select').slideToggle("fast");
-    $('.selector_tab a').toggleClass("rotate_arrow");
 
-    // var arrowImage = $('.selector_tab a').css('background-image');
-    // if (arrowImage.includes('arrowD.png')) {
-    //     $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowU.png)');
-    // } else {
-    //     $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowD.png)');
-    // }
+    var arrowImage = $('.selector_tab a').css('background-image');
+    if (arrowImage.includes('arrowD.png')) {
+        $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowU.png)');
+    } else {
+        $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowD.png)');
+    }
 });
