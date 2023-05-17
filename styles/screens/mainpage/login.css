@@ -118,17 +118,3 @@
 .user__links span {
   color: rgba(0, 0, 0, 0.3);
 }
-/* .user__links a:nth-child(1)::after,
-.user__links a:nth-child(2)::after {
-  content: "";
-  color: rgba(0, 0, 0, 0.2);
-  border: 1px solid #ddd;
-  position: absolute;
-  height: 10px;
-}
-.user__links a:nth-child(1)::after {
-  left: 33%;
-}
-.user__links a:nth-child(2)::after {
-  left: 66%;
-} */

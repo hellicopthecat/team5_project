@@ -15,6 +15,9 @@
 /* - mall - */
 
 /* - searchstore - */
+/*  - app - */
+@import "../styles/app/homedelivery.css";
+
 /*  - map - */
 @import "../styles/map/map.css";
 /* - stroy - */
@@ -24,6 +27,9 @@
 @import "../styles/screens/eventpage/aff_benefits.css";
 @import "../styles/screens/eventpage/eventwinner.css";
 @import "../styles/screens/eventpage/membership.css";
+
+/*  - customer - page - */
+@import "../styles/screens/customercenter/customercenter.css";
 
 /* - footer - */
 @import "../styles/components/footer.css";
@@ -53,4 +59,8 @@ button {
 }
 .hidden {
   display: none;
+}
+button{
+  border: none;
+  background-color: inherit;
 }

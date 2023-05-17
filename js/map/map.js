@@ -160,7 +160,7 @@
     $('#page_2').removeClass('event_page')
     $('#page_2').addClass('event_page_play')
     $('#page_1').addClass('event_page')
-     $('.event_slide').animate({left:'-1100px'})
+     $('.event_slide').animate({left:'-1140px'})
      }else if(s2 == 'ss'){
         
       $('#s2').removeClass('ss')
@@ -169,7 +169,7 @@
      $('#page_3').removeClass('event_page')
      $('#page_3').addClass('event_page_play')
      $('#page_2').addClass('event_page')
-         $('.event_slide').animate({left:'-2250px'})
+         $('.event_slide').animate({left:'-2280px'})
      }else if (s3 == 'ss'){
          $('#s3').removeClass('ss')
      $('#s4').addClass('ss')
@@ -177,7 +177,7 @@
      $('#page_1').removeClass('event_page')
      $('#page_1').addClass('event_page_play')
      $('#page_3').addClass('event_page')
-         $('.event_slide').animate({left:'-3400px'})
+         $('.event_slide').animate({left:'-3420px'})
          setTimeout(function(){
              $('#s4').removeClass('ss')
                $('#s1').addClass('ss')
@@ -206,7 +206,7 @@
             $('#page_2').removeClass('event_page')
             $('#page_2').addClass('event_page_play')
             $('#page_1').addClass('event_page')
-             $('.event_slide').animate({left:'-1100px'})
+             $('.event_slide').animate({left:'-1140px'})
              }else if(s2 == 'ss'){
                 
               $('#s2').removeClass('ss')
@@ -215,7 +215,7 @@
              $('#page_3').removeClass('event_page')
              $('#page_3').addClass('event_page_play')
              $('#page_2').addClass('event_page')
-                 $('.event_slide').animate({left:'-2250px'})
+                 $('.event_slide').animate({left:'-2280px'})
              }else if (s3 == 'ss'){
                  $('#s3').removeClass('ss')
              $('#s4').addClass('ss')
@@ -223,19 +223,18 @@
              $('#page_1').removeClass('event_page')
              $('#page_1').addClass('event_page_play')
              $('#page_3').addClass('event_page')
-                 $('.event_slide').animate({left:'-3400px'})
-                 setTimeout(function(){
-                     $('#s4').removeClass('ss')
-                       $('#s1').addClass('ss')
-                     $('.event_slide').css({left:'0px'})
-                 },4000)
+                 $('.event_slide').animate({left:'-3420px'})
              }
+            else if (s4 == 'ss'){
+                $('#s4').removeClass('ss')
+                $('#s1').addClass('ss')
+              $('.event_slide').css({left:'-20px'})
+            }
          },5000)
         }
  })
 
    // 슬라이드 오른쪽 가기 버튼
-   $(".event_wrap").off().on("click", function(){
     $('.event_arrow_rt').click(function(event){
         let q=   $('#s1').attr('class')
          let w=  $('#s2').attr('class')
@@ -243,44 +242,99 @@
          let r=  $('#s4').attr('class')
          if(q == 'ss'){
             $('.event_arrow_rt').prev
-            setTimeout(function(){    $('#s1').removeClass('ss')
+            $('#s1').removeClass('ss')
             $('#s2').addClass('ss')
             $('#page_1').removeClass('event_page_play')
                $('#page_2').removeClass('event_page')
                $('#page_2').addClass('event_page_play')
                $('#page_1').addClass('event_page')
-                $('.event_slide').animate({left:'-1100px'})},100)
-       
-         }else if (w == 'ss'){
-            setTimeout(function(){
+                $('.event_slide').animate({left:'-1140px'})}
+         else if (w == 'ss'){
                 $('#s2').removeClass('ss')
                 $('#s3').addClass('ss')
                 $('#page_2').removeClass('event_page_play')
                 $('#page_3').removeClass('event_page')
                 $('#page_3').addClass('event_page_play')
                 $('#page_2').addClass('event_page')
-                    $('.event_slide').animate({left:'-2250px'})
-            },1000)
-          
-         }else if ( e== 'ss'){
-            setTimeout(function(){
+                    $('.event_slide').animate({left:'-2280px'})
+            }else if ( e== 'ss'){
                 $('#s3').removeClass('ss')
                 $('#s4').addClass('ss')
                 $('#page_3').removeClass('event_page_play')
                 $('#page_1').removeClass('event_page')
                 $('#page_1').addClass('event_page_play')
                 $('#page_3').addClass('event_page')
-                    $('.event_slide').animate({left:'-3400px'})
-            },1000)
-           
-               
-         }else if ( r== 'ss'){
-            setTimeout(function(){
+                    $('.event_slide').animate({left:'-3420px'})
+            }else if ( r== 'ss'){
                 $('#s4').removeClass('ss')
                 $('#s1').addClass('ss')
               $('.event_slide').css({left:'0px'})
-            },1000)
       
          }
        })
+     
+
+          //  왼쪽 슬라이드 버튼
+    $('.event_arrow_lt').click(function(){
+        let one = $('#s1').attr('class')
+        let two = $('#s2').attr('class')
+        let three = $('#s3').attr('class')
+        if(one == 'ss'){
+            $('#s1').removeClass('ss')
+     $('#s3').addClass('ss')
+     $('#page_1').removeClass('event_page_play')
+     $('#page_3').removeClass('event_page')
+     $('#page_3').addClass('event_page_play')
+     $('#page_1').addClass('event_page')
+            $('.event_slide').css({left:'-3420px'})
+            $('.event_slide').animate({left:'-2280px'})
+        }else if(two == 'ss'){
+            $('#s2').removeClass('ss')
+     $('#s1').addClass('ss')
+     $('#page_2').removeClass('event_page_play')
+     $('#page_1').removeClass('event_page')
+     $('#page_1').addClass('event_page_play')
+     $('#page_2').addClass('event_page')
+            $('.event_slide').animate({left:'0px'})
+        }else if(three == 'ss'){
+            $('#s3').removeClass('ss')
+     $('#s2').addClass('ss')
+     $('#page_3').removeClass('event_page_play')
+     $('#page_2').removeClass('event_page')
+     $('#page_2').addClass('event_page_play')
+     $('#page_3').addClass('event_page')
+     $('.event_slide').animate({left:'-1140px'})
+        }
     })
+
+       // 하단 페이지 버튼
+       $('#page_1').click(function(){
+        $('.event_slide').animate({left:'0px'})
+        $('#page_1').removeClass()
+        $('#page_2').removeClass()
+        $('#page_3').removeClass()
+        $('#page_2').addClass('event_page')
+        $('#page_3').addClass('event_page')
+        $('#page_1').addClass('event_page_play')
+    })
+    $('#page_2').click(function(){
+        $('.event_slide').animate({left:'-1140px'})
+        $('#page_1').removeClass()
+        $('#page_2').removeClass()
+        $('#page_3').removeClass()
+        $('#page_3').addClass('event_page')
+        $('#page_1').addClass('event_page')
+        $('#page_2').addClass('event_page_play')
+    })
+    $('#page_3').click(function(){
+        $('.event_slide').animate({left:'-2280px'})
+        $('#page_1').removeClass()
+        $('#page_2').removeClass()
+        $('#page_3').removeClass()
+        $('#page_2').addClass('event_page')
+        $('#page_1').addClass('event_page')
+        $('#page_3').addClass('event_page_play')
+    })
+
+
+    
