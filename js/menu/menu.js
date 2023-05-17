@@ -55,6 +55,10 @@ $('.selector_tab').click(function(){
     }
 });
 
+
+
+// 카데고리박스 체크박스
+
 // HTML 요소 선택
 const breadAllCheckbox = document.querySelector('#bread_all');
 const otherCheckboxes = document.querySelectorAll('input[type="checkbox"]:not(#bread_all)');

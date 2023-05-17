@@ -33,6 +33,7 @@
     margin: auto;
     margin-bottom: 25px;
     display: flex;
+    position: relative;
 }
 .product_category{
     width: 880px;
@@ -45,10 +46,22 @@
     margin-right: 10px;
 }
 
+/* 모바일 선물하기 배너 */
+
 .mobile_gift_delivery img{
     border-radius: 5px;
-
 }
+.mobile_gift_delivery div{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.mobile_gift_delivery div:hover{
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
 .product_category p{
     font-size: 14px;
     font-weight: 800;
@@ -259,8 +272,7 @@
 .product_description_wrap{
     width: 260px;
     height: 260px;
-    background: rgba(255, 255, 255, 0.6);    
-    /* border: none; */
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -290,13 +302,13 @@
     line-height: 20px;
 }
 
-.product_description_wrap {
+.product_description_wrap{
     opacity: 0;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
-.product_description_wrap:hover {
+.product_description_wrap:hover{
     opacity: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 
