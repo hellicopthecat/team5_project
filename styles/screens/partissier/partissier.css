@@ -1,0 +1,388 @@
+/*partissier info*/
+/*partissier info head*/
+.partissier__head-cont {
+  width: 100%;
+}
+.partissier__head-cont > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.partissier__head-cont > ul > li {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+
+  width: 3vw;
+}
+
+.partissier__head-cont > ul > li > h3 {
+  height: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  writing-mode: vertical-lr;
+  margin-top: 50px;
+}
+.partissier__head-cont > ul > li:first-child {
+  background-color: var(--main-color);
+}
+.partissier__head-cont > ul > li:nth-child(2) {
+  background-color: var(--sub-color);
+}
+.partissier__head-cont > ul > li:last-child {
+  background-color: var(--third-color);
+}
+/* 그리드로 바꿔 보기*/
+
+/* partissier body && recruit body */
+.partissier__body-cont,
+.partissier__recruit-notice,
+.recruit_location_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: 100%;
+  align-items: center;
+  background-color: white;
+}
+.partissier__info,
+.parti__recruit-info,
+.recruit_location-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.partissier__info > img,
+.parti__recruit-info > img,
+.recruit_location-info > img {
+  width: 100%;
+}
+.partissier__info-text,
+.recruit_location-info-text {
+  position: absolute;
+  top: 30px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.recruit_location-info-text {
+  top: 60px;
+}
+.partissier__info-text h3,
+.recruit_location-info-text h3 {
+  margin-bottom: 20px;
+}
+.partissier__info-text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.parti__recruit-info p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.recruit_location-info-text p {
+  font-size: 20px;
+}
+/* new partissier container */
+.partissier__body-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.partissier__body-nav ul {
+  display: flex;
+  color: white;
+  border-top: 1px solid #eeeeeeb8;
+}
+.partissier__body-nav li {
+  padding: 15px 50px;
+  border-left: 1px solid #eeeeeeb8;
+  border-right: 1px solid #eeeeeeb8;
+}
+.partissier__body-nav li:first-child {
+  background-color: white;
+  color: black;
+}
+
+.new-partissier__body-cont {
+  padding: 40px 0;
+  background-color: white;
+}
+.new-partissier__body-list {
+  margin-bottom: 50px;
+}
+.new-partissier__body-list li {
+  width: 100%;
+}
+.new-partissier__body-list ul {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.new-partissier__body-list ul img {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.new-partissier__body-list p {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.new-partissier__body-list li > button {
+  font-size: 16px;
+  padding: 8px 18px;
+  border-radius: 25px;
+}
+.new-partissier__body-list li > button:nth-child(3) {
+  color: white;
+  background-color: var(--main-color);
+  margin-right: 10px;
+}
+.new-partissier__body-list li > button:nth-child(4) {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* food bill & tech center*/
+.new-partissier__foodbill,
+.new-partissier__techcenter {
+  background-color: white;
+  display: flex;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.partissier__foodbill-list,
+.partissier__tech-list {
+  position: absolute;
+  color: white;
+  background-color: var(--main-color);
+  width: 20%;
+  padding: 40px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.partissier__foodbill-list,
+.partissier__foodbill-list ul,
+.partissier__tech-list,
+.partissier__tech-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partissier__foodbill-list h3,
+.partissier__foodbill-list li,
+.partissier__tech-list h3,
+.partissier__tech-list li {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+.partissier__foodbill-list li:hover,
+.partissier__tech-list li:hover {
+  background-color: #003b33;
+  transition: 0.3s ease-in-out;
+}
+.partissier__foodbill-list li:focus,
+.partissier__foodbill-list li:active,
+.partissier__tech-list li:focus,
+.partissier__tech-list li:active {
+  background-color: #003b33;
+}
+.part_foodbill-intro-edu,
+.part_foodbill-intro-recruit,
+.part_foodbill-curriculum,
+.partissier__techcenter-intro,
+.partssier__techcenter-curricul,
+.partssier__recruit-process,
+.partssier__recruit-faq,
+.experienced-partissier-body-cont {
+  position: relative;
+  top: 5px;
+  left: 350px;
+}
+.part_foodbill-intro-edu {
+  width: 60%;
+}
+.part_foodbill-intro-edu h4,
+.part_foodbill-intro-recruit h4,
+.partissier__techcenter-intro h4,
+.partssier__techcenter-curricul h4,
+.partssier__recruit-process h4,
+.experienced-info-text h4,
+.experienced-info h4,
+.recruit-notice--table h4,
+.recruit_location-table h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.partissier__techcenter-intro a {
+  position: absolute;
+  right: 0;
+  padding: 15px 30px;
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 25px;
+}
+.part_intro-recruit-text,
+.part_tech-intro-text {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.experienced-info-text {
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  padding: 20px 40px 10px;
+  margin-bottom: 35px;
+}
+.part_foodbill-intro-edu p,
+.part_intro-recruit-text p,
+.partssier__techcenter-curricul p,
+.experienced-info-text p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+/* part foodbill curriculum & part tech intro text*/
+.part_foodbill-curriculum p {
+  margin-bottom: 10px;
+}
+.part_foodbill-curriculum table,
+.part_tech-intro-text table {
+  border: 1px solid var(--table-color);
+}
+.part_tech-intro-text:nth-child(3) table {
+  margin-bottom: 10px;
+}
+
+.part_foodbill-curriculum table tr:first-child,
+.part_tech-intro-text table tr:first-child {
+  border-bottom: 1px solid var(--table-color);
+}
+.part_foodbill-curriculum th,
+.part_tech-intro-text th {
+  width: 100px;
+  height: 60px;
+  background-color: var(--table-color);
+  text-align: center;
+  vertical-align: middle;
+}
+.part_tech-intro-text:nth-child(2) th {
+  width: 200px;
+}
+
+.part_foodbill-curriculum td,
+.part_tech-intro-text td {
+  width: 500px;
+  vertical-align: middle;
+}
+.part_foodbill-curriculum td > p,
+.part_tech-intro-text td > p {
+  padding: 10px 40px 5px 0px;
+  margin-left: 40px;
+}
+.part_foodbill-curriculum table tr:nth-child(2) td {
+  height: 300px;
+}
+.part_tech-intro-text:nth-child(2) table tr:nth-child(2) td {
+  height: 100px;
+}
+.part_tech-intro-text:nth-child(3) table td {
+  width: 600px;
+  height: 200px;
+}
+
+/* center info table*/
+.center-info tr {
+  border-bottom: 1px solid var(--table-color);
+}
+.center-info th:first-child {
+  width: 15%;
+}
+.center-info th:nth-child(2) {
+  width: 10%;
+}
+.center-info th:nth-child(3) {
+  width: 20%;
+}
+.center-info th {
+  text-align: center;
+  height: 40px;
+  background-color: var(--table-color);
+  vertical-align: middle;
+}
+
+.center-info td {
+  vertical-align: middle;
+  text-align: left;
+  height: 50px;
+}
+
+/* recruit notice form */
+.partissier__recruit-notice {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 80px;
+}
+.partissier__recruit-notice form {
+  padding: 30px 50px;
+  width: 100%;
+  background-color: var(--table-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.partissier__recruit-notice label {
+  margin-right: 10px;
+}
+.partissier__recruit-notice select,
+.partissier__recruit-notice input {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 25px;
+}
+.partissier__recruit-notice button {
+  padding: 5px 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 25px;
+}
+.recruit-notice--table table {
+  width: 100%;
+  margin: 0 auto;
+}
+.recruit-notice--table th,
+.recruit-notice--table td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+.recruit-notice--table th {
+  background-color: var(--table-color);
+}
+.recruit-notice--table th:first-child {
+  width: 80px;
+}
+.recruit-notice--table th:nth-child(2) {
+  width: 100px;
+}
+.recruit-notice--table th:nth-child(3) {
+  width: 100px;
+}
+.recruit-notice--table th:nth-child(4) {
+  width: 600px;
+}
+.recruit-notice--table th:nth-child(5) {
+  width: 200px;
+}
+.recruit-notice--table th:nth-child(6) {
+  width: 100px;
+}
+.recruit-notice--table td {
+  border-bottom: 1px solid var(--table-color);
+}
