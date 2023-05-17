@@ -31,6 +31,9 @@
 /*  - customer - page - */
 @import "../styles/screens/customercenter/customercenter.css";
 
+/* - partissier- */
+@import "../styles/screens/partissier/partissier.css";
+
 /* - footer - */
 @import "../styles/components/footer.css";
 
