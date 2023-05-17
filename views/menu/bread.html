@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>빵</title>
     <link rel="stylesheet" href="../../styles/style.css">
+    
+    <script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+    
 </head>
 <body>
     <header>
@@ -83,16 +86,24 @@
             
             <!--상세분류 셀렉터-->
             <div class="selector_wrap">
-                <div class="selector_tab">
+                <div class="selector_tab" id="selector_tab">
                     <a href="#"><span>상세분류</span></a>
                 </div>
-                <div class="selector_select">
+                <div class="selector_select hidden" id="selector_select">
                     <ul>
                         <li class="selector_select_new">
-                            <span><input type="checkbox" name="select_kind1-1" id="select_kind1-1" data-target="new"> <label class="mark01" for="select_kind1-1">신제품 모아 보기</label></span>
+                            <a href="">
+                                <span>
+                                    <input type="checkbox" name="select_kind1-1" id="select_kind1-1" data-target="new"> <label class="mark01" for="select_kind1-1">신제품 모아 보기</label>
+                                </span>
+                            </a>
                         </li>
                         <li class="selector_select_best">
-                            <span><input type="checkbox" name="select_kind1-2" id="select_kind1-2" data-target="best"> <label class="mark02" for="select_kind1-2">베스트 제품 모아 보기</label></span>
+                            <a href="">
+                                <span>
+                                    <input type="checkbox" name="select_kind1-2" id="select_kind1-2" data-target="best"> <label class="mark02" for="select_kind1-2">베스트 제품 모아 보기</label>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -778,7 +789,9 @@
 
             </div>
         </div>
-
+        
+        <script type="text/javascript" src="../../js/menu/menu.js"></script>
+    
         
         
     </main>
@@ -786,7 +799,7 @@
     <footer>
 
     </footer>
-    <script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
-    <script type="text/javascript" src="../../js/menu/menu.js"></script>
+    
+    
 </body>
 </html>

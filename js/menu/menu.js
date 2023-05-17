@@ -1,3 +1,4 @@
+
 // $(function(){
 //     $(".view_pics").click(function(){
 //         $(".view_pics_dd").removeClass("hidden");
@@ -19,6 +20,8 @@
 //     // });
 // })
 
+
+// 사진으로 보기, 영양정보로 보기  페이지 전환
 const viewPics = document.getElementById("view_pics")
 const viewNutris = document.getElementById("view_nutris")
 const viewPicsD = document.getElementById("view_pics_dd")
@@ -37,3 +40,18 @@ const handleViewNutris=(event)=>{
 }
 viewPics.addEventListener("click",handleViewPics)
 viewNutris.addEventListener("click",handleViewNutris)
+
+
+// 상세분류토글박스
+
+$('.selector_tab').click(function(){
+    $('.selector_select').slideToggle("fast");
+    $('.selector_tab a').toggleClass("rotate_arrow");
+
+    // var arrowImage = $('.selector_tab a').css('background-image');
+    // if (arrowImage.includes('arrowD.png')) {
+    //     $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowU.png)');
+    // } else {
+    //     $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowD.png)');
+    // }
+});

@@ -89,7 +89,7 @@
     height: 30px;
     background:  #fff;
     border: 1px solid #DADFCB;
-    padding: 7px ; 
+    padding: 7px; 
 }
 .selector_tab a{
     background: url(../../../img/menu/arrowD.png) no-repeat right;
@@ -99,6 +99,10 @@
     font-weight: 500;
     color: #555;
     letter-spacing: -0.1em;
+}
+
+.rotate_arrow {
+    transform: rotate(180deg);
 }
 .selector_select{
     position: absolute;
