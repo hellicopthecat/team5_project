@@ -57,10 +57,10 @@
     margin-bottom: 22px;
     border-bottom: 1px solid #fff;
 }
-.product_category_toggle_wrap ul{
+.product_category_box_wrap ul{
     display: flex;
 }
-.product_category_toggle_wrap ul li{
+.product_category_box_wrap ul li{
     margin-right: 40px;
     font-size: 13px;
     font-weight: 600;
@@ -101,9 +101,9 @@
     letter-spacing: -0.1em;
 }
 
-.rotate_arrow {
+/* .rotate_arrow {
     transform: rotate(180deg);
-}
+} */
 .selector_select{
     position: absolute;
     width: 100%;
