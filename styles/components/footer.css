@@ -1,4 +1,6 @@
 .footer_wrap {
+  position: relative;
+  z-index: 1;
   background: #2a2a2a;
   color: #fff;
   width: 100%;
@@ -50,13 +52,8 @@
 .ftc_confirm {
   position: relative;
 }
-<<<<<<< HEAD
-.ftc_confirm a img{
-    position: absolute;
-=======
 .ftc_confirm a img {
   position: absolute;
->>>>>>> 947821ecd16e96958219bbba7c0c8d70380e6116
 }
 .hosting {
   margin-left: 10px;

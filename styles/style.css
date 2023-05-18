@@ -63,7 +63,7 @@ button {
 .hidden {
   display: none;
 }
-button{
-  border: none;
-  background-color: inherit;
+.skip_menu {
+  position: absolute;
+  top: -50px;
 }

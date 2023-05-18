@@ -50,11 +50,77 @@
   font-weight: 600;
   padding: 50px 50px;
 }
+.event_winner-list h3 > p > span {
+  color: tomato;
+}
 .event_winner-list ul {
   width: 100%;
 }
 .event_winner-list ul li {
-  padding: 20px 50px;
+  padding: 20px 50px 10px;
   width: 100%;
   border: 1px solid var(--table-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.event_winner-list ul li span {
+  display: block;
+  margin: 20px 0px;
+}
+.event_winner-list ul li:nth-child(even) {
+  background-color: var(--table-color);
+}
+.event_winner-list ul li:nth-child(even):hover {
+  animation: winnerEvenAnimate 1.5s infinite;
+}
+.event_winner-list ul li:nth-child(odd):hover {
+  animation: winnerOddAnimate 1.5s infinite;
+}
+.event_winner-list ul li:nth-child(even):hover p,
+.event_winner-list ul li:nth-child(odd):hover p,
+.event_winner-list ul li:nth-child(even):hover span,
+.event_winner-list ul li:nth-child(odd):hover span {
+  animation: winnerTextAnimate 1s infinite;
+}
+.event_winner-list ul li p {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.event_winner-list ul li img {
+  text-align: center;
+}
+@keyframes winnerEvenAnimate {
+  0% {
+    background-color: var(--table-color);
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: var(--table-color);
+  }
+}
+@keyframes winnerOddAnimate {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #d6e6a7;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes winnerTextAnimate {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
