@@ -57,53 +57,113 @@ $('.selector_tab').click(function(){
 
 
 
+
 // 카데고리박스 체크박스
 
 // HTML 요소 선택
 const breadAllCheckbox = document.querySelector('#bread_all');
 const otherCheckboxes = document.querySelectorAll('input[type="checkbox"]:not(#bread_all)');
+const productCategories = document.querySelectorAll('.category_name');
+const productItems = document.querySelectorAll('.products_in_category > li');
 
-// '모든 빵 보기' 체크박스 초기 상태 설정
-breadAllCheckbox.checked = true;
 
-// 이벤트 핸들러 등록
-breadAllCheckbox.addEventListener('change', handleBreadAllCheckboxChange);
-otherCheckboxes.forEach(checkbox => checkbox.addEventListener('change', handleOtherCheckboxesChange));
+// 초기화 함수 호출
+initialize();
+
+// 초기화 함수
+function initialize() {
+  // '모든 빵 보기' 체크박스 상태 설정
+  breadAllCheckbox.checked = true;
+
+  // 모든 제품 보이기
+  showAllProducts();
+  
+  // 이벤트 핸들러 등록
+  breadAllCheckbox.addEventListener('change', handleBreadAllCheckboxChange);
+  otherCheckboxes.forEach(checkbox => checkbox.addEventListener('change', handleCheckboxChange));
+}
 
 // '모든 빵 보기' 체크박스 변경 시 이벤트 처리
 function handleBreadAllCheckboxChange() {
   if (breadAllCheckbox.checked) {
-    otherCheckboxes.forEach(checkbox => {
-      checkbox.checked = false;
-    });
-  } else {
-    otherCheckboxes.forEach(checkbox => {
-      checkbox.disabled = false;
-    });
-  }
+    showAllProducts();
+  // } else {
+  //   hideAllProducts();
+  // }
+  } 
+  otherCheckboxes.forEach(checkbox => {
+    checkbox.checked = false;
+
+  });
+
+
 }
 
 // 다른 체크박스 변경 시 이벤트 처리
-function handleOtherCheckboxesChange() {
+function handleCheckboxChange() {
   if (breadAllCheckbox.checked) {
     breadAllCheckbox.checked = false;
   }
-  checkIfAllOtherCheckboxesUnchecked();
-  checkIfAnyOtherCheckboxChecked();
+  
+  // 체크된 카테고리 확인
+  const checkedCategories = Array.from(otherCheckboxes)
+    .filter(checkbox => checkbox.checked)
+    .map(checkbox => checkbox.value);
+  
+  if (checkedCategories.length === 0) {
+    showAllProducts();
+  } else {
+    filterProducts(checkedCategories);
+  }
+
 }
 
-// 모든 다른 체크박스가 선택 해제되었는지 확인
-function checkIfAllOtherCheckboxesUnchecked() {
-  const uncheckedCheckboxes = Array.from(otherCheckboxes).filter(checkbox => !checkbox.checked);
-  if (uncheckedCheckboxes.length === otherCheckboxes.length - 1) {
-    breadAllCheckbox.checked = true;
-  }
+// 모든 제품 보이기
+function showAllProducts() {
+  productCategories.forEach(category => {
+    category.style.display = 'block';
+    category.nextElementSibling.style.display = 'block';
+  });
+  
+  productItems.forEach(item => {
+    item.style.display = 'block';
+  });
 }
 
-// 다른 체크박스 중 하나라도 선택되었는지 확인
-function checkIfAnyOtherCheckboxChecked() {
-  const checkedCheckboxes = Array.from(otherCheckboxes).filter(checkbox => checkbox.checked);
-  if (checkedCheckboxes.length > 0) {
-    breadAllCheckbox.checked = false;
-  }
+// 모든 제품 숨기기
+function hideAllProducts() {
+  productCategories.forEach(category => {
+    category.style.display = 'none';
+    category.nextElementSibling.style.display = 'none';
+  });
+  
+  productItems.forEach(item => {
+    item.style.display = 'none';
+  });
+}
+
+// 카테고리별 제품 필터링
+function filterProducts(checkedCategories) {
+  productCategories.forEach(category => {
+    const categoryName = category.classList[1];
+    
+    if (checkedCategories.includes(categoryName)) {
+      category.style.display = 'block';
+      category.nextElementSibling.style.display = 'block';
+    } else {
+      category.style.display = 'none';
+      category.nextElementSibling.style.display = 'none';
+    }
+  });
+  
+  productItems.forEach(item => {
+    const category = item.closest('.products_in_category').previousElementSibling;
+    const categoryName = category.classList[1];
+    
+    if (checkedCategories.includes(categoryName)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
 }

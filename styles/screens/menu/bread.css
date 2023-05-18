@@ -213,9 +213,7 @@
     display: flex;
     align-items: center;
 }
-.category_name span{
-    margin-left: 20px;
-}
+
 .products_in_category{
     width: 1120px;
     margin: auto;
