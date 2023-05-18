@@ -157,7 +157,9 @@ h3{
 
 /* 목록가기버튼 */
 .btn_area{
+    position: relative;
     width: 400px;
+    height: 70px;
     display: flex;
     justify-content: center;
 }
@@ -167,21 +169,40 @@ h3{
     background: transparent;
     border: 1px solid #a8a8a8;
     border-radius: 5px;
-    margin-top: 30px;
     font-size: 13px;
     color: #555;
     text-align: center;
-    padding-top: 10px;
-    box-sizing: border-box;
+
+    /* 가로 세로 중앙 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: auto;
 }
 
 /* 페이스북 트위터 공유 버튼 */
-.share_icon{
+.share_icon_area{
     position: absolute;
-    margin-top: 38px;
-    left: 430px;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.share_icon a img{
+
+.share_icons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.share_icons a{
+    position: relative;
+    display: inline-block;
+}
+.share_icons a img{
     width: 18px;
-    margin-left: 5px;
+    margin-left: 8px;
+    margin-bottom: 5px;
 }
+
