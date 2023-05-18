@@ -1,8 +1,7 @@
+/* slide motion */
 .winner_list {
   cursor: pointer;
-  width: 300px;
 }
-
 .toggle_slide {
   transition: height 0.5s ease-in-out;
   overflow: hidden;
@@ -10,4 +9,52 @@
 .slideup_active {
   transition: height 0.5s ease-in-out;
   height: 0;
+}
+/* event search form */
+.event_search-form {
+  background-color: var(--table-color);
+}
+.event_search-form form {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event_search-form select,
+.event_search-form input {
+  height: 40px;
+  padding: 0px 20px;
+  margin-right: 30px;
+  border-radius: 25px;
+  border: none;
+}
+.event_search-form select {
+  width: 100px;
+}
+.event_search-form input {
+  width: 200px;
+}
+.event_search-form button {
+  background-color: var(--main-color);
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.event_winner-list {
+  background-color: white;
+}
+.event_winner-list h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 50px 50px;
+}
+.event_winner-list ul {
+  width: 100%;
+}
+.event_winner-list ul li {
+  padding: 20px 50px;
+  width: 100%;
+  border: 1px solid var(--table-color);
 }

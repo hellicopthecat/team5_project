@@ -9,23 +9,28 @@
   </head>
   <body>
     <div class="wrap">
-      <div class="skip_menu">
+      <div class="skip_menu hidden">
         <ul>
-          <li><a href="#해당페이지 바디로 이동">본문냉요으로 바로가기</a></li>
+          <li><a href="#해당페이지 바디로 이동">본문내용으로 바로가기</a></li>
           <li><a href="#gnb로 이동">주메뉴 바로가기</a></li>
         </ul>
       </div>
       <main>
-        <h2>이벤트 당첨자</h2>
-        <div class="event_winner">
-          <div class="event_search">
+        <section class="event_winner-wrap">
+          <div class="eventpage_head-banner">
+            <img src="../../img/eventpage/bakery_bg_2.jpeg" alt="배경이미지" />
+            <h2>이벤트 당첨자</h2>
+          </div>
+          <div class="event_search-form">
             <form action="">
-              <legend>이벤트 검색</legend>
+              <legend class="hidden">이벤트 검색</legend>
               <select>
                 <option value="제목">제목</option>
                 <option value="내용">내용</option>
               </select>
-              <label for="">검색어를 입력해주세요</label>
+              <label for="search_event" class="hidden"
+                >검색어를 입력해주세요</label
+              >
               <input
                 id="search_event"
                 type="text"
@@ -34,11 +39,11 @@
               <button type="submit">검색</button>
             </form>
           </div>
-          <h3>
-            <p>총 <span>15개</span>의 글이 등록되었습니다.</p>
-          </h3>
 
-          <div id="event_winner" class="event_list">
+          <div id="event_winner" class="event_winner-list">
+            <h3>
+              <p>총 <span>15개</span>의 글이 등록되었습니다.</p>
+            </h3>
             <ul>
               <li class="winner_list">
                 <p>뚜레쥬르 크리스마스 이벤트 당첨자 발표</p>
@@ -181,27 +186,129 @@
             <a id="current_btn" href="#none">1</a>
             <a id="next_btn" href="#none">&gt;</a>
           </div>
-        </div>
-        <div class="location">
+        </section>
+
+        <div class="page__location">
           <ul>
             <li>
               <a href=""><span>HOME</span></a>
             </li>
-
-            <li>&lt;</li>
-
+            <p>&gt;</p>
             <li>
               <a href=""><span>이벤트&멤버십</span></a>
             </li>
-
-            <li>&lt;</li>
-
+            <p>&gt;</p>
             <li>
               <a href=""><span>이벤트 당첨자</span></a>
             </li>
           </ul>
         </div>
       </main>
+
+      <footer>
+        <div class="footer_wrap">
+          <div class="company">
+            <ul>
+              <li>
+                <a href="http://www.cjfoodville.co.kr/story/foodvilleintro.html"
+                  >회사소개</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tlj.co.kr:7008/recruit/recruit_index.asp"
+                  >기사채용안내</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tlj.co.kr:7008/franchise/index.asp"
+                  >창업안내</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tlj.co.kr:7008/etc/sitemap.asp"
+                  >사이트맵</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="policy">
+            <ul>
+              <li>
+                <a href="https://www.cjfoodville.co.kr/footer/userpolicy.asp"
+                  >이용약관</a
+                >
+              </li>
+              <li>
+                <a href="https://www.cjfoodville.co.kr/footer/location.asp"
+                  >위치기반서비스 이용약관</a
+                >
+              </li>
+              <li class="private">
+                <a href="https://www.cjfoodville.co.kr/footer/privacy.asp"
+                  >개인정보처리방침</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tlj.co.kr:7008/etc/email.asp"
+                  >이메일무단수집거부</a
+                >
+              </li>
+              <li>
+                <a href="https://www.cjfoodville.co.kr/footer/ethic_center.asp"
+                  >윤리신고센터</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tlj.co.kr:7008/etc/legal.asp">법적고지</a>
+              </li>
+            </ul>
+          </div>
+          <div class="address">
+            <p>
+              <span>상호명 : CJ푸드빌(주)</span>
+              <span>
+                <address>
+                  주소 : (우)04555 서울시 중구 마른내로34(초동
+                  106-9번지)KT&amp;G 을지로타워 3, 9-11층 CJ푸드빌㈜s
+                </address>
+              </span>
+            </p>
+
+            <p>
+              <span>고객센터 : 1577-0700</span>
+              <span class="ftc_confirm"
+                >통신판매업종신고증 제 2011-서울중구-0771호</span
+              >
+              <a
+                href="https://www.ftc.go.kr/waitingroom/main.html"
+                target="_blank"
+                title="새창열림"
+              >
+                <img
+                  src="../../img/menu/footer_info_information.png"
+                  alt="사업자정보확인"
+                />
+              </a>
+              <span class="hosting">호스팅제공자 : CJ올리브네트웍스(주)</span>
+            </p>
+
+            <p>
+              <span>사업자등록번호 : 312-81-42519</span>
+              <span>대표이사 : 김찬호</span>
+              <span>개인정보보호책임자 : 오창호</span>
+              <span class="email"
+                ><a href="mailto:help_master@cj.net"
+                  >대표 이메일 : help_master@cj.net</a
+                ></span
+              >
+            </p>
+
+            <p class="copyright">
+              COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="../../js/eventpage/eventPage.js"></script>
   </body>
