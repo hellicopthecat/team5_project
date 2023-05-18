@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제하기/payment</title>
+</head>
+<body>
+<main>
+    <div>
+        <span>결제수단</p>
+        <button type="submit">신용카드</button>
+        <button type="submit">가상계좌</button>
+        <button type="submit">계좌이체</button>
+    </div>
+
+    <section id="section1">
+        <h2>신용카드</h2>
+        <ul>
+            <li>
+                <span>카드종류</span>
+                <select name="" id="">
+                    <option value="">KB카드</option>
+                    <option value="">BC카드</option>
+                    <option value="">삼성카드</option>
+                    <option value="">신한카드</option>
+                    <option value="">외환카드</option>
+                    <option value="">하나비자</option>
+                    <option value="">롯데카드</option>
+                    <option value="">씨티카드</option>
+                    <option value="">광주비자</option>
+                    <option value="">현대카드</option>
+                    <option value="">전북카드</option>
+                    <option value="">NH카드</option>
+                    <option value="">수협카드</option>
+                    <option value="">제주카드</option>
+                    <option value="">신협카드</option>
+                    <option value="">우리카드</option>
+                </select>
+            </li>
+            <li>
+                <span>할부종류</span>
+                <select name="" id="">
+                    <option value="">일시불</option>
+                    <option value="">2개월</option>
+                    <option value="">3개월</option>
+                    <option value="">5개월</option>
+              
+                </select>
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <div>
+            <ul>
+                <li>
+                    <span>주문금액 합계 원</span>
+                </li>
+                <li>
+                    <span>-</span>
+                </li>
+                <li>
+                    <span>할인금액 0원</span>
+                </li>
+                <li>
+                    <span>=</span>
+                </li>
+                <li>
+                    <span>총 주문금액 원</span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>개인정보 수집 및 이용 동의</h3>
+            <div>
+                <p>1.개인정보의 수집 및 이용 목적</p>
+                <p>뚜레쥬르는 원활한 주문과 서비스 접수 , 정확한 배송지 및 배송주소 확인 , 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려 합니다</p>
+                <p>2.개인정보 수집 및 활용동의 <strong>(필수)</strong></p>    
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th>목적</th>
+                            <th>항목</th>
+                            <th>보유기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                뚜레쥬르 상품주문 관련 서비스 접수
+                                <br>
+                                배송자 및 배송주소 확인, 대금결제 목적
+                            </td>
+                            <td>
+                                주문자 성명,수령자 성명,휴대전화번호
+                                <br>
+                                주소,이메일,비밀번호
+                            </td>
+                            <td>
+                                결제정보는 상법 등 관련법령 규정에
+                                <br>
+                                의하여 5년간 보유
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* 고객님께서는 개인정보 수집 동의에 거부할 수 있으며, 거부 시 쇼핑몰 주문 서비스를 이용하실 수 없습니다.</p>
+            </div>
+
+            <div>
+                <label for="pay_check1">동의합니다</label>
+                <input type="checkbox" name="pay_check1" id="">  
+            </div>
+            <p>관련 문의사항은 고객센터 1577-0700으로 문의해주시기 바랍니다. 감사합니다.</p>
+        </div>
+    </section>
+
+    <section>
+        <h3>결제대행 서비스 이용약관 동의</h3>
+        <div>
+            <ul>
+                <li>
+                    <span>전자금융거래 기본약관</span>
+                    <p>
+                        <a href="#none">자세히보기</a>
+                        <label for="pay_check2">동의</label>
+                        <input type="checkbox" name="pay_check2" id="">
+                    </p>
+                </li>
+                <li>
+                    <span>개인정보의 수집 및 이용 동의 [필수]</span>
+                    <p>
+                        <a href="#none">자세히보기</a>
+                        <label for="pay_check3">동의</label>
+                        <input type="checkbox" name="pay_chec3" id="">
+                    </p>
+                </li>
+                <li>
+                    <span>개인정보의 제공 및 위탁 동의</span>
+                    <p>
+                        <a href="#none">자세히보기</a>
+                        <label for="pay_check4">동의</label>
+                        <input type="checkbox" name="pay_chec4" id="">
+                    </p>
+                </li>
+                <li>
+                    <span>구매할 상품의 결제 조건을 확인 하였으며 , 구매의 동의합니다</span>
+                    <p>
+                        <label for="pay_check4">동의</label>
+                        <input type="checkbox" name="pay_chec4" id="">
+                    </p>
+                </li>
+            </ul>
+            <p>
+                <label for="pay_check5">전체 동의</label>
+                <input type="checkbox" name="pay_chec5" id="">
+            </p>
+        </div>
+        <div>
+            <a href="#none">결제하기</a>
+            <a href="#none">취소하기</a>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>가상계좌</h2>
+            <ul>
+                <li>
+                    <p>
+                        <label for="pay_name">입금자명</label>
+                        <input type="text" form="pay_name">
+                    </p>
+                </li>
+                <li>
+                    <label for="pay_bank">입금은행 선택</label>
+                    <select name="" id="">
+                        <option value="">입금은행 선택</option>
+                        <option value="">기업</option>
+                        <option value="">국민</option>
+                        <option value="">농협</option>
+                        <option value="">하나</option>
+                        <option value="">우리</option>
+                        <option value="">신한</option>
+                        <option value="">경남</option>
+                        <option value="">우체국</option>
+                        <option value="">부산</option>
+                    </select>
+                </li>
+            </ul>
+            <div>
+                <p><strong>무통장입금(가상계좌) 서비스 안내</strong></p>
+                <p>- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다</p>
+                <p>- 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h3>현금영수증 신청</h3>
+            <label for="pay_receipts_on">발급</label>
+            <input type="checkbox" name="pay_receipts_on" id="">
+            <label for="pay_receipts_no">미발급</label>
+            <input type="checkbox" name="pay_receipts_no" id="">
+        </div>
+        <div>
+            <input type="checkbox" name="pay_receipts_common" id="">
+            <label for="pay_receipts_common">소득공제용(일반 개인용)</label>
+            <p>
+                <label for="pay_receipts_name">이름</label>
+                <input type="text" name="pay_receipts_name" id="">
+            </p>
+        </div>
+        <div>
+            <input type="checkbox" name="pay_receipts_common" id="">
+            <label for="pay_receipts_common">지출증빙용(사업자용)</label>
+            <p>
+                <label for="pay_receipts_phone">휴대폰번호</label>
+                <input type="text" name="pay_receipts_phone" id="">
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
