@@ -83,42 +83,42 @@ function initialize() {
   otherCheckboxes.forEach(checkbox => checkbox.addEventListener('change', handleCheckboxChange));
 }
 
-// '모든 빵 보기' 체크박스 변경 시 이벤트 처리
+// '모든 빵 보기' 체크박스 변경 시 이벤트 처리 : handleBreadAllCheckboxChange 함수
 function handleBreadAllCheckboxChange() {
   if (breadAllCheckbox.checked) {
     showAllProducts();
-  // } else {
-  //   hideAllProducts();
-  // }
-  } 
+  } else {
+    if (!Array.from(otherCheckboxes).some(checkbox => checkbox.checked)) {
+      hideAllProducts(); // 모든 제품 숨기기
+    }
+  }
+   
   otherCheckboxes.forEach(checkbox => {
     checkbox.checked = false;
 
   });
-
-
 }
 
-// 다른 체크박스 변경 시 이벤트 처리
+
+// 다른 체크박스 변경 시 이벤트 처리 : handleCheckboxChange 함수 
 function handleCheckboxChange() {
   if (breadAllCheckbox.checked) {
     breadAllCheckbox.checked = false;
   }
   
-  // 체크된 카테고리 확인
+  // 체크된 카테고리들의 값이 배열로 checkedCategories에 저장된다.
   const checkedCategories = Array.from(otherCheckboxes)
     .filter(checkbox => checkbox.checked)
     .map(checkbox => checkbox.value);
   
   if (checkedCategories.length === 0) {
-    showAllProducts();
+    hideAllProducts(); //모든제품숨기기
   } else {
     filterProducts(checkedCategories);
   }
-
 }
 
-// 모든 제품 보이기
+// 모든 제품 보이기 함수 실행 : showAllProducts 함수 
 function showAllProducts() {
   productCategories.forEach(category => {
     category.style.display = 'block';
@@ -130,7 +130,7 @@ function showAllProducts() {
   });
 }
 
-// 모든 제품 숨기기
+// 모든 제품 숨기기 함수 실행 : hideAllProducts 함수 
 function hideAllProducts() {
   productCategories.forEach(category => {
     category.style.display = 'none';
@@ -142,17 +142,26 @@ function hideAllProducts() {
   });
 }
 
-// 카테고리별 제품 필터링
+// 카테고리별 제품 필터링 : filterProducts 함수 
 function filterProducts(checkedCategories) {
   productCategories.forEach(category => {
     const categoryName = category.classList[1];
+    const categoryItems = category.nextElementSibling.querySelectorAll('li');
     
     if (checkedCategories.includes(categoryName)) {
       category.style.display = 'block';
       category.nextElementSibling.style.display = 'block';
+      
+      categoryItems.forEach(item => {
+        item.style.display = 'block';
+      });
     } else {
       category.style.display = 'none';
       category.nextElementSibling.style.display = 'none';
+
+      categoryItems.forEach(item => {
+        item.style.display = 'none';
+      });
     }
   });
   
