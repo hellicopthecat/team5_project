@@ -73,7 +73,7 @@
 /* 오른쪽 영역 */
 .right_area{
     float: right;
-    margin: 25px 0 25px 0;
+    margin: 20px 0 25px 0;
     padding: 0 80px;
     text-align: left;
     position: relative;
@@ -93,7 +93,7 @@ h3{
     padding-bottom: 15px;
 }
 .menu_info_detail{
-    height: 63px;
+    height: 68px;
     background-image:url('../../../img/menu/gr_bg.jpg');
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@ h3{
     vertical-align: top;
 }
 .table_nutrition table thead td{
-    width: 220px;
+    width: 250px;
     border-bottom: 1px solid #ccc;
     text-align: center;
     padding: 10px 0;
