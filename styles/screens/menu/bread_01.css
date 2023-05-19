@@ -63,8 +63,8 @@
 }
 .best_stamp img{
     position: absolute;
-    top: 30px;
-    left: 290px;
+    top: 0px;
+    left: 0px;
     width: 90px;
     height: 90px;
     filter: drop-shadow(3px 3px 3px #561F08);
@@ -90,7 +90,7 @@ h3{
     letter-spacing: -0.1em;
     color: #0D4633;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .menu_info_detail{
     height: 63px;
@@ -159,7 +159,7 @@ h3{
 .btn_area{
     position: relative;
     width: 400px;
-    height: 70px;
+    height: 65px;
     display: flex;
     justify-content: center;
 }
@@ -185,7 +185,7 @@ h3{
 .share_icon_area{
     position: absolute;
     width: 400px;
-    height: 70px;
+    height: 65px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
