@@ -49,17 +49,19 @@
 /* 모바일 선물하기 배너 */
 
 .mobile_gift_delivery img{
+    width: 250px;
     border-radius: 5px;
 }
+
 .mobile_gift_delivery div{
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 .mobile_gift_delivery div:hover{
     opacity: 1;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .product_category p{
