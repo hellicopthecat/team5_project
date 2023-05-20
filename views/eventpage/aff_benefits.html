@@ -41,15 +41,15 @@
           </div>
 
           <div class="aff_benefits_nav">
-            <ul>
-              <li><span>통신사 멤버십 혜택</span></li>
-              <li><span>신용카드 & 멤버십 제휴카드 혜택</span></li>
-              <li><span>포인트 & 보너스 적립 혜택</span></li>
-              <li><span>상품권 혜택</span></li>
+            <ul id="aff_benefits_nav">
+              <li>통신사 멤버십 혜택</li>
+              <li>신용카드 & 멤버십 제휴카드 혜택</li>
+              <li>포인트 & 보너스 적립 혜택</li>
+              <li>상품권 혜택</li>
             </ul>
           </div>
 
-          <section class="telecom_benefit">
+          <section id="tele_benefit" class="telecom_benefit">
             <h3 class="hidden">통신사 멤버십 혜택</h3>
             <div class="telecom_benefit_text">
               <h4>통신사 멤버십 혜택</h4>
@@ -150,7 +150,7 @@
             </div>
           </section>
 
-          <section class="card_benefit hidden">
+          <section id="card_benefit" class="card_benefit hidden">
             <h3 class="hidden">신용카드 & 멤버십 제휴카드 혜택</h3>
             <div class="card_benefit_text">
               <h4>신용카드 & 맴버십 제휴카드 혜택</h4>
@@ -200,7 +200,10 @@
                       이용 가능카드: CJ 국민, CJ 현대, CJ 신한, CJ 삼성, CJ
                       SC비씨, CJ 하나, CJ 롯데, CJ 씨티
                     </li>
-                    <a href="#none">CJ 카드 신청하기</a>
+                    <a
+                      href="https://card.cjmall.com/card/customer/request_call.jsp"
+                      >CJ 카드 신청하기</a
+                    >
                   </ul>
                 </li>
 
@@ -235,7 +238,10 @@
                       * CJ ONE 신한카드는 2020.9.18 일자로 신규 발급 중단되며,
                       기존혜택은 유지 됩니다.
                     </li>
-                    <a href="#none">CJ ONE 제휴 카드 신청하기</a>
+                    <a
+                      href="https://www.cjone.com/cjmweb/point-card/branded-card.do?coopco_cd=7020&brnd_cd=2010&mcht_no=2010&coop_return_url="
+                      >CJ ONE 제휴 카드 신청하기</a
+                    >
                   </ul>
                 </li>
 
@@ -280,7 +286,10 @@
                       오프라인 결제건에 한하며, 백화점, 할인점, 쇼핑몰 등의
                       임대매장은 제외
                     </li>
-                    <a href="#none">CJ 삼성 iD 카드 신청하기</a>
+                    <a
+                      href="https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1764&alncmpC=QNTOUSLJ&affcode=QNTOUSLJ&webViewFirstPage=true"
+                      >CJ 삼성 iD 카드 신청하기</a
+                    >
                   </ul>
                 </li>
 
@@ -300,7 +309,10 @@
                       상품권 구매금액, 기프트카드·선불카드 구매/충전금액은
                       캐시백 제외
                     </li>
-                    <a href="#none">CJ ONE 제휴카드 신청하기</a>
+                    <a
+                      href="http://www.cjone.com/cjmweb/point-card/branded-card.do"
+                      >CJ ONE 제휴카드 신청하기</a
+                    >
                   </ul>
                 </li>
 
@@ -322,7 +334,7 @@
             </div>
           </section>
 
-          <section class="pb_benefit hidden">
+          <section id="pb_benefit" class="pb_benefit hidden">
             <h3 class="hidden">포인트 & 보너스 적립 혜택</h3>
             <div class="pb_benefit_text">
               <h4>포인트 & 보너스 적립 혜택</h4>
@@ -438,7 +450,7 @@
                     alt="블루멤버스 카드"
                   />
                   <img
-                    src="../../img/eventpage/aff_benefits/bluemember_logo.gif"
+                    src="../../img/eventpage/aff_benefits/blumembers_logo.jpeg"
                     alt="블루멤버스로고"
                   />
                   <h4>블루멤버스</h4>
@@ -514,7 +526,7 @@
             </div>
           </section>
 
-          <section class="giftcard_benefit hidden">
+          <section id="gift_benefit" class="giftcard_benefit hidden">
             <h3 class="hidden">상품권 혜택</h3>
             <div class="giftcard_benefit_text">
               <h4>상품권 혜택</h4>
@@ -725,5 +737,6 @@
         </div>
       </footer>
     </div>
+    <script src="../../js/eventpage/aff_benefits.js"></script>
   </body>
 </html>

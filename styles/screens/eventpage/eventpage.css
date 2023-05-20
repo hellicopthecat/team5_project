@@ -1,4 +1,5 @@
 /* event head title */
+
 .eventpage_head-banner {
   position: relative;
   text-align: center;
@@ -30,20 +31,22 @@
   background-color: white;
   padding-bottom: 50px;
 }
+
 .eventpage__list ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  padding: 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .eventpage__list ul li {
-  padding: 40px 50px;
+  padding: 30px 40px;
   text-align: center;
   border: 3px solid var(--table-color);
   border-radius: 25px;
+  margin-bottom: 40px;
 }
 .eventpage__list a {
-  display: inline-block;
+  display: block;
   padding: 0px 0px 20px;
   border-radius: 25px;
   background-color: var(--table-color);
@@ -62,7 +65,7 @@
 }
 .eventpage__list-img img {
   border-radius: 25px;
-  width: 500px;
+  width: 400px;
 }
 .eventpage__list-img span {
   display: block;
@@ -85,7 +88,7 @@
   transition: 0.5s ease-in-out;
 }
 .eventpage__list-text {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   padding: 20px 0px 30px;
   border-radius: 0px 0px 25px 25px;
@@ -93,12 +96,32 @@
   background-color: var(--table-color);
 }
 .eventpage__list-text p {
+  display: flex;
+  justify-content: center;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 /* eventpage modal */
+.eventpage__modal dialog {
+  position: relative;
+  top: 150px;
+}
+.eventpage__modal dialog img {
+  width: 400px;
+}
+.eventpage__modal dialog button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+}
+.eventpage__modal dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .eventpage__modal-img1 {
   position: absolute;
   top: 10px;
@@ -109,6 +132,6 @@
   display: flex;
 }
 .eventpage__modal-img1 img {
-  width: 450px;
-  height: 700px;
+  width: 350px;
+  height: 600px;
 }

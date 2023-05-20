@@ -54,10 +54,11 @@
   color: tomato;
 }
 .event_winner-list ul {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .event_winner-list ul li {
-  padding: 20px 50px 10px;
+  padding: 40px 50px 20px;
   width: 100%;
   border: 1px solid var(--table-color);
   display: flex;
@@ -72,16 +73,16 @@
   background-color: var(--table-color);
 }
 .event_winner-list ul li:nth-child(even):hover {
-  animation: winnerEvenAnimate 1.5s infinite;
+  animation: winnerEvenAnimate 1.5s;
 }
 .event_winner-list ul li:nth-child(odd):hover {
-  animation: winnerOddAnimate 1.5s infinite;
+  animation: winnerOddAnimate 1.5s;
 }
 .event_winner-list ul li:nth-child(even):hover p,
 .event_winner-list ul li:nth-child(odd):hover p,
 .event_winner-list ul li:nth-child(even):hover span,
 .event_winner-list ul li:nth-child(odd):hover span {
-  animation: winnerTextAnimate 1s infinite;
+  animation: winnerTextAnimate 1s;
 }
 .event_winner-list ul li p {
   font-size: 25px;
@@ -89,7 +90,8 @@
   margin-bottom: 10px;
 }
 .event_winner-list ul li img {
-  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 @keyframes winnerEvenAnimate {
   0% {
@@ -115,12 +117,15 @@
 }
 @keyframes winnerTextAnimate {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(15px);
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 }

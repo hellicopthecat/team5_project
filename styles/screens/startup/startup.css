@@ -22,10 +22,12 @@
 }
 
 /* header - nav */
-
+.startup_header-nav {
+  position: relative;
+}
 .startup_header-nav ul {
   display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 20px;
@@ -368,4 +370,135 @@
   100% {
     transform: translateY(0px);
   }
+}
+/* start up modal*/
+
+.present-regist-modal {
+  display: block;
+  position: absolute;
+  top: 20%;
+  padding: 0;
+  z-index: 99;
+}
+.present-regist-modal > h3 {
+  color: white;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  background-color: var(--hover-green);
+}
+.present-regist--form {
+  margin: 20px 20px;
+}
+.present-regist--form form {
+  position: relative;
+  padding-bottom: 30px;
+}
+.present-regist--form > span {
+  display: block;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.present-regist--form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.present-regist--values {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.present-regist--values label,
+.present-regist--adress--cont label {
+  width: 100px;
+}
+.present-regist--values input,
+.present-regist--values select {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  padding: 10px 10px;
+  width: 150px;
+}
+.present-regist--values select {
+  text-align: center;
+}
+.present-regist--values:nth-child(2) input {
+  width: 300px;
+}
+
+.present-regist--values:nth-child(3) span {
+  margin: 0 10px;
+}
+.present-regist--values:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.present-regist--adress--cont {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.present-regist--adress--cont span {
+  margin: 0 10px;
+}
+.present-regist--adress--cont:nth-child(2) input,
+.present-regist--adress--cont:nth-child(3) input {
+  width: 300px;
+}
+.present-regist--values:nth-child(5) select,
+.present-regist--values:nth-child(9) select {
+  margin-right: 20px;
+}
+
+.present_regist--agree {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+.present_regist--agree h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.present_r-agree-text {
+  margin-bottom: 20px;
+}
+.present_r-agree-text p {
+  height: 80px;
+  overflow-y: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.present_recruit-btns {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.present_recruit-btns button {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.present_recruit-btns button:first-child {
+  background-color: var(--main-color);
+  color: white;
+}
+.present_recruit-btns button:last-child {
+  background-color: var(--third-color);
+}
+
+.present-regist--form > span::before,
+.present-regist--values:nth-child(2) label::before,
+.present-regist--values:nth-child(3) label::before,
+.present-regist--adress--cont:first-child label::before,
+.present_regist--agree h4:first-child::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
 }
