@@ -1,0 +1,371 @@
+.startup_wrap {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+/* header img */
+.startup_head-banner {
+  position: relative;
+  padding-bottom: 80px;
+}
+.startup_head-banner img {
+  width: 100%;
+  height: 300px;
+  filter: brightness(40%);
+}
+.startup_head-banner h2 {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 15%;
+  font-size: 30px;
+}
+
+/* header - nav */
+
+.startup_header-nav ul {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.startup_header-nav li {
+  text-align: center;
+  width: 33%;
+  cursor: pointer;
+}
+.startup_header-nav li:hover {
+  transform: scale(110%);
+  transition: 0.5s ease-in-out;
+}
+
+/* start up introduce */
+
+/* start up prepare */
+.startup_prepare-header {
+  position: relative;
+  background-color: var(--fourth-color);
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.startup_prepare-header img,
+.startup_prepare-header h3 {
+  position: absolute;
+}
+.startup_prepare-header h3 {
+  top: 35%;
+  left: 30%;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 3px 2px 1px var(--main-color);
+}
+.startup_prepare-header img {
+  top: -20%;
+  right: 0;
+  transform: rotate(-20deg);
+}
+
+/*startup prepare nav*/
+.startup_prepare-nav {
+  padding: 15px 0;
+  background-color: var(--third-color);
+  margin-bottom: 60px;
+  border-bottom: 3px solid var(--hover-green);
+}
+.startup_prepare-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.startup_prepare-nav li {
+  text-align: center;
+  width: 16.6%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.startup_prepare-nav li:hover {
+  animation: prepareNav 1.3s infinite;
+}
+@keyframes prepareNav {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+/* startup process */
+/* prepare - investcost */
+/* prepare loan */
+.startup_prepare-process,
+.startup_prepare-loan {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.startup_prepare-process h4,
+.startup_prepare-invest--text h4,
+.startup_prepare-loan--text h4,
+.startup_prepare-faq--text h4,
+.startup_recruit_story-text h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.startup_prepare-process h4::before,
+.startup_prepare-invest--text h4::before,
+.startup_prepare-loan--text h4::before,
+.startup_prepare-faq--text h4::before,
+.startup_recruit_story-text h4::before {
+  content: "\00a0";
+  width: 10px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: var(--hover-green);
+}
+
+.startup_prepare-process span,
+.startup_prepare-investcost span,
+.startup_prepare-loan--text span,
+.startup_prepare-faq--text span,
+.startup_recruit_story-text span {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+
+.startup_prepare-process img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.startup_prepare-investcost h5 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.startup_prepare-invest--exception span,
+.startup_prepare-loan--caution span {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+/* prepare - investcost table */
+/* prepare loan table */
+.startup_prepare-investcost table,
+.startup_prepare-loan table,
+.s_prepare-faq--table table {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.startup_prepare-investcost thead,
+.startup_prepare-loan thead,
+.s_prepare-faq--table thead {
+  height: 50px;
+  background-color: var(--table-color);
+}
+
+.startup_prepare-investcost thead th,
+.startup_prepare-investcost tbody th,
+.startup_prepare-investcost tbody td,
+.startup_prepare-investcost tfoot th,
+.startup_prepare-investcost tfoot td,
+.s_prepare-faq--table thead th {
+  vertical-align: middle;
+}
+.s_prepare-faq--table thead th:first-child,
+.s_prepare-faq--table tbody td:first-child {
+  width: 50px;
+  text-align: center;
+}
+.startup_prepare-investcost tbody tr,
+.startup_prepare-investcost tfoot tr,
+.s_prepare-faq--table tbody tr {
+  height: 40px;
+  border-bottom: 1px solid var(--table-color);
+}
+.faq_q td {
+  height: 60px;
+  vertical-align: middle;
+}
+.faq_a td {
+  vertical-align: middle;
+}
+.faq_a td:last-child {
+  height: 100px;
+}
+.startup_prepare-investcost tfoot tr {
+  border: 1px solid var(--table-color);
+}
+
+.startup_prepare-loan thead th,
+.startup_prepare-loan tbody th,
+.startup_prepare-loan tbody td {
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  border-bottom: 1px solid var(--table-color);
+}
+
+.s_prepare-faq--table img {
+  width: 20px;
+}
+
+/* recruit & story */
+.startup_story--wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.startup_knowhow {
+  width: 300px;
+  margin-right: 10px;
+}
+.startup_knowhow a {
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  background-color: var(--fourth-color);
+  display: flex;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+.startup_knowhow p {
+  position: absolute;
+  font-weight: 500;
+  color: white;
+}
+.startup_knowhow p:first-child {
+  font-size: 60px;
+  top: 40px;
+  left: 30px;
+  text-shadow: 3px 3px 1px black;
+}
+.startup_knowhow p:nth-child(2) {
+  font-size: 30px;
+  top: 110px;
+  left: 35px;
+  text-shadow: 3px 3px 1px black;
+  z-index: 1;
+}
+.startup_knowhow img:nth-child(3) {
+  position: absolute;
+  width: 200px;
+  left: 50px;
+  bottom: 40px;
+  filter: drop-shadow(2px 2px 1px black);
+}
+.startup_knowhow p:nth-child(4) {
+  font-size: 60px;
+  font-weight: 700;
+  right: 20px;
+  bottom: 15px;
+  transform: rotate(-25deg);
+  text-shadow: 3px 3px 1px black;
+}
+.startup_knowhow img:nth-child(5) {
+  position: absolute;
+  top: -30px;
+  right: -60px;
+  width: 200px;
+  transform: rotate(-125deg);
+  filter: drop-shadow(-3px 1px 1px black);
+}
+.startup_story {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+}
+.startup_story iframe {
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+.startup_story h5 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.startup_story:nth-child(2) {
+  margin-right: 10px;
+}
+.startup_story-text--cont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.startup_story-text--cont a {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.startup_story-text--cont a:first-child {
+  background-color: var(--main-color);
+  color: white;
+}
+.startup_story-text--cont a:first-child {
+  margin-right: 10px;
+}
+.startup_story-text--cont a:last-child {
+  background-color: var(--fourth-color);
+  color: white;
+}
+
+/* recruit presentation & regist */
+.startup_recruit--wrap {
+  margin-bottom: 100px;
+}
+.startup_recruit-present--regist {
+  border: 3px solid var(--hover-green);
+  border-radius: 25px;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
+}
+.startup_recruit-present--regist img {
+  width: 200px;
+}
+.present--regist-textbox {
+  margin-left: -110px;
+}
+.present--regist-textbox span {
+  display: block;
+  margin-bottom: 20px;
+}
+.startup_recruit-present--regist > button {
+  background-color: var(--main-color);
+  font-size: 25px;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 25px;
+}
+.startup_recruit-present--regist > button:hover {
+  animation: btnUpDown 1.5s infinite;
+}
+@keyframes btnUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

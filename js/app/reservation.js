@@ -52,3 +52,49 @@ function res_email(){
     let value = (com.options[com.selectedIndex].value);
             email.setAttribute('value' , value)
 }                
+
+$('#res_sell').click(()=>{
+    const name = document.getElementById('res_name').value
+    const name2 = document.getElementById('res_name2').value
+    const phone2 = document.getElementById('phone_2').value
+    const phone3 = document.getElementById('phone_3').value
+    const phone4 = document.getElementById('phone_4').value
+    const phone5 = document.getElementById('phone_5').value
+    const email1 = document.getElementById('email_1').value
+    const email2 = document.getElementById('email_2').value
+    const datepicker = document.getElementById('datepicker').value
+    const address = document.getElementById('sample6_address').value
+    const address2 = document.getElementById('sample6_detailAddress').value
+    if(name == ''){
+        alert('신청자 이름을 작성해주세요')
+    }else if(name2 == ''){
+        alert('배송받으실분 이름을 작성해주세요')
+    }else if(phone2 == ''){
+        alert('신청자 핸드폰 번호를 작성해주세요')
+
+    }else if(phone3 == ''){
+        alert('신청자 핸드폰 번호를 작성해주세요')
+
+    }else if(phone4 == ''){
+        alert('배송받으실분 핸드폰 번호를 작성해주세요')
+
+    }else if(phone5 == ''){
+        alert('배송받으실분 핸드폰 번호를 작성해주세요')
+
+    }
+    else if(email1 == ''){
+        alert('이메일을 작성해주세요')
+
+    }else if(email2 == ''){
+        alert('이메일을 작성해주세요')
+    }else if (datepicker == ''){
+        alert('날짜를 정해주세요')
+    }else if (address == ''){
+        alert('주소를 작성해주세요')
+    }else if(address2 == ''){
+        alert('상세주소를 작성해주세요')
+    }else{
+        document.getElementById('res_sell').href = "payment.html"
+
+    }
+});

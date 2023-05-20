@@ -13,7 +13,8 @@
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
-    <main class="qq">
+    <main class="res_main">
+        <div class="res_main_wrap">
         <h2 class="res_title">배송 주문을 위해 아래 정보를 입력해 주세요.</h2>
         <section id="section1">
             <h3 class="res_se_title">고객 정보를 입력해 주세요. 
@@ -23,7 +24,7 @@
                 <tr>
                     <th>주문자 이름</th>
                     <td>
-                        <input class="res_input_name" type="text" placeholder="주문자 이름">
+                        <input id="res_name" class="res_input_name" type="text" placeholder="주문자 이름">
                     </td>
                 </tr>
                 <tr>
@@ -31,9 +32,9 @@
                     <td>
                         <input type="text" class="res_input_phone" value="010" id="phone_1">
                         <span>-</span>
-                        <input type="text" class="res_input_phone" id="phone_2">
+                        <input  type="text" class="res_input_phone" id="phone_2">
                         <span>-</span>
-                        <input type="text" class="res_input_phone" id="phone_3">
+                        <input  type="text" class="res_input_phone" id="phone_3">
                         <p class="absence">상담 및 결제링크 발송을 위해 정확한 전화번호를 입력해 주세요</p>
                         <p class="absence">전화번호 수정이 필요하신 경우, 회원정보 수정을 통해 전화번호를 변경해 주세요.</p>
                     </td>
@@ -87,16 +88,16 @@
                 <tr>
                     <th >받으시는 분</th>
                     <td  >
-                        <input type="text" class="res_input_name" placeholder="성함">
+                        <input id="res_name2" type="text" class="res_input_name" placeholder="성함">
                     </td>
                     </tr>
                 <tr>
                     <th>전화번호</th>
                     <td>  <input type="text"  class="res_input_phone" value="010" id="phone_1">
                         <span>-</span>
-                        <input type="text" class="res_input_phone"  id="phone_2">
+                        <input type="text" class="res_input_phone"  id="phone_4">
                         <span>-</span>
-                        <input type="text" class="res_input_phone"  id="phone_3"></td>
+                        <input type="text" class="res_input_phone"  id="phone_5"></td>
                 </tr>
                 <tr>
                     <th>배송 희망 날짜</th>
@@ -170,7 +171,6 @@
                         <li>배송비</li>
                     </ul>
                 </div>
-
                 <div class="res_se3_goods">
                     <ul>
                         <li class="res_se3_goods_title">
@@ -211,14 +211,13 @@
             </div>
         </div> 
         </section>
-        <a href="#none" class="res_sell">
+        <a href="#none" id="res_sell" class="res_sell">
             <p class="res_sell_title">결제하기</p>
             </a>
+        </div>
     </main>
 </body>
 
-<script src="../../../js/app/reservation.js">
- 
-</script>
+<script src="../../../js/app/reservation.js"></script>
 
 </html>

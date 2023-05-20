@@ -1,6 +1,11 @@
-.qq{
-width: 800px;
+.res_main{
+    padding-top: 50px;
+width: 100%;
 background-color:  #f7f0da;
+}
+.res_main_wrap{
+    width: 800px;
+    margin: auto;
 }
 .absence{
     color: rgb(208,208,208);
@@ -8,11 +13,10 @@ background-color:  #f7f0da;
     margin-top: 5px;
 }
 .res_title{
-    border: 1px solid rgb(230,230,230);
+    border: 1px solid rgb(200,200,200);
     text-align: center;
-    margin-top: 50px;
     margin-bottom: 40px;
-    padding: 15px;
+    padding: 10px;
 }
 .res_se_title{
     margin-bottom: 15px;

@@ -34,6 +34,9 @@
 /* - partissier- */
 @import "../styles/screens/partissier/partissier.css";
 
+/* - start - up */
+@import "../styles/screens/startup/startup.css";
+
 /* - footer - */
 @import "../styles/components/footer.css";
 
