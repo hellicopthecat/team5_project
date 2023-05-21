@@ -1,26 +1,4 @@
 
-// $(function(){
-//     $(".view_pics").click(function(){
-//         $(".view_pics_dd").removeClass("hidden");
-//         $(".view_nutris_dd").addClass("hidden");
-//     })
-//     // $(".view_pics").click(function(){
-//     //     $(".view_pics_dd").show();
-//     //     $(".view_nutris_dd").hide();
-//     // });
-
-//     $(".view_nutirs").click(function(){
-//         $(".view_pics_dd").addClass("hidden");
-//         $(".view_nutris_dd").removeClass("hidden");
-//     })
-
-//     // $(".view_nutirs").click(function(){
-//     //     $(".view_pics_dd").hide();
-//     //     $(".view_nutris_dd").show();
-//     // });
-// })
-
-
 // 사진으로 보기, 영양정보로 보기  페이지 전환
 const viewPics = document.getElementById("view_pics")
 const viewNutris = document.getElementById("view_nutris")
@@ -42,7 +20,9 @@ viewPics.addEventListener("click",handleViewPics)
 viewNutris.addEventListener("click",handleViewNutris)
 
 
-// 상세분류토글박스
+
+
+// 신제품 모아보기, 베스트 모아보기 토글 
 
 $('.selector_tab').click(function(){
     $('.selector_select').slideToggle("fast");
@@ -62,7 +42,7 @@ $('.selector_tab').click(function(){
 
 // HTML 요소 선택
 const breadAllCheckbox = document.querySelector('#bread_all');
-const otherCheckboxes = document.querySelectorAll('input[type="checkbox"]:not(#bread_all)');
+const otherCheckboxes = document.querySelectorAll('#loaf_bread, #healthy_bread, #dessert_bread, #pie_pastries, #donut_goroke');
 const productCategories = document.querySelectorAll('.category_name');
 const productItems = document.querySelectorAll('.products_in_category > li');
 
