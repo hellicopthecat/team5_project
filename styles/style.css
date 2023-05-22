@@ -17,7 +17,8 @@
 /* - searchstore - */
 /*  - app - */
 @import "../styles/app/homedelivery.css";
-
+@import "../styles/app/faq.css";
+@import "../styles/app/inquiry.css";
 /*  - map - */
 @import "../styles/map/map.css";
 /* - stroy - */
