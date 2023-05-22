@@ -105,8 +105,8 @@
 
 /* eventpage modal */
 .eventpage__modal dialog {
-  position: relative;
-  top: 150px;
+  position: fixed;
+  top: 30px;
 }
 .eventpage__modal dialog img {
   width: 400px;

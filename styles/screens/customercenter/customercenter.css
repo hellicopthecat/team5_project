@@ -6,6 +6,7 @@
   padding: 50px 150px 10px;
   background-color: #dadfcb;
   margin-bottom: 30px;
+  border-radius: 25px;
 }
 
 .customer__form h3,
@@ -71,7 +72,7 @@
 .customer__page-table--wrap table tr:nth-child(2) td {
   text-align: center;
 }
-
+/* customer nav */
 .customer_page-controller {
   padding: 10px 50px 40px;
 }
@@ -86,6 +87,13 @@
   align-items: center;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 25px;
+  border: 1px solid var(--hover-green);
+}
+.customer_page-controller li:nth-child(2) {
+  margin: 0 50px;
 }
 .customer_page-controller li:hover {
   transform: scale(110%);
@@ -99,8 +107,19 @@
   margin-top: 15px;
   width: 60%;
 }
+.customer_page-controller button {
+  margin-top: 10px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
 .customer__page--reception-info {
   padding: 30px 0;
+}
+.customer__page--reception-info p {
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 /* FAQ PAGE */
@@ -131,6 +150,7 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  border-radius: 25px 25px 0 0;
 }
 .faq__titles ul {
   width: 90%;
@@ -152,6 +172,8 @@
 .faq__table {
   background-color: white;
   padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-radius: 0 0 25px 25px;
 }
 .faq__table h2 {
   font-size: 30px;
@@ -175,6 +197,8 @@
   grid-template-rows: 50px;
   align-items: center;
   margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .q span {
@@ -203,6 +227,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px;
   align-items: center;
+  color: tomato;
+  font-size: 20px;
 }
 .q h4,
 .a h4 {
@@ -218,12 +244,13 @@
 }
 
 /* Online Counsel Form */
-.online-counsel__warp {
+.online-counsel__wrap {
   width: 100%;
   padding: 0 50px;
   padding-bottom: 100px;
   background-color: white;
   margin-bottom: 30px;
+  border-radius: 25px;
 }
 .online-counsel__form {
   display: flex;
@@ -323,6 +350,9 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
+.counsel_email-cont span {
+  margin: 0 10px;
+}
 .counsel_description-cont label {
   vertical-align: top;
   margin-top: 5px;
@@ -376,7 +406,22 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
 }
-
+.userinfo_per_essential form,
+.userinfo_per_selection form {
+  display: flex;
+  align-items: center;
+}
+.userinfo_per_essential form fieldset,
+.userinfo_per_selection form fieldset {
+  display: flex;
+  align-items: center;
+}
+.userinfo_per_essential form input,
+.userinfo_per_selection form input {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 10px;
+}
 .userinfo_per-buttons {
   display: flex;
   justify-content: end;
@@ -402,7 +447,9 @@
   display: flex;
   justify-content: center;
   padding: 50px 0 100px;
+  margin-bottom: 30px;
   background-color: white;
+  border-radius: 25px;
 }
 .online__counsel-result {
   width: 70%;
@@ -413,6 +460,10 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
+.online__counsel-result h3,
+.online__counsel-result p {
+  text-align: center;
+}
 .online__counsel-result h3 {
   font-size: 25px;
   font-weight: 600;
@@ -420,43 +471,53 @@
 }
 .online__counsel-result p {
   margin-bottom: 10px;
-}
-.online__counsel-result h3,
-.online__counsel-result p {
-  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .online__counsel-result p:nth-child(3) {
   width: 60%;
   margin-bottom: 20px;
 }
+.online__counsel-result fieldset > div {
+  display: flex;
+  align-items: center;
+}
 .online__counsel-result label {
   display: inline-block;
-  width: 100px;
+  font-size: 15px;
+  margin-right: 10px;
 }
 .online__counsel-result input {
+  height: 30px;
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
+}
+.o__c-result--name input {
+  margin-right: 20px;
+}
+.o__c-result--mobile label {
+  width: 50px;
 }
 .o__c-result--mobile input {
-  width: 30%;
-  height: 30px;
+  width: 50px;
 }
 .o__c-result--mobile select {
   width: 15%;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
-  margin: 0 10px;
   text-align: center;
 }
-
+.o__c-result--mobile span {
+  margin: 0 10px;
+}
 .online__counsel-result button {
-  padding: 5px 20px;
+  padding: 10px 20px;
   background-color: #1c8260;
   border-radius: 25px;
-  font-size: 13px;
+  white-space: nowrap;
+  font-size: 14px;
   color: white;
-  margin-left: 20px;
+  margin-left: 10px;
 }
