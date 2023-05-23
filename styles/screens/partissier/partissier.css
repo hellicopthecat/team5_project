@@ -18,14 +18,14 @@
   text-align: center;
 }
 
-.partissier__head-cont > ul > li:hover {
+/* .partissier__head-cont > ul > li:hover {
   transform: scale(110%);
   transition: 0.5s ease-in-out;
   padding: 10px 20px;
   border-radius: 25px;
   color: white;
   background-color: var(--main-color);
-}
+} */
 
 /* partissier body && recruit body */
 .partissier__body-cont,
@@ -181,6 +181,11 @@
   margin-bottom: 5px;
   transition: 0.3s ease-in-out;
 }
+.partissier__foodbill-list h3,
+.partissier__tech-list h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
 .partissier__foodbill-list li:hover,
 .partissier__tech-list li:hover {
   background-color: #003b33;
@@ -246,6 +251,12 @@
   font-size: 15px;
   margin-bottom: 15px;
   line-height: 18px;
+}
+.part_foodbill-intro-edu button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 /* part foodbill curriculum & part tech intro text*/
 .part_foodbill-curriculum p {
@@ -349,6 +360,9 @@
   background-color: var(--main-color);
   color: white;
   border-radius: 25px;
+}
+.recruit-notice--table > h4 span {
+  color: tomato;
 }
 .recruit-notice--table table {
   width: 100%;
