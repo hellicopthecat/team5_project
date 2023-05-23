@@ -190,6 +190,7 @@ h3{
     justify-content: center;
 }
 .gotolist_btn{
+    display: inline-block;
     width: 100px;
     height: 34px;
     background: transparent;
@@ -197,14 +198,21 @@ h3{
     border-radius: 5px;
     font-size: 13px;
     color: #555;
-    text-align: center;
+    margin-top: auto;
+    z-index: 3;
 
     /* 가로 세로 중앙 정렬 */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-top: auto;
+    transition: 0.1s ease-in-out;
+}
+
+.gotolist_btn:hover{
+    background: #0D4633;
+    color: #fff;
+    transition: 0.1s ease-in-out;
 }
 
 /* 페이스북 트위터 공유 버튼 */
