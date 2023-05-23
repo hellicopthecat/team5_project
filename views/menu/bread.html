@@ -83,18 +83,10 @@
                 <div class="selector_select hidden" id="selector_select">
                     <ul>
                         <li class="selector_select_new">
-                            <a href="">
-                                <span>
-                                    <input type="checkbox" name="select_kind1-1" id="select_kind1-1" data-target="new"> <label class="mark01" for="select_kind1-1">신제품 모아 보기</label>
-                                </span>
-                            </a>
+                            <input type="checkbox" name="new_products" id="new_products" value="new_products" data-target="new"> <label for="new_products">신제품 모아 보기</label>        
                         </li>
                         <li class="selector_select_best">
-                            <a href="">
-                                <span>
-                                    <input type="checkbox" name="select_kind1-2" id="select_kind1-2" data-target="best"> <label class="mark02" for="select_kind1-2">베스트 제품 모아 보기</label>
-                                </span>
-                            </a>
+                            <input type="checkbox" name="best_products" id="best_products" value="best_products" data-target="best"> <label for="best_products">베스트 제품 모아 보기</label>     
                         </li>
                     </ul>
                 </div>
@@ -110,7 +102,7 @@
                             <dt class="category_name loaf_bread"><span>식빵</dt></span>
                             <dd><!--식빵 리스트-->
                                 <ul class="products_in_category">
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/honey_loafbread.jpg" alt="">
                                             <div class="best_stamp">
@@ -133,15 +125,12 @@
                                         </a>
                                         <p>착한빵식 통밀식빵</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/plain_dutchbread.jpg">
-                                        </a>
-                                        <p>고소 담백 더치브레드</p>
-                                    </li> -->
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/toktok_seed_bread.jpg">
+                                            <div class="new_stamp">
+                                                <img src="../../img/menu/new_menu_stamp.png">
+                                            </div>
                                             <div class="product_description_wrap">
                                                 <p class="product_description">해바라기씨, 아마씨, 참깨, 귀리를 넣고 반죽한 촉촉한 식감과 입안에서 고소함이 톡톡 터지는 곡물식빵</p>
                                                 <div class="view_more"><span>자세히 보기</span></div>
@@ -169,7 +158,7 @@
                                         </a>
                                         <p>마구마구 밤식빵 1/2</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/72_denish_bread.jpg">
                                             <div class="best_stamp">
@@ -182,7 +171,7 @@
                                         </a>
                                         <p>72겹의 정성 데니쉬식빵</p>  
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/soon_bread.jpg">             
                                             <div class="best_stamp">
@@ -215,7 +204,7 @@
                                         </a>
                                         <p>촉촉 쫄깃 탕종식빵</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/sangsang_bread.jpg">
                                             <div class="best_stamp">
@@ -228,7 +217,7 @@
                                         </a>
                                         <p>生生 생크림 식빵</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/gomebutter_bread.jpg">
                                             <div class="best_stamp">
@@ -253,25 +242,6 @@
                                         </a>
                                         <p>통우유식빵</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/tongmilk_bread_half.jpg">
-                                            <div class="best_stamp">
-                                                <img src="../../img/menu/best_menu_stamp.png">
-                                            </div>
-                                        </a>
-                                        <p>통우유식빵 1/2</p>
-                                    </li> 
-                                    <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/TLJ_cornplus_bread.jpg">
-                                            <div class="product_description_wrap">
-                                                <p class="product_description">한층 더 촉촉해지고 옥수수 맛이 풍부한 빵 속에 고소한 옥수수 알갱이가 톡톡 씹히는 식빵</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div> 
-                                        </a>
-                                        <p>TLJ옥수수듬뿍옥수수식빵</p>
-                                    </li> -->
                                     <li>
                                         <a href="#">
                                             <img src="../../img/menu/bread/TLJ_corn_bread.jpg">
@@ -282,7 +252,7 @@
                                         </a>
                                         <p>TLJ옥수수식빵</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/puremilk_bread.jpg">
                                             <div class="best_stamp">
@@ -295,7 +265,7 @@
                                         </a>
                                         <p>순수한 맛 순우유식빵</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/puremilk_roll.jpg">
                                             <div class="best_stamp">
@@ -308,7 +278,7 @@
                                         </a>
                                         <p>순수한 맛 순우유롤(봉)</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/daily_milkbread.jpg">
                                             <div class="best_stamp">
@@ -321,18 +291,12 @@
                                         </a>
                                         <p>데일리 우유식빵</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/baro_toastbread.jpg">
-                                            <div class="best_stamp">
-                                                <img src="../../img/menu/best_menu_stamp.png">
-                                            </div>
-                                        </a>
-                                        <p>바로굽는 토스트식빵</p>
-                                    </li> -->
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/morning_loafbread.jpg">
+                                            <div class="new_stamp">
+                                                <img src="../../img/menu/new_menu_stamp.png">
+                                            </div>
                                             <div class="product_description_wrap">
                                                 <p class="product_description">담백해서 샌드위치로 만들어 먹기 좋은 네모난 모양의 플레인 식빵</p>
                                                 <div class="view_more"><span>자세히 보기</span></div>
@@ -378,13 +342,7 @@
                                         </a>
                                         <p>데일리 베이글</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/daily_blueberry_bagel.jpg">
-                                        </a>
-                                        <p>데일리 블루베리 베이글</p>
-                                    </li> -->
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/daily_walnut_bagel.jpg">
                                             <div class="new_stamp">
@@ -398,9 +356,12 @@
                                         <p>데일리 월넛 베이글</p>
                                         
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/wholewheat_bread.jpg">
+                                            <div class="new_stamp">
+                                                <img src="../../img/menu/new_menu_stamp.png">
+                                            </div>
                                             <div class="product_description_wrap">
                                                 <p class="product_description">통밀을 넣어 고소 담백하고, 맥주 발효종으로 풍미와 식감을 더한 식사빵
                                                     그냥 먹기에도 좋고, 샌드위치 빵으로도 활용 가능한 건강빵</p>
@@ -419,7 +380,7 @@
                                         </a>
                                         <p>데일리 치아바타</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/honeybutter_baguette.jpg">
                                             <div class="best_stamp">
@@ -432,16 +393,6 @@
                                         </a>
                                         <p>겉바속촉 꿀버터 바게트</p>   
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/gorgonzola_honeyball.jpg">
-                                            <div class="product_description_wrap">
-                                                <p class="product_description">보들보들한 빵결 우유의 고소함을 가득 담은 순우유 식빵</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>고르곤졸라 허니볼</p>
-                                    </li> -->
                                     <li>
                                         <a href="#">
                                             <img src="../../img/menu/bread/garlic_cheese_baguette.jpg">
@@ -462,17 +413,7 @@
                                         </a>
                                         <p>잡곡 듬뿍 곡물브레드</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/creamcheese_grain_bread.jpg">
-                                            <div class="product_description_wrap">
-                                                <p class="product_description">보들보들한 빵결 우유의 고소함을 가득 담은 순우유 식빵</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>크림치즈 곡물브레드</p>
-                                    </li> -->
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/ang_butter_laugen.jpg">
                                             <div class="best_stamp">
@@ -549,12 +490,6 @@
                                         </a>
                                         <p>호두 연유 바게트</p>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/bread/tangjong_bread.jpg">
-                                        </a>
-                                        <p>탕종법으로 만든 담백하고 쫄깃한 브레드</p>
-                                    </li> -->
                                     <li>
                                         <a href="#">
                                             <img src="../../img/menu/bread/campagne_realchoco.jpg">
@@ -565,9 +500,12 @@
                                         </a>
                                         <p>깜파뉴 속의 리얼초코</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/mini_cheese_roll.jpg">
+                                            <div class="new_stamp">
+                                                <img src="../../img/menu/new_menu_stamp.png">
+                                            </div>
                                             <div class="product_description_wrap">
                                                 <p class="product_description">
                                                     부드러운 빵에 고소한 롤치즈가 쏙쏙 박혀있는 미니 치즈롤드</p>
@@ -581,7 +519,7 @@
                             <dt class="category_name dessert_bread"><span>간식빵</span></dt>
                             <dd><!--간식빵 리스트-->
                                 <ul  class="products_in_category">
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/classic_strberry_mammoth.jpg">
                                             <div class="new_stamp">
@@ -594,7 +532,7 @@
                                         </a>
                                         <p>클래식 딸기잼 맘모스</p>  
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/strberry_minisand.jpg">
                                             <div class="new_stamp">
@@ -607,7 +545,7 @@
                                         </a>
                                         <p>퐁당핑이 좋아하는 미니샌드 스트로베리</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/milk_minisand.jpg">
                                             <div class="new_stamp">
@@ -650,7 +588,7 @@
                                         </a>
                                         <p>복이가득 앙! 크림 단팥</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/original_coffeebun.jpg">
                                             <div class="best_stamp">
@@ -663,7 +601,7 @@
                                         </a>
                                         <p>오리지널 커피번</p> 
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/sweetpotato_soboro.jpg">
                                             <div class="best_stamp">
@@ -696,7 +634,7 @@
                                         </a>
                                         <p>우유버터브레드</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/choco_chiffon.jpg">
                                             <div class="new_stamp">
@@ -710,7 +648,7 @@
                                         </a>
                                         <p>폭신폭신 한컵 초코쉬폰</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/milk_chiffon.jpg">
                                             <div class="new_stamp">
@@ -764,7 +702,7 @@
                                         </a>
                                         <p>크림치즈 호두과자빵</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/salt_butter_roll.jpg">
                                             <div class="best_stamp">
@@ -803,7 +741,7 @@
                             <dt class="category_name pie_pastries"><span>파이/패스트리</span></dt>
                             <dd><!--파이/패스트리 리스트-->
                                 <ul  class="products_in_category">
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/butter_garlic_pretzel.jpg">
                                             <div class="new_stamp">
@@ -826,7 +764,7 @@
                                         </a>
                                         <p>겹겹이 딸기파이</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/egg_pudding.jpg">
                                             <div class="best_stamp">
@@ -899,7 +837,7 @@
                                         </a>
                                         <p>앙!호두 버터 샌드</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/layer_denish_milk.jpg">
                                             <div class="best_stamp">
@@ -922,7 +860,7 @@
                                         </a>
                                         <p>겹겹이 데니쉬</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/monblanc.jpg">
                                             <div class="best_stamp">
@@ -940,7 +878,7 @@
                             <dt class="category_name donut_goroke"><span>도넛/고로케</span></dt>
                             <dd><!--도넛/고로케 리스트-->
                                 <ul  class="products_in_category">
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/garlic_chicken_goroke.jpg">
                                             <div class="new_stamp">
@@ -953,7 +891,7 @@
                                         </a>
                                         <p>남해마늘로 만든 마늘 치킨 고로케</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/mini_marabll.jpg">
                                             <div class="new_stamp">
@@ -966,7 +904,7 @@
                                         </a>
                                         <p>작다고 얕보지 마라볼</p>
                                     </li>
-                                    <li>
+                                    <li class="new">
                                         <a href="#">
                                             <img src="../../img/menu/bread/churo_pastries.jpg">
                                             <div class="new_stamp">
@@ -989,7 +927,7 @@
                                         </a>
                                         <p>매콤 에그마요 고로케</p>
                                     </li>
-                                    <li>
+                                    <li class="best">
                                         <a href="#">
                                             <img src="../../img/menu/bread/montecristo.jpg">
                                             <div class="best_stamp">
