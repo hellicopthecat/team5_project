@@ -116,6 +116,7 @@
 .startup_prepare-invest--text h4,
 .startup_prepare-loan--text h4,
 .startup_prepare-faq--text h4,
+.startup_prepare-help--text h4,
 .startup_recruit_story-text h4 {
   font-size: 30px;
   font-weight: 500;
@@ -126,6 +127,7 @@
 .startup_prepare-invest--text h4::before,
 .startup_prepare-loan--text h4::before,
 .startup_prepare-faq--text h4::before,
+.startup_prepare-help--text h4::before,
 .startup_recruit_story-text h4::before {
   content: "\00a0";
   width: 10px;
@@ -138,6 +140,8 @@
 .startup_prepare-investcost span,
 .startup_prepare-loan--text span,
 .startup_prepare-faq--text span,
+.startup_prepare-help--text span,
+.s_prepare-help-phone--text1 span,
 .startup_recruit_story-text span {
   display: block;
   color: rgba(0, 0, 0, 0.4);
@@ -156,6 +160,10 @@
   margin-left: 80px;
   margin-bottom: 20px;
 }
+.startup_prepare-invest--exception,
+.startup_prepare-loan--caution {
+  margin-bottom: 50px;
+}
 .startup_prepare-invest--exception span,
 .startup_prepare-loan--caution span {
   display: block;
@@ -168,21 +176,29 @@
 /* prepare loan table */
 .startup_prepare-investcost table,
 .startup_prepare-loan table,
-.s_prepare-faq--table table {
+.s_prepare-faq--table table,
+.s_prepare-helpcenter table {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.s_prepare-helpcenter table {
+  margin-top: 10px;
+}
 .startup_prepare-investcost thead,
 .startup_prepare-loan thead,
-.s_prepare-faq--table thead {
+.s_prepare-faq--table thead,
+.s_prepare-helpcenter thead {
   height: 50px;
   background-color: var(--table-color);
 }
 
 .startup_prepare-investcost thead th,
+.s_prepare-helpcenter thead th,
 .startup_prepare-investcost tbody th,
+.s_prepare-helpcenter tbody th,
 .startup_prepare-investcost tbody td,
+.s_prepare-helpcenter tbody td,
 .startup_prepare-investcost tfoot th,
 .startup_prepare-investcost tfoot td,
 .s_prepare-faq--table thead th {
@@ -190,11 +206,11 @@
 }
 .s_prepare-faq--table thead th:first-child,
 .s_prepare-faq--table tbody td:first-child {
-  width: 50px;
   text-align: center;
 }
 .startup_prepare-investcost tbody tr,
 .startup_prepare-investcost tfoot tr,
+.s_prepare-helpcenter tbody tr,
 .s_prepare-faq--table tbody tr {
   height: 40px;
   border-bottom: 1px solid var(--table-color);
@@ -202,12 +218,18 @@
 .faq_q td {
   height: 60px;
   vertical-align: middle;
+  cursor: pointer;
+}
+.faq_q td:last-child {
+  text-align: center;
+  margin-right: 10px;
 }
 .faq_a td {
   vertical-align: middle;
 }
 .faq_a td:last-child {
-  height: 100px;
+  height: 150px;
+  width: 1000px;
 }
 .startup_prepare-investcost tfoot tr {
   border: 1px solid var(--table-color);
@@ -215,17 +237,195 @@
 
 .startup_prepare-loan thead th,
 .startup_prepare-loan tbody th,
-.startup_prepare-loan tbody td {
+.startup_prepare-loan tbody td,
+.s_prepare-helpcenter tbody th,
+.s_prepare-helpcenter tbody td {
   vertical-align: middle;
   text-align: center;
   height: 50px;
   border-bottom: 1px solid var(--table-color);
 }
-
+.s_prepare-helpcenter tbody th {
+  width: 150px;
+}
 .s_prepare-faq--table img {
   width: 20px;
 }
+.s_prepare-help-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.s_prepare-help-phone img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.s_prepare-help-phone--text1 p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.s_prepare-help-phone--text1 h5 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: tomato;
+}
+.s_prepare-help-phone span {
+  margin: 0;
+}
+.s_prepare-help-phone--text2 p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.s_prepare-help-phone--text2 p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
 
+.s_prepare-helpcenter {
+  margin-top: 30px;
+}
+.s_prepare-helpcenter form {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 3px solid (--main-color);
+}
+.s_prepare-helpcenter fieldset {
+  background-color: var(--table-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.s_prepare-helpcenter fieldset label {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.s_prepare-helpcenter fieldset input {
+  margin-right: 20px;
+  border: 1px solid var(--hover-green);
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 300px;
+}
+.s_prepare-helpcenter fieldset button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+/* prepare help online form */
+.s_prepare-help-online {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 50px;
+  border: 3px solid var(--hover-green);
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+.s_prepare-help-online--form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.s_prepare-help-online--form form p:nth-child(4) {
+  margin: 20px 0;
+}
+.s_prepare-help-online--form form h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--hover-green);
+  margin-bottom: 15px;
+}
+.s_prepare-help-online--form fieldset {
+  border: 1px solid var(--table-color);
+  padding: 50px 50px;
+  border-radius: 25px;
+}
+.s_pre-help-input {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.s_pre-help-input label {
+  font-size: 20px;
+  width: 100px;
+}
+.s_pre-help-input input,
+.s_pre-help-input select {
+  width: 150px;
+  height: 30px;
+  padding: 5px 0px 5px 10px;
+}
+.s_pre-help-input select {
+  width: 150px;
+}
+.s_pre-help-input span {
+  margin: 0 10px;
+}
+.s_pre-help-input:nth-child(2) label:nth-child(3) {
+  margin-left: 50px;
+  width: 70px;
+}
+.s_pre-help-input:nth-child(2) input:nth-child(4) {
+  height: 20px;
+  width: 20px;
+}
+.s_pre-help--submit button {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+}
+.s_pre-help--submit button:first-child {
+  background-color: var(--main-color);
+}
+.s_pre-help--submit button:last-child {
+  background-color: var(--fourth-color);
+}
+.s_pre-help--agree {
+  margin-top: 30px;
+}
+.s_pre-help--agree h5 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.s_pre-help--agree h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.s_pre-help--agree p {
+  margin-bottom: 20px;
+}
+.s_pre-help--agree p:nth-child(6) {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.s_pre-help--agree table {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.s_pre-help--agree table tr:first-child {
+  height: 30px;
+  background-color: var(--table-color);
+}
+.s_pre-help--agree table tr th,
+.s_pre-help--agree table tr td {
+  vertical-align: middle;
+}
+.s_pre-help--agree table tr:nth-child(2) {
+  height: 50px;
+}
+.s_pre-help--agree table tr td {
+  width: 300px;
+  text-align: center;
+  border: 1px solid var(--table-color);
+}
 /* recruit & story */
 .startup_story--wrap {
   display: flex;
@@ -330,7 +530,8 @@
 .startup_recruit--wrap {
   margin-bottom: 100px;
 }
-.startup_recruit-present--regist {
+.startup_recruit-present--regist,
+.s_prepare-help-phone {
   border: 3px solid var(--hover-green);
   border-radius: 25px;
   padding: 50px 0px;
@@ -374,16 +575,13 @@
 /* start up modal*/
 
 .present-regist-modal {
-  display: block;
-  position: absolute;
-  top: 20%;
-  padding: 0;
-  z-index: 99;
+  top: 0;
 }
-.present-regist-modal > h3 {
+.present-regist-modal form > h3 {
   color: white;
   padding: 10px 10px;
   margin-bottom: 10px;
+
   text-align: left;
   background-color: var(--hover-green);
 }
@@ -391,6 +589,7 @@
   margin: 20px 20px;
 }
 .present-regist--form form {
+  padding: 20px 10px;
   position: relative;
   padding-bottom: 30px;
 }
@@ -477,9 +676,9 @@
   font-size: 13px;
 }
 .present_recruit-btns {
-  position: absolute;
+  position: relative;
+  text-align: right;
   bottom: 0;
-  right: 20px;
 }
 .present_recruit-btns button {
   padding: 10px 20px;

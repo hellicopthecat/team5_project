@@ -247,39 +247,43 @@ const handleRecruSearchSubmit = (event) => {
     let hiddenLength = recruitTable.querySelectorAll(".hidden").length;
     if (localName !== searchValue) {
       parent[index].classList.add("hidden");
+      parent[0].classList.remove("hidden");
       recruitNoticeSpan.innerText = Math.ceil((7 - hiddenLength) / 2);
       if (searchValue === "") {
         parent[index].classList.remove("hidden");
         hiddenLength = 7;
         recruitNoticeSpan.innerText = hiddenLength;
-      } else {
       }
-      parent[0].classList.remove("hidden");
+    }
+    // else if (recruitProcess[0].value === "1" || searchValue === "") {
+    //   parent[index].classList.remove("hidden");
+    //   hiddenLength = 7;
+    //   recruitNoticeSpan.innerText = hiddenLength;
+    // }
+    // else if (
+    //   (recruitProcess[1].value === "2" &&
+    //     processName !== "접수중" &&
+    //     searchValue === "") ||
+    //   (searchValue === "접수중" && processName !== "접수중")
+    // ) {
+    //   parent[index].classList.add("hidden");
+    //   parent[0].classList.remove("hidden");
+    //   recruitNoticeSpan.innerText = Math.ceil((7 - hiddenLength) / 2);
+    // } else if (
+    //   (recruitProcess[2].value === "3" && processName !== "접수마감") ||
+    //   searchValue === "접수마감"
+    // ) {
+    //   parent[index].classList.add("hidden");
+    //   parent[0].classList.remove("hidden");
+    //   recruitNoticeSpan.innerText = Math.ceil((7 - hiddenLength) / 2);
+    // }
+    else {
       parent[index].classList.remove("hidden");
+      parent[0].classList.remove("hidden");
     }
   });
 };
 recruitSearchBtn.addEventListener("click", handleRecruSearchSubmit);
-
-// const handleRecruSelectSubmit = (event) => {
-//   event.preventDefault();
-//   recruitTableRows.forEach((none, index, parent) => {
-//     console.log(processName);
-//     let hiddenLength = recruitTable.querySelectorAll(".hidden").length;
-//     recruitProcess.forEach((process) => {
-//       if (processName !== process.innerText) {
-//         parent[index].classList.add("hidden");
-//         recruitNoticeSpan.innerText = Math.ceil((7 - hiddenLength) / 2);
-//         if (recruitProcess[0]) {
-//           parent[index].classList.remove("hidden");
-//           hiddenLength = 7;
-//           recruitNoticeSpan.innerText = hiddenLength;
-//         }
-//       }
-//     });
-//   });
-// };
-// recruitSearchBtn.addEventListener("click", handleRecruSelectSubmit);
 
 const handleLocalshow = () => {
   if (recruitKindofCont.value === "2") {
