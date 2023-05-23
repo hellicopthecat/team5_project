@@ -261,7 +261,7 @@
     left: 180px;
     width: 60px;
     height: 60px;
-    filter: drop-shadow(2px 2px 2px #acacac);
+    filter: drop-shadow(2px 2px 2px #868686);
 }
 .products_in_category .new_stamp img{
     position: absolute;
@@ -269,7 +269,7 @@
     left: 180px;
     width: 60px;
     height: 60px;
-    filter: drop-shadow(2px 2px 2px #acacac);
+    filter: drop-shadow(2px 2px 2px #59605e);
 }
 
 /* 마우스 오버시 나타나는 설명 */
