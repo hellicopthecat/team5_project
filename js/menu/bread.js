@@ -52,7 +52,6 @@ const newProductsCheckbox = document.querySelector('#new_products');
 const bestProductsCheckbox = document.querySelector('#best_products');
 
 
-
 // 초기화 함수 호출
 initialize();
 
@@ -76,17 +75,17 @@ function initialize() {
 
 // '모든 빵 보기' 체크박스 변경 시 이벤트 처리 : handleBreadAllCheckboxChange 함수
 function handleBreadAllCheckboxChange() {
-  if (breadAllCheckbox.checked) {
-    if (newProductsCheckbox.checked && !bestProductsCheckbox.checked) {
-      showNewProducts(); // 신제품만 보여주기
+  if (breadAllCheckbox.checked) { // 모든빵보기 체크 상태일 때
+    if (newProductsCheckbox.checked && bestProductsCheckbox.checked) {
+      showNewAndBestProducts(); // 신제품+베스트만 보여주기
     } else if (!newProductsCheckbox.checked && bestProductsCheckbox.checked) {
       showBestProducts(); // 베스트 제품만 보여주기
-    } else if (newProductsCheckbox.checked && bestProductsCheckbox.checked) {
-      showNewAndBestProducts();// 신제품과 베스트 제품만 보여주기
+    } else if (newProductsCheckbox.checked && !bestProductsCheckbox.checked) {
+      showNewProducts();//  신제품만 보여주기
     } else {
       showAllProducts(); // 모든 제품 보여주기
     }
-  } else {
+  } else { // 모든빵보기 체크 해제일 때
     if (!Array.from(otherCheckboxes).some(checkbox => checkbox.checked)) {
       hideAllProducts(); // 모든 제품 숨기기
     }
@@ -94,7 +93,7 @@ function handleBreadAllCheckboxChange() {
   
   otherCheckboxes.forEach(checkbox => {
     checkbox.checked = false;
-  });
+  }); // 그리고 다른 체크박스들을 점검한다. 
 }
 
 
@@ -182,23 +181,30 @@ function filterProducts(checkedCategories) {
 
 
 // '신제품 모아보기' 체크박스 변경 시 이벤트 처리: handleNewProductsCheckboxChange 함수
+
 function handleNewProductsCheckboxChange() {
   if (newProductsCheckbox.checked) {
-    if (bestProductsCheckbox.checked) {
-      showNewAndBestProducts(); // 신제품과 베스트 제품 보여주기
+    if (breadAllCheckbox.checked) {
+      if (bestProductsCheckbox.checked) {
+        showNewAndBestProducts();
+      } else {
+        showNewProducts();
+      }
     } else {
-      showNewProducts(); // 신제품만 보여주기
+      hideAllProducts();
+    }
+  } else if (breadAllCheckbox.checked) {
+    if (bestProductsCheckbox.checked) {
+      showBestProducts();
+    } else {
+      showAllProducts();
     }
   } else {
-    if (breadAllCheckbox.checked) {
-      showAllProducts();
-    } else if (bestProductsCheckbox.checked) {
-      showBestProducts(); // 베스트 제품만 보여주기
-    } else {
-      hideAllProducts(); // 모든 제품 숨기기
-    }
+    hideAllProducts();
   }
 }
+
+
 
 // 신제품만 보여주는 함수: showNewProducts 함수
 function showNewProducts() {
@@ -220,22 +226,27 @@ function showNewProducts() {
 // '베스트 제품 모아보기' 체크박스 변경 시 이벤트 처리: handleBestProductsCheckboxChange 함수
 
 function handleBestProductsCheckboxChange() {
-  if (bestProductsCheckbox.checked) { // 베스트모아보기가 체크상태일 때
-    if (newProductsCheckbox.checked) {  // -신제품모아보기가 체크되면
-      showNewAndBestProducts(); // 신제품과 베스트 제품 보여주기
-    } else { // --그게 아니면
-      showBestProducts(); // 베스트 제품만 보여주기
-    }
-  } else { //베스트모아보기가 체크해제이면
-    if (breadAllCheckbox.checked) { //모든빵보기가 체크상태이면
-      showAllProducts(); // 모든빵보여주기
-    } else if (newProductsCheckbox.checked) { // 베스트모아보기가 체크해제 + 모든빵보기 체크 + 신제품모아보기 체크
-      showNewProducts(); // 신제품만 보여주기
+  if (bestProductsCheckbox.checked) {
+    if (breadAllCheckbox.checked){
+      if (newProductsCheckbox.checked) {
+        showNewAndBestProducts();
+      } else {
+        showBestProducts();
+      }
     } else {
-      hideAllProducts(); // 모든 제품 숨기기
+      hideAllProducts();
     }
+  } else if (breadAllCheckbox.checked){
+    if (newProductsCheckbox.checked){
+      showNewProducts();
+    } else {
+      showAllProducts();
+    }
+  } else {
+    hideAllProducts();
   }
 }
+
 
 
 // 베스트 제품만 보여주는 함수: showBestProducts 함수
@@ -263,7 +274,7 @@ function showNewAndBestProducts() {
   });
 
   productItems.forEach(item => {
-    if (item.classList.contains('new') && item.classList.contains('best')) {
+    if (item.classList.contains('new') || item.classList.contains('best')) {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';

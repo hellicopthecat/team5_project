@@ -83,6 +83,7 @@
     width: 90px;
     height: 90px;
     filter: drop-shadow(3px 3px 3px #753c23);
+    animation: updown-20 2s ease-infinite;
 }
 .zoomlens_icon{
     width: 40px;
@@ -206,14 +207,16 @@ h3{
     align-items: center;
     justify-content: center;
 
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .gotolist_btn:hover{
     background: #0D4633;
     color: #fff;
-    transition: 0.1s ease-in-out;
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
 }
+
 
 /* 페이스북 트위터 공유 버튼 */
 .share_icon_area{
