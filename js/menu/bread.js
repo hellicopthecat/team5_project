@@ -180,30 +180,46 @@ function filterProducts(checkedCategories) {
 
 
 
-// '신제품 모아보기' 체크박스 변경 시 이벤트 처리: handleNewProductsCheckboxChange 함수
+// '신제품 모아보기' 체크박스 변경 시 이벤트 처리
+// : handleNewProductsCheckboxChange 함수
 
-function handleNewProductsCheckboxChange() {
-  if (newProductsCheckbox.checked) {
-    if (breadAllCheckbox.checked) {
-      if (bestProductsCheckbox.checked) {
-        showNewAndBestProducts();
-      } else {
-        showNewProducts();
-      }
-    } else {
-      hideAllProducts();
-    }
-  } else if (breadAllCheckbox.checked) {
-    if (bestProductsCheckbox.checked) {
+// function handleNewProductsCheckboxChange() {
+//   if (newProductsCheckbox.checked) {
+//     if (breadAllCheckbox.checked) {
+//       if (bestProductsCheckbox.checked) {
+//         showNewAndBestProducts();
+//       } else {
+//         showNewProducts();
+//       }
+//     } else {
+//       hideAllProducts();
+//     }
+//   } else if (breadAllCheckbox.checked) {
+//     if (bestProductsCheckbox.checked) {
+//       showBestProducts();
+//     } else {
+//       showAllProducts();
+//     }
+//   } else {
+//     hideAllProducts();
+//   }
+// }
+
+function handleNewProductsCheckboxChange(){
+  if  (breadAllCheckbox.checked){
+    if (newProductsCheckbox.checked && bestProductsCheckbox.checked){
+      showNewAndBestProducts();
+    } else if (newProductsCheckbox.checked && !bestProductsCheckbox.checked) {
+      showNewProducts();
+    } else if (!newProductsCheckbox.checked && bestProductsCheckbox.checked) {
       showBestProducts();
     } else {
       showAllProducts();
     }
   } else {
-    hideAllProducts();
+    handleCheckboxChange();
   }
 }
-
 
 
 // 신제품만 보여주는 함수: showNewProducts 함수
@@ -223,27 +239,44 @@ function showNewProducts() {
 }
 
 
-// '베스트 제품 모아보기' 체크박스 변경 시 이벤트 처리: handleBestProductsCheckboxChange 함수
+// '베스트 제품 모아보기' 체크박스 변경 시 이벤트 처리
+// : handleBestProductsCheckboxChange 함수
 
-function handleBestProductsCheckboxChange() {
-  if (bestProductsCheckbox.checked) {
-    if (breadAllCheckbox.checked){
-      if (newProductsCheckbox.checked) {
-        showNewAndBestProducts();
-      } else {
-        showBestProducts();
-      }
-    } else {
-      hideAllProducts();
-    }
-  } else if (breadAllCheckbox.checked){
-    if (newProductsCheckbox.checked){
+// function handleBestProductsCheckboxChange() {
+//   if (bestProductsCheckbox.checked) {
+//     if (breadAllCheckbox.checked){
+//       if (newProductsCheckbox.checked) {
+//         showNewAndBestProducts();
+//       } else {
+//         showBestProducts();
+//       }
+//     } else {
+//       hideAllProducts();
+//     }
+//   } else if (breadAllCheckbox.checked){
+//     if (newProductsCheckbox.checked){
+//       showNewProducts();
+//     } else {
+//       showAllProducts();
+//     }
+//   } else {
+//     hideAllProducts();
+//   }
+// }
+
+function handleBestProductsCheckboxChange(){
+  if (breadAllCheckbox.checked){
+    if (bestProductsCheckbox.checked && newProductsCheckbox.checked) {
+      showNewAndBestProducts();
+    } else if (bestProductsCheckbox.checked && !newProductsCheckbox.checked) {
+      showBestProducts();
+    } else if (!bestProductsCheckbox.checked && newProductsCheckbox.checked) {
       showNewProducts();
     } else {
       showAllProducts();
     }
   } else {
-    hideAllProducts();
+    handleCheckboxChange();
   }
 }
 
@@ -274,10 +307,14 @@ function showNewAndBestProducts() {
   });
 
   productItems.forEach(item => {
-    if (item.classList.contains('new') || item.classList.contains('best')) {
+    if (item.classList.contains('new') || item.classList.contains('best')) { //신제품과 베스트 둘 다 보여주기 위해서는 &&가 아니라 || 를 써야 하는것이었다!!
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
     }
   });
 }
+
+
+
+
