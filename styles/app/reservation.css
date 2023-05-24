@@ -91,19 +91,21 @@ background: #dadfcb;
 }
 .res_section3{
     background-color: #fff;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 50px;
-    border: 1px solid rgb(208,208,208);
+    border: 1px solid #004e42;
+    border-radius: 20px; 
 }
 .res_se3_wrap{
-    
+    padding-top: 20px;
     width: 90%;
     margin: 0 auto;
 }
 .res_se3_check_inpo {
    
     background: #dadfcb;
+    border-radius: 20px;
 }
 .res_se3_check_inpo ul{
     display: flex;
@@ -111,7 +113,7 @@ background: #dadfcb;
     justify-content: space-around;
 }
 .res_se3_check_inpo li{
-    padding: 15px;
+    padding: 20px;
 }
 .res_se3_goods_title{
     position: relative;
@@ -130,6 +132,7 @@ background: #dadfcb;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
 }
 .res_se3_goods li{
     font-size: 14px;

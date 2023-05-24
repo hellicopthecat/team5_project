@@ -18,9 +18,10 @@
 }
 .eventpage_head-banner h2 {
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 10%;
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: 600;
   color: white;
 }
 /* event page */

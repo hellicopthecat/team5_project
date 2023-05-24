@@ -1,0 +1,215 @@
+.app_main_img{
+    width: 100%;
+    height: 460px;
+    background: url("../../img/app/app.main/app_visual.jpg") no-repeat center;
+}
+.app_down_wrap{
+    width: 100%;
+    background: #004e42;
+    margin-bottom: 50px;
+}
+.app_down{
+    position: relative;
+    color: #fff;
+    padding: 50px;
+    margin: 0 auto;
+    
+    width: 900px;
+    background: url("../../img/app/app.main/app_btn_qr.png") no-repeat 200px;;
+    background-position-x: 80%;
+    background-position-y: 60%;
+}
+.app_logo{
+    display: inline-block;
+}
+.app_qrcode{
+    height: 300px;
+    margin-left: 20px;
+
+}
+.app_title{
+    position: absolute;
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+.material-symbols-outlined{
+    position: relative;
+    top: 5px;
+}
+.app_cont_wrap{
+    width: 1100px;
+margin: 0 auto;
+}
+.app_cont_02_wrap{
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+.app_cont_02{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 412px;
+     height: 43px;
+    background: url(../../img/app/app.main/app_tit_01.png) no-repeat;
+    background-size: 100% auto;
+}
+.app_life{
+    position: relative;
+    left: 1000px;
+    width: 897px;
+    height: 426px;
+    background: url(../../img/app/app.main/app_cont_01.png) no-repeat;
+    margin: 40px auto 0;
+}
+.app_life_box{
+position: relative;
+
+}
+.app_cont_02_wrap{
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+.app_service_wrap{
+    overflow: hidden;
+}
+.app_cont_03_wrap{
+
+    margin-bottom: 200px;
+}
+.app_cont_03{
+    margin:  0 auto;
+    margin-bottom: 50px;
+    width: 524px;
+    height: 42px;
+    background: url(../../img/app/app.main/\ .png) no-repeat;
+    background-size: 100% auto;
+}
+.app_service_01_img{
+    background: url(../../img/app/app.main/app_cont_02_01.png);
+    background-color: #fff;
+    background-position: right -15px top 0;
+    background-repeat: no-repeat;
+}
+.app_service_02_img{
+    background: url(../../img/app/app.main/app_cont_02_02.png);
+    background-color: #fff;
+    background-position: right -15px top 0;
+    background-repeat: no-repeat;
+}
+.app_service_03_img{
+    background: url(../../img/app/app.main/app_cont_02_03.png);
+    background-color: #fff;
+    background-position: right -15px top 0;
+    background-repeat: no-repeat;
+}
+.app_service_04_img{
+    background: url(../../img/app/app.main/app_cont_02_04.png);
+    background-color: #fff;
+    background-position: right -15px top 0;
+    background-repeat: no-repeat;
+}
+.app_service_01_03{
+    position: relative;
+    left: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;  
+    padding: 20px 260px 20px 40px;
+    font-size: 19px;
+}
+.app_service_02_04{
+    position: relative;
+    right: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;  
+    padding: 20px 260px 20px 40px;
+    font-size: 19px;
+}
+.app_service_num{
+    color: #004e42;
+    font-weight: 900;
+}
+.app_num_bg{
+border-radius: 20px;
+padding: 5px;
+color: #fff;
+background: #004e42;
+}
+.app_service_writing{
+font-size: 17px;
+line-height: 1.6;
+}
+.app_service_writing strong{
+ color: #ff6900;
+}
+.app_cont_04_title p{
+margin-top: 20px;
+text-align: center;
+font-size: 20px;
+color: #5c3327;
+font-weight: 600;
+}
+.app_cont_04{
+margin: 0 auto;
+
+width: 524px;
+height: 42px;
+background: url(../../img/app/app.main/app_tit_03.png) no-repeat;
+background-size: 100% auto;
+}
+.app_men_wrap{
+    margin-top: 50px;
+}
+.app_men{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+    
+}
+.app_men li{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_men_title_01{
+    color: #fff;
+   
+    background-color:#cd9359;
+    width: 100px;
+    height: 164px;
+    text-align: center;
+    position: relative; 
+  
+}
+.app_men_title_01 span{
+ position: absolute;
+ top: 30%;
+ left: 40%;
+ line-height: 30px;
+}
+.app_men_bg{
+    background: #fff;
+    width: 100%;
+}
+.app_men_cont{
+display: inline-block;
+}
+  
+  
+   
+  
+
+   
+

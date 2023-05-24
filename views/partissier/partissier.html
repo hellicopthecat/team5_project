@@ -76,8 +76,12 @@
                     베이커리 산업에 필요한 전문 인력 양성을 위하여 이론 및
                     매뉴얼 중심의 실습교육을 진행 (정기교육)
                   </p>
-                  <button href="">채용공고</button>
-                  <button href="">자세히 보기</button>
+                  <button id="foodbill-notice--btn" href="#none">
+                    채용공고
+                  </button>
+                  <button id="foodbill-detail--btn" href="#none">
+                    자세히 보기
+                  </button>
                 </li>
                 <li>
                   <img src="../../img/partssier/partissier_9.png" alt="" />
@@ -85,23 +89,30 @@
                     베이커리 산업에 필요한 전문 인력 양성을 위하여 현장 실무
                     중심의 실습 교육을 진행 (수시교육)
                   </p>
-                  <button href="">채용공고</button>
-                  <button href="">자세히 보기</button>
+                  <button id="techcenter-notice--btn" href="#none">
+                    채용공고
+                  </button>
+                  <button id="techcenter-detail--btn" href="#none">
+                    자세히 보기
+                  </button>
                 </li>
               </ul>
             </div>
 
-            <div class="new-partissier__foodbill hidden">
+            <div
+              id="new-partissier__foodbill"
+              class="new-partissier__foodbill hidden"
+            >
               <div class="partissier__foodbill-list">
                 <h3>푸드빌</h3>
-                <ul>
-                  <li><a href="">CJ푸드빌 교육소개</a></li>
-                  <li><a href="">채용 및 입사지원 안내</a></li>
-                  <li><a href="">교육과정</a></li>
+                <ul id="parti__foodbill-list">
+                  <li>CJ푸드빌 교육소개</li>
+                  <li>채용 및 입사지원 안내</li>
+                  <li>교육과정</li>
                 </ul>
               </div>
 
-              <div class="part_foodbill-intro-edu">
+              <div id="fbill-edu" class="part_foodbill-intro-edu">
                 <h4>CJ푸드빌 교육소개</h4>
                 <p>
                   베이커리 산업에 필요한 점포기사를 양성하기 위하여 일반
@@ -120,10 +131,13 @@
                   기술인력을 배출하고 있으며 다양한 직무경험 기회를 제공하여
                   개인 역량개발 지원에도 박차를 가하고 있습니다.
                 </p>
-                <a href="">채용공고 바로가기</a>
+                <button>채용공고 바로가기</button>
               </div>
 
-              <div class="part_foodbill-intro-recruit hidden">
+              <div
+                id="fbill-recruit"
+                class="part_foodbill-intro-recruit hidden"
+              >
                 <div class="part_intro-recruit-text">
                   <h4>직무소개</h4>
                   <p>1. 신규 가맹 점포 오픈지원</p>
@@ -165,7 +179,10 @@
                 </div>
               </div>
 
-              <div class="part_foodbill-curriculum hidden">
+              <div
+                id="fbill-curriculum"
+                class="part_foodbill-curriculum hidden"
+              >
                 <p>&#8251; 교육 주는 상황에 따라 별경될 수 있음</p>
                 <table>
                   <tr>
@@ -188,10 +205,13 @@
               </div>
             </div>
 
-            <div class="new-partissier__techcenter hidden">
-              <div class="partissier__tech-list hidden">
+            <div
+              id="new-partissier__techcenter"
+              class="new-partissier__techcenter hidden"
+            >
+              <div class="partissier__tech-list">
                 <h3>테크니컬 센터</h3>
-                <ul>
+                <ul id="parti__tech-list">
                   <li>센터 소개</li>
                   <li>교육 과정</li>
                   <li>채용 절차</li>
@@ -199,7 +219,7 @@
                 </ul>
               </div>
 
-              <div class="partissier__techcenter-intro hidden">
+              <div id="techcenter-info" class="partissier__techcenter-intro">
                 <h3 class="hidden">센터소개</h3>
 
                 <div class="part_tech-intro-text">
@@ -236,7 +256,10 @@
                 <a href="">채용공고 바로가기</a>
               </div>
 
-              <div class="partssier__techcenter-curricul hidden">
+              <div
+                id="techcenter-curriculum"
+                class="partssier__techcenter-curricul hidden"
+              >
                 <h4>테크니컬 센터 소개 교육과정</h4>
                 <p>교육과정 : 뚜레쥬르 생산기사 양성과정</p>
                 <p>
@@ -256,12 +279,18 @@
                 </p>
               </div>
 
-              <div class="partssier__recruit-process hidden">
+              <div
+                id="techcenter-recruit-process"
+                class="partssier__recruit-process hidden"
+              >
                 <h4>채용절차</h4>
                 <img src="../../img/partssier/partissier_1.png" alt="" />
               </div>
 
-              <div class="partssier__recruit-faq hidden">
+              <div
+                id="techcenter-recruit-faq"
+                class="partssier__recruit-faq hidden"
+              >
                 <h3>테크니컬 센터 교육관련 연락처</h3>
                 <table class="center-info">
                   <tr>
@@ -438,6 +467,7 @@
                 </table>
               </div>
             </div>
+
             <div
               id="experienced-partissier-body-cont"
               class="experienced-partissier-body-cont hidden"
@@ -656,28 +686,29 @@
               </p>
             </div>
           </div>
-          <form action="">
+          <form method="get">
             <fieldset>
               <legend class="hidden">기사 채용공고 검색</legend>
               <label for="recruit_process">진행상태</label>
-              <select name="" id="recruit_process">
+              <select name="process" id="recruit_process">
                 <option value="1">전체</option>
-                <option value="2">접수중/접수마감</option>
-                <option value="3">서류심사</option>
-                <option value="4">채용완료</option>
+                <option value="2">접수중</option>
+                <option value="3">접수마감</option>
+                <option value="4">서류심사</option>
+                <option value="5">채용완료</option>
               </select>
 
               <label for="recruit_kindof">채용구분</label>
-              <select name="" id="recruit_kindof">
+              <select name="kindof" id="recruit_kindof">
                 <option value="1">채용구분</option>
                 <option value="2">CJ푸드빌</option>
                 <option value="3">테크니컬센터</option>
               </select>
 
               <label for="recruit_local">지역</label>
-              <select name="" id="recruit_local">
+              <select name="local" id="recruit_local">
                 <option value="">지역</option>
-                <option class="hidden" value="1"></option>
+                <option class="hidden" value="1">서울훈련원</option>
                 <option class="hidden" value="a">강원</option>
                 <option class="hidden" value="b">광주</option>
                 <option class="hidden" value="c">대구</option>
@@ -702,12 +733,14 @@
 
               <label for="recruit_search">제목내용</label>
               <input id="recruit_search" type="text" />
-              <button type="button">검색</button>
+              <button id="recruit_search-btn" type="submit">검색</button>
             </fieldset>
           </form>
           <div class="recruit-notice--table">
-            <h4>총 <span>9개</span> 글이 등록되었습니다.</h4>
-            <table>
+            <h4>
+              총 <span id="recruit-notice--span">7</span>개 글이 등록되었습니다.
+            </h4>
+            <table id="recruit-notice--table-cont">
               <tr>
                 <th>번호</th>
                 <th>구분</th>
@@ -727,7 +760,7 @@
                   </a>
                 </td>
                 <td>2023.04.24 ~ 2023.05.21</td>
-                <td>접수중</td>
+                <td>접수마감</td>
               </tr>
               <tr>
                 <td>6</td>
