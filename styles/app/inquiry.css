@@ -41,7 +41,7 @@
 }
 .qur_quck_manu .qur_quck_manu_check{
     padding: 20px;
-    margin-right: 5px;
+    margin-right: 25px;
     border-radius: 20px;
     background-color:  #004e42;
     color: #FFF ;
@@ -202,6 +202,24 @@
     font-size: 20px;
     border-radius: 25px;
   }
+  .qur_calder{
+    width: 200px;
+    height: 70%;
+    margin: 10px;
+    border: 0;
+    padding-left:10px ;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  .qur_time{
+    width: 200px;
+    height: 70%;
+    margin: 10px;
+    border: 0;
+    padding-left:10px ;
+    font-size: 20px;
+    border-radius: 25px;
+  }
   .qur_detail{
     padding: 25px;
     border-radius: 20px;
@@ -210,6 +228,33 @@
     height: 280px;
     width: 100%;
     font-size: 20px;
+  }
+  .qur_address{
+    width: 300px;
+    height: 70%;
+    margin: 10px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  .qur_address_detail{
+    width: 300px;
+    height: 70%;
+    margin: 10px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  .qur_address_btn{
+    width: 100px;
+    height: 70%;
+    margin: 10px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #f9f9f9;
+    background: #007061;
   }
   .qur_list_bottom{
     border-bottom-left-radius: 20px;
@@ -239,3 +284,4 @@
     font-size: 16px;
     background-color: #f9f9f9;
   }
+
