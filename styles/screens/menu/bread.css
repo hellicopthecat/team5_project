@@ -87,6 +87,7 @@
 .menu_product_wrap{
     width: 1100px;
     margin: auto;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -107,7 +108,7 @@
     padding: 7px; 
 }
 .selector_tab a{
-    background: url(../../../img/menu/arrowD.png) no-repeat right;
+    background: url(../../../img/icons/arrowD.png) no-repeat right;
     display: block;
     height: 100%;
     font-size: 13px;
@@ -116,9 +117,6 @@
     letter-spacing: -0.1em;
 }
 
-/* .rotate_arrow {
-    transform: rotate(180deg);
-} */
 .selector_select{
     position: absolute;
     width: 100%;
@@ -295,7 +293,7 @@
 }
 .view_more{
     width: 135px;
-    background: url(../../../img/menu/rolling_pin.png) no-repeat center; 
+    background: url(../../../img/icons/rolling_pin.png) no-repeat center; 
     background-size: contain;
     display: flex;
     justify-content: center;

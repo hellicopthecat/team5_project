@@ -22,16 +22,16 @@ viewNutris.addEventListener("click",handleViewNutris)
 
 
 
-// 신제품 모아보기, 베스트 모아보기 토글 
+// 신제품 모아보기, 베스트 모아보기 토글 / 화살표 변경
 
 $('.selector_tab').click(function(){
   $('.selector_select').slideToggle("fast");
 
   var arrowImage = $('.selector_tab a').css('background-image');
   if (arrowImage.includes('arrowD.png')) {
-      $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowU.png)');
+      $('.selector_tab a').css('background-image', 'url(../../../img/icons/arrowU.png)');
   } else {
-      $('.selector_tab a').css('background-image', 'url(../../../img/menu/arrowD.png)');
+      $('.selector_tab a').css('background-image', 'url(../../../img/icons/arrowD.png)');
   }
 });
 
@@ -126,6 +126,9 @@ function showAllProducts() {
   productItems.forEach(item => {
     item.style.display = 'block';
   });
+
+  newProductsCheckbox.checked = false; // 신제품 모아보기 체크 해제
+  bestProductsCheckbox.checked = false; // 베스트 제품 모아보기 체크 해제
 }
 
 // 모든 제품 숨기기 함수 실행 : hideAllProducts 함수 
@@ -138,6 +141,9 @@ function hideAllProducts() {
   productItems.forEach(item => {
     item.style.display = 'none';
   });
+
+  newProductsCheckbox.checked = false; // 신제품 모아보기 체크 해제
+  bestProductsCheckbox.checked = false; // 베스트 제품 모아보기 체크 해제
 }
 
 // 카테고리별 제품 필터링 : filterProducts 함수 
