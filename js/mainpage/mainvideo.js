@@ -27,6 +27,23 @@ function handlePause() {
   pauseVideo.classList.add("hidden");
 }
 
+function handleNext() {
+  if (currentVideo >= bakeryVideos) {
+    handlePause();
+    currentVideo = 0;
+  } else {
+    handlePause();
+    currentVideo + 1;
+  }
+  bakeryVideoList.style.transition = `ease-in-out 1s`;
+  bakeryVideoList.style.transform = `translateX(-${
+    VIDEO_WIDTH * currentVideo
+  }px)`;
+
+  currentVideo++;
+  videoChangeRedDot();
+}
+
 function handlePrev() {
   if (currentVideo === 0) {
     currentVideo = bakeryVideos;
@@ -41,33 +58,24 @@ function handlePrev() {
   bakeryVideoList.style.transform = `translateX(-${
     VIDEO_WIDTH * (currentVideo - 1)
   }px)`;
+
+  videoChangeRedDot();
 }
 
-function handleNext() {
-  if (currentVideo >= bakeryVideos) {
-    handlePause();
-    currentVideo = 0;
-  } else {
-    handlePause();
-    currentVideo + 1;
-  }
-  bakeryVideoList.style.transition = `ease-in-out 1s`;
-  bakeryVideoList.style.transform = `translateX(-${
-    VIDEO_WIDTH * currentVideo
-  }px)`;
-  currentVideo++;
-}
 /**Video Nav */
+
 const videoNavDots = videoDots.querySelectorAll("a");
-videoNavDots.forEach((element) => {
+videoNavDots[0].style.backgroundColor = `tomato`;
+videoNavDots.forEach((element, index) => {
   function handleNav(event) {
     handlePause();
     event.preventDefault();
-    currentVideo = parseInt(element.text);
+    currentVideo = index + 1;
     bakeryVideoList.style.transition = `ease-in-out 1s`;
     bakeryVideoList.style.transform = `translateX(-${
-      VIDEO_WIDTH * (currentVideo - 1)
+      VIDEO_WIDTH * currentVideo
     }px)`;
+    videoChangeRedDot();
   }
   element.addEventListener("click", handleNav);
 });
@@ -75,3 +83,17 @@ videoPrev.addEventListener("click", handlePrev);
 videoNext.addEventListener("click", handleNext);
 playVideo.addEventListener("click", handlePlay);
 pauseVideo.addEventListener("click", handlePause);
+
+function videoChangeRedDot() {
+  const videoNavDots = videoDots.querySelectorAll("a");
+  videoNavDots.forEach((element, index) => {
+    if (index === currentVideo) {
+      videoNavDots[index - 1].style.backgroundColor = "tomato";
+      videoNavDots[index].style.backgroundColor = "white";
+    } else if (index === videoNavDots.length - 1 && index + 1 <= currentVideo) {
+      videoNavDots[index].style.backgroundColor = `tomato`;
+    } else {
+      videoNavDots[index].style.backgroundColor = "white";
+    }
+  });
+}
