@@ -109,6 +109,7 @@
   position: absolute;
   bottom: 0;
   left: 100px;
+  z-index: 99;
 }
 .btn_dot ul {
   display: flex;
@@ -126,10 +127,8 @@
   z-index: 1;
   color: black;
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #009f89;
   padding: 20px 0;
-
-  cursor: pointer;
 }
 #recommend_menu__list > li > span {
   font-size: 30px;

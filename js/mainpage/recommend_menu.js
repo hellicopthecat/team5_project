@@ -329,7 +329,6 @@ function recommAppearence(listIndex) {
 
 recommWrapBtn.forEach((wrapBtn, liIndex) => {
   const handelRecommClick = (event) => {
-    console.log(liIndex);
     if (liIndex === 0) {
       recommAppearence(liIndex);
     }

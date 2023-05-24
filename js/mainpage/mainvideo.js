@@ -70,11 +70,12 @@ videoNavDots.forEach((element, index) => {
   function handleNav(event) {
     handlePause();
     event.preventDefault();
-    currentVideo = index + 1;
+    currentVideo = index;
     bakeryVideoList.style.transition = `ease-in-out 1s`;
     bakeryVideoList.style.transform = `translateX(-${
       VIDEO_WIDTH * currentVideo
     }px)`;
+    currentVideo++;
     videoChangeRedDot();
   }
   element.addEventListener("click", handleNav);
