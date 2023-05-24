@@ -10,7 +10,8 @@
 }
 .page_title span{
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.1em;
     color: #0D4633;  
     padding-left: 15px
 }
@@ -246,7 +247,7 @@
     font-weight: 600;
 
 }
-.products_in_category img{
+.products_in_category img:first-child{
     width: 260px;
     height: 260px;
     border-radius: 20px;
@@ -275,7 +276,7 @@
 .product_description_wrap{
     width: 260px;
     height: 260px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     position: absolute;
     top: 0;

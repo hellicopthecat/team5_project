@@ -9,7 +9,8 @@
 }
 .page_title span{
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.1em;
     color: #0D4633;  
     padding-left: 15px
 }
@@ -77,13 +78,13 @@
     cursor: pointer;
 }
 
-.best_stamp img{
+.stamp img{
     position: absolute;
     top: 0px;
     left: 10px;
     width: 90px;
     height: 90px;
-    filter: drop-shadow(3px 3px 3px #753c23);
+    filter: drop-shadow(3px 3px 3px #6b6b6b);
     animation: updown-20 2s ease-infinite;
 }
 .zoomlens_icon{
