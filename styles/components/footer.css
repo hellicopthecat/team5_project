@@ -3,10 +3,9 @@
 
   z-index: 1;
   background: #2a2a2a;
-  color: #fff;
   width: 100%;
   height: 400px;
-  padding-top: 30px;
+  padding-top: 50px;
   margin: auto;
   font-size: 13px;
   font-weight: 500;
@@ -16,11 +15,15 @@
   width: 800px;
   height: 50px;
   margin: auto;
+  color: #fff;
 }
+
 .policy {
   width: 900px;
   height: 50px;
   margin: auto;
+  margin-bottom: 20px;
+  color: #fff;
 }
 .policy .private{
   color: chocolate;
@@ -35,24 +38,23 @@
   display: flex;
   justify-content: space-between;
 }
-.address {
+.company_info {
   width: 800px;
   height: 90px;
   line-height: 1.5em;
   margin: auto;
   margin-bottom: 40px;
+  color: #b0b0b0;
 }
-.address p,
-.address address {
+.company_info p{
   text-align: center;
+  margin-bottom: 2px;
 }
-.address p span {
+.company_info p span {
   justify-content: space-between;
   margin-right: 10px;
 }
-.copyright {
-  margin-top: 10px;
-}
+
 .ftc_confirm{
   position: relative;
   
@@ -64,6 +66,11 @@
 .hosting{
   padding-left: 80px;
 }
-.business_info{
+
+.company_info .business_info{
   margin-bottom: 15px; 
+}
+
+.company_info .copyright {
+  font-size: 11px;
 }
