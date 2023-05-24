@@ -56,7 +56,7 @@ const recommArray = [
     cake: [
       {
         alt: "카라멜 부케",
-        src: "./img/menu/cake/caramel_bouquet.jpg",
+        src: "./img/menu/cake/caramel_bouquet.png",
         description:
           "달콤한 돌세 카라멜 가나슈와 봄브 버터 크림을 샌드하고 토피 카라멜 크림으로 아이싱된 조화 꽃 케이크",
       },
@@ -68,7 +68,7 @@ const recommArray = [
       },
       {
         alt: "베리 플라워",
-        src: "./img/menu/cake/berry_flower.jpg",
+        src: "./img/menu/cake/berry_flower.png",
         description:
           "핑크빛 베리 시트에 베리 버터 크림과 스트로베리 & 라즈베리 콤포트로 상큼함을 더한 2단 케이크",
       },
@@ -120,7 +120,7 @@ const recommArray = [
       },
       {
         alt: "통밀 튜나샌드위치",
-        src: "./img/menu/deli/tuna_sandwitch.png",
+        src: "./img/menu/deli/tuna_sandwitch.jpg",
         description:
           "건강해진 통밀빵 속에 신선한 야채와 참치샐러드가 더해져 깊은 풍미와 아삭한 식감이 느껴지는 베스트조합",
       },
@@ -205,40 +205,7 @@ const recommArray = [
       },
     ],
   },
-  {
-    drink: [
-      {
-        alt: "딸기 밀크티",
-        src: "./img/menu/drink/str_milktea.jpg",
-        description:
-          "찐하고 달콤새콤한 딸기 베이스가 깊고 진한 로얄 밀크티를 만나 남녀노소 좋아하는 딸기 밀크티",
-      },
-      {
-        alt: "콜드브루",
-        src: "./img/menu/drink/coldbrew.jpg",
-        description:
-          "케냐산 고품질 원두로 추출한 콜드부르 원액을 이용하여 만든 음료로, 좋은 발란스와 향긋한 풍미, 청량감 있는 피니쉬가 인상적인 메뉴 총 카페인 함량 165mg, 고카페인여부 O, 어린이, 임산부, 카페인 민감자는 섭취에 주의해주시기 바랍니다.",
-      },
-      {
-        alt: "아메리카노",
-        src: "./img/menu/drink/americano.jpg",
-        description:
-          "뚜레쥬르만의 스페셜 고급원두를 적절한 비율로 블렌드 하여 커피 본연의 맛과 향을 살린 따뜻한 아메리카노 음료 고카페인여부 O, 어린이, 임산부, 카페인 민감자는 섭취에 주의해주시기 바랍니다.",
-      },
-      {
-        alt: "아이스 아메리카노",
-        src: "./img/menu/drink/ice_americano.jpg",
-        description:
-          "뚜레쥬르만의 스페셜 고급원두를 적절한 비율로 블렌드 하여 커피 본연의 맛과 향을 살린 따뜻한 아메리카노 음료 고카페인여부 O, 어린이, 임산부, 카페인 민감자는 섭취에 주의해주시기 바랍니다.",
-      },
-      {
-        alt: "사르르 밀크 쉐이크",
-        src: "./img/menu/drink/srr_milkshake.jpg",
-        description:
-          "빵과 잘 어울리는 부드럽고 고소한 우유쉐이크. 깔끔한 뒷맛과 부담스럽지 않은 바디감으로 남녀노소 모두 선호하는 제품입니다.",
-      },
-    ],
-  },
+
   {
     gift: [
       {
@@ -301,125 +268,240 @@ const recommArray = [
 
 /** handle recomm slide */
 const recommMenuList = document.getElementById("recommend_menu__list");
-const recommWrapBtn = recommMenuList.querySelectorAll("li > a");
-const recommStuffList = recommMenuList.querySelectorAll(".recomm_cont");
-const recommStuffCont = document.querySelectorAll(".recomm_cont_list ul");
+const recommWrapBtn = recommMenuList.querySelectorAll(
+  "#recommend_menu__list > li>a>img"
+);
+const recommWrapBtnImg = document.querySelectorAll(".recommend_menu--more img");
+const recommStuffCont = document.querySelectorAll(".recomm_cont");
+const recommListCont = document.querySelectorAll(".recomm_cont_list");
+const recommStuffListCont = document.querySelectorAll(".recomm_cont_list  ul");
 
 /** handle recomm control  */
 const recommImg = recommMenuList.querySelectorAll(".recomm_cont img");
 const recommLeft = recommMenuList.querySelectorAll(".recomm_left");
 const recommRight = recommMenuList.querySelectorAll(".recomm_right");
 
+let activeIndex = null;
 /** handle recomm slide */
-recommWrapBtn.forEach((btn) => {
-  function handleRecommClick(event) {
-    event.preventDefault();
-    recommStuffList.forEach((each) => {
-      if (
-        each.classList.contains("slideup_active") &&
-        each.parentNode === btn.parentNode
-      ) {
-        each.classList.remove("slideup_active");
-        each.classList.remove("hidden");
-        each.animate(
-          [
-            {transform: "translateY(-5vw)", opacity: "0", easing: "ease-in"},
-            {transform: "translateY(0vw)", opacity: "1", easing: "ease-out"},
-          ],
-          700
-        );
-      } else {
-        each.animate(
-          [
-            {transform: "translateY(0vw)", easing: "ease-in"},
-            {transform: "translateY(-6vw)", opacity: "0", easing: "ease-out"},
-          ],
-          700
-        );
-        setTimeout(() => {
-          each.classList.add("slideup_active");
-          each.classList.add("hidden");
-        }, 700);
-      }
-    });
+function recommAppearence(listIndex) {
+  if (recommStuffCont[listIndex].classList.contains("hidden")) {
+    if (activeIndex !== null) {
+      recommStuffCont[activeIndex].animate(
+        [
+          {transform: "translateY(0px)", opacity: 1, easing: "ease-in"},
+          {transform: "translateY(-5px)", opacity: 0, easing: "ease-out"},
+        ],
+        1000
+      );
+      setTimeout(() => {
+        recommStuffCont[activeIndex].classList.add("hidden");
+      }, 300);
+      recommWrapBtnImg[activeIndex].style.transform = "rotateZ(0deg)";
+      recommWrapBtnImg[activeIndex].style.transition = "0.7s ease-in-out";
+    }
+    recommStuffCont[listIndex].animate(
+      [
+        {transform: "translateY(-5px)", opacity: 0, easing: "ease-in"},
+        {transform: "translateY(0px)", opacity: 1, easing: "ease-out"},
+      ],
+      1000
+    );
+    recommStuffCont[listIndex].classList.remove("hidden");
+    recommWrapBtnImg[listIndex].style.transform = "rotateZ(180deg)";
+    recommWrapBtnImg[listIndex].style.transition = "0.7s ease-in-out";
+    activeIndex = listIndex;
+  } else {
+    recommStuffCont[listIndex].animate(
+      [
+        {transform: "translateY(-5px)", opacity: 0, easing: "ease-in"},
+        {transform: "translateY(0px)", opacity: 1, easing: "ease-out"},
+      ],
+      1000
+    );
+    setTimeout(() => {
+      recommStuffCont[listIndex].classList.add("hidden");
+    }, 300);
+    recommWrapBtnImg[listIndex].style.transform = "rotateZ(0deg)";
+    recommWrapBtnImg[listIndex].style.transition = "0.7s ease-in-out";
+    activeIndex = null;
   }
+}
 
-  btn.addEventListener("click", handleRecommClick);
+recommWrapBtn.forEach((wrapBtn, liIndex) => {
+  const handelRecommClick = (event) => {
+    if (liIndex === 0) {
+      recommAppearence(liIndex);
+    }
+    if (liIndex === 1) {
+      recommAppearence(liIndex);
+    }
+    if (liIndex === 2) {
+      recommAppearence(liIndex);
+    }
+    if (liIndex === 3) {
+      recommAppearence(liIndex);
+    }
+    if (liIndex === 4) {
+      recommAppearence(liIndex);
+    }
+  };
+  wrapBtn.addEventListener("click", handelRecommClick);
 });
 
-// console.log(recommArray[0].bread);
-let MENUIMG_WIDTH = 400;
+const BREAD_LENGH = recommArray[0].bread.length;
+const CAKE_LENGH = recommArray[1].cake.length;
+const DELI_LENGH = recommArray[2].deli.length;
+const DESSERT_LENGH = recommArray[3].dessert.length;
+const GIFT_LENGH = recommArray[4].gift.length;
+const MENUIMG_WIDTH = 400;
 let currentImg = 0;
 
-for (let btnNum = 0; btnNum < recommStuffCont.length; btnNum++) {
-  const handleRecomLbtn = (event) => {
+recommLeft.forEach((lBtn, index) => {
+  const handleRecommLbtn = (event) => {
+    console.log(index);
     event.preventDefault();
-
     if (currentImg === 0) {
-      for (i = 0; i < recommStuffCont.length; i++) {
-        currentImg = recommStuffCont[i].children.length;
-      }
+      currentImg = BREAD_LENGH;
     } else {
       currentImg--;
     }
+    handleAppend(index);
 
-    recommStuffCont.item([0]).style.transition = `ease-in-out 1s`;
-    recommStuffCont.item([0]).style.transform = `translateX(-${
+    recommStuffListCont.item(index).style.transition = `ease-in-out 1s`;
+    recommStuffListCont.item(index).style.transform = `translateX(-${
       MENUIMG_WIDTH * (currentImg - 1)
     }px)`;
-
-    if (recommStuffCont[btnNum].children.length <= 4) {
-      recommStuffCont[0].firstElementChild.remove();
-    }
-
-    createList(btnNum);
   };
-  recommLeft.item([btnNum]).addEventListener("click", handleRecomLbtn);
-}
+  lBtn.addEventListener("click", handleRecommLbtn);
+});
 
-console.log(recommArray[0].bread.length);
-const createList = (num) => {
+recommRight.forEach((rBtn, index) => {
+  const handleRecommRbtn = (event) => {
+    console.log(index);
+    event.preventDefault();
+    if (currentImg === recommStuffListCont[index].children.length) {
+      currentImg = 0;
+    } else {
+      currentImg++;
+    }
+    handlePrepend(index);
+
+    recommStuffListCont.item(index).style.transition = `ease-in-out 1s`;
+    recommStuffListCont.item(index).style.transform = `translateX(-${
+      MENUIMG_WIDTH * currentImg
+    }px)`;
+  };
+  rBtn.addEventListener("click", handleRecommRbtn);
+});
+
+const appendCreateList = (product, num) => {
   const li = document.createElement("li");
   const img = document.createElement("img");
   const span = document.createElement("span");
   const p = document.createElement("p");
+
+  img.src = product.src;
+  img.alt = product.alt;
+  span.innerText = product.alt;
+  p.innerText = product.description;
+
   li.append(img);
   li.append(span);
   li.append(p);
-  if (num === 0) {
-    for (let i = 0; i < recommArray[num].bread.length; i++) {
-      img.setAttribute("src", recommArray[num].bread[i].src);
-      img.setAttribute("alt", recommArray[num].bread[i].alt);
-      span.innerText = recommArray[num].bread[i].alt;
-      p.innerText = recommArray[num].bread[i].description;
+
+  recommStuffListCont[num].appendChild(li);
+};
+const prependCreateList = (product, num) => {
+  const li = document.createElement("li");
+  const img = document.createElement("img");
+  const span = document.createElement("span");
+  const p = document.createElement("p");
+
+  img.src = product.src;
+  img.alt = product.alt;
+  span.innerText = product.alt;
+  p.innerText = product.description;
+
+  li.append(img);
+  li.append(span);
+  li.append(p);
+
+  recommStuffListCont[num].prepend(li);
+};
+
+const handlePrepend = (NUM) => {
+  if (NUM === 0) {
+    if (recommStuffListCont[0].children.length > BREAD_LENGH - 1) {
+      recommStuffListCont[0].firstChild.remove();
     }
-  } else if (num === 1) {
-    for (i = 0; i < recommArray[1].cake.length; i++) {
-      img.setAttribute("src", recommArray[num].cake[i].src);
-      img.setAttribute("alt", recommArray[num].cake[i].alt);
-      span.innerText = recommArray[num].cake[i].alt;
-      p.innerText = recommArray[num].cake[i].description;
+    recommArray[0].bread.forEach((breadCont, breadIndex) => {
+      prependCreateList(recommArray[0].bread[breadIndex], 0);
+    });
+  } else if (NUM === 1) {
+    if (recommStuffListCont[1].children.length > CAKE_LENGH - 1) {
+      recommStuffListCont[1].firstChild.remove();
     }
-  } else if (num === 2) {
-    img.setAttribute("src", recommArray[num].deli[num].src);
-    img.setAttribute("alt", recommArray[num].deli[num].alt);
-    span.innerText = recommArray[num].deli[num].alt;
-    p.innerText = recommArray[num].deli[num].description;
-  } else if (num === 3) {
-    img.setAttribute("src", recommArray[num].dessert[num].src);
-    img.setAttribute("alt", recommArray[num].dessert[num].alt);
-    span.innerText = recommArray[num].dessert[num].alt;
-    p.innerText = recommArray[num].dessert[num].description;
-  } else if (num === 4) {
-    img.setAttribute("src", recommArray[num].drink[num].src);
-    img.setAttribute("alt", recommArray[num].drink[num].alt);
-    span.innerText = recommArray[num].drink[num].alt;
-    p.innerText = recommArray[num].drink[num].description;
-  } else if (num === 5) {
-    img.setAttribute("src", recommArray[num].gift[num].src);
-    img.setAttribute("alt", recommArray[num].gift[num].alt);
-    span.innerText = recommArray[num].gift[num].alt;
-    p.innerText = recommArray[num].gift[num].description;
+    recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
+      prependCreateList(recommArray[1].cake[cakeIndex], 1);
+    });
+  } else if (NUM === 2) {
+    if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
+      recommStuffListCont[2].firstChild.remove();
+    }
+    recommArray[2].deli.forEach((deliCont, deliIndex) => {
+      prependCreateList(recommArray[2].deli[deliIndex], 2);
+    });
+  } else if (NUM === 3) {
+    if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
+      recommStuffListCont[3].firstChild.remove();
+    }
+    recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
+      prependCreateList(recommArray[3].dessert[dessertIndex], 3);
+    });
+  } else if (NUM === 4) {
+    if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
+      recommStuffListCont[4].firstChild.remove();
+    }
+    recommArray[4].gift.forEach((giftCont, giftIndex) => {
+      prependCreateList(recommArray[4].gift[giftIndex], 4);
+    });
   }
-  recommStuffCont[num].appendChild(li);
+};
+const handleAppend = (NUM) => {
+  if (NUM === 0) {
+    if (recommStuffListCont[0].children.length > BREAD_LENGH - 1) {
+      recommStuffListCont[0].firstChild.remove();
+    }
+    recommArray[0].bread.forEach((breadCont, breadIndex) => {
+      appendCreateList(recommArray[0].bread[breadIndex], 0);
+    });
+  } else if (NUM === 1) {
+    if (recommStuffListCont[1].children.length > CAKE_LENGH) {
+      recommStuffListCont[1].firstChild.remove();
+    }
+    recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
+      appendCreateList(recommArray[1].cake[cakeIndex], 1);
+    });
+  } else if (NUM === 2) {
+    if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
+      recommStuffListCont[2].firstChild.remove();
+    }
+    recommArray[2].deli.forEach((deliCont, deliIndex) => {
+      appendCreateList(recommArray[2].deli[deliIndex], 2);
+    });
+  } else if (NUM === 3) {
+    if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
+      recommStuffListCont[3].firstChild.remove();
+    }
+    recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
+      appendCreateList(recommArray[3].dessert[dessertIndex], 3);
+    });
+  } else if (NUM === 4) {
+    if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
+      recommStuffListCont[4].firstChild.remove();
+    }
+    recommArray[4].gift.forEach((giftCont, giftIndex) => {
+      appendCreateList(recommArray[4].gift[giftIndex], 4);
+    });
+  }
 };
