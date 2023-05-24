@@ -22,10 +22,13 @@
   height: 50px;
   margin: auto;
 }
+.policy .private{
+  color: chocolate;
+  font-weight: 600;
+}
 .company a:hover,
 .policy a:hover {
-  transition: 0.3s ease-in-out;
-  color: #e16f14;
+  text-decoration: underline;
 }
 .company ul,
 .policy ul {
@@ -50,12 +53,17 @@
 .copyright {
   margin-top: 10px;
 }
-.ftc_confirm {
+.ftc_confirm{
   position: relative;
+  
 }
-.ftc_confirm a img {
+.ftc_confirm a {
   position: absolute;
+  left: -8px;
 }
-.hosting {
-  margin-left: 10px;
+.hosting{
+  padding-left: 80px;
+}
+.business_info{
+  margin-bottom: 15px; 
 }
