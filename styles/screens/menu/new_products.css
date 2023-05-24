@@ -10,9 +10,11 @@
 }
 .page_title span{
     font-size: 24px;
+    letter-spacing: -0.1em ;
     font-weight: 700;
     color: #0D4633;  
     padding-left: 15px
+    
 }
 .page_title::before{
     content: "";
@@ -27,19 +29,13 @@
 
 /* 상단 슬라이드 + 모바일 선물하기 */
 
-.wrap{
+.top_contents_wrap{
     width: 1100px;
     margin: auto;
-    
-}
-.nd_wrap {
-    width: 1100px;
     display: flex;
     justify-content: space-between;
-
-    
+    margin-bottom: 50px; 
 }
-
 
 /* 모바일 선물하기 배너 */
 
@@ -75,4 +71,52 @@
     font-size: 13px;
     font-weight: 600;
     color: #555;
+}
+
+
+/* 년도별 신제품 */
+.new_products_wrap{
+    width: 1100px;
+    margin: auto;
+}
+
+.new_products_wrap .new_products_year{
+    width: 1100px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0D4633;
+    background: #DADFCB;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.new_products_wrap dd{
+    margin-bottom: 60px;
+}
+.new_banners{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll ;
+}
+.img_wrap {
+    display: block;
+    width: 350px;
+    height: 123px;
+    border: 1px solid #DADFCB;
+    border-radius: 5px;
+    margin-right: 20px;
+    overflow: hidden;    
+}
+.img_wrap img{
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.img_wrap img:hover {
+    transform: scale(1.1, 1.1);
 }

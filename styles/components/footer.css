@@ -2,9 +2,9 @@
   position: relative;
 
   z-index: 1;
-  background: #2a2a2a;
+  background: #363636;
   width: 100%;
-  height: 340px;
+  height: 300px;
   padding-top: 40px;
   box-sizing: border-box;
   margin: auto;
@@ -23,12 +23,12 @@
   width: 900px;
   height: 50px;
   margin: auto;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 10px;
+  color: #ffff;
 }
 .policy .private{
   color: chocolate;
-  font-weight: 600;
+  font-weight: 700;
 }
 .company a:hover,
 .policy a:hover {
@@ -44,14 +44,14 @@
   height: 90px;
   line-height: 1.5em;
   margin: auto;
-  margin-bottom: 40px;
-  color: #b0b0b0;
+  margin-bottom: 30px;
+  color: #cdcdcd;
   font-size: 12px;
+  position: relative;
 }
 .company_info p,
 .company_info address{
   text-align: center;
-  margin-bottom: 1px;
 }
 .company_info p span {
   justify-content: space-between;
@@ -71,7 +71,7 @@
 }
 
 .company_info .business_info{
-  margin-bottom: 15px; 
+  margin-bottom: 10px; 
 }
 
 .company_info .copyright {
@@ -80,7 +80,6 @@
 .footer_logo img{
   width: 100px;
   position: absolute;
-  left: 1200px;
-  top: 180px;
-
+  right: 70px;
+  top: 160px;
 }
