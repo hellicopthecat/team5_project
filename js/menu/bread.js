@@ -97,6 +97,7 @@ function handleBreadAllCheckboxChange() {
 }
 
 
+
 // 다른 체크박스 변경 시 이벤트 처리 : handleCheckboxChange 함수 
 function handleCheckboxChange() {
   if (breadAllCheckbox.checked) {
@@ -108,14 +109,11 @@ function handleCheckboxChange() {
     .filter(checkbox => checkbox.checked)
     .map(checkbox => checkbox.value);
   
-  if (checkedCategories.length === 0) {
+  if (checkedCategories.length === 0) { //체크된 카테고리가 하나도 없으면
     hideAllProducts(); //모든제품숨기기
   } else {
-    filterProducts(checkedCategories);
+    filterProducts(checkedCategories);  //체크된 카테고리만 필터링
   }
-
-  handleNewProductsCheckboxChange(); // 신제품 체크박스 이벤트 처리 호출
-  handleBestProductsCheckboxChange();  // 베스트제품 체크박스 이벤트 처리 호출
 }
 
 // 모든 제품 보이기 함수 실행 : showAllProducts 함수 
@@ -178,10 +176,7 @@ function filterProducts(checkedCategories) {
 }
 
 
-
-
-// '신제품 모아보기' 체크박스 변경 시 이벤트 처리
-// : handleNewProductsCheckboxChange 함수
+// '신제품 모아보기' 체크박스 변경 시 이벤트 처리 : handleNewProductsCheckboxChange 함수
 
 // function handleNewProductsCheckboxChange() {
 //   if (newProductsCheckbox.checked) {
@@ -222,25 +217,7 @@ function handleNewProductsCheckboxChange(){
 }
 
 
-// 신제품만 보여주는 함수: showNewProducts 함수
-function showNewProducts() {
-  productCategories.forEach(category => {
-    category.style.display = 'block';
-    category.nextElementSibling.style.display = 'block';
-  });
-
-  productItems.forEach(item => {
-    if (item.classList.contains('new')) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-}
-
-
-// '베스트 제품 모아보기' 체크박스 변경 시 이벤트 처리
-// : handleBestProductsCheckboxChange 함수
+// '베스트 제품 모아보기' 체크박스 변경 시 이벤트 처리: handleBestProductsCheckboxChange 함수
 
 // function handleBestProductsCheckboxChange() {
 //   if (bestProductsCheckbox.checked) {
@@ -280,7 +257,21 @@ function handleBestProductsCheckboxChange(){
   }
 }
 
+// 신제품만 보여주는 함수: showNewProducts 함수
+function showNewProducts() {
+  productCategories.forEach(category => {
+    category.style.display = 'block';
+    category.nextElementSibling.style.display = 'block';
+  });
 
+  productItems.forEach(item => {
+    if (item.classList.contains('new')) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
 
 // 베스트 제품만 보여주는 함수: showBestProducts 함수
 function showBestProducts() {
@@ -299,7 +290,7 @@ function showBestProducts() {
 }
 
 
-// 신제품과 베스트제품만 보여주는 함수: showNewAndBestProducts 함수
+// 신제품+베스트제품만 보여주는 함수: showNewAndBestProducts 함수
 function showNewAndBestProducts() {
   productCategories.forEach(category => {
     category.style.display = 'block';
@@ -314,7 +305,6 @@ function showNewAndBestProducts() {
     }
   });
 }
-
 
 
 
