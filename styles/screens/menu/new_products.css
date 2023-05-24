@@ -77,7 +77,7 @@
 /* 년도별 신제품 */
 .new_products_wrap{
     width: 1100px;
-    margin: auto;
+    margin: 0 auto 100px;
 }
 
 .new_products_wrap .new_products_year{
