@@ -78,15 +78,15 @@
     cursor: pointer;
 }
 
-.stamp img{
+.stamp{
     position: absolute;
     top: 0px;
     left: 10px;
     width: 90px;
     height: 90px;
     filter: drop-shadow(3px 3px 3px #6b6b6b);
-    animation: updown-20 2s ease-infinite;
 }
+
 .zoomlens_icon{
     width: 40px;
     position: absolute;
