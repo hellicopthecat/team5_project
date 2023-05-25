@@ -11,6 +11,10 @@
   height: 0;
 }
 /* event search form */
+.event_winner-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
 .event_search-form {
   background-color: var(--table-color);
 }
@@ -44,6 +48,7 @@
 
 .event_winner-list {
   background-color: white;
+  padding-bottom: 50px;
 }
 .event_winner-list h3 {
   font-size: 25px;

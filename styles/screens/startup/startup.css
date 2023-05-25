@@ -1,24 +1,32 @@
 .startup_wrap {
   position: relative;
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   background-color: white;
 }
 /* header img */
 .startup_head-banner {
   position: relative;
-  padding-bottom: 80px;
-}
-.startup_head-banner img {
+  text-align: center;
   width: 100%;
   height: 300px;
-  filter: brightness(40%);
+  overflow: hidden;
+}
+.startup_head-banner img {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  width: 100%;
+  height: 400px;
+  filter: brightness(60%);
 }
 .startup_head-banner h2 {
   position: absolute;
-  color: white;
-  top: 45%;
-  left: 15%;
+  top: 25%;
+  left: 10%;
   font-size: 30px;
+  font-weight: 600;
+  color: white;
 }
 
 /* header - nav */
@@ -28,7 +36,7 @@
 .startup_header-nav ul {
   display: flex;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -49,7 +57,7 @@
 /* start up prepare */
 .startup_prepare-header {
   position: relative;
-  background-color: var(--fourth-color);
+  background-color: var(--table-color);
   width: 100%;
   height: 100px;
   overflow: hidden;
@@ -60,7 +68,7 @@
 }
 .startup_prepare-header h3 {
   top: 35%;
-  left: 30%;
+  left: 140px;
   font-size: 30px;
   color: #fff;
   text-shadow: 3px 2px 1px var(--main-color);
@@ -109,6 +117,7 @@
 .startup_prepare-loan {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -147,6 +156,10 @@
   color: rgba(0, 0, 0, 0.4);
   margin-left: 80px;
   margin-bottom: 40px;
+}
+.startup_recruit_story-text span {
+  width: 80%;
+  line-height: 20px;
 }
 
 .startup_prepare-process img {
@@ -204,9 +217,19 @@
 .s_prepare-faq--table thead th {
   vertical-align: middle;
 }
+.startup_prepare-investcost tbody td,
+.startup_prepare-investcost tfoot td,
 .s_prepare-faq--table thead th:first-child,
 .s_prepare-faq--table tbody td:first-child {
   text-align: center;
+}
+.s_prepare-faq--table thead th:first-child,
+.s_prepare-helpcenter thead th:nth-child(2) {
+  width: 80px;
+}
+.s_prepare-helpcenter thead th:nth-child(3),
+.s_prepare-helpcenter thead th:nth-child(4) {
+  width: 150px;
 }
 .startup_prepare-investcost tbody tr,
 .startup_prepare-investcost tfoot tr,
@@ -244,6 +267,11 @@
   text-align: center;
   height: 50px;
   border-bottom: 1px solid var(--table-color);
+}
+.startup_prepare-loan tbody tr:last-child td:nth-child(2),
+.startup_prepare-loan tbody tr:last-child td:nth-child(3) {
+  width: 400px;
+  font-size: 15px;
 }
 .s_prepare-helpcenter tbody th {
   width: 150px;
@@ -362,6 +390,8 @@
   width: 150px;
   height: 30px;
   padding: 5px 0px 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
 }
 .s_pre-help-input select {
   width: 150px;
@@ -433,8 +463,8 @@
   margin-bottom: 100px;
 }
 .startup_knowhow {
-  width: 300px;
   margin-right: 10px;
+  width: 200px;
 }
 .startup_knowhow a {
   border-radius: 10px;
@@ -447,6 +477,7 @@
 }
 .startup_knowhow p {
   position: absolute;
+  z-index: 99;
   font-weight: 500;
   color: white;
 }
@@ -465,9 +496,9 @@
 }
 .startup_knowhow img:nth-child(3) {
   position: absolute;
-  width: 200px;
-  left: 50px;
-  bottom: 40px;
+  width: 150px;
+  left: 30px;
+  bottom: 50px;
   filter: drop-shadow(2px 2px 1px black);
 }
 .startup_knowhow p:nth-child(4) {
@@ -491,8 +522,10 @@
   flex-direction: column;
   background-color: var(--bg-color);
   border-radius: 10px;
+  width: 450px;
 }
 .startup_story iframe {
+  width: 450px;
   margin-bottom: 10px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -545,7 +578,7 @@
   width: 200px;
 }
 .present--regist-textbox {
-  margin-left: -110px;
+  margin-left: -30px;
 }
 .present--regist-textbox span {
   display: block;

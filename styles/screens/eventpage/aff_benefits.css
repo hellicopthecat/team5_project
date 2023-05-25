@@ -199,18 +199,3 @@
   border-radius: 25px;
   background-color: var(--main-color);
 }
-/* aff benefits location*/
-.page__location ul {
-  position: absolute;
-  top: 115px;
-  right: 70px;
-  display: flex;
-  color: white;
-}
-.page__location li,
-.page__location p {
-  margin-left: 15px;
-}
-.page__location li:hover {
-  text-decoration: underline;
-}

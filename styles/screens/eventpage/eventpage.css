@@ -1,12 +1,14 @@
 /* event head title */
-
+.eventpage_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
 .eventpage_head-banner {
   position: relative;
   text-align: center;
   width: 100%;
   height: 300px;
   overflow: hidden;
-  margin-bottom: 70px;
 }
 .eventpage_head-banner img {
   position: absolute;
@@ -23,6 +25,22 @@
   font-size: 30px;
   font-weight: 600;
   color: white;
+}
+
+/* page location */
+.page__location ul {
+  position: absolute;
+  top: 115px;
+  right: 200px;
+  display: flex;
+  color: white;
+}
+.page__location li,
+.page__location p {
+  margin-left: 15px;
+}
+.page__location li:hover {
+  text-decoration: underline;
 }
 /* event page */
 .eventpage_wrap {
@@ -107,7 +125,7 @@
 /* eventpage modal */
 .eventpage__modal dialog {
   position: fixed;
-  top: 30px;
+  top: 5px;
 }
 .eventpage__modal dialog img {
   width: 400px;
