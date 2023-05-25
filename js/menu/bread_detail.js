@@ -5,7 +5,7 @@ var scale = 1; // 초기 크기 비율
 var increment = 0.01; // 크기 증가량
 var targetScale = 1.2; // 목표 크기 비율
 var intervalTime = 20; // 애니메이션 간격 (20밀리초)
-var animationDuration = 3000; // 애니메이션 지속 시간 (5초)
+var animationDuration = 5000; // 애니메이션 지속 시간 (5초)
 
 function animateStamp() {
     var currentScale = parseFloat(window.getComputedStyle(stamp).getPropertyValue('transform').split(',')[3]); // 현재 크기 비율

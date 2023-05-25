@@ -1,3 +1,5 @@
+// 메인 신제품 배너 애니메이션
+
 $( document ).ready( function() {
     var bannerTime = 700;
     $( '.bn_01' ).animate( {
