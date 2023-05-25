@@ -1,5 +1,7 @@
 .membership__info-wrap {
   background-color: white;
+  width: 1200px;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 .membership_card_banner {
@@ -98,19 +100,20 @@
   padding: 30px 40px;
   border: 2px solid var(--hover-green);
   border-radius: 25px;
+  box-shadow: 3px 4px 3px black;
 }
-.membership_card_benefits ul li:first-child:hover {
-  transform: scale(120%) translateX(50px);
+/* .membership_card_benefits ul li:first-child:hover {
+  transform: scale(105%) translateX(50px);
   transition: 0.6s ease-in-out;
 }
 .membership_card_benefits ul li:nth-child(2):hover {
-  transform: scale(120%);
+  transform: scale(105%);
   transition: 0.6s ease-in-out;
 }
 .membership_card_benefits ul li:last-child:hover {
-  transform: scale(120%) translateX(-50px);
+  transform: scale(105%) translateX(-50px);
   transition: 0.6s ease-in-out;
-}
+} */
 
 .membership_card_benefits ul li:nth-child(2) {
   margin: 0px 50px;

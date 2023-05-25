@@ -1,3 +1,9 @@
+.customer__page-wrap {
+  background-color: #fdfaf6;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .customer__page-form {
   display: flex;
   flex-direction: column;
@@ -22,7 +28,7 @@
 }
 .customer__form-text-1 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .customer__form-text-2 {
   margin-bottom: 20px;
@@ -36,22 +42,7 @@
   display: flex;
   justify-content: center;
 }
-#customer_search-form {
-  margin-bottom: 40px;
-}
-#customer_search-form input {
-  padding: 10px 40% 10px 20px;
-  border: none;
-  border-radius: 25px;
-}
-#customer_search-form button {
-  padding: 5px 20px;
-  background-color: #1c8260;
-  border-radius: 25px;
-  font-size: 13px;
-  color: white;
-  margin-left: 20px;
-}
+
 .customer__page-table--wrap table {
   width: 100%;
   margin-bottom: 30px;
@@ -60,21 +51,24 @@
   background-color: #1c8260;
   color: white;
 }
-.customer__page-table--wrap table tr:first-child th {
-  padding: 15px 0px;
+.customer__page-table--wrap table tr > th {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.customer__page-table--wrap table tr > td {
+  vertical-align: middle;
 }
 .customer__page-table--wrap table tr:nth-child(2) {
   background-color: white;
 }
-.customer__page-table--wrap table tr:nth-child(2) th {
-  padding: 15px 0px;
-}
+
 .customer__page-table--wrap table tr:nth-child(2) td {
   text-align: center;
 }
 /* customer nav */
 .customer_page-controller {
-  padding: 10px 50px 40px;
+  padding: 10px 10px 40px;
 }
 .customer_page-controller ul {
   display: flex;
@@ -88,12 +82,12 @@
   transition: 0.4s ease-in-out;
   cursor: pointer;
   background-color: white;
-  padding: 30px 0;
+  padding: 20px 0;
   border-radius: 25px;
   border: 1px solid var(--hover-green);
 }
 .customer_page-controller li:nth-child(2) {
-  margin: 0 50px;
+  margin: 0 30px;
 }
 .customer_page-controller li:hover {
   transform: scale(110%);
@@ -105,10 +99,11 @@
 }
 .customer_page-controller p {
   margin-top: 15px;
-  width: 60%;
+  line-height: 20px;
+  width: 90%;
 }
 .customer_page-controller button {
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: var(--main-color);
   color: white;
   padding: 5px 10px;
@@ -158,6 +153,7 @@
   justify-content: space-around;
   padding: 20px 0px;
   margin-bottom: 20px;
+  border-bottom: 1px solid #000;
 }
 .faq__titles li {
   font-size: 17px;
@@ -165,8 +161,11 @@
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
+.faq__titles span {
+  color: var(--main-color);
+}
 .faq__titles li:hover {
-  transform: scale(130%);
+  transform: scale(115%);
   transition: 0.4s ease-in-out;
 }
 .faq__table {
@@ -176,9 +175,9 @@
   border-radius: 0 0 25px 25px;
 }
 .faq__table h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
-  margin-left: 30px;
+  margin-left: 60px;
   margin-bottom: 50px;
 }
 .faq__table-head ul {
@@ -196,15 +195,18 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px;
   align-items: center;
-  margin-bottom: 5px;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .q span {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
+}
+.benefit-store span {
+  font-size: 16px;
 }
 .q img {
   width: 20px;
@@ -219,7 +221,7 @@
 .q button {
   display: flex;
   justify-content: end;
-  padding-right: 50px;
+  margin-right: 20px;
 }
 .a {
   display: grid;
@@ -232,12 +234,15 @@
 }
 .q h4,
 .a h4 {
-  width: 200px;
+  margin-left: 20px;
+  width: 80px;
   text-align: center;
 }
 .a p {
+  font-size: 15px;
+  line-height: 20px;
   display: inline-block;
-  width: 600px;
+  width: 500px;
   white-space: wrap;
   grid-column: span 2;
   grid-column-start: 3;
@@ -324,6 +329,9 @@
   display: inline-block;
   width: 100px;
 }
+.counsel_storename-cont div:nth-child(2) label {
+  width: 60px;
+}
 .counsel_username-cont input,
 .counsel_value-cont input,
 .counsel_storename-cont div:first-child input,
@@ -333,9 +341,7 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
-.counsel_mobile-cont select {
-  text-align: center;
-}
+
 .counsel_mobile-cont select,
 .counsel_mobile-cont input {
   width: 20%;
@@ -343,6 +349,10 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   margin: 0 10px;
+}
+.counsel_mobile-cont select {
+  text-align: center;
+  margin-left: 0px;
 }
 .counsel_email-cont input {
   width: 30%;
@@ -398,13 +408,23 @@
 }
 .userinfo_permission table td {
   text-align: center;
+  font-size: 15px;
+  white-space: wrap;
   height: 60px;
   vertical-align: middle;
+}
+.userinfo_per_selection table td:first-child {
+  padding: 0px 10px;
+  width: 200px;
 }
 .userinfo_permission div:nth-child(2) {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
+}
+.userinfo_per_essential p,
+.userinfo_per_selection p {
+  line-height: 25px;
 }
 .userinfo_per_essential form,
 .userinfo_per_selection form {
@@ -428,8 +448,8 @@
 }
 .userinfo_per-buttons button {
   border-radius: 40px;
-  padding: 15px 40px;
-  font-size: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
 }
 .userinfo_per-buttons button:first-child {
   color: white;
@@ -476,7 +496,7 @@
 }
 
 .online__counsel-result p:nth-child(3) {
-  width: 60%;
+  width: 70%;
   margin-bottom: 20px;
 }
 .online__counsel-result fieldset > div {
@@ -485,11 +505,12 @@
 }
 .online__counsel-result label {
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   margin-right: 10px;
 }
 .online__counsel-result input {
-  height: 30px;
+  height: 25px;
+  padding: 0px 10px;
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -497,23 +518,23 @@
   margin-right: 20px;
 }
 .o__c-result--mobile label {
-  width: 50px;
+  width: 40px;
 }
 .o__c-result--mobile input {
-  width: 50px;
+  width: 45px;
 }
 .o__c-result--mobile select {
-  width: 15%;
-  height: 30px;
+  width: 18%;
+  height: 25px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   text-align: center;
 }
 .o__c-result--mobile span {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .online__counsel-result button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #1c8260;
   border-radius: 25px;
   white-space: nowrap;
