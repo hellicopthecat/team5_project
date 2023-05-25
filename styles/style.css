@@ -70,3 +70,10 @@ button {
   position: absolute;
   top: -50px;
 }
+
+@font-face {
+  font-family: "JUA";
+  src: url(../font/woff/BMJUA.woff) format("woff");
+  src: url(../font/woff2/BMJUA.woff2) format("woff2");
+  font-weight: normal;
+}
