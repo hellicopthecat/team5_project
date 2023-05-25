@@ -1,3 +1,7 @@
+.customer__page-wrap {
+  background-color: #fdfaf6;
+}
+
 .customer__page-form {
   display: flex;
   flex-direction: column;

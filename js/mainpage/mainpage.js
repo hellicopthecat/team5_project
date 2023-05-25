@@ -3,8 +3,8 @@ const slideCont = document.getElementById("slide_cont");
 const slide = slideCont.querySelectorAll("li");
 const adPlayBtn = document.getElementById("main_play_btn");
 const adPauseBtn = document.getElementById("main_pause_btn");
-const btnDotCont = document.getElementById("btn_dot");
-const btnDots = btnDotCont.querySelectorAll("button");
+const btnDotCont = document.getElementById("mainpage__btn_dot");
+const btnDots = document.querySelectorAll("#mainpage__btn_dot button");
 
 /**메뉴 정보 Array */
 const adImg = [
@@ -39,13 +39,11 @@ const adImg = [
 ];
 /**슬라이드 위치 */
 let currentIndex = 0;
+btnDots[6].style.backgroundColor = "tomato";
 /**자동슬라이드 동작 */
-function slidecontroller() {
+const slideMainadController = () => {
   let slideArray = adImg[currentIndex++];
   adImg.length <= currentIndex ? (currentIndex = 0) : null;
-
-  //   console.log(slideArray);
-
   const li = document.createElement("li");
   const img = document.createElement("img");
   img.setAttribute("src", slideArray.src);
@@ -62,32 +60,35 @@ function slidecontroller() {
       700
     );
   }
-  // console.log(newLi);
+  trasitionMainAdDot();
   const slideNum = slideCont.children;
   // console.log(slideNum);
   if (slideNum.length > 9) {
     slideNum[7].remove();
     slideNum[8].remove();
   }
-}
-const sliderMotion = setInterval(slidecontroller, 5000);
-function handlepause() {
-  clearInterval(sliderMotion);
+};
+const sliderMotion = setInterval(slideMainadController, 4000);
+
+/** main ad play controll */
+const handleMainAdpause = () => {
   adPlayBtn.classList.add("hidden");
   adPauseBtn.classList.remove("hidden");
-}
-function handlePlay() {
+  clearInterval(sliderMotion);
+};
+const handleMainAdPlay = () => {
   adPlayBtn.classList.remove("hidden");
   adPauseBtn.classList.add("hidden");
   slide.forEach((element) => {
     element.style.removeProperty("z-index");
   });
-  setInterval(slidecontroller, 5000);
-}
-adPlayBtn.addEventListener("click", handlepause);
-adPauseBtn.addEventListener("click", handlePlay);
+  setInterval(slideMainadController, 4000);
+};
+adPlayBtn.addEventListener("click", handleMainAdpause);
+adPauseBtn.addEventListener("click", handleMainAdPlay);
+
 /**버튼 누를시 동작 */
-function slideMotion(num) {
+const clickSlideMotion = (num) => {
   slide.forEach((element) => {
     element.style.removeProperty("z-index");
   });
@@ -100,20 +101,38 @@ function slideMotion(num) {
     ],
     700
   );
-}
-btnDots.forEach((element) => {
-  function handleSelect(event) {
-    const target = event.target;
-    const dots = btnDotCont.children;
+  setTimeout(trasitionMainAdDot(), 0);
+};
 
-    for (let i = 0; i < dots.length; i++) {
-      // console.log(dots.item([i]));
-      // console.log(i);
-      if (target === dots.item([i])) {
-        slideMotion(i);
-        return handlepause();
-      }
+btnDots.forEach((element, index) => {
+  const handleMainAdSelect = (event) => {
+    const target = event.target;
+    if (target === btnDots[index]) {
+      currentIndex = index;
+      trasitionMainAdDot();
+      clickSlideMotion(index);
+      return handleMainAdpause();
     }
-  }
-  element.addEventListener("click", handleSelect);
+  };
+  element.addEventListener("click", handleMainAdSelect);
 });
+
+function trasitionMainAdDot() {
+  btnDots.forEach((eachDots, index) => {
+    if (index !== currentIndex) {
+      btnDots[index].style.backgroundColor = "#d7d7d7";
+    } else if (index === currentIndex) {
+      btnDots[index].style.backgroundColor = " tomato";
+    }
+    // if (handleMainAdpause) {
+    //   setTimeout(slideMainadController, 0);
+    //   currentIndex = index;
+    //   btnDots[currentIndex].style.backgroundColor = " tomato";
+    // }
+    // if (handleMainAdPlay) {
+    //   setInterval(slideMainadController, 4000);
+    //   currentIndex = index;
+    //   btnDots[currentIndex].style.backgroundColor = " tomato";
+    // }
+  });
+}

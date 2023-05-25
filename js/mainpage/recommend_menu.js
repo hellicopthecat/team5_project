@@ -274,7 +274,7 @@ const recommWrapBtn = recommMenuList.querySelectorAll(
 const recommWrapBtnImg = document.querySelectorAll(".recommend_menu--more img");
 const recommStuffCont = document.querySelectorAll(".recomm_cont");
 const recommListCont = document.querySelectorAll(".recomm_cont_list");
-const recommStuffListCont = document.querySelectorAll(".recomm_cont_list  ul");
+const recommStuffListCont = document.querySelectorAll(".recomm_cont_list ul");
 
 /** handle recomm control  */
 const recommImg = recommMenuList.querySelectorAll(".recomm_cont img");
@@ -282,6 +282,7 @@ const recommLeft = recommMenuList.querySelectorAll(".recomm_left");
 const recommRight = recommMenuList.querySelectorAll(".recomm_right");
 
 let activeIndex = null;
+let menuIndex = 0;
 /** handle recomm slide */
 function recommAppearence(listIndex) {
   if (recommStuffCont[listIndex].classList.contains("hidden")) {
@@ -358,7 +359,6 @@ let currentImg = 0;
 
 recommLeft.forEach((lBtn, index) => {
   const handleRecommLbtn = (event) => {
-    console.log(index);
     event.preventDefault();
     if (currentImg === 0) {
       currentImg = BREAD_LENGH;
@@ -377,14 +377,13 @@ recommLeft.forEach((lBtn, index) => {
 
 recommRight.forEach((rBtn, index) => {
   const handleRecommRbtn = (event) => {
-    console.log(index);
     event.preventDefault();
     if (currentImg === recommStuffListCont[index].children.length) {
       currentImg = 0;
     } else {
       currentImg++;
     }
-    handlePrepend(index);
+    handleAppend(index);
 
     recommStuffListCont.item(index).style.transition = `ease-in-out 1s`;
     recommStuffListCont.item(index).style.transform = `translateX(-${
@@ -429,77 +428,77 @@ const prependCreateList = (product, num) => {
   recommStuffListCont[num].prepend(li);
 };
 
-const handlePrepend = (NUM) => {
-  if (NUM === 0) {
-    if (recommStuffListCont[0].children.length > BREAD_LENGH - 1) {
-      recommStuffListCont[0].firstChild.remove();
-    }
-    recommArray[0].bread.forEach((breadCont, breadIndex) => {
-      prependCreateList(recommArray[0].bread[breadIndex], 0);
-    });
-  } else if (NUM === 1) {
-    if (recommStuffListCont[1].children.length > CAKE_LENGH - 1) {
-      recommStuffListCont[1].firstChild.remove();
-    }
-    recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
-      prependCreateList(recommArray[1].cake[cakeIndex], 1);
-    });
-  } else if (NUM === 2) {
-    if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
-      recommStuffListCont[2].firstChild.remove();
-    }
-    recommArray[2].deli.forEach((deliCont, deliIndex) => {
-      prependCreateList(recommArray[2].deli[deliIndex], 2);
-    });
-  } else if (NUM === 3) {
-    if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
-      recommStuffListCont[3].firstChild.remove();
-    }
-    recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
-      prependCreateList(recommArray[3].dessert[dessertIndex], 3);
-    });
-  } else if (NUM === 4) {
-    if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
-      recommStuffListCont[4].firstChild.remove();
-    }
-    recommArray[4].gift.forEach((giftCont, giftIndex) => {
-      prependCreateList(recommArray[4].gift[giftIndex], 4);
-    });
-  }
-};
+// const handlePrepend = (NUM) => {
+//   if (NUM === 0) {
+//     // if (recommStuffListCont[0].children.length > BREAD_LENGH - 1) {
+//     //   recommStuffListCont[0].firstChild.remove();
+//     // }
+//     recommArray[0].bread.forEach((breadCont, breadIndex) => {
+//       prependCreateList(recommArray[0].bread[breadIndex], 0);
+//     });
+//   } else if (NUM === 1) {
+//     // if (recommStuffListCont[1].children.length > CAKE_LENGH - 1) {
+//     //   recommStuffListCont[1].firstChild.remove();
+//     // }
+//     recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
+//       prependCreateList(recommArray[1].cake[cakeIndex], 1);
+//     });
+//   } else if (NUM === 2) {
+//     // if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
+//     //   recommStuffListCont[2].firstChild.remove();
+//     // }
+//     recommArray[2].deli.forEach((deliCont, deliIndex) => {
+//       prependCreateList(recommArray[2].deli[deliIndex], 2);
+//     });
+//   } else if (NUM === 3) {
+//     // if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
+//     //   recommStuffListCont[3].firstChild.remove();
+//     // }
+//     recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
+//       prependCreateList(recommArray[3].dessert[dessertIndex], 3);
+//     });
+//   } else if (NUM === 4) {
+//     // if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
+//     //   recommStuffListCont[4].firstChild.remove();
+//     // }
+//     recommArray[4].gift.forEach((giftCont, giftIndex) => {
+//       prependCreateList(recommArray[4].gift[giftIndex], 4);
+//     });
+//   }
+// };
 const handleAppend = (NUM) => {
   if (NUM === 0) {
-    if (recommStuffListCont[0].children.length > BREAD_LENGH - 1) {
-      recommStuffListCont[0].firstChild.remove();
-    }
+    // if (recommStuffListCont[0].children.length > BREAD_LENGH) {
+    //   recommStuffListCont[0].firstChild.remove();
+    // }
     recommArray[0].bread.forEach((breadCont, breadIndex) => {
       appendCreateList(recommArray[0].bread[breadIndex], 0);
     });
   } else if (NUM === 1) {
-    if (recommStuffListCont[1].children.length > CAKE_LENGH) {
-      recommStuffListCont[1].firstChild.remove();
-    }
+    // if (recommStuffListCont[1].children.length > CAKE_LENGH) {
+    //   recommStuffListCont[1].firstChild.remove();
+    // }
     recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
       appendCreateList(recommArray[1].cake[cakeIndex], 1);
     });
   } else if (NUM === 2) {
-    if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
-      recommStuffListCont[2].firstChild.remove();
-    }
+    // if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
+    //   recommStuffListCont[2].firstChild.remove();
+    // }
     recommArray[2].deli.forEach((deliCont, deliIndex) => {
       appendCreateList(recommArray[2].deli[deliIndex], 2);
     });
   } else if (NUM === 3) {
-    if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
-      recommStuffListCont[3].firstChild.remove();
-    }
+    // if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
+    //   recommStuffListCont[3].firstChild.remove();
+    // }
     recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
       appendCreateList(recommArray[3].dessert[dessertIndex], 3);
     });
   } else if (NUM === 4) {
-    if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
-      recommStuffListCont[4].firstChild.remove();
-    }
+    // if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
+    //   recommStuffListCont[4].firstChild.remove();
+    // }
     recommArray[4].gift.forEach((giftCont, giftIndex) => {
       appendCreateList(recommArray[4].gift[giftIndex], 4);
     });

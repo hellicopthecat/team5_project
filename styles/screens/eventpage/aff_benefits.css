@@ -202,8 +202,8 @@
 /* aff benefits location*/
 .page__location ul {
   position: absolute;
-  top: 250px;
-  right: 50px;
+  top: 115px;
+  right: 70px;
   display: flex;
   color: white;
 }
