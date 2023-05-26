@@ -19,6 +19,7 @@
    
     width: 1200px;
     margin: 0 auto;
+    margin-bottom: 100px;
     display: flex;
 }
 .my_aside_wrap{
@@ -65,7 +66,7 @@
     margin-top: 50px;
     width: 800px;
     background: #fff ;
-    border: 1px solid  var(--main-color);
+
     border-radius: 20px;
     /* background: url(../../../img/mypage/tlj_store.png) ; */
 }
@@ -74,7 +75,7 @@
     margin: 0 auto;
 }
 .my_point{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .my_point img{
     width: 50%;
@@ -131,11 +132,90 @@
     background: var(  --third-color);
 }
 
+.my_page_wrap_basket{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 800px;
+    background: #fff ;
+   
+    border-radius: 20px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.my_basket{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 650px;   
+}
+.table_wrap{
+    margin-left: 50px;
+}
+.my_basket_tb{
+    position: relative;
+    left: -130px;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 140%;
+  
+ 
+
+}
+.my_basket_tb thead{
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--table-color);
+}
+
+.my_basket_tb tr {
+    border-bottom: 1px solid var(--hover-green);
+    padding-bottom: 20px;
+}
+
+.my_basket_tilte{
+    width: 250px;
+    height: 100px;
+  
+}
+.my_basket_tilte p{
+    width: 250px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.my_basket_tb img{
+    width: 80px;
+    height: 100px;
+    }
+
+.my_basket_total{
+    position: relative;
+    left: -90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    padding: 30px;
+    width: 126%;
+}
+.my_basket_no{
+
+    font-size: 30px;
+}
+.basket_ok{
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 .my_coupon{
     width: 95%;
     margin: 0 auto;
     text-align:  center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .my_coupon h2{
     color: var(--main-color );
@@ -163,7 +243,7 @@
     border-bottom: 1px solid var(--table-color);
 }
 .my_coupon_page{
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 20px;
 }
 .my_inpo{
@@ -173,13 +253,14 @@
 }
 .my_inpo_title{
     color: var(--main-color );
-    font-size: 20px;
+    font-family:"JUA", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .my_inpo_sub_title{
     color: var(--fourth-color);
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .my_inpo_cjgo{
     display: flex;
@@ -191,6 +272,7 @@
     margin-bottom: 90px;
 }
 .my_inpo_cjgo a{
+
     padding: 20px;
     border-radius: 20px;
     background: var(--main-color);
