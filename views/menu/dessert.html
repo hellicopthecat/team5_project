@@ -31,28 +31,24 @@
                                 <legend class="hidden">카테고리별 디저트&스낵 보기</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" name="bread_all" id="bread_all" value="bread_all">
-                                        <label for="bread_all">전체 보기</label>
+                                        <input type="checkbox" name="view_all" id="view_all" value="view_all">
+                                        <label for="view_all">전체 보기</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="loaf_bread" id="loaf_bread" value="loaf_bread">
-                                        <label for="loaf_bread">구움양과</label>
+                                        <input type="checkbox" name="category_01" id="category_01" value="category_01">
+                                        <label for="category_01">구움양과</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="healthy_bread" id="healthy_bread" value="healthy_bread">
-                                        <label for="healthy_bread">마카롱</label>
+                                        <input type="checkbox" name="category_02" id="category_02" value="category_02">
+                                        <label for="category_02">마카롱</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="dessert_bread" id="dessert_bread" value="dessert_bread">
-                                        <label for="dessert_bread">아이스크림</label>
+                                        <input type="checkbox" name="category_03" id="category_03" value="category_03">
+                                        <label for="category_03">초콜릿/캔디</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="pie_pastries" id="pie_pastries" value="pie_pastries">
-                                        <label for="pie_pastries">초콜릿/캔디</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="donut_goroke" id="donut_goroke" value="donut_goroke">
-                                        <label for="donut_goroke">잼/스프레드</label>
+                                        <input type="checkbox" name="category_04" id="category_04" value="category_04">
+                                        <label for="category_04">잼/스프레드</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -94,10 +90,10 @@
                     <a href=""> <!--dt 사진으로 보기 페이지-->
                         <dt id="view_pics" class="view_pics"><span>사진으로 보기</span></dt>
                     </a>
-                    <dd id="view_pics_dd" class="view_pics_dd bread_all"> <!--dd 사진으로 보기 페이지-->
+                    <dd id="view_pics_dd" class="view_pics_dd view_all"> <!--dd 사진으로 보기 페이지-->
                         <dl> <!--모든 디저트/스낵 리스트-->
                             
-                            <dt class="category_name loaf_bread"><span>구움양과</dt></span>
+                            <dt class="category_name category_01"><span>구움양과</dt></span>
                             <dd><!--구움양과 리스트-->
                                 <ul class="products_in_category">
                                     <li class="new">
@@ -223,7 +219,7 @@
                                 </ul>
                             </dd>
 
-                            <dt class="category_name healthy_bread"><span>마카롱</span></dt>
+                            <dt class="category_name category_02"><span>마카롱</span></dt>
                             <dd><!--마가롱 리스트-->
                                 <ul  class="products_in_category">
                                     <li class="best">
@@ -335,7 +331,7 @@
                                 </ul>
                             </dd>
                             
-                            <dt class="category_name dessert_bread"><span>초콜릿/캔디</span></dt>
+                            <dt class="category_name category_03"><span>초콜릿/캔디</span></dt>
                             <dd><!--초콜릿/캔디-->
                                 <ul  class="products_in_category">
                                     <li>
@@ -436,7 +432,7 @@
                                 </ul>
                             </dd>
                             
-                            <dt class="category_name pie_pastries"><span>잼/스프레드</span></dt>
+                            <dt class="category_name category_04"><span>잼/스프레드</span></dt>
                             <dd><!--잼/스프레드 리스트-->
                                 <ul  class="products_in_category">
                                     <li class="best">
@@ -520,100 +516,6 @@
                                             </div>
                                         </a>
                                         <p>뚜레쥬르가 만든 블루베리잼</p>
-                                    </li>
-                                </ul>
-                            </dd>
-                            
-                            <dt class="category_name donut_goroke"><span>조각케이크</span></dt>
-                            <dd><!--조각케이크 리스트-->
-                                <ul  class="products_in_category">
-                                    <li class="new">
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_str_tiramisu.jpg">
-                                            <div class="new_stamp">
-                                                <img src="../../img/menu/new_menu_stamp.png">
-                                            </div>
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">이탈리아와 뉴질랜드산 마스카포네 치즈를 블랜딩하여 더욱 부드러운 치즈 무스와 달콤한 딸기 꿀리가 조화로운 딸기 마스카포네 티라미수</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>쁘띠 딸기 마스카포네 티라미수</p>
-                                    </li>
-                                    <li class="new">
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_mascarpone_tiramisu.jpg">
-                                            <div class="new_stamp">
-                                                <img src="../../img/menu/new_menu_stamp.png">
-                                            </div>
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">이탈리아와 뉴질랜드산 마스카포네 치즈를 블랜딩하여 더욱 부드러운 치즈 무스와 달콤한 프랑스산 발로나 코코아 파우더가 잘 어울리는 클래식 마스카포네 티라미수</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>쁘띠 마스카포네 티라미수</p>
-                                    </li>
-                                    <li class="best">
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_peach.jpg">
-                                            <div class="best_stamp">
-                                                <img src="../../img/menu/best_menu_stamp.png">
-                                            </div>
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">촉촉한 화이트 시트에 아삭아삭한 복숭아와
-                                                    복숭아 생크림을 샌드하여
-                                                    향긋한 복숭아 맛을 가득 느낄 수 있는 디저트 케이크</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>쁘띠 복숭아 케이크</p>
-                                    </li>
-                                    <li class="best">
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_orange.jpg">
-                                            <div class="best_stamp">
-                                                <img src="../../img/menu/best_menu_stamp.png">
-                                            </div>
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">향긋한 한라봉 시트에 상큼한 오렌지와 한라봉 맛 생크림을 샌드 하여 입안 가득 상큼한 맛을 느낄 수 있는 디저트 케이크</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>쁘띠 한라봉&오렌지 케이크</p>
-                                    </li>
-                                    <li class="best">
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_chocolat_gateau.jpg">
-                                            <div class="best_stamp">
-                                                <img src="../../img/menu/best_menu_stamp.png">
-                                            </div>
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">초코&블랙초코 시트에 진한 가나슈 초콜릿이 샌드 된 프리미엄 조각 케이크</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>쇼콜라 갸또(조각)</p>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_greentea.jpg">
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">싱그러운 녹차 풍미가 살아있는 시트와
-                                                    부드러운 연유 크림이 조화를 이룬 케이크</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>클래식 녹차 케이크(조각)</p>                       
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="../../img/menu/cake/p_goguma.jpg">
-                                            <div class="product_description_wrap">
-                                                <p class="mulit-line-ellipsis">진한 고구마맛을 더하여 한층 풍미가 깊어진 부드러운 고구마케이크</p>
-                                                <div class="view_more"><span>자세히 보기</span></div>
-                                            </div>
-                                        </a>
-                                        <p>고구마 케이크(조각)</p>                       
                                     </li>
                                 </ul>
                             </dd>

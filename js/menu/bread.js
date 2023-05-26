@@ -42,8 +42,8 @@ $('.selector_tab').click(function(){
 // 카데고리박스 체크박스
 
 // HTML 요소 선택 - 빵 종류별 체크박스
-const breadAllCheckbox = document.querySelector('#bread_all');
-const otherCheckboxes = document.querySelectorAll('#loaf_bread, #healthy_bread, #dessert_bread, #pie_pastries, #donut_goroke');
+const viewAllCheckbox = document.querySelector('#view_all');
+const otherCheckboxes = document.querySelectorAll('#category_01, #category_02, #category_03, #category_04, #category_05');
 const productCategories = document.querySelectorAll('.category_name');
 const productItems = document.querySelectorAll('.products_in_category > li');
 
@@ -58,13 +58,13 @@ initialize();
 // 초기화 함수
 function initialize() {
   // '모든 빵 보기' 체크박스 상태 설정
-  breadAllCheckbox.checked = true;
+  viewAllCheckbox.checked = true;
 
   // 모든 제품 보이기
   showAllProducts();
   
   // 이벤트 핸들러 등록 - 빵 종류별 체크박스
-  breadAllCheckbox.addEventListener('change', handleBreadAllCheckboxChange);
+  viewAllCheckbox.addEventListener('change', handleViewAllCheckboxChange);
   otherCheckboxes.forEach(checkbox => checkbox.addEventListener('change', handleCheckboxChange));
 
 
@@ -73,9 +73,9 @@ function initialize() {
   bestProductsCheckbox.addEventListener('change', handleBestProductsCheckboxChange);
 }
 
-// '모든 빵 보기' 체크박스 변경 시 이벤트 처리 : handleBreadAllCheckboxChange 함수
-function handleBreadAllCheckboxChange() {
-  if (breadAllCheckbox.checked) { // 모든빵보기 체크 상태일 때
+// '모든 빵 보기' 체크박스 변경 시 이벤트 처리 : handleShowAllCheckboxChange 함수
+function handleViewAllCheckboxChange() {
+  if (viewAllCheckbox.checked) { // 모든빵보기 체크 상태일 때
     if (newProductsCheckbox.checked && bestProductsCheckbox.checked) {
       showNewAndBestProducts(); // 신제품+베스트만 보여주기
     } else if (!newProductsCheckbox.checked && bestProductsCheckbox.checked) {
@@ -100,8 +100,8 @@ function handleBreadAllCheckboxChange() {
 
 // 다른 체크박스 변경 시 이벤트 처리 : handleCheckboxChange 함수 
 function handleCheckboxChange() {
-  if (breadAllCheckbox.checked) {
-    breadAllCheckbox.checked = false;
+  if (viewAllCheckbox.checked) {
+    viewAllCheckbox.checked = false;
   }
   
   // 체크된 카테고리들의 값이 배열로 checkedCategories에 저장된다.
@@ -207,7 +207,7 @@ function filterProducts(checkedCategories) {
 // }
 
 function handleNewProductsCheckboxChange(){
-  if  (breadAllCheckbox.checked){
+  if  (viewAllCheckbox.checked){
     if (newProductsCheckbox.checked && bestProductsCheckbox.checked){
       showNewAndBestProducts();
     } else if (newProductsCheckbox.checked && !bestProductsCheckbox.checked) {
@@ -248,7 +248,7 @@ function handleNewProductsCheckboxChange(){
 // }
 
 function handleBestProductsCheckboxChange(){
-  if (breadAllCheckbox.checked){
+  if (viewAllCheckbox.checked){
     if (bestProductsCheckbox.checked && newProductsCheckbox.checked) {
       showNewAndBestProducts();
     } else if (bestProductsCheckbox.checked && !newProductsCheckbox.checked) {
