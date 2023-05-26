@@ -289,14 +289,14 @@ function recommAppearence(listIndex) {
     if (activeIndex !== null) {
       recommStuffCont[activeIndex].animate(
         [
-          {transform: "translateY(0px)", opacity: 1, easing: "ease-in"},
           {transform: "translateY(-5px)", opacity: 0, easing: "ease-out"},
+          {transform: "translateY(0px)", opacity: 1, easing: "ease-in"},
         ],
         1000
       );
-      setTimeout(() => {
-        recommStuffCont[activeIndex].classList.add("hidden");
-      }, 300);
+
+      recommStuffCont[activeIndex].classList.add("hidden");
+
       recommWrapBtnImg[activeIndex].style.transform = "rotateZ(0deg)";
       recommWrapBtnImg[activeIndex].style.transition = "0.7s ease-in-out";
     }
@@ -319,9 +319,9 @@ function recommAppearence(listIndex) {
       ],
       1000
     );
-    setTimeout(() => {
-      recommStuffCont[listIndex].classList.add("hidden");
-    }, 300);
+
+    recommStuffCont[listIndex].classList.add("hidden");
+
     recommWrapBtnImg[listIndex].style.transform = "rotateZ(0deg)";
     recommWrapBtnImg[listIndex].style.transition = "0.7s ease-in-out";
     activeIndex = null;
@@ -504,3 +504,7 @@ const handleAppend = (NUM) => {
     });
   }
 };
+
+// window.addEventListener("scroll", () => {
+//   console.log(window.scrollY);
+// });
