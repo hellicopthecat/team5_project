@@ -312,5 +312,3 @@ function showNewAndBestProducts() {
   });
 }
 
-
-

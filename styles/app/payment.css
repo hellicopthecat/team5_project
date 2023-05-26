@@ -16,7 +16,8 @@ body .pay_hide{
     margin-bottom: 50px;
 }
 .pay_method span{
-    margin-right: 40px;
+  
+    margin: 0 60px;
 }
 
 .pay_method button + button{

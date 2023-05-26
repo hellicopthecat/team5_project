@@ -33,6 +33,7 @@
         $('#region').click(() => {
             $('#placesList').hide()
             $('#pagination').hide()
+            $('#step2').hide()
 
             $('#step').show()
             $('#search_bar').show()
@@ -40,6 +41,22 @@
 
             $('#region').addClass('search_title_click')
             $('#quick').removeClass()
+            $('#seoul').hide()
+            $('#gyeonggi').hide()
+            $('#gwangju').hide()
+            $('#daegu').hide()
+            $('#busan').hide()
+            $('#daejeon').hide()
+            $('#ulsan').hide()
+            $('#lncheon').hide()
+            $('#gangwon').hide()
+            $('#gyeongnam').hide()
+             $('#gyeongbuk').hide()
+            $('#jeonnam').hide()
+            $('#jeonbuk').hide()
+             $('#chungnam').hide()
+            $('#chungbuk').hide()
+            $('#jeju').hide()
         })
 
     

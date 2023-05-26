@@ -46,17 +46,17 @@ window.addEventListener("scroll" , () => {
     }
 
     if( scroll > 1750){
-        app01.style.transition = "all 4s" 
-        app01.style.animation = "right 4s" 
+        app01.style.transition = "all 2.5s" 
+        app01.style.animation = "right 2.5s" 
         app01.style.right = "0px"
-        app02.style.transition = "all 4.5s" 
-        app02.style.animation = "right 4.5s" 
+        app02.style.transition = "all 3.0s" 
+        app02.style.animation = "right 3.0s" 
         app02.style.right = "0px"
-        app03.style.transition = "all 5s" 
-        app03.style.animation = "right 5s" 
+        app03.style.transition = "all 3.5s" 
+        app03.style.animation = "right 3.5s" 
         app03.style.right = "0px"
-        app04.style.transition = "all 5.5s" 
-        app04.style.animation = "right 5.5s" 
+        app04.style.transition = "all 4s" 
+        app04.style.animation = "right 4s" 
         app04.style.right = "0px"
     }else if (scroll < 1700){
         app01.style.right = "1300px"
