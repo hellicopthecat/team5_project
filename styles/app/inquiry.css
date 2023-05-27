@@ -36,7 +36,7 @@
     padding: 20px;
     margin-right: 5px;
     border-radius: 20px;
-    background-color:#f7f0da; 
+  
     border: 1px solid #004e42;
 }
 .qur_quck_manu .qur_quck_manu_check{
@@ -120,6 +120,7 @@
     align-items: center;
     justify-content: center
     ;
+    border-bottom: 2px solid var(--table-color);
     width: 290px;
     padding: 10px 0;
     background-color: #dadfcb
@@ -132,23 +133,14 @@
     padding-left: 50px;
 
   }
-  .qur_category{
-    width: 300px;
-    height: 70%;
-    border: 0;
-    display: flex;
-    padding-left: 20px;
-    margin: 10px;
-    align-items: center;
-    border-radius: 25px;
-    font-size: 20px;
-  }
+
   .qur_name{
+
     width: 500px;
     height: 70%;
     border: 0;
     display: flex;
-    padding-left: 20px;
+    padding-left: 25px;
     margin: 10px;
     align-items: center;
     border-radius: 25px;
@@ -156,9 +148,10 @@
   }
   .qur_email{
     width: 250px;
+
     height: 70%;
     border: 0;
-    padding-left: 20px;
+    padding-left: 25px;
     margin: 10px;
     border-radius: 25px;
     font-size: 20px;
@@ -168,12 +161,14 @@
     height: 70%;
     border: 0;
     margin: 10px;
+    padding-left: 25px;
     border-radius: 25px;
     font-size: 20px;
   }
   .qur_email_category{
     width: 130px;
     height: 70%;
+    padding-left: 10px;
     border: 0;
     border-radius: 25px;
     font-size: 20px;
@@ -183,6 +178,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
+    padding-left: 25px;
     border-radius: 25px;
     font-size: 20px;
   }
@@ -191,6 +187,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
+    padding-left: 25px;
     border-radius: 25px;
     font-size: 20px;
   }
@@ -200,6 +197,7 @@
     margin: 10px;
     border: 0;
     font-size: 20px;
+    padding-left: 25px;
     border-radius: 25px;
   }
   .qur_calder{
@@ -207,7 +205,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
-    padding-left:10px ;
+    padding-left: 25px;
     font-size: 20px;
     border-radius: 25px;
   }
@@ -216,7 +214,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
-    padding-left:10px ;
+    padding-left: 25px;
     font-size: 20px;
     border-radius: 25px;
   }
@@ -226,6 +224,7 @@
     border: solid 1px #e4e4e4;
     margin: 10px;
     height: 280px;
+    padding-left: 25px;
     width: 100%;
     font-size: 20px;
   }
@@ -234,6 +233,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
+    padding-left: 25px;
     font-size: 20px;
     border-radius: 25px;
   }
@@ -242,6 +242,7 @@
     height: 70%;
     margin: 10px;
     border: 0;
+    padding-left: 25px;
     font-size: 20px;
     border-radius: 25px;
   }
@@ -262,8 +263,9 @@
 
   }
   .qur_click{
+
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0 60px 0;
   }
   .qur_no{
     display: inline-block;

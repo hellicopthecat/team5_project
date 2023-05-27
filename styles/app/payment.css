@@ -1,5 +1,6 @@
 body .pay_hide{
     display: none;
+   
 }
 .pay_main{
     width: 100%;
@@ -7,16 +8,19 @@ body .pay_hide{
 .pay_main_wrap{
     width: 1100px;
     margin: auto;
+    padding-bottom: 100px;
 }
 .pay_method .pay_check{
     background-color: #0D4633;
     color: #fff;
+   
 }
 .pay_method{
     margin-bottom: 50px;
 }
 .pay_method span{
-    margin-right: 40px;
+  
+    margin: 0 60px;
 }
 
 .pay_method button + button{
@@ -28,7 +32,7 @@ margin-left: -5px;
     height: 40px;
     padding: 0;
     color: #004e42;
-    border: 1px solid #004e42;;
+    border: 1px solid #004e42;
 }
 .pay_se01_wrap{
     margin: 0 auto;
@@ -36,6 +40,7 @@ margin-left: -5px;
     width: 90%;
     padding: 40px;
     background: #fff;
+    border: 1px solid #004e42;
 }
 .pay_se01_wrap h2{
     font-weight: bold;
@@ -59,6 +64,8 @@ margin-left: -5px;
     width: 90%;
     padding: 40px;
     background: #fff;
+    border: 1px solid #004e42;
+ 
 }
 .pay_se02_total{
     position: relative;
@@ -192,6 +199,7 @@ margin-left: -5px;
     width: 90%;
     padding: 40px;
     background: #fff;
+    border: 1px solid #004e42;
 }
 .pay_se03{
     padding-left: 50px;
@@ -224,7 +232,7 @@ margin-left: -5px;
 }
 
 .pay_se04_wrap{
-
+    border: 1px solid #004e42;
     margin: 0 auto;
     margin-bottom: 10px;
     width: 90%;
@@ -244,7 +252,7 @@ margin-left: -5px;
 
 }
 .pay_se05_wrap{
-
+    border: 1px solid #004e42;
     margin: 0 auto;
     margin-bottom: 10px;
     width: 90%;
