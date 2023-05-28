@@ -8,10 +8,10 @@ const btnDots = document.querySelectorAll("#mainpage__btn_dot button");
 
 /**슬라이드 위치 */
 let currentIndex = 0;
+const SLIDEIMGSIZE = slideCont.querySelector("li img").clientWidth;
+btnDots[0].style.backgroundColor = "tomato";
 /**자동슬라이드 동작 */
 const slideMainadController = () => {
-  const SLIDEIMGSIZE = slideCont.querySelector("li img").clientWidth;
-  btnDots[0].style.backgroundColor = "tomato";
   if (slide.length <= currentIndex) {
     currentIndex = 0;
   } else {
@@ -19,13 +19,14 @@ const slideMainadController = () => {
   }
   slideCont.style.transform = `translateX(-${SLIDEIMGSIZE * currentIndex}px)`;
   slideCont.style.transition = `ease-in-out 0.7s`;
-
+  trasitionMainAdDot();
+  console.log(currentIndex);
   currentIndex++;
 };
-const sliderMotion = setInterval(slideMainadController, 3000);
+let sliderMotion = setInterval(slideMainadController, 3000);
 
 /** main ad play controll */
-const handleMainAdpause = () => {
+const handleMainAdPause = () => {
   adPlayBtn.classList.add("hidden");
   adPauseBtn.classList.remove("hidden");
   clearInterval(sliderMotion);
@@ -33,12 +34,9 @@ const handleMainAdpause = () => {
 const handleMainAdPlay = () => {
   adPlayBtn.classList.remove("hidden");
   adPauseBtn.classList.add("hidden");
-  slide.forEach((element) => {
-    element.style.removeProperty("z-index");
-  });
-  setInterval(slideMainadController, 3000);
+  sliderMotion = setInterval(slideMainadController, 3000);
 };
-adPlayBtn.addEventListener("click", handleMainAdpause);
+adPlayBtn.addEventListener("click", handleMainAdPause);
 adPauseBtn.addEventListener("click", handleMainAdPlay);
 
 /**버튼 누를시 동작 */
@@ -48,12 +46,15 @@ const clickSlideMotion = (num) => {
 };
 
 btnDots.forEach((eachBtn, index) => {
-  const handleMainAdSelect = () => {
+  const handleMainAdSelect = (event) => {
+    const target = event.target;
+    currentIndex = index;
     if (target === btnDots[index]) {
-      currentIndex = index;
-      trasitionMainAdDot();
       clickSlideMotion(index);
-      return handleMainAdpause();
+      trasitionMainAdDot();
+      handleMainAdPause();
+    } else {
+      return handleMainAdPause();
     }
   };
   eachBtn.addEventListener("click", handleMainAdSelect);
@@ -64,11 +65,7 @@ function trasitionMainAdDot() {
     if (index !== currentIndex) {
       btnDots[index].style.backgroundColor = "#d7d7d7";
     } else if (index === currentIndex) {
-      btnDots[index].style.backgroundColor = " tomato";
+      btnDots[index].style.backgroundColor = "tomato";
     }
-    // else if (clickSlideMotion) {
-    //   btnDots[currentIndex - 1].style.backgroundColor = "#d7d7d7";
-    //   btnDots[currentIndex].style.backgroundColor = " tomato";
-    // }
   });
 }

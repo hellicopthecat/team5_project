@@ -43,7 +43,6 @@ function handleNext() {
   currentVideo++;
   videoChangeRedDot();
 }
-
 function handlePrev() {
   if (currentVideo === 0) {
     currentVideo = bakeryVideos;
@@ -98,3 +97,29 @@ function videoChangeRedDot() {
     }
   });
 }
+
+/** mouse over event */
+function handlePrevMouseEnter() {
+  const arrowPrevImg = videoPrev.querySelector("img");
+  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow.png");
+  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow_col.png");
+}
+function handleNextMouseEnter() {
+  const arrowNextImg = videoNext.querySelector("img");
+  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow.png");
+  arrowNextImg.setAttribute("src", "./img/icons/right-arrow_col.png");
+}
+videoPrev.addEventListener("mouseenter", handlePrevMouseEnter);
+videoNext.addEventListener("mouseenter", handleNextMouseEnter);
+function handlePrevMouseLeave() {
+  const arrowPrevImg = videoPrev.querySelector("img");
+  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow_col.png");
+  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow.png");
+}
+function handleNextMouseLeave() {
+  const arrowNextImg = videoNext.querySelector("img");
+  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow_col.png");
+  arrowNextImg.setAttribute("src", "./img/icons/right-arrow.png");
+}
+videoPrev.addEventListener("mouseleave", handlePrevMouseLeave);
+videoNext.addEventListener("mouseleave", handleNextMouseLeave);
