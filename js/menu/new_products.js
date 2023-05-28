@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = event.currentTarget; // 현재 이벤트가 발생한 요소 선택
     const currentScrollLeft = container.scrollLeft; // 현재 스크롤 위치
     const targetScrollLeft = currentScrollLeft + delta * scrollAmount; // 목표 스크롤 위치
-    const duration = 3000; // 애니메이션 지속 시간 (밀리초)
+    const duration = 1000; // 애니메이션 지속 시간 (밀리초)
 
     // 애니메이션 적용
     container.scrollTo({
