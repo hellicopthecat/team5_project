@@ -134,3 +134,14 @@
     transform: translateY(0px);
   }
 }
+#eventwinner__pager {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+#eventwinner__pager button {
+  font-size: 20px;
+}
+.e__w--pager-active {
+  color: tomato;
+}
