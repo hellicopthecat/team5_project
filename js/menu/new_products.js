@@ -38,6 +38,7 @@ $('.view_more').click(function(){
   } else {
       $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow.png)');
   }
+
 });
 
 
@@ -97,60 +98,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-//년도별 신제품 배너들 가로 스크롤 
-
-
-
-
-// $(document).ready(function() {
-//   $(".new_banners").mCustomScrollbar({
-//     theme: "rounded-dots-dark", // 스크롤 테마 종류
-//     axis: "x", // 가로 스크롤 설정
-//     advanced: {
-//       autoExpandHorizontalScroll: true // 가로 스크롤 영역 자동 확장
-//     }
-//   });
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function() {
-//   // 각각의 new_banners 요소에 대해 처리
-//   $('.new_banners').each(function() {
-//     var scrollContainer = this;
-//     var scrollAmount = 100; // 스크롤 이동량 설정
-
-//     // 가로 스크롤바 플러그인 적용
-//     $(this).mCustomScrollbar({
-//       theme: 'rounded-dots-dark', // 테마 설정
-//       axis: 'x', // 가로 스크롤
-//       advanced: {
-//         autoExpandHorizontalScroll: true // 스크롤 영역 자동 확장
-//       }
-//     });
-
-//     // 마우스 휠 이벤트 처리
-//     $(this).on('wheel', function(event) {
-//       event.preventDefault();
-//       var delta = event.originalEvent.deltaX;
-
-//       // 마우스 휠 방향에 따라 가로 스크롤 이동
-//       if (delta < 0) {
-//         scrollContainer.scrollLeft -= scrollAmount;
-//       } else {
-//         scrollContainer.scrollLeft += scrollAmount;
-//       }
-//     });
-//   });
-// });

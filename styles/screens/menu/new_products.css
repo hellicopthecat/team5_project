@@ -139,6 +139,8 @@
 }
 .line_banner_left:hover{
     background:  #0D4633;
+}
+.line_banner_left a:hover{
     color: #fff;
 }
 .line_banner_right{
@@ -168,6 +170,12 @@
 .line_banner_right a:hover{
     color: #0D4633;
 }
+
+.line_banner_left a,
+.line_banner_right a{
+text-decoration : none
+} 
+
 .line_banner_wrap span{
     margin-left: 20px;
 }
@@ -175,7 +183,7 @@
 /* 신제품 슬라이더 */
 .new_products_slider_wrap{
     width: 100%;
-    background: #3b3b3b;
+    background: #fff;
     height: 400px;
     position:relative;
     z-index: 10;
