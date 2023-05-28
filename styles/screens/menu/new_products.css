@@ -139,6 +139,7 @@
 }
 .line_banner_left:hover{
     background:  #0D4633;
+    color: #fff;
 }
 .line_banner_right{
     width: 550px;
@@ -222,7 +223,7 @@
 
 
 .new_banners{
-    padding: 20px 0;
+    padding: 30px 5px;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -233,7 +234,7 @@
     display: block;
     width: 350px;
     height: 123px;
-    border: 1px solid #DADFCB;
+    border: 1px solid #FAF3EB;
     border-radius: 5px;
     margin-right: 20px;
     overflow: hidden;
@@ -253,7 +254,6 @@
 /* 가로 스크롤 바 */
 ::-webkit-scrollbar {
     height: 8px;
-    width: 10px;
   }
 
   .scroll-container::-webkit-scrollbar {
@@ -261,12 +261,15 @@
   }
   
   .scroll-container::-webkit-scrollbar-thumb {
-    background-color: #c7c7c7; /* 스크롤바 색상 */
+    background-color: #b8b8b8; /* 스크롤바 색상 */
     border-radius: 4px; /* 스크롤바 둥글기 조절 */
     max-width: 10px; /* 스크롤바 가로 조절 */
   }
   
   .scroll-container::-webkit-scrollbar-track {
-    background-color: #E9EBF3; /* 스크롤바 트랙 색상 */
+    background-color: #f1f1f1; /* 스크롤바 트랙 색상 */
   }
   
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #989898;
+  }
