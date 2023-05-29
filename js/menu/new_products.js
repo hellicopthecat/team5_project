@@ -28,15 +28,15 @@ $( document ).ready( function() {
   } );
 
   
-//자세히 보기 클릭시 슬라이더 펼쳐보기 
+// 메인 배너 자세히 보기 클릭시 슬라이더 펼치기 
 $('.view_more').click(function(){
   $('.new_products_slider_wrap').slideToggle("fast");
 
   var arrowImage = $('.line_banner_right_toggle a').css('background-image');
-  if (arrowImage.includes('down-arrow.png')) {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/up-arrow.png)');
+  if (arrowImage.includes('down-arrow_wh.png')) {
+      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/up-arrow_wh.png)');
   } else {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow.png)');
+      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow_wh.png)');
   }
 
 });
@@ -46,22 +46,42 @@ $('.view_more').click(function(){
 
 
 
-// 신제품 슬라이더 펼쳐보기 토글 / 화살표 변경
+// 이달의 신제품 펼쳐보기 토글 / 화살표 변경
 
 $('.line_banner_right').click(function(){
   $('.new_products_slider_wrap').slideToggle("fast");
 
   var arrowImage = $('.line_banner_right_toggle a').css('background-image');
-  if (arrowImage.includes('down-arrow.png')) {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/up-arrow.png)');
+  if (arrowImage.includes('down-arrow_wh.png')) {
+      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/up-arrow_wh.png)');
   } else {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow.png)');
+      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow_wh.png)');
   }
 });
 
 
+// 이달의 신제품 슬라이더
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    auto: true,                  // 자동넘어가기 여부
+     autoStart: true,            // 자동시작 여부(false일경우 start클릭시 슬라이드시작)
+     autoControls: false,       // 시작/멈춤 버튼 노출 여부
+     autoHover : true,           // 마우스 오버시 정지 여부
+     pause: 3000,               // 자동 전환사이의 시간
+     pager: true,              // 현재 페이지 버튼 노출 여부
+     infiniteLoop: true,        // 마지막이미지에서 다음버튼 클릭시 처음이미지
+     controls: true,           // 이전/다음 버튼 노출 여부
+     mode:'fade',             //horizontal, fade, vertical
+     slideWidth: 1000,
+  });
+});
 
-// 마우스휠 가로 스크롤
+
+
+
+
+
+// 년도별 신제품 모음 마우스휠 가로 스크롤
 
 document.addEventListener('DOMContentLoaded', function() {
   

@@ -125,7 +125,7 @@
 
 .line_banner_left a{
     display: block;
-    background: url(../../../img/icons/right-arrow.png) no-repeat right;
+    background: url(../../../img/icons/right-arrow_wh.png) no-repeat right;
     background-size: 20px;
     color: #fff ;
     font-size: 16px;
@@ -155,7 +155,7 @@
 
 .line_banner_right a{
     display: block;
-    background: url(../../../img/icons/down-arrow.png) no-repeat right;
+    background: url(../../../img/icons/down-arrow_wh.png) no-repeat right;
     background-size: 25px;
     color: #BA835A;
     font-size: 16px;
@@ -193,15 +193,7 @@ text-decoration : none
     margin: auto;
 }
 
-#carouselExampleIndicators{
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background: #fff;
-}
-#carouselExampleIndicators .carousel-item img{
-   width: 200px;
-}
+
 
 
 
