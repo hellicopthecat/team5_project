@@ -1,7 +1,26 @@
-.footer_wrap {
-  position: relative;
+footer{
+  z-index: 3;
+}
 
-  z-index: 1;
+.footer_affiliate{
+  width: 100%;
+  background: #F7F1DB;
+  border-top: 1px solid #CAC0B6;
+}
+.footer_affiliate ul{
+  width: 1100px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_affiliate ul li{
+  padding: 0 20px;
+}
+
+.footer_bottom {
+  position: relative;
   background: #363636;
   width: 100%;
   height: 300px;
@@ -12,15 +31,16 @@
   font-weight: 500;
   line-height: 30px;
 }
+
 .company {
-  width: 800px;
+  width: 900px;
   height: 50px;
   margin: auto;
   color: #fff;
 }
 
 .policy {
-  width: 900px;
+  width: 1000px;
   height: 50px;
   margin: auto;
   margin-bottom: 10px;
