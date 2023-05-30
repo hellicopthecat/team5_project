@@ -1,5 +1,6 @@
 footer{
-  z-index: 3;
+  z-index: 5;
+  position: relative;
 }
 
 .footer_affiliate{
