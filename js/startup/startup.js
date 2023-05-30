@@ -108,7 +108,7 @@ const handleRegistModalClose = () => {
 closeRegistModal.addEventListener("click", handleRegistModalClose);
 
 /** introduce tlj 2 depth */
-const introduceTljList = document.querySelectorAll("#startup_introduce-tlj li");
+const introduceTljList = startUpIntroTlj.querySelectorAll("ul>li");
 const tljLook = document.querySelector(".startup_tlj--look");
 const tljStrength = document.querySelector(".startup_tlj--strength");
 
