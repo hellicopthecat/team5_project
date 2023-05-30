@@ -68,6 +68,57 @@ a {
   background-color: #fff;
 }
 
+/* button tour */
+.btnn{
+  width: 80px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+.btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse{
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover{
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--green{
+  color: transparent;
+  border-color: #669900;
+}
+.btn.btn--green:hover{
+  color: #fff;
+  background-color: #669900;
+}
+.btn.btn--gold{
+  color: #d9AA8A;
+  border-color: #d9AA8A;
+}
+.btn.btn--gold:hover{
+  color: #fff;
+  background-color: #d9aa8a;
+}
+.btn.btn--white{
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover{
+  color: #333;
+  background-color: #fff;
+}
 
 
 /* Header */
