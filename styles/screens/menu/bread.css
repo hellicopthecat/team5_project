@@ -212,7 +212,7 @@
     font-size: 16px;
     font-weight: 800;
     color: #0D4633;
-    background: #FAF3EB;
+    background: #F7F1DB;
     display: flex;
     align-items: center;
 }
@@ -363,5 +363,40 @@
 .view_nutris_dd{
     position: relative;
     top: 15px;
-    /* right: 1120px; */
+    
 }
+
+/* .view_nutris_dd dl dd{
+    position: relative;
+    top: -50px;
+    margin-bottom: 70px;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 1100px;
+    margin: 30px 0 70px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  th {
+    border-top: 1px solid #776b5f;
+    border-bottom: 1px solid #776b5f;
+    color: #333;
+    font-size: 14px;
+  }
+
+  tr {
+    border-bottom: 1px solid #CAC0B6;
+    color: #696969;
+    font-size: 13px;
+  }
