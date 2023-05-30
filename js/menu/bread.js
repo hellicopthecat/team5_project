@@ -5,6 +5,8 @@ const viewNutris = document.getElementById("view_nutris")
 const viewPicsD = document.getElementById("view_pics_dd")
 const viewNutrisD = document.getElementById("view_nutris_dd")
 
+const selectorBox = document.getElementById("selector_tab")
+
 const handleViewPics = (event)=>{
     // console.log(event.target)
     event.preventDefault(); /* 화면이 새로고침되지 않도록 하는 코드 */
@@ -15,6 +17,8 @@ const handleViewNutris=(event)=>{
     event.preventDefault();
     viewNutrisD.classList.remove("hidden")
     viewPicsD.classList.add("hidden")
+
+    selectorBox.classList.add("hidden") // 베스트 , 신제품 보기 분류 박스 숨기기
 }
 
 const switchToPicsView = () => {
