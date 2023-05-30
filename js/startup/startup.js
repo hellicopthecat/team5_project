@@ -3,7 +3,6 @@ const startUpIntroTlj = document.getElementById("startup_introduce-tlj");
 const startUpPrePare = document.getElementById("startup_prepare");
 const startUpRecruitStory = document.getElementById("startup_recruit_story");
 
-console.log(startUpHeaderNav);
 startUpHeaderNav.forEach((headerNav, index) => {
   const handleStartUpHeaderNav = () => {
     if (index === 0) {
@@ -107,3 +106,21 @@ const handleRegistModalClose = () => {
   registModal.close();
 };
 closeRegistModal.addEventListener("click", handleRegistModalClose);
+
+/** introduce tlj 2 depth */
+const introduceTljList = document.querySelectorAll("#startup_introduce-tlj li");
+const tljLook = document.querySelector(".startup_tlj--look");
+const tljStrength = document.querySelector(".startup_tlj--strength");
+
+introduceTljList.forEach((each, index) => {
+  function handleIntroduceClick() {
+    if (index === 0) {
+      tljLook.classList.remove("hidden");
+      tljStrength.classList.add("hidden");
+    } else if (index === 1) {
+      tljLook.classList.add("hidden");
+      tljStrength.classList.remove("hidden");
+    }
+  }
+  each.addEventListener("click", handleIntroduceClick);
+});
