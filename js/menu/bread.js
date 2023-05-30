@@ -12,6 +12,7 @@ const handleViewPics = (event)=>{
     event.preventDefault(); /* 화면이 새로고침되지 않도록 하는 코드 */
     viewPicsD.classList.remove("hidden")
     viewNutrisD.classList.add("hidden")
+    selectorBox.classList.remove("hidden") // 베스트 , 신제품 보기 분류 박스 보이기
 }
 const handleViewNutris=(event)=>{
     event.preventDefault();
