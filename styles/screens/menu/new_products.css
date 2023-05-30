@@ -189,11 +189,37 @@ text-decoration : none
     position:relative;
     z-index: 10;
 }
-.new_products_slider{
-    width: 1100px;
-    margin: auto;
-}
-
+.new_products_slider {
+    width: 100%; /* 슬라이드 컨테이너의 너비 */
+    height: 400px; /* 슬라이드 컨테이너의 높이 */
+    overflow: hidden; /* 슬라이드 넘침 처리 */
+    position: relative;
+  }
+  
+  .new_products_slider ul {
+    width: 100%; /* 슬라이드 리스트의 너비 */
+    height: 100%; /* 슬라이드 리스트의 높이 */
+    display: flex; /* 슬라이드를 가로로 배치 */
+    transition: transform 0.3s ease-in-out; /* 슬라이드 전환 애니메이션 */
+  }
+  
+  .new_products_slider ul li {
+    flex: 0 0 100%; /* 슬라이드 아이템의 가로 너비 */
+    height: 100%; /* 슬라이드 아이템의 높이 */
+    display: flex; /* 슬라이드 아이템 내 이미지 가운데 정렬을 위해 사용 */
+    justify-content: center; /* 슬라이드 아이템 내 이미지 가운데 정렬을 위해 사용 */
+    align-items: center; /* 슬라이드 아이템 내 이미지 가운데 정렬을 위해 사용 */
+  }
+  
+  .new_products_slider ul li img {
+    max-width: 100%; /* 이미지가 슬라이드 아이템 내에서 최대 너비를 가지도록 설정 */
+    max-height: 100%; /* 이미지가 슬라이드 아이템 내에서 최대 높이를 가지도록 설정 */
+  }
+  
+  .new_products_slider ul li.show {
+    transform: translateX(-100%); /* 현재 슬라이드 아이템을 왼쪽으로 이동하여 보이도록 함 */
+  }
+  
 
 
 
