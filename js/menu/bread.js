@@ -16,8 +16,31 @@ const handleViewNutris=(event)=>{
     viewNutrisD.classList.remove("hidden")
     viewPicsD.classList.add("hidden")
 }
-viewPics.addEventListener("click",handleViewPics)
-viewNutris.addEventListener("click",handleViewNutris)
+
+const switchToPicsView = () => {
+  viewPics.style.background = "url(../../../img/menu/icon-pics-wh.png) no-repeat left";
+  viewPics.style.backgroundColor = "#7e7e7e";
+  viewPics.style.color = "#fff";
+
+  viewNutris.style.background = "url(../../../img/menu/icon-ntris.png) no-repeat left";
+  viewNutris.style.backgroundColor = "#fff";
+  viewNutris.style.color = "#555";
+};
+
+const switchToNutrisView = () => {
+  viewPics.style.background = "url(../../../img/menu/icon-pics.png) no-repeat left";
+  viewPics.style.backgroundColor = "#fff";
+  viewPics.style.color = "#555";
+
+  viewNutris.style.background = "url(../../../img/menu/icon-ntris-wh.png) no-repeat left";
+  viewNutris.style.backgroundColor = "#7e7e7e";
+  viewNutris.style.color = "#fff";
+};
+
+viewPics.addEventListener("click",handleViewPics);
+viewNutris.addEventListener("click",handleViewNutris);
+viewPics.addEventListener("click", switchToPicsView);
+viewNutris.addEventListener("click", switchToNutrisView);
 
 
 
