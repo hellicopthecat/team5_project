@@ -40,6 +40,11 @@ h3::before{
     color: #747474;
     padding-left: 5px;
 }
+.page_location ul li a:hover{
+    text-decoration: underline;
+}
+
+
 
 /* 상단 슬라이드 + 라인배너(모바일선물/신제품 펼쳐보기) */
 

@@ -39,6 +39,11 @@ h4::before{
     color: #747474;
     padding-left: 5px;
 }
+.page_location ul li a:hover{
+    text-decoration: underline;
+}
+
+
 
 /* 제품디테일박스 */
 .product_detail_wrap{
