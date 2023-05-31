@@ -12,8 +12,13 @@
 }
 /* event search form */
 .event_winner-wrap {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
+}
+.event_winner--result {
+  position: relative;
+  top: -80px;
 }
 .event_search-form {
   background-color: var(--table-color);

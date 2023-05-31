@@ -410,23 +410,23 @@ const appendCreateList = (product, num) => {
 
   recommStuffListCont[num].appendChild(li);
 };
-const prependCreateList = (product, num) => {
-  const li = document.createElement("li");
-  const img = document.createElement("img");
-  const span = document.createElement("span");
-  const p = document.createElement("p");
+// const prependCreateList = (product, num) => {
+//   const li = document.createElement("li");
+//   const img = document.createElement("img");
+//   const span = document.createElement("span");
+//   const p = document.createElement("p");
 
-  img.src = product.src;
-  img.alt = product.alt;
-  span.innerText = product.alt;
-  p.innerText = product.description;
+//   img.src = product.src;
+//   img.alt = product.alt;
+//   span.innerText = product.alt;
+//   p.innerText = product.description;
 
-  li.append(img);
-  li.append(span);
-  li.append(p);
+//   li.append(img);
+//   li.append(span);
+//   li.append(p);
 
-  recommStuffListCont[num].prepend(li);
-};
+//   recommStuffListCont[num].prepend(li);
+// };
 
 // const handlePrepend = (NUM) => {
 //   if (NUM === 0) {

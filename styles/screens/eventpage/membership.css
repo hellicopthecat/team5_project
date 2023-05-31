@@ -1,5 +1,5 @@
 .membership__info-wrap {
-  background-color: var(--bg-color);
+  background-color: white;
   width: 1200px;
   margin: 0 auto;
   padding-bottom: 50px;
@@ -174,19 +174,20 @@
   border-radius: 25px;
   width: 230px;
   height: 50px;
+  box-shadow: 3px 3px 3px black;
   background-color: var(--main-color);
   animation: membershipLink infinite 3s;
 }
 
 @keyframes membershipLink {
   0% {
-    transform: scale(95%);
+    transform: scale(98%);
   }
   50% {
-    transform: scale(105%);
+    transform: scale(102%);
   }
   100% {
-    transform: scale(95%);
+    transform: scale(98%);
   }
 }
 @keyframes membershipCardBanner {

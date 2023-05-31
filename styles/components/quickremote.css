@@ -4,15 +4,18 @@
   bottom: 20px;
   right: 10px;
   z-index: 99;
+  height: 0;
 }
 .mainpage_quick--menu-cont {
+  position: relative;
+  bottom: 290px;
+  right: 0px;
   display: block;
   margin: 0 auto;
   padding: 5px 0px;
   background-color: #333;
   border-radius: 10px;
   border: 1px solid white;
-  transform: translateX(60px);
 }
 .mainpage_quick--menu a {
   display: flex;
@@ -39,7 +42,7 @@
   background-color: #333;
   border: 1px solid white;
   position: absolute;
-  right: 3px;
+  right: 4px;
   bottom: 0px;
   display: flex;
   justify-content: center;
