@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous les Jours | 결제하기</title>
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="../../../styles/app/payment.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+<main class="pay_main">
+    <div class="pay_main_wrap">
+        <h2 class="servicecenter_title">결제하기</h2>
+        <div class="qur_quck_manu">
+            <p >주문배송</p>
+            <p class="qur_quck_manu_check">결제하기</p>
+        </div>
+    <div class="pay_method" >
+        <span>결제수단</span>
+        <button id="pay_c" class="pay_check" type="submit">신용카드</button>
+        <button id="pay_e"  type="submit">가상계좌</button>
+        <button id="pay_g"  type="submit">계좌이체</button>
+    </div>
+  
+    <section class="pay_se01_wrap" id="section1">
+        <h2>신용카드</h2>
+        <ul>
+            <li>
+                <span>카드종류</span>
+                <select  class="pay_select01" name="" id="pay_bank">
+                    <option id="bank01" value="none">카드를 선택해주세요</option>
+                    <option value="KB">KB카드</option>
+                    <option value="BC">BC카드</option>
+                    <option value="삼성카드">삼성카드</option>
+                    <option value="신한카드">신한카드</option>
+                    <option value="외한">외환카드</option>
+                    <option value="하나">하나비자</option>
+                    <option value="롯데">롯데카드</option>
+                    <option value="씨티">씨티카드</option>
+                    <option value="광주">광주비자</option>
+                    <option value="현대">현대카드</option>
+                    <option value="전북">전북카드</option>
+                    <option value="NH">NH카드</option>
+                    <option value="수협">수협카드</option>
+                    <option value="제주">제주카드</option>
+                    <option value="신협">신협카드</option>
+                    <option value="우리">우리카드</option>
+                </select>
+            </li>
+            <li>
+                <span>할부종류</span>
+                <select class="pay_select02" name="" id="">
+                    <option value="">일시불</option>
+                    <option value="">2개월</option>
+                    <option value="">3개월</option>
+                    <option value="">5개월</option>
+              
+                </select>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="pay_se03_wrap pay_hide">
+        <div class="pay_se03">
+            <h2>가상계좌</h2>
+            <ul class="pay_se03_ul">
+                <li>
+                    <p>
+                        <label for="pay_name">입금자명 </label>
+                        <input type="text" form="pay_name" id="pay_name">
+                    </p>
+                    <div id="result">
+
+                    </div>
+                </li>
+                <li>
+                    <label for="pay_bank02">입금은행</label>
+                    <select name="pay_bank02" id="pay_bank02">
+                        <option id="bank02" name="" value="none">입금은행 선택</option>
+                        <option name="" value="기업">기업</option>
+                        <option name="" value="국민">국민</option>
+                        <option name="" value="농협">농협</option>
+                        <option name="" value="하나">하나</option>
+                        <option name="" value="우리">우리</option>
+                        <option name="" value="신한">신한</option>
+                        <option name="" value="경남">경남</option>
+                        <option name="" value="우체국">우체국</option>
+                        <option name="" value="부산">부산</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="pay_se03_guide">
+                <p><strong>무통장입금(가상계좌) 서비스 안내</strong></p>
+                <p class="pay_se03_guide_p">- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다</p>
+                <p class="pay_se03_guide_p">- 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pay_se04_wrap pay_hide">
+        <div>
+            <h4>결제안내</h4>
+            <p>-계좌이체로 결제 완료시 본인 계좌에서 즉시 이체 처리됩니다</p>
+            <p>-실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다</p>
+        </div>
+    
+    </section>
+
+    <section  class="pay_se05_wrap pay_hide">
+        <div class="pay_se05_receipt">
+            <h4 >현금영수증 신청</h4>
+            <div>
+                <input class="pay_se05_checkbox" type="checkbox"  name="pay_receipts_on" id="">
+                <label class="pay_se05_receipt_label" for="pay_receipts_on" >발급</label>
+                <input class="pay_se05_checkbox" type="checkbox" checked="on" name="pay_receipts_no" id="">
+                <label class="pay_se05_receipt_label" for="pay_receipts_no" >미발급</label>
+            </div>
+
+        </div>
+
+        <div id="receipt_01"  class="pay_se05_receipt">
+            <input  class="pay_se05_checkbox" type="checkbox" id="pay_receipts1"  name="pay_receipts_common" checked="on" id="">
+            <label class="pay_se05_receipt_label" for="pay_receipts_common">소득공제용(일반 개인용)</label>
+            <p>
+                <label  for="pay_receipts_name">이름</label>
+                <input  class="pay_se05_text" type="text" name="pay_receipts_name">
+            </p>
+        </div>
+
+        <div id="receipt_02" class="pay_se05_receipt">
+            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common" id="pay_receipts2">
+            <label class="pay_se05_receipt_label" for="pay_receipts_common">지출증빙용(사업자용)</label>
+            <p>
+                <label for="pay_receipts_phone">휴대폰번호</label>
+                <input class="pay_se05_text"  type="text" name="pay_receipts_phone" >
+            </p>
+        </div>
+
+        <div  id="company_01" class="pay_se05_receipt  pay_hide">
+            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common"  id="pay_receipts3">
+            <label class="pay_se05_receipt_label" for="pay_receipts_common">소득공제용(일반 개인용)</label>
+            <p>
+                <label  for="pay_company_name">사업자명</label>
+                <input  class="pay_se05_text" type="text" name="pay_company_name" id="">
+            </p>
+        </div>
+
+        <div id="company_02"  class="pay_se05_receipt pay_hide">
+            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common" checked="on" id="pay_receipts4">
+            <label class="pay_se05_receipt_label" for="pay_receipts_common">지출증빙용(사업자용)</label>
+            <p>
+                <label for="pay_company_num">사업자번호</label>
+                <input class="pay_se05_text"  type="text" name="pay_company_num" id="">
+            </p>
+        </div>
+      
+    </section>
+
+
+    <section class="pay_se02_wrap">
+        <div class="pay_se02_total">
+            <ul>
+                <li>
+                    <span class="pay_se02_li01">주문금액 합계</span>
+                    <span>50,000원</span>
+                </li>
+                <li class="pay_se02_li02">
+                    <span>-</span>
+                </li>
+                <li>
+                    <span class="pay_se02_li01">할인금액</span>
+                    <span>0원</span>
+                </li>
+                <li class="pay_se02_li02"> 
+                    <span>=</span>
+                </li>
+                <li>
+                    <span class="pay_se02_li03">총 주문금액 50000원</span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="pay_se02_h3">개인정보 수집 및 이용 동의</h3>
+            <div>
+                <p class="pay_se02_privacy">1.개인정보의 수집 및 이용 목적</p>
+                <p class="pay_se02_privacy02" >뚜레쥬르는 원활한 주문과 서비스 접수 , 정확한 배송지 및 배송주소 확인 , 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려 합니다</p>
+                <p class="pay_se02_privacy">2.개인정보 수집 및 활용동의 <strong>(필수)</strong></p>    
+                <table class="pay_se02_privacy_table">
+                    <thead>
+
+                        <tr class="pay_se02_privacy_tr01">
+                            <th>목적</th>
+                            <th>항목</th>
+                            <th>보유기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pay_se02_privacy_tr02">
+                            <td>
+                                뚜레쥬르 상품주문 관련 서비스 접수
+                                <br>
+                                배송자 및 배송주소 확인, 대금결제 목적
+                            </td>
+                            <td>
+                                주문자 성명,수령자 성명,휴대전화번호
+                                <br>
+                                주소,이메일,비밀번호
+                            </td>
+                            <td>
+                                결제정보는 상법 등 관련법령 규정에
+                                <br>
+                                의하여 5년간 보유
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="pay_se02_important">* 고객님께서는 개인정보 수집 동의에 거부할 수 있으며, 거부 시 쇼핑몰 주문 서비스를 이용하실 수 없습니다.</p>
+            </div>
+
+            <div class="pay_se02_important_ok">
+                <label for="pay_check1">동의합니다</label>
+                <input type="checkbox" name="pay_check" id="pay_check1">  
+            </div>
+            <p class="pay_se02_call">관련 문의사항은 고객센터 1577-0700으로 문의해주시기 바랍니다. 감사합니다.</p>
+        </div>
+
+        <h4 class="pay_se02_h4">결제대행 서비스 이용약관 동의</h4>
+        <div>
+            <ul >
+                <li class="pay_se02_information">
+                    <span>전자금융거래 기본약관</span>
+                    <p>
+                        <a class="pay_se02_look" onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;" href="https://pay.cjsystems.co.kr/NewPayment/Apply/PGApply.htm">자세히보기</a>
+                        <label for="pay_check2">동의</label>
+                        <input type="checkbox" name="pay_check" id="pay_check2">
+                    </p>
+                </li>
+                <li class="pay_se02_information">
+                    <span>개인정보의 수집 및 이용 동의 [필수]</span>
+                    <p>
+                        <a class="pay_se02_look" onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;" href="https://pay.cjsystems.co.kr/NewPayment/Apply/IDCollectApply.htm">자세히보기</a>
+                        <label for="pay_check3">동의</label>
+                        <input type="checkbox" name="pay_check" id="pay_check3">
+                    </p>
+                </li>
+                <li class="pay_se02_information">
+                    <span>개인정보의 제공 및 위탁 동의</span>
+                    <p>
+                        <a class="pay_se02_look" onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;" href="https://pay.cjsystems.co.kr/NewPayment/Apply/IDProvideApply.htm">자세히보기</a>
+                        <label for="pay_check4">동의</label>
+                        <input type="checkbox" name="pay_check" id="pay_check4">
+                    </p>
+                </li>
+                <li class="pay_se02_information">
+                    <span>구매할 상품의 결제 조건을 확인 하였으며 , 구매의 동의합니다</span>
+                    <p>
+                        <label for="pay_check4">동의</label>
+                        <input type="checkbox" name="pay_check" id="pay_check5">
+                    </p>
+                </li>
+            </ul>
+            <p class="pay_check_all">
+                <label for="pay_check5">전체 동의</label>
+                <input type="checkbox" name="pay_check_all" id="pay_check_all">
+            </p>
+        </div>
+        <div class="pay_approval">
+            <a id="pay_ok" class="pay_approval_ok" href="#none">결제하기</a>
+            <a  id="pay_no" class="pay_approval_no" href="#none">취소하기</a>
+        </div>
+
+   
+   
+    
+    </section>
+
+ 
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer_affiliate">
+      <ul>
+        <li>
+          <a href="https://www.cjfoodville.co.kr/main.asp" target="_blank" title="CJ 푸드빌 새창으로 열기">
+            <img src="../../../img/footer/cjfoodvill.jpg" alt="CJ 푸드빌">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ivips.co.kr:7002/" target="_blank" title="빕스 새창으로 열기">
+            <img src="../../../img/footer/vips.jpg" alt="Vips">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.italiantheplace.co.kr:7022/brand/" target="_blank" title="더플레이스 새창으로 열기">
+            <img src="../../../img/footer/theplace.jpg" alt="The place">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cheiljemyunso.co.kr:7014/main.asp" target="_blank" title="제일제면소 새창으로 열기">
+            <img src="../../../img/footer/jeil.jpg" alt="제일제면소">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ngrill.co.kr:7025/index.html" target="_blank" title="엔그릴 새창으로 열기">
+            <img src="../../../img/footer/ngrill.jpg" alt="엔그릴">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nseoultower.co.kr:8501/index.asp" target="_blank" title="N SEOUL TOWER 새창으로 열기">
+            <img src="../../../img/footer/nSeoul.jpg" alt="엔서울타워">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer_bottom">
+
+      <div class="company">
+        <ul>
+          <li>
+            <a href="http://www.cjfoodville.co.kr/story/foodvilleintro.html"
+              >회사소개</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/views/partissier/partissier.html"
+              >기사채용안내</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/views/startup/startup.html"
+              >창업안내</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/views/footer/sitemap.html">사이트맵</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policy">
+        <ul>
+          <li>
+            <a href="https://www.cjfoodville.co.kr/footer/userpolicy.asp" target="_blank" title="새창 열림">이용약관</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cjfoodville.co.kr/footer/location.asp" target="_blank" title="새창 열림">위치기반서비스 이용약관</a
+            >
+          </li>
+          <li class="private">
+            <a href="https://www.cjfoodville.co.kr/footer/privacy.asp" target="_blank" title="새창 열림">개인정보처리방침</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/views/footer/email.html"
+              >이메일무단수집거부</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cjfoodville.co.kr/footer/ethic_center.asp" target="_blank" title="새창 열림">윤리신고센터</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/views/footer/legal.html">법적고지</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="company_info">
+        <p>상호명 : CJ푸드빌(주)</p>
+
+        <address>
+            주소 : (우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&amp;G
+            을지로타워 3, 9-11층 CJ푸드빌㈜s
+        </address>
+
+        <p>
+          <span>고객센터 : 1577-0700</span>
+          <span>통신판매업종신고증 제 2011-서울중구-0771호</span>
+          <sapn class="ftc_confirm">
+            <a
+              href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=3128142519"
+              target="_blank"
+              title="새창열림"
+            >
+              <img
+                src="../../../img/footer/footer_info_information.png"
+                alt="사업자정보확인"
+              />
+            </a>
+          </sapn>
+          <span class="hosting">호스팅제공자 : CJ올리브네트웍스(주)</span>
+        </p>
+
+        <p class="business_info">
+          <span>사업자등록번호 : 312-81-42519</span>
+          <span>대표이사 : 김찬호</span>
+          <span>개인정보보호책임자 : 오창호</span>
+          <span class="email">
+            <a href="mailto:help_master@cj.net"
+              >대표 이메일 : help_master@cj.net</a
+            >
+          </span>
+        </p>
+
+        <p class="copyright">
+          COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.
+        </p>
+      </div>
+
+      <div class="footer_logo">
+        <img src="../../../img/logos/logo_grey.png" />
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="../../../js/app/paymaent.js"></script>
+</html>

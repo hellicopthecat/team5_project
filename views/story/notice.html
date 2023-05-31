@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Coffee Korea</title>
+
+    <link rel="icon" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../../styles/brandstory/latelier.css" />
+    <link rel="stylesheet" href="../../styles/brandstory/notice.css" />
+
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=h1ai8h7ku5"
+    ></script>
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script defer src="./js/latelier.js"></script>
+    <script defer src="./js/notice.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img src="./images/starbucks_logo.png" alt="STARBUCKS" />
+        </a>
+
+        <div class="sub-menu">
+          <ul class="menu">
+            <li>
+              <a href="/signin">매장안내</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">고객센터</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">기사 채용안내</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">log in</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" />
+            <div class="material-icons">search</div>
+          </div>
+        </div>
+
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">브랜드 스토리</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">제품 안내</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">이벤트 & 멤버십</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">뚜레쥬르 앱 & 온라인 쇼핑몰</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Section -->
+    <section class="notice">
+      <div class="inner">
+        <div class="title-area">
+          <h1>뉴스 & 공지사항</h1>
+          <div class="navigation-box">
+            <a href="#none">Home</a>
+            <span class="arrow-box">
+              <img src="../../images/arrow_right_ACACAC.svg" alt="아이콘" />
+            </span>
+            <a href="#none">브랜드 스토리</a>
+            <span class="arrow-box">
+              <img src="../../images/arrow_right_ACACAC.svg" alt="아이콘" />
+            </span>
+            <a href="#none">뉴스 & 공지사항</a>
+          </div>
+        </div>
+        <div class="search-area">
+          <select id="" name="">
+            <option value="title_cnt_v">제목+내용</option>
+            <option value="title_v">제목</option>
+            <option value="cnt_v">내용</option>
+          </select>
+          <input type="search" placeholder="검색어를 입력해주세요" />
+          <button type="button">검색</button>
+        </div>
+        <div class="notice-list-area">
+          <h1>
+            총<span class="notice-list-num">222개</span>의 글이 등록되었습니다.
+          </h1>
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>이벤트 명</th>
+                  <th>등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="wsw">[공지]</td>
+                  <td class="tal">
+                    <a href="notice_detail_1.html"
+                      >CJ ONE 멤버십 서비스 정책 변경 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2018.01.29</td>
+                </tr>
+                <tr>
+                  <td class="wsw">[공지]</td>
+                  <td class="tal">
+                    <a href="notice_detail_2.html"
+                      >뚜레쥬르 모바일 제품 교환권 이용 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2016.03.31</td>
+                </tr>
+                <tr>
+                  <td class="wsw">222</td>
+                  <td class="tal">
+                    <a href="notice_detail_3.html"
+                      >"그대로 구워먹는 꿀 토스트 식빵 구매하면 꿀 혜택이 뚝뚝!"
+                      이벤트 당첨자 발표</a
+                    >
+                  </td>
+                  <td class="wsw">2023.04.12</td>
+                </tr>
+                <tr>
+                  <td class="wsw">221</td>
+                  <td class="tal">
+                    <a href="#none"
+                      >CJ푸드빌 위치기반서비스 이용약관 개정 고지</a
+                    >
+                  </td>
+                  <td class="wsw">2023.04.10</td>
+                </tr>
+                <tr>
+                  <td class="wsw">220</td>
+                  <td class="tal">
+                    <a href="#none">CJ푸드빌 개인정보처리방침 개정 고지</a>
+                  </td>
+                  <td class="wsw">2023.04.10</td>
+                </tr>
+                <tr>
+                  <td class="wsw">219</td>
+                  <td class="tal">
+                    <a href="#none">뚜레쥬르 X 알쏭달쏭 캐치! 티니핑</a>
+                  </td>
+                  <td class="wsw">2023.03.28</td>
+                </tr>
+                <tr>
+                  <td class="wsw">218</td>
+                  <td class="tal">
+                    <a href="#none"
+                      >SKT 0 day 및 발렌타인 신제품 사랑해 곰돌이 초콜릿 구매
+                      가능 매장 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2023.01.11</td>
+                </tr>
+                <tr>
+                  <td class="wsw">217</td>
+                  <td class="tal">
+                    <a href="#none">CJ푸드빌 개인정보처리방침 개정 고지</a>
+                  </td>
+                  <td class="wsw">2023.01.09</td>
+                </tr>
+                <tr>
+                  <td class="wsw">216</td>
+                  <td class="tal">
+                    <a href="#none"
+                      >행복 플러스백[뚜레쥬르X오롤리데이 콜라보 굿즈]X페이코인
+                      제휴 이벤트 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2022.12.12</td>
+                </tr>
+                <tr>
+                  <td class="wsw">215</td>
+                  <td class="tal">
+                    <a href="#none"
+                      >행복 플러스백[뚜레쥬르X오롤리데이 콜라보 굿즈]X
+                      네이버페이 제휴 이벤트 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2022.11.28</td>
+                </tr>
+                <tr>
+                  <td class="wsw">214</td>
+                  <td class="tal">
+                    <a href="#none"
+                      >2022년 크리스마스 뚜레쥬르X서커스보이밴드 굿즈[케이크
+                      서버] 출시 안내</a
+                    >
+                  </td>
+                  <td class="wsw">2022.11.28</td>
+                </tr>
+                <tr>
+                  <td class="wsw">213</td>
+                  <td class="tal">
+                    <a href="#none">CJ푸드빌 개인정보처리방침 개정 고지</a>
+                  </td>
+                  <td class="wsw">2022.11.10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="page-number-box">
+            <button class="prev-btn">
+              <span class="ico-box">
+                <img src="../../images/arrow_prev_797979.svg" alt="아이콘" />
+              </span>
+            </button>
+            <ul>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+            </ul>
+            <button class="next-btn">
+              <span class="ico-box">
+                <img src="../../images/arrow_next_797979.svg" alt="아이콘" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
