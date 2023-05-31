@@ -30,20 +30,21 @@ let activeIndex = null;
 customerNav.forEach((nav, index) => {
   const handelCustomerNav = () => {
     const DURATION = 800;
+
     if (index === 0) {
       onlineCounsel.classList.add("hidden");
       onlineCounselResult.classList.add("hidden");
-      faqWarp.classList.remove("hidden");
+      faqWarp.classList.toggle("hidden");
       faqWarp.animate([{opacity: 0}, {opacity: 1}], {duration: DURATION});
     } else if (index === 1) {
       faqWarp.classList.add("hidden");
       onlineCounselResult.classList.add("hidden");
-      onlineCounsel.classList.remove("hidden");
+      onlineCounsel.classList.toggle("hidden");
       onlineCounsel.animate([{opacity: 0}, {opacity: 1}], {duration: DURATION});
     } else if (index === 2) {
       faqWarp.classList.add("hidden");
       onlineCounsel.classList.add("hidden");
-      onlineCounselResult.classList.remove("hidden");
+      onlineCounselResult.classList.toggle("hidden");
       onlineCounselResult.animate([{opacity: 0}, {opacity: 1}], {
         duration: DURATION,
       });
