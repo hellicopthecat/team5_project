@@ -26,7 +26,10 @@
 }
 .deli_main_title{
     font-size: 50px;
+<<<<<<< HEAD
     font-weight: 100;
+=======
+>>>>>>> main
 }
 .deli_title_menu ul{
     margin-bottom: 50px;
@@ -40,6 +43,9 @@
     border-radius: 20px;
 }
 
+.deli_product_wrap{
+    margin-bottom: 50px;
+}
 
 /* 메뉴 선텍  */
 
@@ -86,7 +92,11 @@
 }
 
 .deli_product_wrap h2{
+<<<<<<< HEAD
     font-size: 45px;
+=======
+    font-size: 50px;
+>>>>>>> main
     margin-bottom: 50px;
     font-weight: 100;
 }

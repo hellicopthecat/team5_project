@@ -44,7 +44,11 @@ margin-left: -5px;
     border: 1px solid #004e42;
 }
 .pay_se01_wrap h2{
+<<<<<<< HEAD
     font-size: 40px;
+=======
+   font-size: 40px;
+>>>>>>> main
     margin-bottom: 30px;
 }
 .pay_se01_wrap li{
@@ -206,7 +210,8 @@ margin-left: -5px;
     padding-left: 50px;
 }
 .pay_se03_wrap h2{
-    font-weight: bold;
+    
+    font-size: 40px;
     margin-bottom: 30px
 }
 .pay_se03_ul li{
