@@ -16,11 +16,40 @@
       viewNutrisD.classList.remove("hidden")
       viewPicsD.classList.add("hidden")
   }
-  viewPics.addEventListener("click",handleViewPics)
-  viewNutris.addEventListener("click",handleViewNutris)
+  
+
+
+
+  //사진으로 보기, 영양정보로 보기 페이지 전환시 버튼 스타일 변경
+  const switchToPicsView = () => {
+    viewPics.style.background = "url(../../../img/menu/icon-pics-wh.png) no-repeat left";
+    viewPics.style.backgroundColor = "#7e7e7e";
+    viewPics.style.color = "#fff";
+  
+    viewNutris.style.background = "url(../../../img/menu/icon-ntris.png) no-repeat left";
+    viewNutris.style.backgroundColor = "#fff";
+    viewNutris.style.color = "#555";
+  };
+  
+  const switchToNutrisView = () => {
+    viewPics.style.background = "url(../../../img/menu/icon-pics.png) no-repeat left";
+    viewPics.style.backgroundColor = "#fff";
+    viewPics.style.color = "#555";
+  
+    viewNutris.style.background = "url(../../../img/menu/icon-ntris-wh.png) no-repeat left";
+    viewNutris.style.backgroundColor = "#7e7e7e";
+    viewNutris.style.color = "#fff";
+  };
+  
+  viewPics.addEventListener("click",handleViewPics);
+  viewNutris.addEventListener("click",handleViewNutris);
+  viewPics.addEventListener("click", switchToPicsView);
+  viewNutris.addEventListener("click", switchToNutrisView);
   
   
 
+
+  
   
   
   // 신제품 모아보기, 베스트 모아보기 토글 / 화살표 변경
