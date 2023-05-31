@@ -61,43 +61,21 @@ $('.line_banner_right').click(function(){
 
 
 // 이달의 신제품 슬라이더
-// 슬라이드 이미지들을 선택합니다.
-const sliderContainer = document.querySelector('.new_products_slider ul');
-const slides = Array.from(document.querySelectorAll('.new_products_slider ul li'));
 
-// 슬라이드 인덱스와 슬라이드 간격을 초기화합니다.
-let currentSlideIndex = 0;
-const slideInterval = 2000; // 슬라이드 간격: 2초
-
-// 다음 슬라이드로 이동하는 함수
-function nextSlide() {
-  // 현재 슬라이드를 숨깁니다.
-  slides[currentSlideIndex].classList.remove('show');
-
-  // 다음 슬라이드의 인덱스를 계산합니다.
-  currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-
-  // 다음 슬라이드를 보여줍니다.
-  slides[currentSlideIndex].classList.add('show');
-}
-
-// 일정 간격마다 자동으로 슬라이드를 전환합니다.
-setInterval(nextSlide, slideInterval);
-
-const slider = document.querySelector('.new_products_slider ul');
-let position = 0;
-const slidesToShow = 1;
-const slideWidth = 100 / slidesToShow;
+const slider = document.querySelector('.new_products_slider .slider-container');
+const slides = Array.from(document.querySelectorAll('.new_products_slider .slide'));
+const slideWidth = slides[0].offsetWidth;
+let currentIndex = 0;
 
 function slideNext() {
-  position -= slideWidth;
-  if (position <= -(100 - slideWidth)) {
-    position = 0;
-  }
-  slider.style.transform = `translateX(${position}%)`;
+  currentIndex = (currentIndex + 1) % slides.length;
+  slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
 }
 
 setInterval(slideNext, 2000);
+
+
+
 
 
 
