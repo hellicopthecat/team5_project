@@ -3,7 +3,8 @@
     margin: 0 auto;
 }
 .bulk_main_wrap h2{
-    font-size: 40px;
+    font-size: 40px;    
+    margin-bottom: 30px;
 }
 .bulk_i_wrap{
     width: 80%;
@@ -63,4 +64,9 @@ top: -20px;
 left: 10px;
 font-size: 30px;
 font-weight: bold;
+}
+
+.bulk_font{
+    font-size: 15px;
+    color: rgb(180,180, 180);
 }
