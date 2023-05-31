@@ -151,7 +151,7 @@ h3::before{
     font-weight: 500;
     display: block;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width:540px;
     height: 60px;
@@ -165,43 +165,35 @@ h3::before{
 .line_banner_right{
     width: 550px;
     height: 60px;
-    background:  #F1E2B4;
+    background:  #DADFCB;
     box-sizing: border-box;
 }
 .line_banner_right:hover{
-    background:  #DADFCB;
+    background:  #fff;
 }
 
 .line_banner_right a{
     display: block;
-    background: url(../../../img/icons/down-arrow_wh.png) no-repeat right;
+    background: url(../../../img/icons/down-arrow.png) no-repeat right;
     background-size: 25px;
-    color: #BA835A;
+    color: #0D4633;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     display: block;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width:540px;
     height: 60px;
 }
-.line_banner_right a:hover{
-    color: #0D4633;
-}
 
-.line_banner_left a,
-.line_banner_right a{
-text-decoration : none
-} 
 
-.line_banner_wrap span{
-    margin-left: 20px;
-}
+
 
 /* 신제품 슬라이더 */
 .new_products_slider_wrap{
     width: 1100px;
+    height: 450px;
     margin: auto;
     background: #fff;   
     position:relative;
@@ -222,47 +214,110 @@ text-decoration : none
 
 .slide {
     width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .slide img {
-    width: 500px;
+    width: 1100px;
     object-fit: cover; /* 이미지 비율 유지 및 조정 */
     transition: all 1s;
 }
 
-.slider_button{
-    text-align: center;
+.new_view_more{
+    position: absolute;
+    bottom: 150px;
+    width: 100px;
+    height: 30px;
+    background: #c07272;
+    color: #eee7e7;
+    border-radius: 3px;
+    font-size: 13px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.prev img, .next img{
-    width: 50px;
-    height: 50px;
-    opacity: 0.3;
+.new_view_more:hover{
+    background: #eee7e7;
+    color: #c07272;
+    filter: drop-shadow(2px 2px 3px #c9b8b8);
 }
-.prev img:hover{
-    opacity: 0.5;
-}
-.next img:hover{
-    opacity: 0.5;
+
+
+.slider_button{
+    width: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 .btn{
     width: 20px;
     height: 20px;
-    margin: 5px;
     border-radius: 50%;
-    background-color: #989898;
+    background-color: #bdbdbd;
     color: #eee;
     transition: all 1s;
 }
-
 .btn:hover{
-    background-color: darkolivegreen;
+    background-color: rgb(104, 122, 72);
     cursor: pointer;
 }
+
+.slider_arrow{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: absolute;
+    top: 150px;
+}
+
+.prev img, .next img{
+    width: 65px;
+    opacity: 0.1;
+}
+.prev img:hover{
+    opacity: 0.3;
+}
+.next img:hover{
+    opacity: 0.3;
+}
+
 
 .prev, .next{
     margin: 0 50px;
 }
+
+
+
+/* 모달창 */
+.modal_01{
+    /* display: none; */
+    position:fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.8);
+    top: 0;
+    left: 0;
+
+}
+.modal_close{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
