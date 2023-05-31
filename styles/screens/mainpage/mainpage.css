@@ -1,5 +1,6 @@
 .mainpage__wrap {
   position: relative;
+  background-color: #f7f0da;
 }
 /* Video Slide */
 .daily_bakery_warp {
@@ -144,6 +145,7 @@
   position: absolute;
   top: -90px;
   font-size: 80px;
+  font-weight: 500;
   margin-left: 30px;
   color: white;
 }
@@ -503,13 +505,14 @@
   position: relative;
   width: 100%;
   z-index: 2;
-  margin-bottom: 80px;
+
   color: white;
-  padding: 20px 0 100px 0;
+  padding: 20px 0 180px 0;
 }
 .main_ad-video h2 {
   margin-left: 80px;
   font-size: 80px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 .main_ad-video--cont {
@@ -524,34 +527,43 @@
 .mainpage_bg-img {
   position: absolute;
   z-index: 0;
-  top: 150px;
+  top: 480px;
   display: flex;
   flex-direction: column;
 }
+
 .mainpage_bg-img img {
   width: 100%;
-  height: 100%;
   margin: 0;
   filter: brightness(40%);
 }
-
+.mainpage_bg-img img:last-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
+  mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
+}
 /* main page quick menu */
 .mainpage_quick--menu {
   position: fixed;
   bottom: 20px;
-  right: -50px;
+  right: 10px;
   z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.mainpage_quick--menu-cont {
+  display: block;
   margin: 0 auto;
-  padding: 10px 0px;
+  padding: 5px 0px;
   background-color: var(--main-color);
   border-radius: 10px;
   border: 1px solid white;
+  transform: translateX(60px);
 }
-
 .mainpage_quick--menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30px;
   padding: 10px 15px;
   margin: 0px 5px 10px;
@@ -568,19 +580,12 @@
   font-size: 10px;
   white-space: nowrap;
 }
-.main_quick--btn {
-  display: flex;
-  padding: 5px 2px;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-}
+
 .mainpage_quick--menu button {
+  background-color: var(--main-color);
   border: 1px solid white;
   position: absolute;
-  bottom: 0;
-  /* top: -70px; */
-  right: 70px;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,4 +596,16 @@
 .mainpage_quick--menu button > img {
   margin: 0;
   text-align: center;
+}
+.mainpage_btn {
+  transform: translateY(-300px);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_btn-img {
+  transform: rotateZ(-90deg);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_quick-cont {
+  transform: translateX(0px);
+  transition: 0.6s ease-in-out;
 }
