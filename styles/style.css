@@ -47,6 +47,10 @@
 /* - main head banner & location - */
 @import "./components/_main-head-banner.css";
 
+/* - quick remote - */
+@import "./components/quickremote.css";
+
+/* - global - */
 * {
   box-sizing: border-box;
 }
