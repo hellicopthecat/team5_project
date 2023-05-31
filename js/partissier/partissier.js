@@ -46,42 +46,37 @@ function techRecruitInfo() {
   partissierInfo.classList.remove("hidden");
   partissierNotice.classList.add("hidden");
   partissierLocal.classList.add("hidden");
-  partissierHeadNav[0].style.padding = `10px 20px`;
-  partissierHeadNav[0].style.borderRadius = `25px`;
-  partissierHeadNav[0].style.backgroundColor = `var(--main-color)`;
-  partissierHeadNav[0].style.color = `white`;
-  partissierHeadNav[1].style.backgroundColor = `inherit`;
-  partissierHeadNav[1].style.color = `black`;
-  partissierHeadNav[2].style.backgroundColor = `inherit`;
-  partissierHeadNav[2].style.color = `black`;
+  partissierHeadNav[0].classList.add("parti_mouse_click");
+  partissierHeadNav[0].classList.remove("parti_mouse_nonclick");
+  partissierHeadNav[1].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[1].classList.remove("parti_mouse_click");
+  partissierHeadNav[2].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[2].classList.remove("parti_mouse_click");
   hideRecruitContents();
 }
 function techRecruitNotice() {
   partissierInfo.classList.add("hidden");
   partissierNotice.classList.remove("hidden");
   partissierLocal.classList.add("hidden");
-  partissierHeadNav[0].style.backgroundColor = `inherit`;
-  partissierHeadNav[0].style.color = `black`;
-  partissierHeadNav[1].style.padding = `10px 20px`;
-  partissierHeadNav[1].style.borderRadius = `25px`;
-  partissierHeadNav[1].style.backgroundColor = `var(--main-color)`;
-  partissierHeadNav[1].style.color = `white`;
-  partissierHeadNav[2].style.backgroundColor = `inherit`;
-  partissierHeadNav[2].style.color = `black`;
+  partissierHeadNav[0].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[0].classList.remove("parti_mouse_click");
+  partissierHeadNav[1].classList.add("parti_mouse_click");
+  partissierHeadNav[1].classList.remove("parti_mouse_nonclick");
+  partissierHeadNav[2].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[2].classList.remove("parti_mouse_click");
+
   hideRecruitContents();
 }
 function techRecruitLocal() {
   partissierInfo.classList.add("hidden");
   partissierNotice.classList.add("hidden");
   partissierLocal.classList.remove("hidden");
-  partissierHeadNav[0].style.backgroundColor = `inherit`;
-  partissierHeadNav[0].style.color = `black`;
-  partissierHeadNav[1].style.backgroundColor = `inherit`;
-  partissierHeadNav[1].style.color = `black`;
-  partissierHeadNav[2].style.padding = `10px 20px`;
-  partissierHeadNav[2].style.borderRadius = `25px`;
-  partissierHeadNav[2].style.backgroundColor = `var(--main-color)`;
-  partissierHeadNav[2].style.color = `white`;
+  partissierHeadNav[0].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[0].classList.remove("parti_mouse_click");
+  partissierHeadNav[1].classList.add("parti_mouse_nonclick");
+  partissierHeadNav[1].classList.remove("parti_mouse_click");
+  partissierHeadNav[2].classList.add("parti_mouse_click");
+  partissierHeadNav[2].classList.remove("parti_mouse_nonclick");
   hideRecruitContents();
 }
 
@@ -96,21 +91,7 @@ partissierHeadNav.forEach((headNav, index) => {
       techRecruitLocal();
     }
   };
-  const handlePartiMouseEnter = () => {
-    partissierHeadNav[index].style.transform = ` scale(105%)`;
-    partissierHeadNav[index].style.transition = ` 0.5s ease-in-out`;
-    partissierHeadNav[index].style.padding = ` 10px 20px`;
-    partissierHeadNav[index].style.borderRadius = ` 25px`;
-    partissierHeadNav[index].style.color = ` white`;
-    partissierHeadNav[index].style.backgroundColor = ` var(--hover-green)`;
-  };
-  const handlePartiMouseleave = () => {
-    partissierHeadNav[index].style.transform = ` scale(100%)`;
-    partissierHeadNav[index].style.transition = ` 0.5s ease-in-out`;
-  };
   headNav.addEventListener("click", handlePartissierNav);
-  headNav.addEventListener("mouseenter", handlePartiMouseEnter);
-  headNav.addEventListener("mouseleave", handlePartiMouseleave);
 });
 
 /** body nav */
@@ -120,7 +101,6 @@ newPartissierNav.forEach((newPartiNav, index) => {
       exPartiTable.classList.add("hidden");
       newPartissierList.classList.remove("hidden");
       hideRecruitContents();
-
       newPartissierNav[0].style.backgroundColor = `white`;
       newPartissierNav[0].style.color = `black`;
       newPartissierNav[1].style.backgroundColor = `inherit`;
@@ -128,7 +108,6 @@ newPartissierNav.forEach((newPartiNav, index) => {
     } else if (index === 1) {
       exPartiTable.classList.remove("hidden");
       newPartissierList.classList.add("hidden");
-
       hideRecruitContents();
       newPartissierNav[1].style.backgroundColor = `white`;
       newPartissierNav[1].style.color = `black`;
