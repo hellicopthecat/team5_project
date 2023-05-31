@@ -1,11 +1,12 @@
 /* 페이지 제목 */
-
-h3{
+.top_content_wrap{
     width: 1100px;
     margin: auto;
-    height: 100px;
-    padding: 32px 0 0 15px;
- 
+    height: 150px;
+    padding: 40px 0;
+}
+h3{
+    padding: 30px 30px 0 15px;
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.1em;
@@ -23,6 +24,21 @@ h3::before{
     background-color: #0D4633;
 }
 
+.page_location{
+    position: absolute;
+    right: 90px;
+    top: 120px;
+
+}
+.page_location ul{
+    display: flex;
+}
+.page_location ul li{
+    font-size: 13px;
+    font-weight: 700;
+    color: #747474;
+    padding-left: 5px;
+}
 .content_box{
     width: 1100px;
     height: 600px;

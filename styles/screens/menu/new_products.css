@@ -1,23 +1,20 @@
 
 /* 페이지 제목 */
-.h2_wrap{
+.top_content_wrap{
     width: 1100px;
     margin: auto;
-    height: 100px;
-    padding-top: 32px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 10;
+    height: 150px;
+    padding: 40px 0;
 }
-.page_title{
+h3{
+    padding: 30px 30px 0 15px;
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.1em;
     color: #0D4633;  
-    padding-left: 15px
-    
+    position: relative;  
 }
-.page_title::before{
+h3::before{
     content: "";
     display: block;
     position: absolute;
@@ -26,6 +23,22 @@
     width: 5px;
     height: 28px;
     background-color: #0D4633;
+}
+
+.page_location{
+    position: absolute;
+    right: 90px;
+    top: 120px;
+
+}
+.page_location ul{
+    display: flex;
+}
+.page_location ul li{
+    font-size: 13px;
+    font-weight: 700;
+    color: #747474;
+    padding-left: 5px;
 }
 
 /* 상단 슬라이드 + 라인배너(모바일선물/신제품 펼쳐보기) */
