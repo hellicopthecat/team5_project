@@ -60,23 +60,68 @@ $('.line_banner_right').click(function(){
 });
 
 
+
+
+
 // 이달의 신제품 슬라이더
 
-const slider = document.querySelector('.new_products_slider .slider-container');
-const slides = Array.from(document.querySelectorAll('.new_products_slider .slide'));
-const slideWidth = slides[0].offsetWidth;
-let currentIndex = 0;
-
-function slideNext() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-}
-
-setInterval(slideNext, 2000);
+const box = document.querySelector('.slider-container');
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const btn3 = document.querySelector('.btn3');
+const btn4 = document.querySelector('.btn4');
+const btnPrev = document.querySelector('.prev');
+const btnNext = document.querySelector('.next');
 
 
+let absPosX = 1;
 
+btn1.addEventListener('click', () => {
+  box.style.transform = 'translateX(0vw)'
+  absPosX = 1;
+});
 
+btn2.addEventListener('click', () => {
+  box.style.transform = 'translateX(-100vw)';
+  absPosX = 2;
+});
+
+btn3.addEventListener('click', () => {
+  box.style.transform = 'translateX(-200vw)';
+  absPosX = 3;
+});
+
+btn4.addEventListener('click', () => {
+  box.style.transform = 'translateX(-300vw)';
+  absPosX = 4;
+});
+
+btn4.addEventListener('click', () => {
+  box.style.transform = 'translateX(-300vw)';
+  absPosX = 4;
+});
+
+const max = 4;
+
+prev.addEventListener('click', () => {
+  if (absPosX !== 1) {
+    box.style.transform = 'translateX(-' +(absPosX-2)*100 + 'vw)';
+    absPosX -=1;
+  } else{
+    absPosX = max;
+    box.style.transform = 'translateX(-' +(absPosX-1)*100 + 'vw)';
+  }
+})
+
+next.addEventListener('click', () => {
+  if (absPosX !== max) {
+    box.style.transform = 'translateX(-' + absPosX*100 + 'vw)';
+    absPosX +=1;
+  } else{
+    absPosX = 1;
+    box.style.transform = 'translateX(-' + 0 + 'vw)';
+  }
+})
 
 
 
@@ -109,8 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
   containers.forEach(container => {
     container.addEventListener('wheel', handleMouseWheel);
   });
-
-
 });
 
 

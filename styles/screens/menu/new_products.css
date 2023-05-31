@@ -183,33 +183,68 @@ text-decoration : none
 
 /* 신제품 슬라이더 */
 .new_products_slider_wrap{
-    width: 100%;
-    background: #fff;
-    height: 400px;
+    width: 1100px;
+    margin: auto;
+    background: #fff;   
     position:relative;
     z-index: 10;
 }
-.slider-container {
-    position: relative;
-    display: flex;
+
+.new_products_slider{
     overflow: hidden;
-    width: 600px;
-    height: 400px; /* 슬라이드 컨테이너의 높이 조정 */
-    transition: transform 0.5s ease; /* 슬라이드 애니메이션 효과를 위한 트랜지션 속성 */
 }
 
-  .slide {
-    float: left;
-    flex: 0 0 20%; /* 각 슬라이드의 너비 조정 */
-  }
-  
-  .slide img {
-    width: 500px;
-    height: 100%;
-    object-fit: cover; /* 이미지 비율 유지 및 조정 */
-  }
-  
+.slider-container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    transition: all 1s;
+    width: 400vw;
+}
 
+.slide {
+    width: 100vw;
+}
+
+.slide img {
+    width: 500px;
+    object-fit: cover; /* 이미지 비율 유지 및 조정 */
+    transition: all 1s;
+}
+
+.slider_button{
+    text-align: center;
+    display: flex;
+}
+.prev img, .next img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+}
+.prev img:hover{
+    opacity: 0.5;
+}
+.next img:hover{
+    opacity: 0.5;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #989898;
+    color: #eee;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
+
+.prev, .next{
+    margin: 0 50px;
+}
 
 
 
