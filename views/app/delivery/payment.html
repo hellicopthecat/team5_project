@@ -21,10 +21,10 @@
     <div class="pay_method" >
         <span>결제수단</span>
         <button id="pay_c" class="pay_check" type="submit">신용카드</button>
-        <button id="pay_e"  type="submit">가상계좌</button>
+      <a href="https://api.iamport.co/api/supplements/v1/link/payment">어어s</a>
         <button id="pay_g"  type="submit">계좌이체</button>
     </div>
-  
+    <script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js"></script>
     <section class="pay_se01_wrap" id="section1">
         <h2>신용카드</h2>
         <ul>
@@ -63,42 +63,7 @@
         </ul>
     </section>
     
-    <section class="pay_se03_wrap pay_hide">
-        <div class="pay_se03">
-            <h2>가상계좌</h2>
-            <ul class="pay_se03_ul">
-                <li>
-                    <p>
-                        <label for="pay_name">입금자명 </label>
-                        <input type="text" form="pay_name" id="pay_name">
-                    </p>
-                    <div id="result">
-
-                    </div>
-                </li>
-                <li>
-                    <label for="pay_bank02">입금은행</label>
-                    <select name="pay_bank02" id="pay_bank02">
-                        <option id="bank02" name="" value="none">입금은행 선택</option>
-                        <option name="" value="기업">기업</option>
-                        <option name="" value="국민">국민</option>
-                        <option name="" value="농협">농협</option>
-                        <option name="" value="하나">하나</option>
-                        <option name="" value="우리">우리</option>
-                        <option name="" value="신한">신한</option>
-                        <option name="" value="경남">경남</option>
-                        <option name="" value="우체국">우체국</option>
-                        <option name="" value="부산">부산</option>
-                    </select>
-                </li>
-            </ul>
-            <div class="pay_se03_guide">
-                <p><strong>무통장입금(가상계좌) 서비스 안내</strong></p>
-                <p class="pay_se03_guide_p">- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다</p>
-                <p class="pay_se03_guide_p">- 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</p>
-            </div>
-        </div>
-    </section>
+   
     
     <section class="pay_se04_wrap pay_hide">
         <div>
@@ -109,55 +74,7 @@
     
     </section>
 
-    <section  class="pay_se05_wrap pay_hide">
-        <div class="pay_se05_receipt">
-            <h4 >현금영수증 신청</h4>
-            <div>
-                <input class="pay_se05_checkbox" type="checkbox"  name="pay_receipts_on" id="">
-                <label class="pay_se05_receipt_label" for="pay_receipts_on" >발급</label>
-                <input class="pay_se05_checkbox" type="checkbox" checked="on" name="pay_receipts_no" id="">
-                <label class="pay_se05_receipt_label" for="pay_receipts_no" >미발급</label>
-            </div>
-
-        </div>
-
-        <div id="receipt_01"  class="pay_se05_receipt">
-            <input  class="pay_se05_checkbox" type="checkbox" id="pay_receipts1"  name="pay_receipts_common" checked="on" id="">
-            <label class="pay_se05_receipt_label" for="pay_receipts_common">소득공제용(일반 개인용)</label>
-            <p>
-                <label  for="pay_receipts_name">이름</label>
-                <input  class="pay_se05_text" type="text" name="pay_receipts_name">
-            </p>
-        </div>
-
-        <div id="receipt_02" class="pay_se05_receipt">
-            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common" id="pay_receipts2">
-            <label class="pay_se05_receipt_label" for="pay_receipts_common">지출증빙용(사업자용)</label>
-            <p>
-                <label for="pay_receipts_phone">휴대폰번호</label>
-                <input class="pay_se05_text"  type="text" name="pay_receipts_phone" >
-            </p>
-        </div>
-
-        <div  id="company_01" class="pay_se05_receipt  pay_hide">
-            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common"  id="pay_receipts3">
-            <label class="pay_se05_receipt_label" for="pay_receipts_common">소득공제용(일반 개인용)</label>
-            <p>
-                <label  for="pay_company_name">사업자명</label>
-                <input  class="pay_se05_text" type="text" name="pay_company_name" id="">
-            </p>
-        </div>
-
-        <div id="company_02"  class="pay_se05_receipt pay_hide">
-            <input  class="pay_se05_checkbox" type="checkbox" name="pay_receipts_common" checked="on" id="pay_receipts4">
-            <label class="pay_se05_receipt_label" for="pay_receipts_common">지출증빙용(사업자용)</label>
-            <p>
-                <label for="pay_company_num">사업자번호</label>
-                <input class="pay_se05_text"  type="text" name="pay_company_num" id="">
-            </p>
-        </div>
-      
-    </section>
+    
 
 
     <section class="pay_se02_wrap">

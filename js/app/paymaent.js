@@ -1,8 +1,8 @@
 $(document).ready(()=>{
     $('#bank02').prop('value' , 'no')
     $('#pay_name').prop('html' , 'no')
-    const name = document.getElementById('pay_name').value;
-    document.getElementById("result").innerText = name;
+
+
 })
 
 function check (){
@@ -52,20 +52,7 @@ function check (){
         $('#pay_e').removeClass('pay_check')
         $('#pay_g').removeClass('pay_check')
     })
-    ae.addEventListener('click' , () => {
-        $('#bank01').prop('value' , 'no')
-        $('#bank02').prop('value' , 'none')
-        $('#pay_name').prop('html' , '' )
-     
-        
-        $('.pay_se01_wrap').addClass('pay_hide')
-        $('.pay_se04_wrap').addClass('pay_hide')
-        $('.pay_se03_wrap').removeClass('pay_hide')
-        $('.pay_se05_wrap').removeClass('pay_hide')
-        $('#pay_e').addClass('pay_check')
-        $('#pay_c').removeClass('pay_check')
-        $('#pay_g').removeClass('pay_check')
-    })
+
     ag.addEventListener('click', ()=>{
         $('#bank01').prop('value' , 'no')
         $('#bank02').prop('value' , 'no')
@@ -84,20 +71,16 @@ function check (){
         let pay_bank02  = document.getElementById("pay_bank02");
         const go = document.getElementById('pay_ok')
         const no = document.getElementById('pay_no')
-        let name = document.getElementById('pay_name').html
+     
      
         go.addEventListener('click' , ()=>{
             let check_all = document.getElementById('pay_check_all')
             let bank_check = (pay_bank.options[pay_bank.selectedIndex].value);
-            let bank_check02 = (pay_bank02.options[pay_bank02.selectedIndex].value);
-            console.log(name)
+           
             if(bank_check == 'none'){
                 alert("은행을 선택하세요")
             }
-            else if(bank_check02 == 'none'){
-                alert("은행을 선택하세요")
-                
-            }else if(check_all.checked !== true){
+        else if(check_all.checked !== true){
                 alert('약관동의해주세요')
                 
             }else{
@@ -136,3 +119,11 @@ function check (){
                 $('#receipt_02').removeClass('pay_hide')
         }
     });
+
+
+    var oPay = Naver.Pay.create({
+        "mode" : "production", // development or production
+        "clientId": "u86j4ripEt8LRfPGzQ8", // clientId
+        "chainId": "TDZSUHBoVGRFS2l" // chainId
+  });
+
