@@ -96,8 +96,8 @@ partissierHeadNav.forEach((headNav, index) => {
       techRecruitLocal();
     }
   };
-  const handlePartiMouseover = () => {
-    partissierHeadNav[index].style.transform = ` scale(110%)`;
+  const handlePartiMouseEnter = () => {
+    partissierHeadNav[index].style.transform = ` scale(105%)`;
     partissierHeadNav[index].style.transition = ` 0.5s ease-in-out`;
     partissierHeadNav[index].style.padding = ` 10px 20px`;
     partissierHeadNav[index].style.borderRadius = ` 25px`;
@@ -109,7 +109,7 @@ partissierHeadNav.forEach((headNav, index) => {
     partissierHeadNav[index].style.transition = ` 0.5s ease-in-out`;
   };
   headNav.addEventListener("click", handlePartissierNav);
-  headNav.addEventListener("mouseenter", handlePartiMouseover);
+  headNav.addEventListener("mouseenter", handlePartiMouseEnter);
   headNav.addEventListener("mouseleave", handlePartiMouseleave);
 });
 
