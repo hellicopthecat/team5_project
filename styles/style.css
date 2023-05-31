@@ -15,10 +15,10 @@
 
 /* - searchstore - */
 /*  - app - */
-@import "./app/homedelivery.css";
-@import "./app/faq.css";
-@import "./app/inquiry.css";
-@import "./app/appmain.css";
+@import "../styles/app/homedelivery.css";
+@import "../styles/app/faq.css";
+@import "../styles/app/inquiry.css";
+@import "../styles/app/appmain.css";
 /*  - map - */
 @import "./map/map.css";
 /* - stroy - */
