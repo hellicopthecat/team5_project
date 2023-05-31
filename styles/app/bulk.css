@@ -2,18 +2,37 @@
     width: 1200px;
     margin: 0 auto;
 }
-.bulk_main_wrap h2{
-
-    font-size: 40px;
-    margin: 30px 0;
-
-    font-size: 40px;    
-    margin-bottom: 30px;
-
-    font-size: 40px;    
-    margin-bottom: 30px;
+.app_sub_title{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 150px;
+    background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../../img/app/app_title.jpg) no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app_sub_title h2{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 35px;
+    color: var(--table-color);
+}
+.app_sub_title ul{
+    display: flex;
+    margin-top: 40px;
+    margin-right: 50px;
+ 
+}
+.app_sub_title li{
+    color: rgb(200, 200, 200);
+    margin-right: 10px;
+    font-size: 20px;
 
 }
+
 .bulk_i_wrap{
     width: 80%;
     margin:  auto;
@@ -72,18 +91,11 @@ top: -20px;
 left: 10px;
 font-size: 30px;
 font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6043c41 (장진용_05_31_02)
+
 }
 
 .bulk_font{
     font-size: 15px;
     color: rgb(180,180, 180);
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> 6043c41 (장진용_05_31_02)
+
 }
