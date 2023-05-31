@@ -9,7 +9,7 @@
   display: block;
   margin: 0 auto;
   padding: 5px 0px;
-  background-color: var(--main-color);
+  background-color: #333;
   border-radius: 10px;
   border: 1px solid white;
   transform: translateX(60px);
@@ -36,15 +36,16 @@
 }
 
 .mainpage_quick--menu button {
-  background-color: var(--main-color);
+  background-color: #333;
   border: 1px solid white;
   position: absolute;
+  right: 3px;
   bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 10px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .mainpage_quick--menu button > img {
