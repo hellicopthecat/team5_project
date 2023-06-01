@@ -7,19 +7,19 @@
     box-sizing: border-box;
     position: relative;
 }
-h2{
+.h2_si{
 
-    font-size: 30px;
+    font-size: 20px;
 
     /* letter-spacing: -0.1em; */
-    color: var(--hover-green);  
+    color: var(--main-color);
 }
-h2::before{
+.h2_si::before{
     content: "";
     display: block;
     position: absolute;
     left: -15px;
-    top: 34px;
+    top: 30px;
     width: 5px;
     height: 28px;
     background-color: #0D4633;
