@@ -48,13 +48,18 @@ $('.view_more').click(function(){
 $('.line_banner_right').click(function(){
   $('.new_products_slider_wrap').slideToggle("fast");
 
-  var arrowImage = $('.line_banner_right_toggle a').css('background-image');
+  var arrowImage = $('.line_banner_right_toggle').css('background-image');
   if (arrowImage.includes('down-arrow.png')) {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/up-arrow.png)');
+      $('.line_banner_right_toggle').css('background-image', 'url(../../../img/icons/up-arrow.png)');
+      $('.line_banner_right').css('background-color', '#fff');
   } else {
-      $('.line_banner_right_toggle a').css('background-image', 'url(../../../img/icons/down-arrow.png)');
+      $('.line_banner_right_toggle').css('background-image', 'url(../../../img/icons/down-arrow.png)');
+      $('.line_banner_right').css('background-color', '#DADFCB');
   }
 });
+
+
+
 
 
 
