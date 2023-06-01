@@ -16,7 +16,7 @@
     display: none;
 }
 .qur_main_wrap {
-    max-width: 1190px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .servicecenter_title {
@@ -30,7 +30,7 @@
 .qur_quck_manu {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 .qur_quck_manu p {
     padding: 20px;
@@ -111,6 +111,15 @@
     border: solid 1px #004e42;
     margin-bottom: 40px;
 }
+.qur_se03 {
+    margin-bottom: 40px;
+    padding: 25px 30px 90px 30px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 78, 66);
+    border-image: initial;
+}
 .qur_form_list li {
     min-height: 60px;
     display: flex;
@@ -181,15 +190,7 @@
     border-radius: 25px;
     font-size: 20px;
 }
-.qur_address {
-    width: 700px;
-    height: 70%;
-    margin: 10px;
-    border: 0;
-    padding-left: 25px;
-    border-radius: 25px;
-    font-size: 20px;
-}
+
 .qur_title {
     width: 700px;
     height: 70%;
@@ -228,7 +229,7 @@
     font-size: 20px;
 }
 .qur_address {
-    width: 300px;
+    width: 500px;
     height: 70%;
     margin: 10px;
     border: 0;
@@ -237,7 +238,7 @@
     border-radius: 25px;
 }
 .qur_address_detail {
-    width: 300px;
+    width: 600px;
     height: 70%;
     margin: 10px;
     border: 0;
