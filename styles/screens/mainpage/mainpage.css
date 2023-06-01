@@ -175,7 +175,7 @@
 .recommend_menu_warp > h2 {
   position: absolute;
   top: -90px;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 500;
   margin-left: 30px;
   color: white;
@@ -187,19 +187,19 @@
   color: black;
   background-color: white;
   border-bottom: 2px solid #009f89;
-  padding: 10px 0 0;
+  padding: 10px 0;
 }
 #recommend_menu__list > li > h3 {
   font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 60px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 500;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 #recommend_menu__list > li > a > img {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   width: 30px;
 }
@@ -277,8 +277,8 @@
   justify-content: center;
   align-items: center;
   padding: 30px 0px;
-  margin-bottom: 150px;
   filter: drop-shadow(15px 15px 10px black);
+  margin-bottom: 150px;
 }
 .mainpage_info-top {
   display: flex;
@@ -326,7 +326,7 @@
 .mainpage_info-middle {
   width: 100%;
   display: flex;
-
+  justify-content: space-evenly;
   align-items: center;
   padding: 40px 0;
   background-color: white;
@@ -380,7 +380,7 @@
 /* middle - aff benefit */
 .mainpage_aff-benefits {
   position: relative;
-  width: 50%;
+  width: 680px;
   height: 407px;
   background-color: var(--hover-green);
   color: white;
@@ -537,13 +537,12 @@
   position: relative;
   width: 100%;
   z-index: 2;
-
   color: white;
   padding: 20px 0 180px 0;
 }
 .main_ad-video h2 {
   margin-left: 80px;
-  font-size: 80px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -571,7 +570,7 @@
 }
 .mainpage_bg-img img:last-child {
   width: 100%;
-  height: 290px;
+  height: 100px;
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
   mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
