@@ -7,19 +7,25 @@
   justify-content: center;
   align-items: center;
 }
-.login h2 {
+.login > h2 {
   position: absolute;
   top: 150px;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 15px;
   text-shadow: 1px 1px 1px black;
   z-index: 1;
 }
-.login img {
-  width: 100%;
+.login_bg-cont {
+  position: relative;
   height: 1000px;
+  overflow: hidden;
+}
+.login_bg-cont img {
+  position: relative;
+  top: -500px;
+  width: 100%;
   opacity: 0.5;
 }
 .login__form {
@@ -39,7 +45,7 @@
 .login__form-toptext h3 {
   font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -47,6 +53,8 @@
   color: var(--sub-color);
 }
 .login__form-toptext p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 23px;
 }
 .user__id-cont input,
@@ -90,7 +98,7 @@
   border: none;
 }
 .login__form button {
-  width: 90%;
+  width: 255px;
   height: 50px;
   margin-bottom: 30px;
   color: white;
@@ -103,12 +111,16 @@
   transition: 0.3s ease-in-out;
 }
 .login__notice-text {
-  font-size: 15px;
+  font-size: 13px;
   margin: 0 auto;
   margin: 0px 20px 30px;
 }
 .login__notice-text p {
   margin-bottom: 10px;
+}
+.login__notice-text p::before {
+  content: "*";
+  color: tomato;
 }
 .user__links {
   display: flex;
