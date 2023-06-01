@@ -34,6 +34,7 @@ setTimeout(function() {
 
 
 
+// 제품 이미지 줌렌즈
 
 const imgContainer = document.getElementById("image_container");
 const productImg = document.getElementById("product_image");
@@ -41,14 +42,23 @@ imgContainer.addEventListener("mousemove", onZoom);
 imgContainer.addEventListener("mouseover", onZoom);
 imgContainer.addEventListener("mouseleave", offZoom);
 
-function onZoom(e){
-    const x = e.clientX - e.target.offsetLeft;
-    const y = e.clientY - e.target.offsetTop;
-    productImg.style.transformOrigin = `${x}px ${y}px`;
-    productImg.style.transform = "scale(2)";
+function onZoom(e) {
+  const containerRect = imgContainer.getBoundingClientRect();
+  const containerWidth = containerRect.width;
+  const containerHeight = containerRect.height;
+  
+  const offsetX = e.clientX - containerRect.left;
+  const offsetY = e.clientY - containerRect.top;
+  
+  const percentX = (offsetX / containerWidth) * 100;
+  const percentY = (offsetY / containerHeight) * 100;
+  
+  productImg.style.transformOrigin = `${percentX}% ${percentY}%`;
+  productImg.style.transform = "scale(2)";
 }
 
-function offZoom(e){
-    productImg.style.transformOrigin = `center center`;
-    productImg.style.transform = "scale(1)";
+function offZoom(e) {
+  productImg.style.transformOrigin = `center center`;
+  productImg.style.transform = "scale(1)";
 }
+
