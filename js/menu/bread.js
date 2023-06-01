@@ -4,17 +4,20 @@
   const viewNutris = document.getElementById("view_nutris")
   const viewPicsD = document.getElementById("view_pics_dd")
   const viewNutrisD = document.getElementById("view_nutris_dd")
+  const selectorBox = document.getElementById("selector_wrap")
   
   const handleViewPics = (event)=>{
       // console.log(event.target)
       event.preventDefault(); /* 화면이 새로고침되지 않도록 하는 코드 */
       viewPicsD.classList.remove("hidden")
       viewNutrisD.classList.add("hidden")
+      selectorBox.classList.remove("hidden")
   }
   const handleViewNutris=(event)=>{
       event.preventDefault();
       viewNutrisD.classList.remove("hidden")
       viewPicsD.classList.add("hidden")
+      selectorBox.classList.add("hidden")
   }
   
 
@@ -230,37 +233,108 @@
   }
   
 
+
   
-  // 신제품 모아보기, 베스트 제품 모아보기 클릭 
-
-
-  // 함수명 직관적으로 변경 + if 문 간결히 변경 + new, best한번에 씀
-  $('#new_products, #best_products').click(()=>{
-    let newProductsChecked = $('#new_products').is(':checked');
-    let bestProductsChecked = $('#best_products').is(':checked');
+  // 각각의 카테고리 내에서 신제품 모아보기, 베스트 제품 모아보기
   
-    if(newProductsChecked == true){
-      if(bestProductsChecked == true){
-        $('.new').show()
-        $('.best').show()
-        $('.list').hide()
-      } else{
-        $('.new').show()
-        $('.best').hide()
-        $('.list').hide()
-      } 
-    } else{
-      if(bestProductsChecked == true){
-        $('.new').hide()
-        $('.best').show()
-        $('.list').hide()
-      } else{
-        $('.new').hide()
-        $('.best').hide()
-        $('.list').show()
-      }
-    }
-  })
+
+  // $('#new_products').click(()=>{
+  //   let newProductsChecked = $('#new_products').is(':checked');
+  //   let bestProductsChecked = $('#best_products').is(':checked');
+  
+  //   if(newProductsChecked == true){
+  //     if(bestProductsChecked == true){
+  //       $('.new').show()
+  //       $('.best').show()
+  //       $('.list').hide()
+  //     } else{
+  //       $('.new').show()
+  //       $('.best').hide()
+  //       $('.list').hide()
+  //     } 
+  //   } else{
+  //     if(bestProductsChecked == true){
+  //       $('.new').hide()
+  //       $('.best').show()
+  //       $('.list').hide()
+  //     } else{
+  //       $('.new').hide()
+  //       $('.best').hide()
+  //       $('.list').show()
+  //     }
+  //   }
+  // })
 
 
+
+  // 다른 방법으로 또 간결히 해봄. 경우의 수 4가지 이므로 코드양은 동일함
+
+  // $('#new_products').click(()=>{
+  //   let newProductsChecked = $('#new_products').is(':checked');
+  //   let bestProductsChecked = $('#best_products').is(':checked');
+  
+  //   if(newProductsChecked && bestProductsChecked){
+  //       $('.new').show()
+  //       $('.best').show()
+  //       $('.list').hide()
+  //     } else if (newProductsChecked) {
+  //       $('.new').show();
+  //       $('.best').hide();
+  //       $('.list').hide()
+  //     } else if (bestProductsChecked) {
+  //       $('.new').hide();
+  //       $('.best').show();
+  //       $('.list').hide();
+  //     } else {
+  //       $('.new').hide();
+  //       $('.best').hide();
+  //       $('.list').show();
+  //     }
+  // })
+
+
+
+
+  // #new_products, #best_products 코드를 합칠 수 있음
+
+  // $('#new_products, #best_products').click(()=>{
+  //   let newProductsChecked = $('#new_products').is(':checked');
+  //   let bestProductsChecked = $('#best_products').is(':checked');
+  
+  //   if(newProductsChecked == true){
+  //     if(bestProductsChecked == true){
+  //       $('.new').show()
+  //       $('.best').show()
+  //       $('.list').hide()
+  //     } else{
+  //       $('.new').show()
+  //       $('.best').hide()
+  //       $('.list').hide()
+  //     } 
+  //   } else{
+  //     if(bestProductsChecked == true){
+  //       $('.new').hide()
+  //       $('.best').show()
+  //       $('.list').hide()
+  //     } else{
+  //       $('.new').hide()
+  //       $('.best').hide()
+  //       $('.list').show()
+  //     }
+  //   }
+  // })
+
+
+
+
+// toggle()함수를 사용하여 코드를 짧게 만듦
+
+$('#new_products, #best_products').click(() => {
+  let newProductsChecked = $('#new_products').is(':checked');
+  let bestProductsChecked = $('#best_products').is(':checked');
+  
+  $('.new').toggle(newProductsChecked);
+  $('.best').toggle(bestProductsChecked);
+  $('.list').toggle(!(newProductsChecked || bestProductsChecked));
+});
 

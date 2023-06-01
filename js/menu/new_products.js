@@ -43,6 +43,8 @@ $('.view_more').click(function(){
 });
 
 
+
+
 // 이달의 신제품 펼쳐보기 토글 / 화살표 변경
 
 $('.line_banner_right').click(function(){
@@ -64,6 +66,7 @@ $('.line_banner_right').click(function(){
 
 
 // 이달의 신제품 슬라이더
+
 const box = document.querySelector('.slider-container');
 const btn1 = document.querySelector('.btn1');
 const btn2 = document.querySelector('.btn2');
@@ -108,6 +111,7 @@ btnNext.addEventListener('click', () => {
     goToSlide(1);
   }
 });
+
 
 // 자동 슬라이드 시작
 function startAutoSlide() {
