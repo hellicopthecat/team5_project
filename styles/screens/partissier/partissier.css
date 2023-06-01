@@ -198,6 +198,9 @@
   flex-direction: column;
   align-items: center;
 }
+.partissier__foodbill-list li {
+  font-size: 14px;
+}
 .partissier__foodbill-list h3,
 .partissier__foodbill-list li,
 .partissier__tech-list h3,
@@ -215,6 +218,7 @@
 .partissier__tech-list li:hover {
   background-color: #003b33;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .partissier__foodbill-list li:focus,
 .partissier__foodbill-list li:active,
@@ -342,7 +346,7 @@
 }
 .part_foodbill-curriculum th,
 .part_tech-intro-text th {
-  width: 100px;
+  width: 300px;
   height: 60px;
   background-color: var(--table-color);
   text-align: center;
@@ -386,6 +390,9 @@
 .center-info th:nth-child(3) {
   width: 20%;
 }
+.center-info th:nth-child(4) {
+  width: 600px;
+}
 .center-info th {
   text-align: center;
   height: 40px;
@@ -405,7 +412,7 @@
   padding-bottom: 80px;
 }
 .partissier__recruit-notice form {
-  padding: 30px 50px;
+  padding: 30px 14px;
   width: 100%;
   background-color: var(--table-color);
   text-align: center;

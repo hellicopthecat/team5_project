@@ -193,11 +193,15 @@
   margin-bottom: 50px;
   border-radius: 0 0 15px 15px;
 }
-.faq__table h2 {
+.faq__table > h2 {
+  color: inherit;
   font-size: 20px;
   font-weight: 500;
   margin-left: 60px;
   margin-bottom: 50px;
+}
+.faq__table > h2 > span:first-child {
+  color: tomato;
 }
 .faq__table-head ul {
   display: flex;
@@ -539,7 +543,7 @@
   margin-right: 20px;
 }
 .o__c-result--mobile label {
-  width: 40px;
+  width: 50px;
 }
 .o__c-result--mobile input {
   width: 45px;

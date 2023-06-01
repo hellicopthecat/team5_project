@@ -180,6 +180,9 @@
   margin-left: 30px;
   color: white;
 }
+.recommend_menu_warp > h2::before {
+  content: none;
+}
 
 #recommend_menu__list > li {
   position: relative;
@@ -540,7 +543,8 @@
   color: white;
   padding: 20px 0 180px 0;
 }
-.main_ad-video h2 {
+.main_ad-video > h2 {
+  color: white;
   margin-left: 80px;
   font-size: 30px;
   font-weight: 500;
