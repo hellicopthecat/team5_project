@@ -11,8 +11,8 @@
 }
 .startup_header-nav ul {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  font-size: 30px;
   font-weight: 600;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -24,8 +24,11 @@
 }
 .startup_header-nav li {
   text-align: center;
-  width: 33%;
+  width: 32%;
   cursor: pointer;
+}
+.startup_header-nav li:last-child {
+  font-size: 55px;
 }
 .startup_header-nav li:hover {
   transform: scale(110%);
@@ -43,9 +46,11 @@
   font-size: 25px;
   padding-bottom: 30px;
   margin-bottom: 30px;
+  width: 50%;
 }
 .startup_introduce-tlj--wrap > ul > li {
   cursor: pointer;
+  padding: 5px 10px;
 }
 .startup_introduce-tlj--wrap > ul > li:hover {
   transform: scale(105%);
@@ -134,9 +139,12 @@
 .startup_prepare-header h3 {
   top: 35%;
   left: 140px;
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 3px 2px 1px var(--main-color);
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--main-color);
+  text-shadow: 3px 3px 1px #aaa;
 }
 .startup_prepare-header img {
   top: -20%;
@@ -642,7 +650,7 @@
 .startup_recruit-present--regist,
 .s_prepare-help-phone {
   border: 3px solid var(--hover-green);
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 50px 0px;
   display: flex;
   align-items: center;
