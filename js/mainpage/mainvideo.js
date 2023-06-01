@@ -5,8 +5,8 @@ const video = bakeryVideoList.querySelector("video");
 const videos = bakeryVideoList.querySelectorAll("video");
 const videoPrev = document.getElementById("video_prev");
 const videoNext = document.getElementById("video_next");
-const playVideo = document.getElementById("play");
-const pauseVideo = document.getElementById("pause");
+const playVideo = document.getElementById("main_video_play");
+const pauseVideo = document.getElementById("main_video_pause");
 const videoDots = document.getElementById("video_dots");
 
 let currentVideo = 1;
@@ -20,11 +20,15 @@ function handlePlay() {
   videos.item([currentVideo - 1]).play();
   pauseVideo.classList.remove("hidden");
   playVideo.classList.add("hidden");
+  pauseVideo.style.display = "block";
+  playVideo.style.display = "none";
 }
 function handlePause() {
   videos.item([currentVideo - 1]).pause();
   playVideo.classList.remove("hidden");
   pauseVideo.classList.add("hidden");
+  pauseVideo.style.display = "none";
+  playVideo.style.display = "block";
 }
 
 function handleNext() {
@@ -98,7 +102,7 @@ function videoChangeRedDot() {
   });
 }
 
-/** mouse over event */
+/** mouse enter && leave  event */
 function handlePrevMouseEnter() {
   const arrowPrevImg = videoPrev.querySelector("img");
   arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow.png");
@@ -111,6 +115,7 @@ function handleNextMouseEnter() {
 }
 videoPrev.addEventListener("mouseenter", handlePrevMouseEnter);
 videoNext.addEventListener("mouseenter", handleNextMouseEnter);
+
 function handlePrevMouseLeave() {
   const arrowPrevImg = videoPrev.querySelector("img");
   arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow_col.png");

@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 /* - reset -  */
 @import "./components/_reset.css";
 
@@ -88,8 +90,8 @@ h2 {
 }
 @font-face {
   font-family: "JUA";
-  src: url(../font/woff/BMJUA.woff) format("woff");
-  src: url(../font/woff2/BMJUA.woff2) format("woff2");
+  src: url("../font/woff/BMJUA.woff") format("woff");
+  /* src: url("../font/woff2/BMJUA.woff2") format("woff2"); */
   font-size: 50px;
   font-weight: 500;
 }

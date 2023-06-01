@@ -26,7 +26,8 @@
   margin: 0px 5px 10px;
 }
 .mainpage_quick--menu a:hover {
-  background-color: var(--hover-green);
+  border-radius: 10px;
+  background-color: #869989;
 }
 .mainpage_quick--menu img {
   width: 15px;
