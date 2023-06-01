@@ -315,6 +315,10 @@
   margin-left: 80px;
   margin-bottom: 10px;
 }
+.startup_prepare-loan--caution span::before {
+  content: "* ";
+  color: tomato;
+}
 
 /* prepare - investcost table */
 /* prepare loan table */
@@ -405,10 +409,13 @@
   height: 50px;
   border-bottom: 1px solid var(--table-color);
 }
-
+.startup_prepare-loan tbody tr:nth-child(4) td {
+  font-size: 13px;
+}
 .startup_prepare-loan tbody tr:last-child td:nth-child(2),
 .startup_prepare-loan tbody tr:last-child td:nth-child(3) {
   width: 400px;
+  line-height: 20px;
   font-size: 15px;
 }
 .s_prepare-helpcenter tbody th {
@@ -530,7 +537,7 @@
   width: 150px;
   height: 30px;
   padding: 5px 0px 5px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
 .s_pre-help-input select {
