@@ -19,7 +19,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 500;
 }
 .startup_header-nav li {
@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 .startup_header-nav li:last-child {
-  font-size: 55px;
+  font-size: 28px;
 }
 .startup_header-nav li:hover {
   transform: scale(110%);
