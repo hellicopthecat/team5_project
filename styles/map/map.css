@@ -3,16 +3,15 @@
 .map_wrap,
 .map_wrap * {
     margin: 0;
-    margin-top: 0px;
     padding: 0;
     font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
     font-size: 12px;
-    
+
 }
 
 .map_wrap a,
-.map_wrap a:hover,
-.map_wrap a:active {
+.map_wrap a:active,
+.map_wrap a:hover {
     color: #000;
     text-decoration: none;
 }
@@ -31,18 +30,18 @@
     width: 300px;
     height: 60px;
     margin: 10px 0 20px 10px;
-    padding: 0px;
+    padding: 0;
     background: rgba(255, 255, 255, 0.7);
     z-index: 1;
 }
 
 .bg_white {
     background: #fff;
-    
+
 }
 
 #menu_wrap hr {
-   
+
     border-top: 2px solid #5F5F5F;
     margin: 0;
 }
@@ -58,7 +57,7 @@
 #menu_wrap .option button {
     margin-left: 5px;
 }
-#placesList{
+#placesList {
     position: relative;
     z-index: 111;
 }
@@ -79,8 +78,8 @@
     margin-top: 4px;
 }
 
-#placesList .item h5,
-#placesList .item .info_map {
+#placesList .item .info_map,
+#placesList .item h5 {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -108,10 +107,12 @@
     width: 36px;
     height: 50px;
     margin: 10px 0 0 5px;
-    background: url(../../img/shop/ser_06.png) no-repeat;
+    background: url("../../img/shop/ser_06.png") no-repeat;
 }
-#placesList .info_map .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
-
+#placesList .info_map .jibun {
+    padding-left: 26px;
+    background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png") no-repeat;
+}
 
 #pagination {
     margin: 10px auto;
@@ -129,42 +130,39 @@
     color: #777;
 }
 
-
 /* 매장찾기 및 길찾기 버튼 */
 
-.find_title{
+.find_title {
     display: flex;
     align-items: center;
 }
 
-.find_title p{
+.find_title p {
     width: 100%;
 }
-.find_title p>a{
+.find_title p > a {
     display: block;
     width: 237px;
     height: 57px;
     padding: 10px;
 }
 
-
 /*  */
-.find_store{
-    background: url(../../img/shop/ser_01_on.png)
-    no-repeat ;
-background-position: center;
-background-color: var(--main-color );
+.find_store {
+    background: url("../../img/shop/ser_01_on.png") no-repeat;
+    background-position: center;
+    background-color: var(--main-color);
 }
 
 /* 옵션선택 버튼 */
-.arrow_show{
-    background: url(../../img/shop/ser_04_on.png);
+.arrow_show {
+    background: url("../../img/shop/ser_04_on.png");
     height: 44px;
     width: 44px;
     margin-right: 15px;
 }
-.arrow_hide{
-    background: url(../../img/shop/ser_04_off.png);
+.arrow_hide {
+    background: url("../../img/shop/ser_04_off.png");
     display: block;
     height: 44px;
     overflow: hidden;
@@ -173,7 +171,7 @@ background-color: var(--main-color );
 }
 
 /* 검색목록 컨테이너 */
-.placesList_wrap{
+.placesList_wrap {
     position: absolute;
     top: 60px;
     left: 30px;
@@ -187,14 +185,14 @@ background-color: var(--main-color );
 
 /* 검색 ( 퀵 검색 )  */
 
-.search_wrap{
+.search_wrap {
     width: 285px;
 }
 .search_title {
     display: flex;
     text-align: center;
     margin-bottom: 6px;
- 
+
 }
 .search_title a {
     text-decoration: none;
@@ -202,38 +200,36 @@ background-color: var(--main-color );
     height: 35px;
     width: 150px;
 
-    
 }
-.search_title h3{
+.search_title h3 {
     font-size: 12px;
-      line-height : 40px;
-      border-bottom: 1px solid #444;
+    line-height: 40px;
+    border-bottom: 1px solid #444;
 }
-.search_title_click{
+.search_title_click {
     background-color: var(--main-color);
     color: #fff;
 }
 
-
 /* 퀵 검색 */
-.quick_search{
+.quick_search {
     position: relative;
     height: 60px;
-        width: 100%;
+    width: 100%;
     background-color: var(--main-color);
 }
-.quick{
+.quick {
     display: block;
     border: none;
     height: 40px;
     padding: 0;
     width: 95%;
-    margin:  auto;
+    margin: auto;
     position: relative;
     top: 10px;
 }
-.quick_btn{
-    background: url(../../img/shop/ser_07.png);
+.quick_btn {
+    background: url("../../img/shop/ser_07.png");
     height: 23px;
     position: absolute;
     right: 15px;
@@ -244,7 +240,7 @@ background-color: var(--main-color );
 
 /* 지역 검색창 */
 /* 스텝 1 시/도 선택창 */
-.step_wrap1{
+.step_wrap1 {
     display: none;
     position: relative;
     top: -60px;
@@ -254,7 +250,7 @@ background-color: var(--main-color );
     background-color: var(--main-color);
 }
 
-.step_title{
+.step_title {
     background: var(--main-color);
     color: #fff;
     font-size: 14px;
@@ -262,7 +258,7 @@ background-color: var(--main-color );
     line-height: 60px;
     text-indent: 20px;
 }
-.step_wrap1 li{
+.step_wrap1 li {
     border-bottom: 1px solid #ddd;
     float: left;
     height: 40px;
@@ -270,14 +266,14 @@ background-color: var(--main-color );
     width: 140px;
     font-size: 14px;
 }
-.step1_btn:hover{
+.step1_btn:hover {
     cursor: pointer;
 }
-.search_title a:hover{
-    text-decoration: underline ;
+.search_title a:hover {
+    text-decoration: underline;
 }
 /* 스텝 2 구/군 선택창 */
-.region_list{
+.region_list {
     display: none;
     position: relative;
     top: -60px;
@@ -286,7 +282,7 @@ background-color: var(--main-color );
     z-index: 3;
     background-color: var(--main-color);
 }
-.region_list .back_btn{
+.region_list .back_btn {
     color: #444;
     font-size: 14px;
     height: 54px;
@@ -294,11 +290,11 @@ background-color: var(--main-color );
     position: relative;
     text-indent: 40px;
     width: 100%;
-    background: url(../../img/shop/ser_08.png) no-repeat #f4f4f2;;
-    background-position-y:18px;
-    background-position-x:18px;
+    background: url("../../img/shop/ser_08.png") no-repeat #f4f4f2;
+    background-position-y: 18px;
+    background-position-x: 18px;
 }
-.region_list li{
+.region_list li {
     border-bottom: 1px solid #ddd;
     float: left;
     height: 40px;
@@ -308,24 +304,26 @@ background-color: var(--main-color );
 }
 
 /* 인포윈도우 */
-.inpo_wrap{
+.inpo_wrap {
     position: relative;
     width: 481px;
     height: 197px;
     background: no-repeat;
-    background-image: url(../../img/shop/ser_09.jpeg)  ;
+    background-image: url("../../img/shop/ser_09.jpeg");
 }
-.inpo_wrap button:hover{cursor: pointer;}
+.inpo_wrap button:hover {
+    cursor: pointer;
+}
 
-.inpo_map{  
+.inpo_map {
     font-size: 16px;
     color: #fff;
     padding: 15px 20px;
 }
 
-.inpo_btn{
+.inpo_btn {
     position: absolute;
-    color: #fff  !important;
+    color: #fff !important;
     right: 20px;
     border: 1px solid #fff;
     padding: 10px;
@@ -334,17 +332,17 @@ background-color: var(--main-color );
 }
 
 /* 이밴트 */
-.event_wrap{
+.event_wrap {
     height: 360px;
     margin: 50px auto 100px;
     position: relative;
     width: 1100px;
 }
-.event_wrap h2{
+.event_wrap h2 {
     font-size: 50px;
     margin-bottom: 20px;
 }
-.event_slide_wrap{
+.event_slide_wrap {
     position: relative;
     width: 1100px;
     left: 20px;
@@ -352,77 +350,77 @@ background-color: var(--main-color );
     overflow: hidden;
     margin: 0 auto 30px;
 }
- .event_slide{
+.event_slide {
     margin: 0 auto;
     position: relative;
     display: flex;
     gap: 80px;
 }
-.event_slide img{
+.event_slide img {
     width: 260px;
     height: 220px;
     border-radius: 10px;
-    margin: 0px 20px 30px;
+    margin: 0 20px 30px;
 }
 .event_slide p {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
 }
-.event_slide span{
+.event_slide span {
     color: rgb(107,107 , 107);
 }
 /* 이밴트 화살표 */
-.event_arrow_lt{
+.event_arrow_lt {
     position: absolute;
     left: -20px;
     top: 150px;
 }
-.event_arrow_rt{
+.event_arrow_rt {
     position: absolute;
     top: 150px;
     right: -20px;
 }
-.nn{
+.nn {
     margin: 150px;
 }
 /* 슬라이드 버튼 */
-.event_btn{
+.event_btn {
     text-align: center;
     padding-bottom: 50px;
 }
-.event_page{
-   background: url(../../../img/shop/ser_e12.png) no-repeat -13px 0px;
-   width: 13px;
-   height: 12px;
+.event_page {
+    background: url("../../../img/shop/ser_e12.png") no-repeat -13px 0;
+    width: 13px;
+    height: 12px;
     overflow: hidden;
     display: inline-block;
     text-indent: -9999px;
 }
-.event_page_play{
-   background: url(../../../img/shop/ser_e12.png) no-repeat 0px 0px;
-   width: 13px;
-   height: 12px;
+.event_page_play {
+    background: url("../../../img/shop/ser_e12.png") no-repeat 0 0;
+    width: 13px;
+    height: 12px;
     overflow: hidden;
     display: inline-block;
     text-indent: -9999px;
 }
-.play{
-    background: url(../../../img/shop/ser_e11.png) no-repeat 6px 0px;
+.play {
+    background: url("../../../img/shop/ser_e11.png") no-repeat 6px 0;
     width: 15px;
     height: 13px;
-     overflow: hidden;
-     display: inline-block;
-     text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -9999px;
 }
-.stop{
-    background: url(../../../img/shop/ser_e11.png) no-repeat -7px 0px;
+.stop {
+    background: url("../../../img/shop/ser_e11.png") no-repeat -7px 0;
     width: 15px;
     height: 13px;
-     overflow: hidden;
-     display: inline-block;
-     text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -9999px;
 }
-.dsnone{
+.dsnone {
     display: none;
 }
