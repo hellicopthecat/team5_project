@@ -294,9 +294,7 @@ function recommAppearence(listIndex) {
         ],
         1000
       );
-
       recommStuffCont[activeIndex].classList.add("hidden");
-
       recommWrapBtnImg[activeIndex].style.transform = "rotateZ(0deg)";
       recommWrapBtnImg[activeIndex].style.transition = "0.7s ease-in-out";
     }
@@ -319,15 +317,12 @@ function recommAppearence(listIndex) {
       ],
       1000
     );
-
     recommStuffCont[listIndex].classList.add("hidden");
-
     recommWrapBtnImg[listIndex].style.transform = "rotateZ(0deg)";
     recommWrapBtnImg[listIndex].style.transition = "0.7s ease-in-out";
     activeIndex = null;
   }
 }
-
 recommWrapBtn.forEach((wrapBtn, liIndex) => {
   const handelRecommClick = (event) => {
     if (liIndex === 0) {
@@ -366,7 +361,6 @@ recommLeft.forEach((lBtn, index) => {
       currentImg--;
     }
     handleAppend(index);
-
     recommStuffListCont.item(index).style.transition = `ease-in-out 1s`;
     recommStuffListCont.item(index).style.transform = `translateX(-${
       MENUIMG_WIDTH * (currentImg - 1)
@@ -374,7 +368,6 @@ recommLeft.forEach((lBtn, index) => {
   };
   lBtn.addEventListener("click", handleRecommLbtn);
 });
-
 recommRight.forEach((rBtn, index) => {
   const handleRecommRbtn = (event) => {
     event.preventDefault();
@@ -384,7 +377,6 @@ recommRight.forEach((rBtn, index) => {
       currentImg++;
     }
     handleAppend(index);
-
     recommStuffListCont.item(index).style.transition = `ease-in-out 1s`;
     recommStuffListCont.item(index).style.transform = `translateX(-${
       MENUIMG_WIDTH * currentImg
@@ -398,16 +390,13 @@ const appendCreateList = (product, num) => {
   const img = document.createElement("img");
   const span = document.createElement("span");
   const p = document.createElement("p");
-
   img.src = product.src;
   img.alt = product.alt;
   span.innerText = product.alt;
   p.innerText = product.description;
-
   li.append(img);
   li.append(span);
   li.append(p);
-
   recommStuffListCont[num].appendChild(li);
 };
 // const prependCreateList = (product, num) => {

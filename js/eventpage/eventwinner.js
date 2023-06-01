@@ -3,14 +3,11 @@ const eventWinPagerCont = document.getElementById("eventwinner__pager");
 winnerList.forEach((each) => {
   function handleClick() {
     const img = each.querySelectorAll(".toggle_slide");
-
     img.forEach((att) => {
       if (att.classList.contains("slideup_active")) {
         att.classList.remove("slideup_active");
         att.style.height = "auto";
-
         const imgHeight = `${att.clientHeight}px`;
-
         att.style.height = "0px";
         setTimeout(() => {
           att.style.height = imgHeight;
@@ -25,7 +22,6 @@ winnerList.forEach((each) => {
           {once: true}
         );
       }
-
       winnerList.forEach((clicked) => {
         if (clicked !== each) {
           const imgClicked = clicked.querySelectorAll("img");
@@ -62,7 +58,6 @@ function displayPost(startPost, endPost) {
     }
   });
 }
-
 function createActiveAbleBtn(btnNum) {
   const btn = document.createElement("button");
   btn.innerText = btnNum;
@@ -84,7 +79,6 @@ function createActiveAbleBtn(btnNum) {
 
   return btn;
 }
-
 function createPagerBtn() {
   for (i = 1; i <= PAGECOUNT; i++) {
     const btn = createActiveAbleBtn(i);
