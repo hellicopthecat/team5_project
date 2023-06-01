@@ -1,3 +1,4 @@
+
 .main_wrap{
     font-weight: bold;
     font-size: 18px 
@@ -26,7 +27,7 @@
     margin-bottom: 50px;
 }
 .deli_main_title{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 100;
 }
 .deli_title_menu ul{
@@ -45,7 +46,7 @@
 /* 메뉴 선텍  */
 
 .deli_product{
-    margin-left: 15px;
+    margin-left: 13px;
 }
 .deli_menu_wrap{
     margin-bottom: 50px;
@@ -87,7 +88,8 @@
 }
 
 .deli_product_wrap h2{
-    font-size: 45px;
+
+    font-size: 30px;
     margin-bottom: 50px;
     font-weight: 100;
 }
@@ -125,7 +127,7 @@
 .deli_see_more{
        animation: all 0.5s;
     display: none;
-    padding: 15px 120px 15px;
+    padding: 15px 115px 15px;
     color: #fff;
     border-radius: 40px;
     background: var(--main-color);
@@ -198,7 +200,7 @@ justify-content: center;
     margin-bottom: 15px;
 }
 .moadl_title h2{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 100;
 }
 .modal_inpo{

@@ -133,6 +133,7 @@
     font-size: 19px;
 }
 .app_service_num {
+    width: 120px;
     color: #004e42;
     font-weight: 900;
 }

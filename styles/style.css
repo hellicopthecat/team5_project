@@ -45,6 +45,7 @@
 
 /* - footer - */
 @import "./components/footer.css";
+@import "./screens/footer/sitemap_etc.css";
 
 /* - main head banner & location - */
 @import "./components/_main-head-banner.css";
