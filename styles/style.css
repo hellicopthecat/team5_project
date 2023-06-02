@@ -47,7 +47,6 @@
 
 /* - footer - */
 @import "components/footer.css";
-@import "screens/footer/sitemap.css";
 
 /* - quick remote - */
 @import "components/quickremote.css";
