@@ -1,56 +1,56 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /* - reset -  */
-@import "../styles/components/_reset.css";
+@import "components/reset.css";
 
 /* - variables -  */
-@import "../styles/components/_variables.css";
+@import "components/variables.css";
 /* - main head banner & location - */
-@import "../styles/components/_main-head-banner.css";
+@import "components/main-head-banner.css";
 
 /* - screens -  */
 /* - mainpage - */
-@import "../styles/screens/mainpage/mainpage.css";
-@import "../styles/screens/mainpage/login.css";
-@import "../styles/screens/mainpage/mypage.css";
+@import "screens/mainpage/mainpage.css";
+@import "screens/mainpage/login.css";
+@import "screens/mainpage/mypage.css";
 /* - menu -*/
 
 /* - mall - */
 
 /* - searchstore - */
 /*  - app - */
-@import "../styles/app/homedelivery.css";
-@import "../styles/app/faq.css";
-@import "../styles/app/inquiry.css";
-@import "../styles/app/appmain.css";
-@import "../styles/app/bulk.css";
+@import "app/homedelivery.css";
+@import "app/faq.css";
+@import "app/inquiry.css";
+@import "app/appmain.css";
+@import "app/bulk.css";
 /*  - map - */
-@import "../styles/map/map.css";
+@import "map/map.css";
 /* - stroy - */
 
 /* - event - Page - */
-@import "../styles/screens/eventpage/eventpage.css";
-@import "../styles/screens/eventpage/aff_benefits.css";
-@import "../styles/screens/eventpage/eventwinner.css";
-@import "../styles/screens/eventpage/membership.css";
+@import "screens/eventpage/eventpage.css";
+@import "screens/eventpage/aff_benefits.css";
+@import "screens/eventpage/eventwinner.css";
+@import "screens/eventpage/membership.css";
 
 /*  - customer - page - */
-@import "../styles/screens/customercenter/customercenter.css";
+@import "screens/customercenter/customercenter.css";
 
 /* - partissier- */
-@import "../styles/screens/partissier/partissier.css";
+@import "screens/partissier/partissier.css";
 
 /* - start - up */
-@import "../styles/screens/startup/startup.css";
+@import "screens/startup/startup.css";
 /* - header - */
-@import "../styles/components/header.css";
+@import "components/header.css";
 
 /* - footer - */
-@import "../styles/components/footer.css";
-@import "../styles/screens/footer/sitemap_etc.css";
+@import "components/footer.css";
+@import "screens/footer/sitemap_etc.css";
 
 /* - quick remote - */
-@import "../styles/components/quickremote.css";
+@import "components/quickremote.css";
 
 /* - global - */
 * {
