@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>사이트맵</title>
+    <title>사이트맵 | Tous les Jours</title>
     
     <!-- 헤더 관련 -->
     <link
@@ -31,6 +31,10 @@
 
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/screens/footer/sitemap.css">
+
+    <!-- 제이쿼리 -->
+    <script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+
 </head>
 
 <body>
@@ -440,7 +444,7 @@
           <div class="top_content_wrap">
             <h2>사이트맵</h2>
     
-            <div class="page_location">
+            <!-- <div class="page_location">
               <ul>
                 <li>
                   <a href="../../index.html"><span>HOME</span></a>
@@ -453,143 +457,110 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
+          
           <div class="box">
 
           <div class="site_wrap">
-            <h3 class="h2_si">
-              브랜드 스토리
-            </h3>
-          <ul class="site_ul">
-            <li>
-              <a href="#none">브랜드 스토리</a>
-            </li>
-            <li>
-              <a href="#none">뚜레쥬르 재료 이야기</a>
-            </li>
-            <li>
-              <a href="#none">글로벌 뚜레쥬르</a>
-            </li>
-            <li>
-              <a href="#none">뚜레쥬르 라뜰리에</a>
-            </li>
-            <li>
-              <a href="#none">뚜레쥬르 착한빵</a>
-            </li>
-          </ul>
+            <h3 class="h2_si">브랜드 스토리 </h3>
+              <ul class="site_ul">
+                <li>
+                  <a href="#none">브랜드 스토리</a>
+                </li>
+                <li>
+                  <a href="#none">뚜레쥬르 재료 이야기</a>
+                </li>
+                <li>
+                  <a href="#none">글로벌 뚜레쥬르</a>
+                </li>
+                <li>
+                  <a href="#none">뚜레쥬르 라뜰리에</a>
+                </li>
+                <li>
+                  <a href="#none">뚜레쥬르 착한빵</a>
+                </li>
+              </ul>
 
         </div>
 
         <div class="site_wrap">
-          <h3 class="h2_si">
-            제품안내
-          </h3>
-          <ul>
-            <li>
-              <a href="../../views/menu/new_products.html">신제품</a>
-            </li>
-            <li>
-              <a href="../../views/menu/bread.html">빵</a>
-            </li>
-            <li>
-              <a href="../../views/menu/cake.html">케이크</a>
-            </li>
-            <li>
-              <a href="../../views/menu/deli.html">델리</a>
-            </li>
-            <li>
-              <a href="../../views/menu/dessert.html">선물</a>
-            </li>
-            <li>
-              <a href="../../views/menu/dessert.html">디저트&스낵</a>
-            </li>
-            <li>
-              <a href="../../views/menu/drinks.html">음료</a>
-            </li>
-          </ul>
+          <h3 class="h2_si">제품안내</h3>
+            <ul>
+              <li>
+                <a href="../../views/menu/new_products.html">신제품</a>
+              </li>
+              <li>
+                <a href="../../views/menu/bread.html">빵</a>
+              </li>
+              <li>
+                <a href="../../views/menu/cake.html">케이크</a>
+              </li>
+              <li>
+                <a href="../../views/menu/deli.html">델리</a>
+              </li>
+              <li>
+                <a href="../../views/menu/dessert.html">선물</a>
+              </li>
+              <li>
+                <a href="../../views/menu/dessert.html">디저트&스낵</a>
+              </li>
+              <li>
+                <a href="../../views/menu/drinks.html">음료</a>
+              </li>
+            </ul>
         </div>
   
         <div class="site_wrap">
-          <h3 class="h2_si">
-            이벤트&할인혜택
-          </h3>
-          <ul>
-            <li>
-              <a href="../../views/eventpage/eventpage.html">진행중인 이벤트</a>
-            </li>
-            <li>
-              <a href="../../views/eventpage/eventwinner.html">이벤트 당첨자</a>
-            </li>
-            <li>
-              <a href="../../views/eventpage/membership.html">CJ ONE맴버쉽</a>
-            </li>
-            <li>
-              <a href="../../views/eventpage/aff_benefits.html">제휴 해택</a>
-            </li>
-          
-          </ul>
+          <h3 class="h2_si">이벤트&할인혜택</h3>
+            <ul>
+              <li>
+                <a href="../../views/eventpage/eventpage.html">진행중인 이벤트</a>
+              </li>
+              <li>
+                <a href="../../views/eventpage/eventwinner.html">이벤트 당첨자</a>
+              </li>
+              <li>
+                <a href="../../views/eventpage/membership.html">CJ ONE맴버쉽</a>
+              </li>
+              <li>
+                <a href="../../views/eventpage/aff_benefits.html">제휴 해택</a>
+              </li>
+            </ul>
         </div>
         
         <div class="site_wrap">
-          <h3 class="h2_si">
-            뚜레쥬르 앱&온라인 쇼핑
-          </h3>
-          <ul>
-            <li>
-              <a href="../../views/app/appmain.html">뚜레쥬르 앱</a>
-            </li>
-            <li>
-              <a href="../../views/app/homedelivery/homedelivery_listAll.html">홈페이지 전용 예약 배송</a>
-            </li>
-            <li>
-              <a href="../../views/app/flowerdelivery/flowerdelivery.html">꽃 & 케이크 택배 배송</a>
-            </li>
-            <li>
-              <a href="../../views/app/bulkpurchase.html">대량 구매 문의</a>
-            </li>
-          </ul>
+          <h3 class="h2_si">뚜레쥬르 앱&온라인 쇼핑</h3>
+            <ul>
+              <li>
+                <a href="../../views/app/appmain.html">뚜레쥬르 앱</a>
+              </li>
+              <li>
+                <a href="../../views/app/homedelivery/homedelivery_listAll.html">홈페이지 전용 예약 배송</a>
+              </li>
+              <li>
+                <a href="../../views/app/flowerdelivery/flowerdelivery.html">꽃 & 케이크 택배 배송</a>
+              </li>
+              <li>
+                <a href="../../views/app/bulkpurchase.html">대량 구매 문의</a>
+              </li>
+            </ul>
         </div>
 
         <div class="site_wrap">
-          <h3 class="h2_si">
-            기사 채용안내
-          </h3>
-            <ul>
-              <li>
-                <a href="../../views/partissier/partissier.html">기사 채용안내</a>
-              </li>
-            </ul>
+          <h3 class="h2_si"><a href="../../views/partissier/partissier.html">기사 채용안내</a></h3>
+
         </div>
 
           <div class="site_wrap">
-            <h3 class="h2_si">
-              창업안내
-            </h3>
-            <ul>
-              <li>
-                <a href="../../views/startup/startup.html">창업 준비하기</a>
-              </li>
-            </ul>
+            <h3 class="h2_si"><a href="../../views/startup/startup.html">창업 준비하기</a></h3>
           </div>
 
           <div class="site_wrap">
-            <h3 class="h2_si">매장안내</h3>
-            <ul>
-              <li>
-                <a href="../../views/map/map.html">매장안내</a>
-              </li>
-            </ul>
+            <h3 class="h2_si"><a href="../../views/map/map.html">매장안내</a></h3>
           </div>
 
           <div class="site_wrap">
-            <h3 class="h2_si">
-              고객센터
-            </h3>
-            <ul>
-              <li>
-              <a href="../../views/customerpage/customerpage.html">고객센터</a>
-              </li>
-            </ul>
+            <h3 class="h2_si"><a href="../../views/customerpage/customerpage.html">고객센터</a></h3>
           </div>
       </div>
     </div>
@@ -738,13 +709,14 @@
     <!-- 내부 스크립트 -->
     <script>
       $('h3').mouseenter(function(){
-        $(h3).addClass('shadow_effect')
-      })
-                
+        $(this).addClass('shadow_effect');
+      });
+    
       $('h3').mouseleave(function(){
-        $(th3).removeClass('shadow_effect')
-      })
+        $(this).removeClass('shadow_effect');
+      });
     </script>
+    
 
 
     <!-- 오른쪽 하단 바로가기 메뉴 -->

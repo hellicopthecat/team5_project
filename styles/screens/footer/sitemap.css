@@ -60,28 +60,35 @@ h3{
     height: 50px;
     padding: 2px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #303030;
+    margin-bottom: 10px;
 }
 
 .shadow_effect{
-    animation: all 0.5s;
+    animation: all 0.3s;
     border: none;
-    box-shadow: 10px 5px 5px rgb(110, 110, 110);
+    box-shadow: 5px 3px 3px rgb(0, 0, 0);
 }
-.content_box p{
+
+h3 ul li a{
     font-size: 14px;
     line-height: 1.6 ;
     margin-bottom: 30px;
-}
-.site_wrap{
-    padding: 15px 10px;
     text-align: center;
-    color: var( --third-color);
-  }
+    color:   #fff;
+    font-weight: 600;
+    font-family: "jua";
+}
+/* .content_box p{
+    font-size: 14px;
+    line-height: 1.6 ;
+    margin-bottom: 30px;
+} */
+
   .box{
     width: 1000px;
     margin: 0 auto;
