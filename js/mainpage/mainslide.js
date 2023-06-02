@@ -20,7 +20,6 @@ const slideMainadController = () => {
   slideCont.style.transform = `translateX(-${SLIDEIMGSIZE * currentIndex}px)`;
   slideCont.style.transition = `ease-in-out 0.7s`;
   trasitionMainAdDot();
-  console.log(currentIndex);
   currentIndex++;
 };
 let sliderMotion = setInterval(slideMainadController, 3000);
