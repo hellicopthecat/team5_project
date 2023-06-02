@@ -68,7 +68,7 @@ header .sub-menu .search {
   position: relative;
 }
 header .sub-menu .search input {
-  width: 36px;
+  width: 0px;
   height: 34px;
   padding: 4px 10px;
   border: none;
@@ -78,7 +78,7 @@ header .sub-menu .search input {
   background: url(../../img/app/search_icon.png) no-repeat;
   background-position:98% 50%;
   background-color : none ;
-  color: #fff;
+
   font-size: 12px;
   transition: all 0.4s;
 }

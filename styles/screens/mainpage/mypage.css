@@ -118,7 +118,7 @@
 }
 .my_point_btn {
     position: relative;
-    left: -10px;
+    left: 10px;
     width: 110%;
     padding: 50px;
 }
