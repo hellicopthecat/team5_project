@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
     <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -122,7 +123,7 @@
                     </li>
                     <li>
                       <a href="../eventpage/eventwinner.html"
-                        >이벤트 담당자</a
+                        >이벤트 당첨자당첨자당첨자</a
                       >
                     </li>
                     <li>
@@ -510,7 +511,7 @@
                                 <th></th>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr id="basket01"> 
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_03.png" alt="">
                                         <p>
@@ -526,12 +527,13 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_01"  class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                           
+                                <tr id="basket02">
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_05.png" alt="">
                                         <p>
@@ -547,12 +549,12 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_02" class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="basket03">
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_05.png" alt="">
                                         <p>
@@ -568,12 +570,12 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_03" class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="basket04">
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_05.png" alt="">
                                         <p>
@@ -589,12 +591,12 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_04" class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="basket05">
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_05.png" alt="">
                                         <p>
@@ -609,13 +611,13 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_05" class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
                                     
                                 </tr>
-                                <tr>
+                                <tr id="basket06">
                                     <td class="my_basket_tilte">
                                         <img src="../../img/app/homedelivery/dl_05.png" alt="">
                                         <p>
@@ -631,7 +633,7 @@
                                     </td>
                                     <td>
 
-                                        <button class="my_basket_no" type="submit">
+                                        <button id="basket_btn_06" class="my_basket_no" type="submit">
                                             X
                                         </button>
                                     </td>
@@ -692,7 +694,7 @@
         
 
             <section id="my_se02" class="hide my_page_wrap">
-                <div class="my_wrap">
+                <div id="se_02_01" class="my_wrap">
 
                     <div class="my_coupon">
                         <h2 style="font-size: 50px;">
@@ -742,19 +744,127 @@
                         </table>
                         
                         <p class="my_coupon_page">
-                            <a href="#none">
-                                <span class="my_icon material-symbols-outlined">
-                                    arrow_back_ios
-                                    </span>
-                            </a>
-                            <a style="color: var(--sub-color);" href="#none">1</a>
-                            <a href="#none">2</a>
-                            <a href="#none">3</a>
-                            <a href="#none">
-                                <span class="my_icon material-symbols-outlined">
-                                    arrow_forward_ios
-                                    </span>
-                            </a>
+                          
+                            <a class="coupon_page coupon_page_01" href="#none">1</a>
+                            <a class="coupon_page_02"  href="#none">2</a>
+                            <a class="coupon_page_03" href="#none">3</a>
+                         
+                        </p>
+                    </div>
+                </div>
+                <div id="se_02_02" class="my_wrap none">
+
+                    <div class="my_coupon">
+                        <h2 style="font-size: 50px;">
+                            사용 가능한 쿠폰
+                        </h2>
+
+
+                       
+                        <table class="my_coupon_tb">
+                            <thead>
+                                <th>코드</th>
+                                <th>쿠폰</th>
+                                <th>유효기간</th>
+                            </thead>
+                            <tbody>
+                                <tr class="coupon_br">
+                                    <td>123456</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>234567</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>345678</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>456789</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>567890</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>678901</td>
+                                    <td>6월 이벤트 쿠폰</td>
+                                    <td>23.06.01 ~ 23.06.31</td>
+                                </tr>
+                            </tbody>                            
+                        </table>
+                        
+                        <p class="my_coupon_page">
+                         
+                            <a class="coupon_page coupon_page_01" href="#none">1</a>
+                            <a class="coupon_page_02"  href="#none">2</a>
+                            <a class="coupon_page_03" href="#none">3</a>
+                        
+                        </p>
+                    </div>
+                </div>
+                <div id="se_02_03" class="my_wrap none">
+
+                    <div class="my_coupon">
+                        <h2 style="font-size: 50px;">
+                            사용 가능한 쿠폰
+                        </h2>
+
+
+                       
+                        <table class="my_coupon_tb">
+                            <thead>
+                                <th>코드</th>
+                                <th>쿠폰</th>
+                                <th>유효기간</th>
+                            </thead>
+                            <tbody>
+                                <tr class="coupon_br">
+                                    <td>123456</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>234567</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>345678</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>456789</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>567890</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                                <tr class="coupon_br">
+                                    <td>678901</td>
+                                    <td>7월 이벤트 쿠폰</td>
+                                    <td>23.07.01 ~ 23.07.31</td>
+                                </tr>
+                            </tbody>                            
+                        </table>
+                        
+                        <p class="my_coupon_page">
+                         
+                            <a class="coupon_page coupon_page_01" href="#none">1</a>
+                            <a class="coupon_page_02"  href="#none">2</a>
+                            <a class="coupon_page_03" href="#none">3</a>
+                    
                         </p>
                     </div>
                 </div>
@@ -972,7 +1082,7 @@
       </div>
   
 </body>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+
 <script>
  $('#my_basket_btn').click(()=>{
     $('#my_se00').removeClass('hide')
@@ -999,6 +1109,57 @@
     $('#my_se02').addClass('hide')
  })
 
+ $('#basket_btn_01').click(()=>{
+                                    $('#basket01').hide()
+                                  })
+
+                                  $('#basket_btn_02').click(()=>{
+                                    console.log(1)
+                                    $('#basket02').hide()
+                                  })
+
+                                  $('#basket_btn_03').click(()=>{
+                                    $('#basket03').hide()
+                                  })
+
+                                  $('#basket_btn_04').click(()=>{
+                                    $('#basket04').hide()
+                                  })
+
+                                  $('#basket_btn_05').click(()=>{
+                                    $('#basket05').hide()
+                                  })
+
+                                  $('#basket_btn_06').click(()=>{
+                                    $('#basket06').hide()
+                                  })
+
+
+                                  $('.coupon_page_01').click(()=>{
+                            $('.coupon_page_01').addClass('coupon_page')
+                            $('#se_02_01').show()
+                            $('#se_02_02').hide()
+                            $('#se_02_03').hide()
+                            $('.coupon_page_02').removeClass('coupon_page')
+                            $('.coupon_page_03').removeClass('coupon_page')
+                          })
+                          $('.coupon_page_02').click(()=>{
+                            $('#se_02_02').show()
+                            $('#se_02_01').hide()
+                            $('#se_02_03').hide()
+                            $('.coupon_page_02').addClass('coupon_page')
+                            $('.coupon_page_01').removeClass('coupon_page')
+                            $('.coupon_page_03').removeClass('coupon_page')
+                          })
+                          $('.coupon_page_03').click(()=>{
+                            $('#se_02_03').show()
+                            $('#se_02_02').hide()
+                            $('#se_02_01').hide()
+                            $('.coupon_page_03').addClass('coupon_page')
+                            $('.coupon_page_02').removeClass('coupon_page')
+                            $('.coupon_page_01').removeClass('coupon_page')
+                          })
+                                  
 </script>
 <script src="../../js/mainpage/mainquicknav.js"></script>
 </html>
