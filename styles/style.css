@@ -1,12 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /* - reset -  */
-@import "./components/_reset.css";
+@import "components/_reset.css";
 
 /* - variables -  */
-@import "./components/_variables.css";
+@import "/components/_variables.css";
 /* - main head banner & location - */
-@import "./components/_main-head-banner.css";
+@import "/components/_main-head-banner.css";
 
 /* - screens -  */
 /* - mainpage - */
