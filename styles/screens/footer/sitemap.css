@@ -1,0 +1,93 @@
+/* 페이지 제목 */
+.top_content_wrap{
+    width: 1100px;
+    margin: auto;
+    height: 120px;
+    padding: 40px 0;
+}
+h2{
+    padding: 10px 30px 0 15px;
+    font-size: 30px;
+    color: #FFF;  
+    position: relative;  
+}
+/* h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 28px;
+    background-color: #0D4633;
+} */
+
+.page_location{
+    float: right;
+    padding-top: 10px;
+}
+.page_location ul{
+    display: flex;
+}
+.page_location ul li{
+    font-size: 13px;
+    font-weight: 700;
+    color: #747474;
+    padding-left: 5px;
+}
+.page_location ul li a:hover{
+    text-decoration: underline;
+}
+.content_box{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url(../../../img/footer/sitemap/nick-karvounis-jN_M0McVNeI-unsplash.jpg) no-repeat  ;
+    background-size:100%;
+    /* opacity:0.8;  */
+    /* filter: brightness(60%); */
+    /* border: 2px solid #CAC0B6; */
+    padding: 40px;
+    box-sizing: border-box;
+    /* margin-bottom: 100px; */
+    
+}
+
+h3{
+    font-size:30x;
+    font-family: "JUA";
+    width: 200px;
+    height: 50px;
+    padding: 2px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+}
+
+.shadow_effect{
+    animation: all 0.5s;
+    border: none;
+    box-shadow: 10px 5px 5px rgb(110, 110, 110);
+}
+.content_box p{
+    font-size: 14px;
+    line-height: 1.6 ;
+    margin-bottom: 30px;
+}
+.site_wrap{
+    padding: 15px 10px;
+    text-align: center;
+    color: var( --third-color);
+  }
+  .box{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    line-height: 30px;
+    padding: 10px;
+  }
