@@ -14,8 +14,7 @@ window.addEventListener("scroll", () => {
     console.log(scroll)
     if (scroll > 250) {
 
-        life.style.transition = "all 4s"
-        life.style.animation = "left 4s"
+        life.style.transition = "all 3s"
         life.style.left = "0px"
     } else if (scroll < 500) {
         life.style.left = "1000px"
@@ -24,17 +23,13 @@ window.addEventListener("scroll", () => {
 
     if (scroll > 800) {
 
-        service01.style.transition = "all 4s"
-        service01.style.animation = "left 4s"
+        service01.style.transition = "all 3s"
         service01.style.left = "0px"
-        service02.style.transition = "all 4s"
-        service02.style.animation = "right 4s"
+        service02.style.transition = "all 3s"
         service02.style.right = "0px"
-        service03.style.transition = "all 4s"
-        service03.style.animation = "left 4s"
+        service03.style.transition = "all 3s"
         service03.style.left = "0px"
-        service04.style.transition = "all 4s"
-        service04.style.animation = "right 4s"
+        service04.style.transition = "all 3s"
         service04.style.right = "0px"
 
     } else if (scroll < 1250) {
@@ -47,16 +42,12 @@ window.addEventListener("scroll", () => {
 
     if (scroll > 1750) {
         app01.style.transition = "all 2.5s"
-        app01.style.animation = "right 2.5s"
         app01.style.right = "0px"
         app02.style.transition = "all 3.0s"
-        app02.style.animation = "right 3.0s"
         app02.style.right = "0px"
         app03.style.transition = "all 3.5s"
-        app03.style.animation = "right 3.5s"
         app03.style.right = "0px"
         app04.style.transition = "all 4s"
-        app04.style.animation = "right 4s"
         app04.style.right = "0px"
     } else if (scroll < 1700) {
         app01.style.right = "1300px"

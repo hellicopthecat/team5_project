@@ -116,7 +116,7 @@ td {
 }
 .res_se3_goods_title {
     position: relative;
-    margin-left: -84px;
+    margin-left: -64px;
     left: 60px;
 }
 .res_se3_1 {
@@ -134,10 +134,10 @@ td {
     gap: 10px;
 }
 .res_se3_goods li {
-    font-size: 14px;
+    font-size: 20px;
 }
 .res_se3_check_inpo li {
-    font-size: 14px;
+    font-size: 13px;
 }
 .res_se3_goods {
     margin-bottom: 30px;

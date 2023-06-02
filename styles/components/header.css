@@ -36,12 +36,13 @@ header .sub-menu ul.menu {
 }
 header .sub-menu ul.menu li {
   position: relative;
+  
 }
 header .sub-menu ul.menu li::before {
   content: "";
   display: block;
   width: 1px;
-  height: 12px;
+  height: 25px;
   background-color: #e5e5e5;
   position: absolute;
   top: 0;
@@ -56,9 +57,11 @@ header .sub-menu ul.menu li a {
   padding: 11px 16px;
   display: block;
   color: #656565;
+  font-weight: bold;
+  transition: color 0.8s;
 }
 header .sub-menu ul.menu li a:hover {
-  color: #000;
+  color: #007061;
 }
 header .sub-menu .search {
   height: 34px;
@@ -68,25 +71,28 @@ header .sub-menu .search input {
   width: 36px;
   height: 34px;
   padding: 4px 10px;
-  border: 1px solid #ccc;
+  border: none;
   box-sizing: border-box;
   border-radius: 5px;
   outline: none;
-  background-color: #fff;
-  color: #777;
+  background: url(../../img/app/search_icon.png) no-repeat;
+  background-position:98% 50%;
+  background-color : none ;
+  color: #fff;
   font-size: 12px;
-  transition: width 0.4s;
+  transition: all 0.4s;
 }
 header .sub-menu .search input:focus {
   width: 190px;
-  border-color: #669900;
+  background-color: #fff;
+  border:1px solid #669900;
 }
 header .sub-menu .search .material-icons {
   height: 24px;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 7px;
   bottom: 0;
-  right: 5px;
+  right: -10px;
   margin: auto;
   transition: 0.4s;
 }
@@ -139,7 +145,8 @@ header .main-menu .item .item__contents .contents__menu > ul > li {
 }
 header .main-menu .item .item__contents .contents__menu > ul > li h4 {
   padding: 3px 0 12px 0;
-  font-size: 14px;
+  width: 200px;
+  font-size: 15px;
   color: #fff;
 }
 header .main-menu .item .item__contents .contents__menu > ul > li ul li {
@@ -150,4 +157,8 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li {
 }
 header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
   color: #669900;
+}
+
+.none{
+  display: none;
 }
