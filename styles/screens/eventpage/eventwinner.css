@@ -15,10 +15,11 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 .event_winner--result {
   position: relative;
-  top: -80px;
+  top: -100px;
 }
 .event_search-form {
   background-color: var(--table-color);

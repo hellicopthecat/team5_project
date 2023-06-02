@@ -171,11 +171,11 @@
 }
 
 .deli_modal{
-    width: 1150px;
+    width: 1250px;
     height: 600px;
     margin:  0 auto;
     position: relative;
-    top: 10%;
+    top: 14%;
     color:rgb(98, 83, 71);
     background-color: #fff;
     border: 3px solid black;
