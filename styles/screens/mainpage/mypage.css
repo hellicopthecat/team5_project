@@ -166,7 +166,7 @@
 }
 .my_basket_tb {
     position: relative;
-    left: -130px;
+    left: -114px;
     font-size: 20px;
     margin: 0 auto;
     width: 140%;
@@ -201,7 +201,7 @@
 
 .my_basket_total {
     position: relative;
-    left: -90px;
+    left: -95px;
     margin-top: 20px;
     margin-bottom: 30px;
     border: 1px solid var(--main-color);
@@ -217,6 +217,8 @@
     display: inline-block;
     background-color: var(--main-color);
     color: #fff;
+    position: relative;
+    left: -20px;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
@@ -362,4 +364,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+.coupon_page{
+    color: var(--sub-color);
+}
+.none{
+    display: none;
+}
+.coupon_page_02{
+    margin-right: 15px;
+}
+.coupon_page_01{
+    margin-right: 15px;
 }
