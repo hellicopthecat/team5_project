@@ -130,9 +130,10 @@ h2::before{
     margin: auto;
 }
 h3{
+    font-family: "jua";
     font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.1em;
+    /* font-weight: 700;
+    letter-spacing: -0.1em; */
     color: #0D4633;
     text-align: center;
     padding-bottom: 15px;

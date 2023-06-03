@@ -20,7 +20,7 @@ footer {
   padding: 0 20px;
 }
 
-.footer_bottom {
+.footer_bottom_wrap {
   position: relative;
   background: #363636;
   width: 100%;
@@ -33,34 +33,34 @@ footer {
   line-height: 30px;
 }
 
-.company {
+.footer_company {
   width: 900px;
   height: 50px;
   margin: auto;
   color: #fff;
 }
 
-.policy {
+.footer_policy {
   width: 1000px;
   height: 50px;
   margin: auto;
   margin-bottom: 10px;
   color: #ffff;
 }
-.policy .private {
-  color: chocolate;
+.footer_policy .private {
+  color: #d2691e;
   font-weight: 700;
 }
-.company a:hover,
-.policy a:hover {
+.footer_company a:hover,
+.footer_policy a:hover {
   text-decoration: underline;
 }
-.company ul,
-.policy ul {
+.footer_company ul,
+.footer_policy ul {
   display: flex;
   justify-content: space-between;
 }
-.company_info {
+.footer_company_info {
   width: 800px;
   height: 90px;
   line-height: 1.5em;
@@ -70,11 +70,11 @@ footer {
   font-size: 12px;
   position: relative;
 }
-.company_info p,
-.company_info address {
+.footer_company_info p,
+.footer_company_info address {
   text-align: center;
 }
-.company_info p span {
+.footer_company_info p span {
   justify-content: space-between;
   margin-right: 10px;
 }
@@ -90,11 +90,11 @@ footer {
   padding-left: 80px;
 }
 
-.company_info .business_info {
+.footer_company_info .business_info {
   margin-bottom: 10px;
 }
 
-.company_info .copyright {
+.footer_company_info .copyright {
   font-size: 11px;
 }
 .footer_logo img {
