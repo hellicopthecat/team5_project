@@ -4,7 +4,7 @@
 }
 .app_sub_title {
     width: 100%;
-    margin: 10px auto 0;
+    margin: 0 auto ;
     height: 150px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../../img/app/app_title.jpg) no-repeat;
     background-size: 100%;

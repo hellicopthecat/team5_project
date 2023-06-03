@@ -20,3 +20,13 @@
 
                 })
 
+
+                    $('.basket_go').click(()=>{
+                        let basket_ok = confirm("장바구니로 이동하시겠습니까?")
+                        if(basket_ok){
+                         
+                            window.location.href ='../../main/mypage.html';
+                        }else{
+                            alert("취소하셨습니다.")
+                        }
+                    })
