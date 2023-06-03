@@ -105,26 +105,26 @@ function videoChangeRedDot() {
 /** mouse enter && leave  event */
 function handlePrevMouseEnter() {
   const arrowPrevImg = videoPrev.querySelector("img");
-  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow.png");
-  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow_col.png");
+  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow_col.png");
+  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow_white.png");
 }
 function handleNextMouseEnter() {
   const arrowNextImg = videoNext.querySelector("img");
-  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow.png");
-  arrowNextImg.setAttribute("src", "./img/icons/right-arrow_col.png");
+  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow_col.png");
+  arrowNextImg.setAttribute("src", "./img/icons/right-arrow_white.png");
 }
 videoPrev.addEventListener("mouseenter", handlePrevMouseEnter);
 videoNext.addEventListener("mouseenter", handleNextMouseEnter);
 
 function handlePrevMouseLeave() {
   const arrowPrevImg = videoPrev.querySelector("img");
-  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow_col.png");
-  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow.png");
+  arrowPrevImg.removeAttribute("src", "./img/icons/left-arrow_white.png");
+  arrowPrevImg.setAttribute("src", "./img/icons/left-arrow_col.png");
 }
 function handleNextMouseLeave() {
   const arrowNextImg = videoNext.querySelector("img");
-  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow_col.png");
-  arrowNextImg.setAttribute("src", "./img/icons/right-arrow.png");
+  arrowNextImg.removeAttribute("src", "./img/icons/right-arrow_white.png");
+  arrowNextImg.setAttribute("src", "./img/icons/right-arrow_col.png");
 }
 videoPrev.addEventListener("mouseleave", handlePrevMouseLeave);
 videoNext.addEventListener("mouseleave", handleNextMouseLeave);
