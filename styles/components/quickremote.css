@@ -1,0 +1,82 @@
+/* main page quick menu */
+.mainpage_quick--menu {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  height: 0;
+}
+.mainpage_quick--menu-cont {
+  position: relative;
+  bottom: 290px;
+  right: 0px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0px;
+  background-color: #333;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.mainpage_quick--menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  padding: 10px 15px;
+  margin: 0px 5px 10px;
+}
+.mainpage_quick--menu a:hover {
+  border-radius: 10px;
+  background-color: #869989;
+}
+.mainpage_quick--menu img {
+  width: 15px;
+  margin-bottom: 10px;
+}
+.mainpage_quick--menu span {
+  color: #ddd;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.mainpage_quick--menu button {
+  background-color: #333;
+  border: 1px solid white;
+  position: absolute;
+  right: 4px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.mainpage_quick--menu button > img {
+  margin: 0;
+  text-align: center;
+}
+.mainpage_btn--appear {
+  transform: translateY(-300px);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_btn-img--appear {
+  transform: rotateZ(90deg);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_quick-cont--appear {
+  transform: translateX(0px);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_btn--disappear {
+  transform: translateY(0px);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_btn-img--disappear {
+  transform: rotateZ(0deg);
+  transition: 0.6s ease-in-out;
+}
+.mainpage_quick-cont--disappear {
+  transform: translateX(60px);
+  transition: 0.6s ease-in-out;
+}

@@ -1,0 +1,162 @@
+.res_main {
+    padding-top: 50px;
+    width: 100%;
+    background-color: #f7f0da;
+}
+.res_main_wrap {
+    width: 800px;
+    margin: auto;
+}
+.absence {
+    color: rgb(208,208,208);
+    font-size: 11px;
+    margin-top: 5px;
+}
+.res_title {
+    border: 1px solid rgb(200,200,200);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+.res_se_title {
+    margin-bottom: 15px;
+}
+.res_strong {
+    color: rgb(41, 100, 46);
+}
+.res_se_table {
+    width: 95%;
+    margin: 0 auto 50px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.res_se_table th {
+    background: #dadfcb;
+    padding: 20px;
+}
+.res_se_table th,
+td {
+    border-bottom: 1px solid rgb(233,233,233);
+
+}
+.res_se_table td {
+    padding-left: 30px;
+    background-color: #fff;
+}
+.res_se_quck_title span {
+    position: relative;
+    top: -65px;
+}
+.res_th_address {
+    position: relative;
+    top: 20px;
+}
+.res_input_name {
+    width: 250px;
+    height: 28px;
+
+}
+.res_input_phone {
+    width: 100px;
+    height: 28px;
+}
+.res_input_date {
+    height: 28px;
+    background: url("../../img/app/icon_calendar.gif") no-repeat;
+    background-size: 20px;
+    background-position: right center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.res_input_time {
+    width: 200px;
+    height: 28px;
+    font-size: 15px;
+}
+.res_input_detailaddress {
+    width: 300px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+.res_input_btn {
+    height: 34px;
+}
+.res_input_address {
+    height: 28px;
+    margin-bottom: 10px;
+    width: 234px;
+}
+.res_se3_title {
+    margin-bottom: 40px;
+}
+.res_section3 {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto 50px;
+    border: 1px solid #004e42;
+    border-radius: 20px;
+}
+.res_se3_wrap {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.res_se3_check_inpo {
+
+    background: #dadfcb;
+    border-radius: 20px;
+}
+.res_se3_check_inpo ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.res_se3_check_inpo li {
+    padding: 20px;
+}
+.res_se3_goods_title {
+    position: relative;
+    margin-left: -64px;
+    left: 60px;
+}
+.res_se3_1 {
+
+    font-size: 10px;
+    color: rgb(236, 129, 130);
+}
+.res_se3_2 {
+    font-size: 12px;
+}
+.res_se3_goods ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.res_se3_goods li {
+    font-size: 20px;
+}
+.res_se3_check_inpo li {
+    font-size: 13px;
+}
+.res_se3_goods {
+    margin-bottom: 30px;
+}
+.res_se3_totla {
+    text-align: right;
+    padding-bottom: 20px;
+}
+.res_sell {
+
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #006633;
+    color: #fff;
+    margin: auto;
+}
+.res_sell_title {
+    position: relative;
+    right: -120px;
+    top: 15px;
+}

@@ -1,0 +1,506 @@
+/*partissier info*/
+/*partissier info head*/
+.partissier__wrap {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
+}
+.parissier__cont--wrap {
+  position: relative;
+  top: -80px;
+}
+.partissier__head-cont > ul {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--table-color);
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+.partissier__head-cont > ul > li {
+  cursor: pointer;
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+}
+.partissier__head-cont > ul > li:hover {
+  transform: scale(105%);
+  transition: 0.5s ease-in-out;
+  background-color: var(--hover-green);
+  color: white;
+}
+
+.parti_mouse_click {
+  background-color: var(--main-color);
+  color: white;
+}
+.parti_mouse_nonclick {
+  color: black;
+  background-color: var(--table-color);
+}
+/* partissier body && recruit body */
+.partissier__body-cont,
+.partissier__recruit-notice,
+.recruit_location_wrap {
+  position: relative;
+  top: 0;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+}
+.recruit_location_wrap {
+  padding-bottom: 100px;
+}
+.partissier__info,
+.parti__recruit-info,
+.recruit_location-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.partissier__info > img,
+.parti__recruit-info > img,
+.recruit_location-info > img {
+  width: 100%;
+}
+.partissier__info > img {
+  height: 240px;
+}
+.partissier__info-text,
+.recruit_location-info-text,
+.partissier__notice-text {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.partissier__info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 60px;
+}
+.partissier__notice-text {
+  top: 50px;
+}
+.recruit_location-info-text {
+  top: 70px;
+}
+.partissier__info-text h3,
+.recruit_location-info-text h3,
+.partissier__notice-text h3 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.partissier__info-text p {
+  width: 95%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.partissier__notice-text p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.parti__recruit-info p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.recruit_location-info-text p {
+  font-size: 13px;
+}
+/* new partissier container */
+.partissier__body-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.partissier__body-nav ul {
+  display: flex;
+  color: white;
+  border-top: 1px solid #eeeeeeb8;
+}
+.partissier__body-nav li {
+  padding: 15px 50px;
+  border-left: 1px solid #eeeeeeb8;
+  border-right: 1px solid #eeeeeeb8;
+  cursor: pointer;
+}
+.partissier__body-nav li:first-child {
+  background-color: white;
+  color: black;
+}
+
+.new-partissier__body-cont {
+  padding: 40px 0;
+  background-color: white;
+}
+.new-partissier__body-list {
+  margin-bottom: 50px;
+}
+.new-partissier__body-list li {
+  width: 100%;
+}
+.new-partissier__body-list ul {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.new-partissier__body-list ul img {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.new-partissier__body-list p {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.new-partissier__body-list li > button {
+  font-size: 16px;
+  padding: 8px 18px;
+  border-radius: 25px;
+}
+.new-partissier__body-list li > button:nth-child(3) {
+  color: white;
+  background-color: var(--main-color);
+  margin-right: 10px;
+}
+.new-partissier__body-list li > button:nth-child(4) {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* food bill & tech center*/
+.new-partissier__foodbill,
+.new-partissier__techcenter {
+  background-color: white;
+  display: flex;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.partissier__foodbill-list,
+.partissier__tech-list {
+  position: absolute;
+  left: -50px;
+  color: white;
+  background-color: var(--main-color);
+  width: 20%;
+  padding: 40px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.partissier__foodbill-list,
+.partissier__foodbill-list ul,
+.partissier__tech-list,
+.partissier__tech-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partissier__foodbill-list li {
+  font-size: 14px;
+}
+.partissier__foodbill-list h3,
+.partissier__foodbill-list li,
+.partissier__tech-list h3,
+.partissier__tech-list li {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+.partissier__foodbill-list h3,
+.partissier__tech-list h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.partissier__foodbill-list li:hover,
+.partissier__tech-list li:hover {
+  background-color: #003b33;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.partissier__foodbill-list li:focus,
+.partissier__foodbill-list li:active,
+.partissier__tech-list li:focus,
+.partissier__tech-list li:active {
+  background-color: #003b33;
+}
+.part_foodbill-intro-edu,
+.part_foodbill-intro-recruit,
+.part_foodbill-curriculum,
+.partissier__techcenter-intro,
+.partssier__techcenter-curricul,
+.partssier__recruit-process,
+.partssier__recruit-faq {
+  position: relative;
+  top: 5px;
+  left: 200px;
+}
+
+.part_foodbill-intro-edu {
+  width: 60%;
+}
+.part_foodbill-intro-edu > h4,
+.part_intro-recruit-text > h4,
+.part_tech-intro-text > h4,
+.partssier__techcenter-curricul > h4,
+.partssier__recruit-process > h4,
+.experienced-info-text > h4,
+.experienced-info > h4,
+.recruit-notice--table > h4,
+.recruit_location-table > h4,
+.partssier__recruit-faq > h4 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.part_foodbill-intro-edu h4::before,
+.part_foodbill-intro-recruit h4::before,
+.partissier__techcenter-intro h4::before,
+.partssier__techcenter-curricul h4::before,
+.partssier__recruit-process h4::before,
+.recruit-notice--table h4::before,
+.partssier__recruit-faq h4::before {
+  position: absolute;
+  left: 0px;
+  content: "";
+  width: 5px;
+  height: 25px;
+  background-color: var(--main-color);
+}
+.experienced-info h4 {
+  margin-left: 60px;
+}
+.experienced-info-text > h4::before,
+.experienced-info > h4::before {
+  position: absolute;
+  left: 100px;
+  content: "";
+  width: 5px;
+  height: 25px;
+  background-color: var(--main-color);
+}
+
+.recruit_location-table > h4::before {
+  position: absolute;
+  left: 60px;
+  content: "";
+  width: 5px;
+  height: 25px;
+  background-color: var(--main-color);
+}
+.partissier__techcenter-intro a {
+  position: absolute;
+  right: 0;
+  padding: 15px 30px;
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 25px;
+}
+.part_foodbill-intro-edu,
+.part_intro-recruit-text,
+.part_foodbill-curriculum,
+.part_tech-intro-text,
+.partssier__techcenter-curricul,
+.partssier__recruit-process,
+.partssier__recruit-faq {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.partssier__techcenter-curricul {
+  width: 80%;
+}
+.experienced-info-text {
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  padding: 20px 40px 10px;
+  margin-bottom: 35px;
+}
+.part_foodbill-intro-edu p,
+.part_intro-recruit-text p,
+.partssier__techcenter-curricul p,
+.experienced-info-text p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+.part_foodbill-intro-edu button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+/* part foodbill curriculum & part tech intro text*/
+.part_foodbill-curriculum p {
+  margin-bottom: 10px;
+}
+.part_foodbill-curriculum table,
+.part_tech-intro-text table {
+  border: 1px solid var(--table-color);
+}
+
+.part_tech-intro-text:nth-child(3) table {
+  margin-bottom: 10px;
+}
+
+.part_foodbill-curriculum table tr:first-child,
+.part_tech-intro-text table tr:first-child {
+  border-bottom: 1px solid var(--table-color);
+}
+.part_foodbill-curriculum th,
+.part_tech-intro-text th {
+  width: 300px;
+  height: 60px;
+  background-color: var(--table-color);
+  text-align: center;
+  vertical-align: middle;
+}
+.part_tech-intro-text:nth-child(2) th {
+  width: 300px;
+}
+.part_tech-intro-text:nth-child(3) th {
+  width: 200px;
+}
+
+.part_foodbill-curriculum td,
+.part_tech-intro-text td {
+  width: 500px;
+  vertical-align: middle;
+}
+.part_foodbill-curriculum td > p,
+.part_tech-intro-text td > p {
+  padding: 10px 40px 5px 0px;
+  margin-left: 40px;
+}
+.part_foodbill-curriculum table tr:nth-child(2) td {
+  height: 300px;
+}
+.part_tech-intro-text:nth-child(2) table tr:nth-child(2) td {
+  height: 100px;
+}
+.part_tech-intro-text:nth-child(3) table td {
+  width: 600px;
+  height: 200px;
+}
+
+/* center info table*/
+.center-info tr {
+  border-bottom: 1px solid var(--table-color);
+}
+.center-info th:first-child {
+  width: 15%;
+}
+.center-info th:nth-child(2) {
+  width: 10%;
+}
+.center-info th:nth-child(3) {
+  width: 20%;
+}
+.center-info th:nth-child(4) {
+  width: 600px;
+}
+.center-info th {
+  text-align: center;
+  height: 40px;
+  background-color: var(--table-color);
+  vertical-align: middle;
+}
+
+.center-info td {
+  vertical-align: middle;
+  text-align: center;
+  height: 70px;
+}
+.center-info td p,
+.center-info td span {
+  font-size: 14px;
+}
+/* recruit notice form */
+.partissier__recruit-notice {
+  background-color: white;
+  padding-bottom: 80px;
+}
+.partissier__recruit-notice form {
+  padding: 30px 14px;
+  width: 100%;
+  background-color: var(--table-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.partissier__recruit-notice label {
+  margin-right: 10px;
+}
+.partissier__recruit-notice select,
+.partissier__recruit-notice input {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 25px;
+}
+.partissier__recruit-notice button {
+  padding: 5px 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 25px;
+}
+.recruit-notice--table > h4 span {
+  color: tomato;
+}
+.recruit-notice--table table {
+  width: 100%;
+  margin: 0 auto;
+}
+.recruit-notice--table th,
+.recruit-notice--table td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+.recruit-notice--table td > a {
+  font-size: 14px;
+  line-height: 21px;
+}
+.recruit-notice--table th {
+  background-color: var(--table-color);
+}
+.recruit-notice--table th:first-child {
+  width: 80px;
+}
+.recruit-notice--table th:nth-child(2) {
+  width: 120px;
+}
+.recruit-notice--table th:nth-child(3) {
+  width: 100px;
+}
+.recruit-notice--table th:nth-child(4) {
+  width: 430px;
+}
+.recruit-notice--table th:nth-child(5) {
+  width: 300px;
+}
+.recruit-notice--table th:nth-child(6) {
+  width: 100px;
+}
+.recruit-notice--table td {
+  border-bottom: 1px solid var(--table-color);
+}

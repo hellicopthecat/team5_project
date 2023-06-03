@@ -204,7 +204,7 @@ h2::before{
     margin: auto;
     background: #fff;   
     position:relative;
-    z-index: 5;
+    z-index: 10;
 }
 
 .new_products_slider{

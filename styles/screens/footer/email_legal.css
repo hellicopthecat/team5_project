@@ -1,0 +1,57 @@
+/* 페이지 제목 */
+.top_content_wrap{
+    width: 1100px;
+    margin: auto;
+    height: 120px;
+    padding: 40px 0;
+}
+h2{
+    padding: 10px 30px 0 15px;
+    font-size: 30px;
+    color: #0D4633;  
+    position: relative;  
+}
+h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 28px;
+    background-color: #0D4633;
+}
+
+.page_location{
+    float: right;
+    padding-top: 10px;
+}
+.page_location ul{
+    display: flex;
+}
+.page_location ul li{
+    font-size: 13px;
+    font-weight: 700;
+    color: #747474;
+    padding-left: 5px;
+}
+.page_location ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.content_box{
+    width: 1100px;
+    height: 600px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #CAC0B6;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.content_box p{
+    font-size: 14px;
+    line-height: 1.6 ;
+    margin-bottom: 30px;
+}

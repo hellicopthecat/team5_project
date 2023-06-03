@@ -1,0 +1,420 @@
+
+/* 페이지 제목 */
+.top_content_wrap{
+    width: 1100px;
+    margin: auto;
+    height: 120px;
+    padding: 40px 0;
+}
+h2{
+    padding: 10px 30px 0 15px;
+    font-size: 30px;
+    color: #0D4633;  
+    position: relative;  
+}
+h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 26px;
+    background-color: #0D4633;
+}
+
+.page_location{
+    float: right;
+    padding-top: 10px;
+}
+.page_location ul{
+    display: flex;
+}
+.page_location ul li{
+    font-size: 13px;
+    font-weight: 700;
+    color: #747474;
+    padding-left: 5px;
+}
+.page_location ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/* 카테고리 별 빵 보기 선택박스 */
+
+.category_gift_wrap{
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    position: relative;
+}
+.product_category{
+    width: 880px;
+    height: 135px;
+    background: #DADFCB; 
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    margin-right: 10px;
+}
+
+/* 모바일 선물하기 배너 */
+
+.mobile_gift_delivery img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+.mobile_gift_delivery div{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+}
+.mobile_gift_delivery div:hover{
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+}
+
+.product_category p{
+    font-size: 14px;
+    font-weight: 800;
+    color: #0D4633;
+    padding: 10px 0 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #fff;
+}
+.product_category_box_wrap ul{
+    display: flex;
+}
+.product_category_box_wrap ul li{
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+/* 제품 목록 박스 */
+.menu_product_wrap{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+/* 상세분류 셀렉터 */
+.selector_wrap{
+    position: absolute;
+    width: 200px;
+    left: 900px;
+    top: -20px;
+    z-index: 8;
+}
+.selector_tab{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background:  #fff;
+    border: 1px solid #DADFCB;
+    padding: 5px; 
+}
+.selector_tab a{
+    background: url(../../../img/icons/arrowD.png) no-repeat right;
+    display: block;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: -0.1em;
+}
+
+.selector_select{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border: 1px solid #DADFCB;
+    padding: 6px;
+}
+.selector_select li{
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: -0.1em;
+}
+.selector_select li label{
+    margin-left: 18px;
+}
+.selector_select .selector_select_new{
+    padding-bottom: 6px;
+}
+.selector_select_new{
+    background: url(../../../img/menu/new_menu_stamp.png) no-repeat left;
+    background-size: 9%;
+    background-position: 21px 1px;
+}
+.selector_select_best{
+    background: url(../../../img/menu/best_menu_stamp.png) no-repeat left;
+    background-size: 9%;
+    background-position: 21px 1px;
+}
+
+/* 사진으로 보기/영양정보로 보기 */
+.menu_product_view{
+    position: relative;
+    display: flex;
+
+}
+.view_pics{
+    position: absolute;
+    width: 110px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.1em;
+    background: url(../../../img/menu/icon-pics-wh.png) no-repeat left, #7e7e7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+}
+.view_nutris{
+    position: absolute;
+    width: 110px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: -0.1em;
+    background: url(../../../img/menu/icon-ntris.png) no-repeat left, #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    left: 120px;
+}
+.view_pics span{
+    margin-left: 8px;
+}
+.view_nutris span{
+    margin-left: 12px;
+}
+
+
+/* 빵들 */
+.view_pics_dd{
+    position: relative;
+    top: 18px;
+}
+.view_pics_dd dl dd{
+    position: relative;
+    top: -50px;
+    margin-bottom: 70px;
+}
+.category_name{
+    width: 1100px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0D4633;
+    background: #F7F1DB;
+    display: flex;
+    align-items: center;
+}
+.category_name span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.products_in_category{
+    width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 60px;
+    left: -10px; 
+}
+.products_in_category li{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+}
+.products_in_category a{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.products_in_category p{
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+
+}
+.products_in_category img{
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+}
+
+/* new best 스탬프 */
+.products_in_category .best_stamp img{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 2px #868686);
+}
+.products_in_category .new_stamp img{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 2px #59605e);
+}
+
+/* 마우스 오버시 나타나는 설명 */
+
+.product_description_wrap{
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.product_description_wrap p{
+    color: #0D4633;
+    font-weight: 650;
+    line-height: 20px;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin: 20px 0 ;
+}
+
+/* 상세 설명 말줄임표 효과 */
+.mulit-line-ellipsis {
+    overflow: hidden;
+    line-height: 1.2em;
+    max-height: 4.6em;
+}
+
+.mulit-line-ellipsis:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mulit-line-ellipsis:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;  /* 배경색과 동일하게 적용 */
+  }
+  .mulit-line-ellipsis {
+    width: calc(180px - 1em);
+    position: relative;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  .mulit-line-ellipsis {
+    width: calc(180px - 1em);
+    position: relative;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+
+/* 자세히 보기 */
+.view_more{
+    width: 135px;
+    background: url(../../../img/icons/rolling_pin.png) no-repeat center; 
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+.view_more span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.product_description_wrap{
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.product_description_wrap:hover{
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+
+/* 영양정보로 보기 페이지 숨김 */
+.view_nutris_dd{
+    position: relative;
+    top: 15px;
+    
+}
+
+/* .view_nutris_dd dl dd{
+    position: relative;
+    top: -50px;
+    margin-bottom: 70px;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 1100px;
+    margin: 30px 0 70px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  th {
+    border-top: 1px solid #776b5f;
+    border-bottom: 1px solid #776b5f;
+    color: #333;
+    font-size: 14px;
+  }
+
+  tr {
+    border-bottom: 1px solid #CAC0B6;
+    color: #696969;
+    font-size: 13px;
+  }
+
+
+
+

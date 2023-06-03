@@ -1,0 +1,297 @@
+body .pay_hide {
+    display: none;
+
+}
+.pay_main {
+    width: 100%;
+}
+.pay_main h2{
+    font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.pay_main_wrap {
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.pay_method .pay_check {
+    background-color: #0D4633;
+    color: #fff;
+
+}
+.pay_method {
+    margin-bottom: 50px;
+}
+.pay_method span {
+    font-size: 25px;
+    font-family: "JUA",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 60px;
+}
+
+.pay_method button + button {
+    margin-left: -5px;
+}
+.pay_method button {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    color: #004e42;
+    border: 1px solid #004e42;
+}
+.pay_se01_wrap {
+    margin: 0 auto 10px;
+    width: 90%;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #004e42;
+}
+.pay_se01_wrap h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.pay_se01_wrap li {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.pay_se01_wrap span {
+    margin: 0 50px 0 100px;
+}
+.pay_select01 {
+    width: 150px;
+}
+.pay_select02 {
+    width: 90px;
+}
+.pay_se02_wrap {
+    margin: 0 auto;
+    width: 90%;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #004e42;
+
+}
+.pay_se02_total {
+    position: relative;
+    width: 100%;
+    border: 3px solid #e1dddd;
+    text-align: left;
+}
+.pay_se02_total ul {
+    padding: 30px;
+}
+.pay_se02_total li {
+    display: inline-block;
+}
+.pay_se02_li01 {
+    margin-right: 80px;
+}
+.pay_se02_li02 {
+    margin: 0 25px;
+}
+.pay_se02_li03 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+    color: rgb(226, 115, 58);
+}
+.pay_se02_h3 {
+    border-top: 1px solid #e1dddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+    color: #0D4633;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.pay_se02_privacy {
+    font-size: 13px;
+    padding: 10px;
+}
+.pay_se02_privacy02 {
+    color: #e1dddd;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.pay_se02_privacy_table {
+    margin: 10px auto;
+    width: 97%;
+}
+
+.pay_se02_privacy_tr01 th {
+    padding: 18px;
+    background: #ecefe4;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.pay_se02_privacy_tr02 {
+    border-bottom: 1px solid #e8e6e2;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+}
+.pay_se02_privacy_tr02 td {
+    padding: 15px 0;
+
+}
+.pay_se02_important {
+    margin-top: 10px;
+    color: #f26b24 !important;
+    font-size: 11px;
+}
+.pay_se02_important_ok {
+    display: inline-block;
+    position: relative;
+    right: -800px;
+    padding: 20px 0;
+
+    font-size: 15px;
+
+}
+.pay_se02_call {
+    font-size: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1dddd;
+    margin-bottom: 20px;
+}
+.pay_se02_h4 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.pay_se02_information {
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.pay_se02_look {
+    display: inline-block;
+    background-color: #333;
+    padding: 8px;
+    margin-right: 10px;
+    color: #fff;
+}
+.pay_check_all {
+    padding: 20px 6px;
+    text-align: right;
+}
+.pay_approval {
+    text-align: right;
+    padding-top: 30px;
+}
+.pay_approval_ok {
+    display: inline-block;
+    padding: 10px 65px;
+    background: #004e42;
+    color: #fff;
+}
+.pay_approval_no {
+    display: inline-block;
+    padding: 10px 65px;
+    background: #e8e6e2;
+
+}
+
+.pay_se03_wrap {
+    margin: 0 auto 10px;
+    width: 90%;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #004e42;
+}
+.pay_se03 {
+    padding-left: 50px;
+}
+.pay_se03_wrap h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.pay_se03_ul li {
+    margin-bottom: 30px;
+}
+.pay_se03_ul label {
+    font-weight: bold;
+    margin-right: 100px;
+}
+.pay_se03_ul input {
+    width: 200px;
+    height: 25px;
+}
+.pay_se03_ul select {
+    width: 200px;
+}
+.pay_se03_guide strong {
+    font-weight: bold;
+}
+.pay_se03_guide_p {
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #e1dddd;
+}
+
+.pay_se04_wrap {
+    border: 1px solid #004e42;
+    margin: 0 auto 10px;
+    width: 90%;
+    padding: 50px;
+    background: #fff;
+}
+.pay_se04_wrap h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+.pay_se04_wrap p {
+    font-size: 15px;
+    padding-left: 20px;
+    color: #999;
+    margin-bottom: 5px;
+
+}
+.pay_se05_wrap {
+    border: 1px solid #004e42;
+    margin: 0 auto 10px;
+    width: 90%;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.pay_se05_receipt div {
+    background: #e6e2d9;
+    padding: 10px;
+    text-align: center;
+}
+.pay_se05_checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+
+}
+.pay_se05_receipt p {
+    padding-top: 30px;
+}
+.pay_se05_receipt_label {
+    position: relative;
+    top: -4px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.pay_se05_receipt h4 {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.pay_se05_text {
+    width: 100px;
+    height: 30px;
+}

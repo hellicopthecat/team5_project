@@ -1,0 +1,102 @@
+.bulk_main_wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+.app_sub_title {
+    width: 100%;
+    margin: 0 auto ;
+    height: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../../img/app/app_title.jpg) no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app_sub_title h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: var(--table-color);
+    font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.app_sub_title ul {
+    display: flex;
+    margin-top: 55px;
+    margin-right: 50px;
+
+}
+.app_sub_title li {
+    color: rgb(200, 200, 200);
+    margin-right: 10px;
+    font-size: 14px;
+
+}
+
+.bulk_i_wrap {
+    width: 90%;
+    margin: auto auto 50px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+.bulk_i_wrap h3 {
+    font-size: 35px;
+    font-family: "JUA",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 30px 20px;
+}
+.bulk_i img {
+    position: relative;
+    left: 60px;
+
+}
+.bulk_b {
+    display: flex;
+    justify-content: right;
+}
+.bulk_b li {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.bulk_b h4 {
+    margin-bottom: 15px;
+}
+.bulk_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.bulk_a li {
+    width: 400px;
+}
+.bulk_a a {
+    display: inline-block;
+    width: 400px;
+}
+.bulk_online {
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.bulk_phone {
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.bulk_font {
+    font-size: 15px;
+    color: rgb(180,180, 180);
+
+}

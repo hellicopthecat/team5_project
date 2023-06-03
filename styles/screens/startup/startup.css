@@ -1,0 +1,903 @@
+.startup_wrap {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.startup_contents--cont {
+  position: relative;
+  top: -80px;
+}
+/* header - nav */
+.startup_header-nav {
+  position: relative;
+}
+.startup_header-nav ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.startup_header-nav li {
+  text-align: center;
+  width: 32%;
+  cursor: pointer;
+}
+.startup_header-nav li:last-child {
+  font-size: 28px;
+}
+.startup_header-nav li:hover {
+  transform: scale(110%);
+  transition: 0.5s ease-in-out;
+}
+
+/* start up introduce */
+
+.startup_introduce-tlj--wrap > ul {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+.startup_introduce-tlj--wrap > ul > li {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.startup_introduce-tlj--wrap > ul > li:hover {
+  transform: scale(105%);
+  transition: 0.4s ease-in-out;
+  background-color: var(--hover-green);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.startup_tlj--look,
+.startup_tlj--strength {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.startup_tlj--header {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background: linear-gradient(#004e42, #f1e6b2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.startup_tlj--header h2 {
+  position: absolute;
+  top: 40px;
+  color: white;
+  font-size: 60px;
+}
+.startup_tlj--header p {
+  position: absolute;
+  color: white;
+}
+.startup_tlj--header p:nth-child(2) {
+  top: 100px;
+}
+.startup_tlj--header p:nth-child(3) {
+  top: 120px;
+}
+.startup_tlj--header img {
+  position: absolute;
+  bottom: 15px;
+}
+.startup_tlj--look-body,
+.startup_tlj--strength-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.startup_tlj--look-body h3,
+.startup_tlj--strength-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.startup_tlj--look-body h3::before,
+.startup_tlj--strength-body h3::before {
+  position: absolute;
+  left: 0px;
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 25px;
+  background-color: var(--main-color);
+}
+.startup_tlj--look-body p,
+.startup_tlj--strength-body p {
+  margin-bottom: 10px;
+}
+
+/* start up prepare */
+.startup_prepare-header {
+  position: relative;
+  background-color: var(--table-color);
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.startup_prepare-header img,
+.startup_prepare-header h3 {
+  position: absolute;
+}
+.startup_prepare-header h3 {
+  top: 35%;
+  left: 140px;
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--main-color);
+  text-shadow: 3px 3px 1px #aaa;
+}
+.startup_prepare-header img {
+  top: -20%;
+  right: 0;
+  transform: rotate(-20deg);
+}
+.startup_tlj--look-store,
+.startup_tlj--look-logo,
+.startup_tlj--look-brandcolor,
+.startup_tlj--look-package,
+.startup_tlj--look-uniform,
+.startup_tlj--strength-first,
+.startup_tlj--strength-second,
+.startup_tlj--strength-third,
+.startup_tlj--strength-fourth {
+  margin-bottom: 50px;
+}
+.startup_tlj--look-store > h3,
+.startup_tlj--look-logo > h3,
+.startup_tlj--look-brandcolor > h3,
+.startup_tlj--look-package > h3,
+.startup_tlj--look-uniform > h3,
+.startup_tlj--strength-first > h3,
+.startup_tlj--strength-second > h3,
+.startup_tlj--strength-third > h3,
+.startup_tlj--strength-fourth > h3 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+.startup_tlj--look-logo img,
+.startup_tlj--look-brandcolor img,
+.startup_tlj--look-package img,
+.startup_tlj--look-uniform img {
+  display: flex;
+  margin: 20px auto;
+}
+.startup_tlj--look-logo p,
+.startup_tlj--look-brandcolor p,
+.startup_tlj--look-package p,
+.startup_tlj--look-uniform p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.startup_tlj--strength-first p,
+.startup_tlj--strength-second p,
+.startup_tlj--strength-third p,
+.startup_tlj--strength-fourth p {
+  font-size: 14px;
+}
+/*startup prepare nav*/
+.startup_prepare-nav {
+  padding: 15px 0;
+  background-color: var(--third-color);
+  margin-bottom: 60px;
+  border-bottom: 3px solid var(--hover-green);
+}
+.startup_prepare-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.startup_prepare-nav li {
+  text-align: center;
+  width: 16.6%;
+  font-size: 17px;
+  cursor: pointer;
+}
+.startup_prepare-nav li:hover {
+  animation: prepareNav 1.3s infinite;
+}
+@keyframes prepareNav {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+/* startup process */
+/* prepare - investcost */
+/* prepare loan */
+.startup_prepare-process,
+.startup_prepare-loan {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.startup_prepare-process > h4,
+.startup_prepare-invest--text > h4,
+.startup_prepare-loan--text > h4,
+.startup_prepare-faq--text > h4,
+.startup_prepare-help--text > h4,
+.startup_recruit_story-text > h4 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 20px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.startup_prepare-process h4::before,
+.startup_prepare-invest--text h4::before,
+.startup_prepare-loan--text h4::before,
+.startup_prepare-faq--text h4::before,
+.startup_prepare-help--text h4::before,
+.startup_recruit_story-text h4::before {
+  position: absolute;
+  left: 80px;
+  content: "";
+  width: 5px;
+  height: 25px;
+  margin-right: 20px;
+  background-color: var(--main-color);
+}
+
+.startup_prepare-process span,
+.startup_prepare-investcost span,
+.startup_prepare-loan--text span,
+.startup_prepare-faq--text span,
+.startup_prepare-help--text span,
+.s_prepare-help-phone--text1 span,
+.startup_recruit_story-text span {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+.startup_recruit_story-text span {
+  width: 80%;
+  line-height: 20px;
+}
+
+.startup_prepare-process img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.startup_prepare-investcost h5 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.startup_prepare-invest--exception,
+.startup_prepare-loan--caution {
+  margin-bottom: 50px;
+}
+.startup_prepare-invest--exception span,
+.startup_prepare-loan--caution span {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+.startup_prepare-loan--caution span::before {
+  content: "* ";
+  color: tomato;
+}
+
+/* prepare - investcost table */
+/* prepare loan table */
+.startup_prepare-investcost table,
+.startup_prepare-loan table,
+.s_prepare-faq--table table,
+.s_prepare-helpcenter table {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.s_prepare-helpcenter table {
+  margin-top: 10px;
+}
+.startup_prepare-investcost thead,
+.startup_prepare-loan thead,
+.s_prepare-faq--table thead,
+.s_prepare-helpcenter thead {
+  height: 50px;
+  background-color: var(--table-color);
+}
+
+.startup_prepare-investcost thead th,
+.s_prepare-helpcenter thead th,
+.startup_prepare-investcost tbody th,
+.s_prepare-helpcenter tbody th,
+.startup_prepare-investcost tbody td,
+.s_prepare-helpcenter tbody td,
+.startup_prepare-investcost tfoot th,
+.startup_prepare-investcost tfoot td,
+.s_prepare-faq--table thead th {
+  vertical-align: middle;
+}
+.startup_prepare-investcost tbody td,
+.startup_prepare-investcost tfoot td,
+.s_prepare-faq--table thead th:first-child,
+.s_prepare-faq--table tbody td:first-child {
+  text-align: center;
+}
+.s_prepare-faq--table thead th:first-child,
+.s_prepare-helpcenter thead th:nth-child(2) {
+  width: 80px;
+}
+.s_prepare-helpcenter thead th:nth-child(3),
+.s_prepare-helpcenter thead th:nth-child(4) {
+  width: 150px;
+}
+.s_prepare-helpcenter thead th:nth-child(5) {
+  width: 250px;
+}
+.startup_prepare-investcost tbody tr,
+.startup_prepare-investcost tfoot tr,
+.s_prepare-helpcenter tbody tr,
+.s_prepare-faq--table tbody tr {
+  height: 60px;
+  border-bottom: 1px solid var(--table-color);
+}
+.s_prepare-helpcenter tbody tr > td:last-child {
+  font-size: 14px;
+}
+.faq_q td {
+  height: 60px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.faq_q td:last-child {
+  text-align: center;
+  margin-right: 10px;
+}
+.faq_a td {
+  vertical-align: middle;
+}
+.faq_a td:last-child {
+  height: 150px;
+  width: 1000px;
+}
+.startup_prepare-investcost tfoot tr {
+  border: 1px solid var(--table-color);
+}
+
+.startup_prepare-loan thead th,
+.startup_prepare-loan tbody th,
+.startup_prepare-loan tbody td,
+.s_prepare-helpcenter tbody th,
+.s_prepare-helpcenter tbody td {
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  border-bottom: 1px solid var(--table-color);
+}
+.startup_prepare-loan tbody tr:nth-child(4) td {
+  font-size: 13px;
+}
+.startup_prepare-loan tbody tr:last-child td:nth-child(2),
+.startup_prepare-loan tbody tr:last-child td:nth-child(3) {
+  width: 400px;
+  line-height: 20px;
+  font-size: 15px;
+}
+.s_prepare-helpcenter tbody th {
+  width: 150px;
+}
+.s_prepare-faq--table img {
+  width: 20px;
+}
+.s_prepare-help-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.s_prepare-help-phone img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.s_prepare-help-phone--text1 p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.s_prepare-help-phone--text1 h5 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: tomato;
+}
+.s_prepare-help-phone span {
+  margin: 0;
+}
+.s_prepare-help-phone--text2 p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.s_prepare-help-phone--text2 p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.s_prepare-helpcenter {
+  margin-top: 30px;
+}
+.s_prepare-helpcenter form {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 3px solid (--main-color);
+}
+.s_prepare-helpcenter fieldset {
+  background-color: var(--table-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.s_prepare-helpcenter fieldset label {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.s_prepare-helpcenter fieldset input {
+  margin-right: 20px;
+  border: 1px solid var(--hover-green);
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 300px;
+}
+.s_prepare-helpcenter fieldset button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+/* prepare help online form */
+.s_prepare-help-online {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 50px;
+  border: 3px solid var(--hover-green);
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+.s_prepare-help-online--form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.s_prepare-help-online--form form p:nth-child(4) {
+  margin: 20px 0;
+}
+.s_prepare-help-online--form form h3 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--hover-green);
+  margin-bottom: 15px;
+}
+.s_prepare-help-online--form fieldset {
+  border: 1px solid var(--table-color);
+  padding: 50px 50px;
+  border-radius: 25px;
+}
+.s_pre-help-input {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.s_pre-help-input label {
+  font-size: 15px;
+  width: 100px;
+}
+.s_pre-help-input input,
+.s_pre-help-input select {
+  width: 150px;
+  height: 30px;
+  padding: 5px 0px 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.s_pre-help-input select {
+  width: 150px;
+}
+.s_pre-help-input span {
+  margin: 0 10px;
+}
+.s_pre-help-input textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.s_pre-help-input:nth-child(2) label:nth-child(3) {
+  margin-left: 50px;
+  width: 70px;
+}
+.s_pre-help-input:nth-child(2) input:nth-child(4) {
+  height: 20px;
+  width: 20px;
+}
+.s_pre-help--submit button {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+}
+.s_pre-help--submit button:first-child {
+  background-color: var(--main-color);
+}
+.s_pre-help--submit button:last-child {
+  background-color: var(--fourth-color);
+}
+.s_pre-help--agree {
+  margin-top: 30px;
+}
+.s_pre-help--agree h5 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.s_pre-help--agree h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.s_pre-help--agree p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.s_pre-help--agree p:nth-child(6) {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.s_pre-help--agree table {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.s_pre-help--agree table tr:first-child {
+  height: 30px;
+  background-color: var(--table-color);
+}
+.s_pre-help--agree table tr th,
+.s_pre-help--agree table tr td {
+  vertical-align: middle;
+}
+.s_pre-help--agree table tr:nth-child(2) {
+  height: 50px;
+}
+.s_pre-help--agree table tr td {
+  width: 300px;
+  text-align: center;
+  border: 1px solid var(--table-color);
+}
+.s_pre-help--checkbox {
+  display: flex;
+  justify-content: end;
+}
+.s_pre-help--checkbox label {
+  font-size: 14px;
+}
+/* recruit & story */
+.startup_story--wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.startup_knowhow {
+  margin-right: 10px;
+  width: 200px;
+}
+.startup_knowhow a {
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  background-color: var(--fourth-color);
+  display: flex;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+.startup_knowhow p {
+  position: absolute;
+  z-index: 99;
+  font-weight: 500;
+  color: white;
+}
+.startup_knowhow p:first-child {
+  font-size: 60px;
+  top: 40px;
+  left: 30px;
+  text-shadow: 3px 3px 1px black;
+}
+.startup_knowhow p:nth-child(2) {
+  font-size: 30px;
+  top: 110px;
+  left: 35px;
+  text-shadow: 3px 3px 1px black;
+  z-index: 1;
+}
+.startup_knowhow img:nth-child(3) {
+  position: absolute;
+  width: 150px;
+  left: 30px;
+  bottom: 50px;
+  filter: drop-shadow(2px 2px 1px black);
+}
+.startup_knowhow p:nth-child(4) {
+  font-size: 60px;
+  font-weight: 700;
+  right: 20px;
+  bottom: 15px;
+  transform: rotate(-25deg);
+  text-shadow: 3px 3px 1px black;
+}
+.startup_knowhow img:nth-child(5) {
+  position: absolute;
+  top: -30px;
+  right: -60px;
+  width: 200px;
+  transform: rotate(-125deg);
+  filter: drop-shadow(-3px 1px 1px black);
+}
+.startup_story {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  width: 450px;
+}
+.startup_story iframe {
+  width: 450px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+.startup_story h5 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.startup_story:nth-child(2) {
+  margin-right: 10px;
+}
+.startup_story-text--cont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.startup_story-text--cont a {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.startup_story-text--cont a:first-child {
+  background-color: var(--main-color);
+  color: white;
+}
+.startup_story-text--cont a:first-child {
+  margin-right: 10px;
+}
+.startup_story-text--cont a:last-child {
+  background-color: var(--fourth-color);
+  color: white;
+}
+
+/* recruit presentation & regist */
+.startup_recruit--wrap {
+  margin-bottom: 100px;
+}
+.startup_recruit-present--regist,
+.s_prepare-help-phone {
+  border: 3px solid var(--hover-green);
+  border-radius: 15px;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
+}
+.startup_recruit-present--regist img {
+  width: 200px;
+}
+.present--regist-textbox {
+  margin-left: -30px;
+}
+.present--regist-textbox span {
+  display: block;
+  margin-bottom: 20px;
+}
+.startup_recruit-present--regist > button {
+  background-color: var(--main-color);
+  font-size: 25px;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 25px;
+}
+.startup_recruit-present--regist > button:hover {
+  animation: btnUpDown 1.5s infinite;
+}
+@keyframes btnUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* start up modal*/
+
+.present-regist-modal {
+  top: 0;
+}
+.present-regist-modal form > h3 {
+  color: white;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+
+  text-align: left;
+  background-color: var(--hover-green);
+}
+.present-regist--form {
+  margin: 20px 20px;
+}
+.present-regist--form form {
+  padding: 20px 10px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.present-regist--form > span {
+  display: block;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.present-regist--form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.present-regist--values {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.present-regist--values label,
+.present-regist--adress--cont label {
+  width: 100px;
+}
+.present-regist--values input,
+.present-regist--values select {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 150px;
+}
+.present-regist--values select {
+  text-align: center;
+}
+.present-regist--values:nth-child(2) input {
+  width: 150px;
+}
+
+.present-regist--values:nth-child(3) span {
+  margin: 0 10px;
+}
+.present-regist--values:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.present-regist--adress--cont {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.present-regist--adress--cont span {
+  margin: 0 10px;
+}
+.present-regist--adress--cont:nth-child(2) input,
+.present-regist--adress--cont:nth-child(3) input {
+  width: 300px;
+}
+.present-regist--values:nth-child(5) select,
+.present-regist--values:nth-child(9) select {
+  margin-right: 20px;
+}
+.present-regist--adress--cont button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 10px;
+  border: 15px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.present_regist--agree {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+.present_regist--agree h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.present_r-agree-text {
+  margin-bottom: 20px;
+}
+.present_r-agree-text p {
+  height: 80px;
+  overflow-y: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.present_recruit-btns {
+  position: relative;
+  text-align: right;
+  bottom: 0;
+}
+.present_recruit-btns button {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.present_recruit-btns button:first-child {
+  background-color: var(--main-color);
+  color: white;
+}
+.present_recruit-btns button:last-child {
+  background-color: var(--third-color);
+}
+
+.present-regist--form > span::before,
+.present-regist--values:nth-child(2) label::before,
+.present-regist--values:nth-child(3) label::before,
+.present-regist--adress--cont:first-child label::before,
+.present_regist--agree h4:first-child::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
+}

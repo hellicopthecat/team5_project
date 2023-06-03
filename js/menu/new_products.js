@@ -1,43 +1,31 @@
 // 메인 신제품 배너 애니메이션
 
-// $( document ).ready( function() {
-//     var bannerTime = 600;
-//     $( '.bn_01' ).animate( {
-//       opacity: '1'
-//     }, bannerTime, function() {
-//       $( '.bn_02' ).animate( {
-//         opacity: '1'
-//       }, bannerTime, function() {
-//         $( '.bn_03' ).animate( {
-//           opacity: '1'
-//         }, bannerTime, function() {
-//             $( '.bn_04' ).animate( {
-//               opacity: '1'
-//             }, bannerTime, function() {
-//                 $( '.bn_05' ).animate( {
-//                   opacity: '1'
-//                 }, bannerTime, function() {
-//                     $( '.bn_06' ).animate( {
-//                       opacity: '1'
-//                     });
-//                 });
-//             });
-//         });
-//       } );
-//     } );
-//   } );
-
-  $(document).ready(function() {
-    let bannerTime = 600;
-    let banners = ['.bn_01', '.bn_02', '.bn_03', '.bn_04', '.bn_05', '.bn_06'];
-  
-    $(banners).each(function(index) {
-      $(this).delay(index * bannerTime).animate({
+$( document ).ready( function() {
+    var bannerTime = 600;
+    $( '.bn_01' ).animate( {
+      opacity: '1'
+    }, bannerTime, function() {
+      $( '.bn_02' ).animate( {
         opacity: '1'
-      }, bannerTime);
-    });
-  });
-  
+      }, bannerTime, function() {
+        $( '.bn_03' ).animate( {
+          opacity: '1'
+        }, bannerTime, function() {
+            $( '.bn_04' ).animate( {
+              opacity: '1'
+            }, bannerTime, function() {
+                $( '.bn_05' ).animate( {
+                  opacity: '1'
+                }, bannerTime, function() {
+                    $( '.bn_06' ).animate( {
+                      opacity: '1'
+                    });
+                });
+            });
+        });
+      } );
+    } );
+  } );
 
   
 // 메인 배너 자세히 보기 클릭시 슬라이더 펼치기

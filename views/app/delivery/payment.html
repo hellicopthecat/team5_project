@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tous les Jours | 결제하기</title>
+    <link rel="stylesheet" href="../../../styles/style.css" />
+    <link rel="stylesheet" href="../../../styles/app/payment.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <link rel="icon" href="../../../favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img
+            src="../../../img/logos/logo_2.png"
+            alt="touslesjours"
+            width="300"
+          />
+        </a>
+
+        <div class="sub-menu">
+          <ul class="menu">
+            <li>
+              <a
+                href="https://www.cjone.com/cjmweb/join.do?coopco_cd=7020&brnd_cd=2010&mcht_no=2010&coop_return_url="
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/map/map.html">매장 찾기</a>
+            </li>
+            <li>
+              <a href="../../../views/startup/startup.html">창업 안내</a>
+            </li>
+            <li>
+              <a href="../../customerpage/customerpage.html">고객센터</a>
+            </li>
+            <li>
+              <a href="../../partissier/partissier.html">기사 채용안내</a>
+            </li>
+            <li>
+              <a href="../../main/login.html">log in</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input id="search_box" type="text" />
+          </div>
+        </div>
+
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">
+              <a href="../../story/brand_story.html">브랜드 스토리</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>
+                        <a href="../../story/brand_story.html">브랜드 스토리</a>
+                      </li>
+                      <li>
+                        <a href="../../story/material.html"
+                          >뚜레쥬르 재료 이야기</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/global.html">글로벌 뚜레쥬르</a>
+                      </li>
+                      <li>
+                        <a href="../../story/latelier.html"
+                          >뚜레쥬르 라뜰리에</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/awesomebread.html"
+                          >뚜레쥬르 착한빵</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/notice.html">뉴스 & 공지사항</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li><a href="../../menu/new_products.html">신제품</a></li>
+                      <li><a href="../../menu/bread.html">빵</a></li>
+                      <li><a href="../../menu/cake.html">케이크</a></li>
+                      <li><a href="../../menu/deli.html">델리</a></li>
+                      <li><a href="../../menu/">선물</a></li>
+                      <li><a href="../../menu/dessert.html">디저트&스낵</a></li>
+                      <li><a href="../../menu/drinks.html">음료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>
+                        <a href="../../eventpage/eventpage.html"
+                          >진행중인 이벤트</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/eventwinner.html"
+                          >이벤트 당첨자</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/membership.html"
+                          >CJ ONE 멤버십</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/aff_benefits.html"
+                          >제휴 혜택</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li><a href="../../app/appmain.html">뚜레쥬르 앱</a></li>
+                      <li>
+                        <a
+                          href="../../app/homedelivery/homedelivery_list01.html"
+                          >홈페이지 전용 예약 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/flowerdelivery/flowerdelivery.html"
+                          >꽃 & 케이크 택배 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/bulkpurchase.html">대량 구매 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="../../menu/new_products.html">제품 안내</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>
+                        <a href="../../story/brand_story.html">브랜드 스토리</a>
+                      </li>
+                      <li>
+                        <a href="../../story/material.html"
+                          >뚜레쥬르 재료 이야기</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/global.html">글로벌 뚜레쥬르</a>
+                      </li>
+                      <li>
+                        <a href="../../story/latelier.html"
+                          >뚜레쥬르 라뜰리에</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/awesomebread.html"
+                          >뚜레쥬르 착한빵</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/notice.html">뉴스 & 공지사항</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li><a href="../../menu/new_products.html">신제품</a></li>
+                      <li><a href="../../menu/bread.html">빵</a></li>
+                      <li><a href="../../menu/cake.html">케이크</a></li>
+                      <li><a href="../../menu/deli.html">델리</a></li>
+                      <li><a href="../../menu/">선물</a></li>
+                      <li><a href="../../menu/dessert.html">디저트&스낵</a></li>
+                      <li><a href="../../menu/drinks.html">음료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>
+                        <a href="../../eventpage/eventpage.html"
+                          >진행중인 이벤트</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/eventwinner.html"
+                          >이벤트 당첨자</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/membership.html"
+                          >CJ ONE 멤버십</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/aff_benefits.html"
+                          >제휴 혜택</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li><a href="../../app/appmain.html">뚜레쥬르 앱</a></li>
+                      <li>
+                        <a
+                          href="../../app/homedelivery/homedelivery_list01.html"
+                          >홈페이지 전용 예약 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/flowerdelivery/flowerdelivery.html"
+                          >꽃 & 케이크 택배 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/bulkpurchase.html">대량 구매 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="../../eventpage/eventpage.html">이벤트 & 멤버십</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>
+                        <a href="../../story/brand_story.html">브랜드 스토리</a>
+                      </li>
+                      <li>
+                        <a href="../../story/material.html"
+                          >뚜레쥬르 재료 이야기</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/global.html">글로벌 뚜레쥬르</a>
+                      </li>
+                      <li>
+                        <a href="../../story/latelier.html"
+                          >뚜레쥬르 라뜰리에</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/awesomebread.html"
+                          >뚜레쥬르 착한빵</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/notice.html">뉴스 & 공지사항</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li><a href="../../menu/new_products.html">신제품</a></li>
+                      <li><a href="../../menu/bread.html">빵</a></li>
+                      <li><a href="../../menu/cake.html">케이크</a></li>
+                      <li><a href="../../menu/deli.html">델리</a></li>
+                      <li><a href="../../menu/">선물</a></li>
+                      <li><a href="../../menu/dessert.html">디저트&스낵</a></li>
+                      <li><a href="../../menu/drinks.html">음료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>
+                        <a href="../../eventpage/eventpage.html"
+                          >진행중인 이벤트</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/eventwinner.html"
+                          >이벤트 당첨자</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/membership.html"
+                          >CJ ONE 멤버십</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/aff_benefits.html"
+                          >제휴 혜택</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li><a href="../../app/appmain.html">뚜레쥬르 앱</a></li>
+                      <li>
+                        <a
+                          href="../../app/homedelivery/homedelivery_list01.html"
+                          >홈페이지 전용 예약 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/flowerdelivery/flowerdelivery.html"
+                          >꽃 & 케이크 택배 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/bulkpurchase.html">대량 구매 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="../../app/appmain.html">뚜레쥬르 앱 & 온라인 쇼핑몰</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>
+                        <a href="../../story/brand_story.html">브랜드 스토리</a>
+                      </li>
+                      <li>
+                        <a href="../../story/material.html"
+                          >뚜레쥬르 재료 이야기</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/global.html">글로벌 뚜레쥬르</a>
+                      </li>
+                      <li>
+                        <a href="../../story/latelier.html"
+                          >뚜레쥬르 라뜰리에</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/awesomebread.html"
+                          >뚜레쥬르 착한빵</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../story/notice.html">뉴스 & 공지사항</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li><a href="../../menu/new_products.html">신제품</a></li>
+                      <li><a href="../../menu/bread.html">빵</a></li>
+                      <li><a href="../../menu/cake.html">케이크</a></li>
+                      <li><a href="../../menu/deli.html">델리</a></li>
+                      <li><a href="../../menu/">선물</a></li>
+                      <li><a href="../../menu/dessert.html">디저트&스낵</a></li>
+                      <li><a href="../../menu/drinks.html">음료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>
+                        <a href="../../../eventpage/eventpage.html"
+                          >진행중인 이벤트</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/eventwinner.html"
+                          >이벤트 당첨자</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/membership.html"
+                          >CJ ONE 멤버십</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../eventpage/aff_benefits.html"
+                          >제휴 혜택</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li><a href="../../app/appmain.html">뚜레쥬르 앱</a></li>
+                      <li>
+                        <a
+                          href="../../app/homedelivery/homedelivery_list01.html"
+                          >홈페이지 전용 예약 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/flowerdelivery/flowerdelivery.html"
+                          >꽃 & 케이크 택배 배송</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../app/bulkpurchase.html">대량 구매 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="pay_main">
+      <div class="pay_main_wrap">
+        <div class="app_sub_title">
+          <h2>결제하기</h2>
+
+          <ul>
+            <li>
+              <a href="../../index.html">HOME</a>
+            </li>
+            <li>
+              <span>></span>
+            </li>
+            <li>
+              <a href="../../views/app/appmain.html">APP</a>
+            </li>
+            <li>
+              <span>></span>
+            </li>
+            <li>
+              <a href="#none">결제하기</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pay_method">
+          <span>결제수단</span>
+          <button id="pay_c" class="pay_check" type="submit">신용카드</button>
+
+          <button id="pay_g" type="submit">계좌이체</button>
+        </div>
+        <script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js"></script>
+        <section class="pay_se01_wrap" id="section1">
+          <h2>신용카드</h2>
+          <ul>
+            <li>
+              <span>카드종류</span>
+              <select class="pay_select01" name="" id="pay_bank">
+                <option id="bank01" value="none">카드를 선택해주세요</option>
+                <option value="KB">KB카드</option>
+                <option value="BC">BC카드</option>
+                <option value="삼성카드">삼성카드</option>
+                <option value="신한카드">신한카드</option>
+                <option value="외한">외환카드</option>
+                <option value="하나">하나비자</option>
+                <option value="롯데">롯데카드</option>
+                <option value="씨티">씨티카드</option>
+                <option value="광주">광주비자</option>
+                <option value="현대">현대카드</option>
+                <option value="전북">전북카드</option>
+                <option value="NH">NH카드</option>
+                <option value="수협">수협카드</option>
+                <option value="제주">제주카드</option>
+                <option value="신협">신협카드</option>
+                <option value="우리">우리카드</option>
+              </select>
+            </li>
+            <li>
+              <span>할부종류</span>
+              <select class="pay_select02" name="" id="">
+                <option value="">일시불</option>
+                <option value="">2개월</option>
+                <option value="">3개월</option>
+                <option value="">5개월</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section class="pay_se04_wrap pay_hide">
+          <div>
+            <h4>결제안내</h4>
+            <p>-계좌이체로 결제 완료시 본인 계좌에서 즉시 이체 처리됩니다</p>
+            <p>-실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다</p>
+          </div>
+        </section>
+
+        <section class="pay_se02_wrap">
+          <div class="pay_se02_total">
+            <ul>
+              <li>
+                <span class="pay_se02_li01">주문금액 합계</span>
+                <span>50,000원</span>
+              </li>
+              <li class="pay_se02_li02">
+                <span>-</span>
+              </li>
+              <li>
+                <span class="pay_se02_li01">할인금액</span>
+                <span>0원</span>
+              </li>
+              <li class="pay_se02_li02">
+                <span>=</span>
+              </li>
+              <li>
+                <span class="pay_se02_li03">총 주문금액 50,000원</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="pay_se02_h3">개인정보 수집 및 이용 동의</h3>
+            <div>
+              <p class="pay_se02_privacy">1.개인정보의 수집 및 이용 목적</p>
+              <p class="pay_se02_privacy02">
+                뚜레쥬르는 원활한 주문과 서비스 접수 , 정확한 배송지 및 배송주소
+                확인 , 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려
+                합니다
+              </p>
+              <p class="pay_se02_privacy">
+                2.개인정보 수집 및 활용동의 <strong>(필수)</strong>
+              </p>
+              <table class="pay_se02_privacy_table">
+                <thead>
+                  <tr class="pay_se02_privacy_tr01">
+                    <th>목적</th>
+                    <th>항목</th>
+                    <th>보유기간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="pay_se02_privacy_tr02">
+                    <td>
+                      뚜레쥬르 상품주문 관련 서비스 접수
+                      <br />
+                      배송자 및 배송주소 확인, 대금결제 목적
+                    </td>
+                    <td>
+                      주문자 성명,수령자 성명,휴대전화번호
+                      <br />
+                      주소,이메일,비밀번호
+                    </td>
+                    <td>
+                      결제정보는 상법 등 관련법령 규정에
+                      <br />
+                      의하여 5년간 보유
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="pay_se02_important">
+                * 고객님께서는 개인정보 수집 동의에 거부할 수 있으며, 거부 시
+                쇼핑몰 주문 서비스를 이용하실 수 없습니다.
+              </p>
+            </div>
+
+            <div class="pay_se02_important_ok">
+              <label for="pay_check1">동의합니다</label>
+              <input type="checkbox" name="pay_check" id="pay_check1" />
+            </div>
+            <p class="pay_se02_call">
+              관련 문의사항은 고객센터 1577-0700으로 문의해주시기 바랍니다.
+              감사합니다.
+            </p>
+          </div>
+
+          <h4 class="pay_se02_h4">결제대행 서비스 이용약관 동의</h4>
+          <div>
+            <ul>
+              <li class="pay_se02_information">
+                <span>전자금융거래 기본약관</span>
+                <p>
+                  <a
+                    class="pay_se02_look"
+                    onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;"
+                    href="https://pay.cjsystems.co.kr/NewPayment/Apply/PGApply.htm"
+                    >자세히보기</a
+                  >
+                  <label for="pay_check2">동의</label>
+                  <input type="checkbox" name="pay_check" id="pay_check2" />
+                </p>
+              </li>
+              <li class="pay_se02_information">
+                <span>개인정보의 수집 및 이용 동의 [필수]</span>
+                <p>
+                  <a
+                    class="pay_se02_look"
+                    onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;"
+                    href="https://pay.cjsystems.co.kr/NewPayment/Apply/IDCollectApply.htm"
+                    >자세히보기</a
+                  >
+                  <label for="pay_check3">동의</label>
+                  <input type="checkbox" name="pay_check" id="pay_check3" />
+                </p>
+              </li>
+              <li class="pay_se02_information">
+                <span>개인정보의 제공 및 위탁 동의</span>
+                <p>
+                  <a
+                    class="pay_se02_look"
+                    onclick="window.open(this.href , '_blank' ,
+                        'width=450 ,height=600, resizable=no, scrollbars=no');return false;"
+                    href="https://pay.cjsystems.co.kr/NewPayment/Apply/IDProvideApply.htm"
+                    >자세히보기</a
+                  >
+                  <label for="pay_check4">동의</label>
+                  <input type="checkbox" name="pay_check" id="pay_check4" />
+                </p>
+              </li>
+              <li class="pay_se02_information">
+                <span
+                  >구매할 상품의 결제 조건을 확인 하였으며 , 구매의
+                  동의합니다</span
+                >
+                <p>
+                  <label for="pay_check4">동의</label>
+                  <input type="checkbox" name="pay_check" id="pay_check5" />
+                </p>
+              </li>
+            </ul>
+            <p class="pay_check_all">
+              <label for="pay_check5">전체 동의</label>
+              <input type="checkbox" name="pay_check_all" id="pay_check_all" />
+            </p>
+          </div>
+          <div class="pay_approval">
+            <a id="pay_ok" class="pay_approval_ok" href="#none">결제하기</a>
+            <a id="pay_no" class="pay_approval_no" href="#none">취소하기</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_affiliate">
+        <ul>
+          <li>
+            <a href="https://www.cjfoodville.co.kr/main.asp" target="_blank" title="CJ 푸드빌 새창으로 열기">
+              <img src="../../../img/footer/cjfoodvill.jpg" alt="CJ 푸드빌">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ivips.co.kr:7002/" target="_blank" title="빕스 새창으로 열기">
+              <img src="../../../img/footer/vips.jpg" alt="Vips">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.italiantheplace.co.kr:7022/brand/" target="_blank" title="더플레이스 새창으로 열기">
+              <img src="../../../img/footer/theplace.jpg" alt="The place">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cheiljemyunso.co.kr:7014/main.asp" target="_blank" title="제일제면소 새창으로 열기">
+              <img src="../../../img/footer/jeil.jpg" alt="제일제면소">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ngrill.co.kr:7025/index.html" target="_blank" title="엔그릴 새창으로 열기">
+              <img src="../../../img/footer/ngrill.jpg" alt="엔그릴">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nseoultower.co.kr:8501/index.asp" target="_blank" title="N SEOUL TOWER 새창으로 열기">
+              <img src="../../../img/footer/nSeoul.jpg" alt="엔서울타워">
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_bottom_wrap">
+  
+        <div class="footer_company">
+          <ul>
+            <li>
+              <a href="http://www.cjfoodville.co.kr/story/foodvilleintro.html"
+                >회사소개</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/partissier/partissier.html"
+                >기사채용안내</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/startup/startup.html"
+                >창업안내</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/footer/sitemap.html">사이트맵</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="footer_policy">
+          <ul>
+            <li>
+              <a href="https://www.cjfoodville.co.kr/footer/userpolicy.asp" target="_blank" title="새창 열림">이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cjfoodville.co.kr/footer/location.asp" target="_blank" title="새창 열림">위치기반서비스 이용약관</a
+              >
+            </li>
+            <li class="private">
+              <a href="https://www.cjfoodville.co.kr/footer/privacy.asp" target="_blank" title="새창 열림">개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/footer/email.html"
+                >이메일무단수집거부</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cjfoodville.co.kr/footer/ethic_center.asp" target="_blank" title="새창 열림">윤리신고센터</a
+              >
+            </li>
+            <li>
+              <a href="../../../views/footer/legal.html">법적고지</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="footer_company_info">
+          <p>상호명 : CJ푸드빌(주)</p>
+  
+          <address>
+              주소 : (우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&amp;G
+              을지로타워 3, 9-11층 CJ푸드빌㈜s
+          </address>
+  
+          <p>
+            <span>고객센터 : 1577-0700</span>
+            <span>통신판매업종신고증 제 2011-서울중구-0771호</span>
+            <sapn class="ftc_confirm">
+              <a
+                href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=3128142519"
+                target="_blank"
+                title="새창열림"
+              >
+                <img
+                  src="../../../img/footer/footer_info_information.png"
+                  alt="사업자정보확인"
+                />
+              </a>
+            </sapn>
+            <span class="hosting">호스팅제공자 : CJ올리브네트웍스(주)</span>
+          </p>
+  
+          <p class="business_info">
+            <span>사업자등록번호 : 312-81-42519</span>
+            <span>대표이사 : 김찬호</span>
+            <span>개인정보보호책임자 : 오창호</span>
+            <span class="email">
+              <a href="mailto:help_master@cj.net"
+                >대표 이메일 : help_master@cj.net</a
+              >
+            </span>
+          </p>
+  
+          <p class="copyright">
+            COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.
+          </p>
+        </div>
+  
+        <div class="footer_logo">
+          <img src="../../../img/logos/logo_grey.png" />
+        </div>
+      </div>
+    </footer>
+    <div class="mainpage_quick--menu">
+      <div class="mainpage_quick--menu-cont mainpage_quick-cont--disappear">
+        <a href="#" class="main_quick--btn">
+          <img src="../../../img/icons/top.png" alt="상단으로가기" />
+          <span>TOP</span>
+        </a>
+        <a
+          href="https://www.instagram.com/touslesjours_kr/"
+          class="main_quick--btn"
+        >
+          <img src="../../../img/icons/sns.png" alt="sns보기" />
+          <span>SNS</span>
+        </a>
+        <a href="./views/startup/startup.html" class="main_quick--btn">
+          <img src="../../../img/icons/start-up.png" alt="창업하기" />
+          <span>창업</span>
+        </a>
+        <a href="./views/partissier/partissier.html" class="main_quick--btn">
+          <img src="../../../img/icons/recruitment.png" alt="기사채용" />
+          <span>기사<br />채용</span>
+        </a>
+      </div>
+      <button id="quicktoggle" class="mainpage_btn--disappear">
+        <img
+          class="mainpage_btn-img--disappear"
+          src="../../../img/icons/up-arrow_col.png"
+          alt="보이기"
+        />
+      </button>
+    </div>
+  </body>
+  <script src="../../../js/app/paymaent.js"></script>
+  <script src="../../../js/mainpage/mainquicknav.js"></script>
+</html>

@@ -118,6 +118,6 @@ h3{
     color:   #141414;
     font-weight: 600;   
 }
-ul li a:hover{
+ul li:hover{
     color: #F26A25;
 }

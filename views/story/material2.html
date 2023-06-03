@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Coffee Korea</title>
+
+    <link rel="icon" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../../styles/brandstory/material2.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="../../js/main.js"></script>
+    <script defer src="/js/material2.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img src="./images/starbucks_logo.png" alt="STARBUCKS" />
+        </a>
+
+        <div class="sub-menu">
+          <ul class="menu">
+            <li>
+              <a href="/signin">매장안내</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">고객센터</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">기사 채용안내</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">log in</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" />
+            <div class="material-icons">search</div>
+          </div>
+        </div>
+
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">브랜드 스토리</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">제품 안내</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">이벤트 & 멤버십</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">뚜레쥬르 앱 & 온라인 쇼핑몰</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <h4>브랜드 스토리</h4>
+                    <ul>
+                      <li>브랜드 스토리</li>
+                      <li>뚜레쥬르 재료 이야기</li>
+                      <li>글로벌 뚜레쥬르</li>
+                      <li>뚜레쥬르 라뜰리에</li>
+                      <li>뚜레쥬르 착한빵</li>
+                      <li>뉴스 & 공지사항</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>제품 안내</h4>
+                    <ul>
+                      <li>신제품</li>
+                      <li>빵</li>
+                      <li>케이크</li>
+                      <li>델리</li>
+                      <li>선물</li>
+                      <li>디저트&스낵</li>
+                      <li>음료</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>이벤트&멤버십</h4>
+                    <ul>
+                      <li>진행중인 이벤트</li>
+                      <li>이벤트 담당자</li>
+                      <li>CJ ONE 멤버십</li>
+                      <li>제휴 혜택</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>뚜레쥬르 앱&온라인 쇼핑몰</h4>
+                    <ul>
+                      <li>뚜레쥬르 앱</li>
+                      <li>홈페이지 전용 예약 배송</li>
+                      <li>꽃 & 케이크 택배 배송</li>
+                      <li>대량 구매 문의</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Section -->
+    <section class="story">
+      <div class="inner">
+        <div class="dropdown_open"></div>
+
+        <div class="story_top">
+          <ul class="top_menu">
+            <li>
+              <a href="javascript:void(0)">HOME</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">브랜드 스토리</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">재료이야기</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">천일염</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="content-bg_1">
+            <div class="content-bg_1_title">
+              <img
+                src="/images/material/material2/tit_ingredient1.png"
+                alt=""
+              />
+              <div class="line"></div>
+              <img
+                src="/images/material/material2/txt_ingredient_top.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="content-bg_1_2">
+            <div class="content-bg_1_2_inner">
+              <img
+                src="/images/material/material2/txt_ingredient01_1.png"
+                alt=""
+              />
+              <div class="desc">
+                뚜레쥬르는 소금도 대한민국 명품 갯벌 전남 신안 신의도
+                염전에서<br />
+                선인들의 방법 그대로 오직 바람과 햇볕의 힘으로만 얻은 귀한
+                천일염,<br />
+                CJ제일제당 ‘오천년의 신비’를 사용 합니다<br />
+                *일부 제품, 매장별로 사용하는 소금이 상이할 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <div class="content-bg_2"></div>
+          <div class="content-bg_2_2">
+            <div class="content-bg_2_2_inner">
+              <img
+                src="/images/material/material2/txt_ingredient02_2.png"
+                alt=""
+              />
+              <div class="desc">
+                간수 제거, 세척, 자연탈수, 자연 건조는 물론 3단계의 이물 제거
+                과정을 통해 완성된 ‘오천년의 신비는’<br />
+                세계적으로 유명한 프랑스 게랑드 천일염보다 칼륨, 칼슘, 마그네슘
+                등의 천연 미네랄 성분이 3배가 높습니다<br />
+                <br />
+                5000년 동안의 오랜 시간이 쌓여 만들어진 갯벌, 그 갯벌 위 뜨거운
+                태양아래 충분히 필요한 시간만큼 두어 귀하게 얻고<br />
+                6단계의 까다로운 공정을 거친 천일염 이여야만 ‘오천년의 신비’가
+                될 수 있습니다
+              </div>
+              <!-- <div class="desc2">
+                <ul>
+                  <li>
+                    <img src="/images/img_ingredient02_2_1.png" alt="">
+                  </li>
+                  <li>
+                    <img src="/images/img_ingredient02_2_2.png" alt="">
+                  </li>
+                  <li>
+                    <img src="/images/img_ingredient02_2_3.png" alt="">
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <div class="content-bg_3">
+            <div class="content-bg_3_inner">
+              <div class="content-bg_3_youtube">
+                <iframe
+                  width="846"
+                  height="476"
+                  src="https://www.youtube.com/embed/Vt0ABwzERJU"
+                  title="재료부터 다른 건강한 베이커리 뚜레쥬르"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="content-bg_3_desc">
+                <div class="content-bg_3_desc_tit">
+                  <img src="/images/txt_ingredient_movie.png" alt="" />
+                </div>
+                <div class="content-bg_3_scrollBox">
+                  <br />
+                  <br />
+                  황금빛 속이 꽉 찬 밀<br />
+                  빵에 꼭 맞는 밀가루에<br />
+                  오천년의 신비 신안 천일염<br />
+                  자연 그대로의 건강한 콩<br />
+                  자연을 담은 건강한 재료를 선별해 만듭니다.<br />
+                  <br />
+                  진한 두유 검은콩 식빵<br />
+                  칠곡 바게트<br />
+                  재료부터 다른 건강한 베이커리<br />
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-bg_4"></div>
+          <div class="content-bg_4_2">
+            <div class="content-bg_4_2_inner">
+              <img
+                src="/images/material/material2/txt_ingredient_p_info.png"
+                alt=""
+              />
+              <div class="image_container">
+                <div class="container1">
+                  <img
+                    src="/images/material/material2/img_slide01.png"
+                    alt=""
+                  />
+                  <span>프랑스 바게트</span>
+                  <div class="desc">
+                    천일염의 사용으로 프랑스 정통<br />
+                    바게트 식감과 풍미가 더해진<br />
+                    대표적인 건강한 유럽스타일의 빵
+                  </div>
+                  <div class="container2_btnn">
+                    <a href="javascript:void(0)" class="btnn btn--green"
+                      >자세히 보기</a
+                    >
+                  </div>
+                </div>
+                <div class="container2">
+                  <img
+                    src="/images/material/material2/img_slide02.png"
+                    alt=""
+                  />
+                  <span>건포도빵</span>
+                  <div class="desc">
+                    천일염의 사용으로 그 풍미가 더욱 깊어졌으며,<br />
+                    달콤한 건포도와 고소한 피칸이 들어간<br />
+                    유기농 우유의 건강한 영양까지 맛 볼 수 있는 빵
+                  </div>
+                  <div class="container2_btnn">
+                    <a href="javascript:void(0)" class="btnn btn--green"
+                      >자세히 보기</a
+                    >
+                  </div>
+                </div>
+                <div class="container3">
+                  <img
+                    src="/images/material/material2/img_slide03.png"
+                    alt=""
+                  />
+                  <span>호밀빵</span>
+                  <div class="desc">
+                    천일염의 사용으로 그 맛이 더욱 깔끔해진<br />
+                    호밀과 오트밀이 조화를 이룬<br />
+                    식사대용 건강한 유럽스타일 빵
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="desc2">
+                <ul>
+                  <li>
+                    <img src="/images/img_ingredient02_2_1.png" alt="">
+                  </li>
+                  <li>
+                    <img src="/images/img_ingredient02_2_2.png" alt="">
+                  </li>
+                  <li>
+                    <img src="/images/img_ingredient02_2_3.png" alt="">
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div id="to-top">
+          <div class="material-icons">arrow_upward</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

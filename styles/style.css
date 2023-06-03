@@ -1,0 +1,96 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* - reset -  */
+@import "components/reset.css";
+
+/* - variables -  */
+@import "components/variables.css";
+/* - main head banner & location - */
+@import "components/main-head-banner.css";
+
+/* - screens -  */
+/* - mainpage - */
+@import "screens/mainpage/mainpage.css";
+@import "screens/mainpage/login.css";
+@import "screens/mainpage/mypage.css";
+/* - menu -*/
+
+/* - mall - */
+
+/* - searchstore - */
+/*  - app - */
+@import "app/homedelivery.css";
+@import "app/faq.css";
+@import "app/inquiry.css";
+@import "app/appmain.css";
+@import "app/bulk.css";
+/*  - map - */
+@import "map/map.css";
+/* - stroy - */
+
+/* - event - Page - */
+@import "screens/eventpage/eventpage.css";
+@import "screens/eventpage/aff_benefits.css";
+@import "screens/eventpage/eventwinner.css";
+@import "screens/eventpage/membership.css";
+
+/*  - customer - page - */
+@import "screens/customercenter/customercenter.css";
+
+/* - partissier- */
+@import "screens/partissier/partissier.css";
+
+/* - start - up */
+@import "screens/startup/startup.css";
+/* - header - */
+@import "components/header.css";
+
+/* - footer - */
+@import "components/footer.css";
+
+/* - quick remote - */
+@import "components/quickremote.css";
+
+/* - global - */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hidden {
+  display: none;
+}
+.skip_menu {
+  position: absolute;
+  top: -50px;
+}
+
+h2 {
+  font-family: "JUA", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@font-face {
+  font-family: "JUA";
+  src: url("../font/woff/BMJUA.woff") format("woff");
+  /* src: url("../font/woff2/BMJUA.woff2") format("woff2"); */
+  font-size: 50px;
+  font-weight: 500;
+}
