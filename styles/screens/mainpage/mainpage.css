@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   color: gray;
-  background-color: #b5b5b55a;
+  background-color: #424242a2;
   padding: 40px 10px;
   text-align: center;
   font-size: 50px;
@@ -93,26 +93,26 @@
 }
 .mainvideo_play a:first-child {
   display: block;
-  background-image: url("../../../img/icons/play-button-arrowhead_white.png");
+  background-image: url("../../../img/icons/play-button-arrowhead_col.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .mainvideo_play a:last-child {
   display: none;
-  background-image: url("../../../img/icons/pause-button-white.png");
+  background-image: url("../../../img/icons/pause-button-col.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .mainvideo_play a:first-child:hover {
   display: block;
-  background-image: url("../../../img/icons/play-button-arrowhead_col.png");
+  background-image: url("../../../img/icons/play-button-arrowhead_white.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .mainvideo_play a:last-child:hover {
   display: none;
-  background-image: url("../../../img/icons/pause-button-col.png");
+  background-image: url("  ../../../img/icons/pause-button-white.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -575,7 +575,7 @@
 }
 .mainpage_bg-img img:last-child {
   width: 100%;
-  height: 100px;
+  height: 300px;
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
   mask-image: linear-gradient(to top, transparent 5%, #f7f0da);
