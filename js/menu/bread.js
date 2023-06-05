@@ -27,7 +27,7 @@ const switchToPicsView = () => {
   viewPics.style.color = "#fff";
 
   viewNutris.style.background =
-    "url(../../../img/menu/icon-ntris.png) no-repeat left";
+    "url(../../img/menu/icon-ntris.png) no-repeat left";
   viewNutris.style.backgroundColor = "#fff";
   viewNutris.style.color = "#555";
 };
