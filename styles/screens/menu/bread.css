@@ -190,7 +190,7 @@ h2::before {
   font-weight: 500;
   color: #555;
   letter-spacing: -0.1em;
-  background: url(../../img/menu/icon-ntris.png) no-repeat left, #fff;
+  background: url(../../../img/menu/icon-ntris.png) no-repeat left, #fff;
   display: flex;
   justify-content: center;
   align-items: center;
