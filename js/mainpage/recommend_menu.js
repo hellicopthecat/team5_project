@@ -323,22 +323,29 @@ function recommAppearence(listIndex) {
     activeIndex = null;
   }
 }
+
+let currentImg = 0;
 recommWrapBtn.forEach((wrapBtn, liIndex) => {
   const handelRecommClick = (event) => {
     if (liIndex === 0) {
       recommAppearence(liIndex);
+      currentImg = 0;
     }
     if (liIndex === 1) {
       recommAppearence(liIndex);
+      currentImg = 0;
     }
     if (liIndex === 2) {
       recommAppearence(liIndex);
+      currentImg = 0;
     }
     if (liIndex === 3) {
       recommAppearence(liIndex);
+      currentImg = 0;
     }
     if (liIndex === 4) {
       recommAppearence(liIndex);
+      currentImg = 0;
     }
   };
   wrapBtn.addEventListener("click", handelRecommClick);
@@ -350,7 +357,6 @@ const DELI_LENGH = recommArray[2].deli.length;
 const DESSERT_LENGH = recommArray[3].dessert.length;
 const GIFT_LENGH = recommArray[4].gift.length;
 const MENUIMG_WIDTH = 400;
-let currentImg = 0;
 
 recommLeft.forEach((lBtn, index) => {
   const handleRecommLbtn = (event) => {
@@ -455,45 +461,66 @@ const appendCreateList = (product, num) => {
 //     });
 //   }
 // };
-const handleAppend = (NUM) => {
+
+// const handleAppend = (NUM) => {
+//   if (NUM === 0) {
+//     // if (recommStuffListCont[0].children.length > BREAD_LENGH) {
+//     //   recommStuffListCont[0].firstChild.remove();
+//     // }
+//     recommArray[0].bread.forEach((breadCont, breadIndex) => {
+//       appendCreateList(recommArray[0].bread[breadIndex], 0);
+//     });
+//   } else if (NUM === 1) {
+//     // if (recommStuffListCont[1].children.length > CAKE_LENGH) {
+//     //   recommStuffListCont[1].firstChild.remove();
+//     // }
+//     recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
+//       appendCreateList(recommArray[1].cake[cakeIndex], 1);
+//     });
+//   } else if (NUM === 2) {
+//     // if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
+//     //   recommStuffListCont[2].firstChild.remove();
+//     // }
+//     recommArray[2].deli.forEach((deliCont, deliIndex) => {
+//       appendCreateList(recommArray[2].deli[deliIndex], 2);
+//     });
+//   } else if (NUM === 3) {
+//     // if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
+//     //   recommStuffListCont[3].firstChild.remove();
+//     // }
+//     recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
+//       appendCreateList(recommArray[3].dessert[dessertIndex], 3);
+//     });
+//   } else if (NUM === 4) {
+//     // if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
+//     //   recommStuffListCont[4].firstChild.remove();
+//     // }
+//     recommArray[4].gift.forEach((giftCont, giftIndex) => {
+//       appendCreateList(recommArray[4].gift[giftIndex], 4);
+//     });
+//   }
+// };
+
+const handleAppend = async (NUM) => {
   if (NUM === 0) {
-    // if (recommStuffListCont[0].children.length > BREAD_LENGH) {
-    //   recommStuffListCont[0].firstChild.remove();
-    // }
-    recommArray[0].bread.forEach((breadCont, breadIndex) => {
-      appendCreateList(recommArray[0].bread[breadIndex], 0);
-    });
+    for (const breadCont of recommArray[0].bread) {
+      await appendCreateList(breadCont, 0);
+    }
   } else if (NUM === 1) {
-    // if (recommStuffListCont[1].children.length > CAKE_LENGH) {
-    //   recommStuffListCont[1].firstChild.remove();
-    // }
-    recommArray[1].cake.forEach((cakeCont, cakeIndex) => {
-      appendCreateList(recommArray[1].cake[cakeIndex], 1);
-    });
+    for (const cakeCont of recommArray[1].cake) {
+      await appendCreateList(cakeCont, 1);
+    }
   } else if (NUM === 2) {
-    // if (recommStuffListCont[2].children.length > DELI_LENGH - 1) {
-    //   recommStuffListCont[2].firstChild.remove();
-    // }
-    recommArray[2].deli.forEach((deliCont, deliIndex) => {
-      appendCreateList(recommArray[2].deli[deliIndex], 2);
-    });
+    for (const deliCont of recommArray[2].deli) {
+      await appendCreateList(deliCont, 2);
+    }
   } else if (NUM === 3) {
-    // if (recommStuffListCont[3].children.length > DESSERT_LENGH - 1) {
-    //   recommStuffListCont[3].firstChild.remove();
-    // }
-    recommArray[3].dessert.forEach((dessertCont, dessertIndex) => {
-      appendCreateList(recommArray[3].dessert[dessertIndex], 3);
-    });
+    for (const dessertCont of recommArray[3].dessert) {
+      await appendCreateList(dessertCont, 3);
+    }
   } else if (NUM === 4) {
-    // if (recommStuffListCont[4].children.length > GIFT_LENGH - 1) {
-    //   recommStuffListCont[4].firstChild.remove();
-    // }
-    recommArray[4].gift.forEach((giftCont, giftIndex) => {
-      appendCreateList(recommArray[4].gift[giftIndex], 4);
-    });
+    for (const giftCont of recommArray[4].gift) {
+      await appendCreateList(giftCont, 4);
+    }
   }
 };
-
-// window.addEventListener("scroll", () => {
-//   console.log(window.scrollY);
-// });
